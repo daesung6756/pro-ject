@@ -1,7 +1,7 @@
 html, body{width:100%;height:100%;}
 * {box-sizing:border-box}
 /*.wrap {height:100%;overflow:hidden;}*/
-.header {max-width:1200px;margin:0 auto;}
+.header {max-width:1024px;margin:0 auto;}
 .input-text-set {display:inline-block;height:40px;line-height:40px;padding:0 10px;width:70px;margin:5px;}
 
 .local-img-output {text-align:center;min-width:100%;}
@@ -16,10 +16,16 @@ html, body{width:100%;height:100%;}
 .makeBox-inner .input-area {font-size:0;}
 .makeBox-inner .input-area input {font-size:14px;}
 
+.release-info {padding:10px 30px;border:1px solid #efefef;max-width:400px;}
+.release-info:hover {background: rgba(247,208,0,.2);}
+.release-info > ul > li{border-bottom:1px dotted #999;padding:10px 0;font-size:14px;}
+.release-info > ul > li > strong {display:block;padding-bottom:5px;margin:0;}
+.release-info > ul > li > ul > li {font-size:12px;line-height:1.6;}
+
 .box-control {background:#e6eef9;padding:5px;}
 .box-control .ctrl-inner {position:relative;padding-right:70px;}
 .box-control .resualt-value {position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:12px;}
-.box-control .color-ctrl{padding-bottom:10px;border-bottom:1px solid #ddd;}
+.box-control .color-ctrl{padding-bottom:10px;border-bottom:1px solid #ddd;line-height:1.4;}
 
 .boardcopy-wrap {padding:15px 0;text-align:right;}
 .boardcopy-wrap button{width:100px;height:40px;cursor:pointer;background:#446dcb;border:1px solid #446dcb;color:#fff;font-weight:bold;transition: background .3s linear}
