@@ -17,11 +17,12 @@ html, body{width:100%;height:100%;}
 .makeBox-inner .input-area {font-size:0;}
 .makeBox-inner .input-area input {font-size:14px;}
 
-.release-info {padding:10px 30px;border:1px solid #efefef;max-width:400px;}
+.release-info {padding:10px 30px;border:1px solid #efefef;}
 .release-info:hover {background: rgba(247,208,0,.2);}
 .release-info > ul > li{border-bottom:1px dotted #999;padding:10px 0;font-size:14px;}
 .release-info > ul > li > strong {display:block;padding-bottom:5px;margin:0;}
-.release-info > ul > li > ul > li {font-size:12px;line-height:1.6;}
+.release-info > ul > li > ul > li {position:relative;font-size:12px;line-height:1.6;padding-left:10px;}
+.release-info > ul > li > ul > li:before {content:'-';position:absolute;top:0;left:0;}
 
 .box-control {background:#e6eef9;padding:5px;}
 .box-control .ctrl-inner {position:relative;padding-right:70px;}

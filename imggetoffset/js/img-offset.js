@@ -198,7 +198,7 @@ function colorChangeRadioEvent($el, $target) {
             break;
         case "colorSelect2":
             $tG.css({
-                'background': '#909090'
+                'background': '#0F92F7'
             });
             break;
         case "colorSelect3":
