@@ -50,8 +50,14 @@
         <button type="button" class="img-view-reset" onclick="handleFileSelectReset()">이미지 초기화</button>
     </div>
     <div class="boardcopy-wrap">
-        <button type="button" onclick="boardCopyEvent('#resualt-px')">픽셀 복사</button>
-        <button type="button" onclick="boardCopyEvent('#resualt-per')">퍼센트 복사</button>
+        <div>
+            <button type="button" onclick="boardCopyEvent('#resualt-px')">PX CSS 복사</button>
+            <button type="button" onclick="boardCopyEvent('#resualt-per')">% CSS 복사</button>
+        </div>
+        <div style="margin-top:10px;">
+            <button type="button" class="direct" onclick="appendBtn('#resualt-px')">PX 버튼 복사</button>
+            <button type="button" class="direct" onclick="appendBtn('#resualt-per')">% 버튼 복사</button>
+        </div>
     </div>
     <div class="resualt-px">
         <textarea id="resualt-px" readonly="readonly"></textarea>
@@ -74,7 +80,7 @@
 
 <div class="wrap">
     <header class="header">
-        <h1 class="title tc">LEEDS GET IMAGES OFFSET GENERATOR v0.4</h1>
+        <h1 class="title tc">LEEDS GET IMAGES OFFSET GENERATOR v0.5</h1>
         <p class="title-desc tc">Made in Korea!</p>
         <div class="row mt40">
             <div class="column n2">
@@ -95,6 +101,12 @@
             <div class="column n2">
                 <div class="release-info">
                     <ul>
+                        <li>
+                            <strong>v0.5</strong>
+                            <ul>
+                                <li>앵커태그 복사 기능 추가</li>
+                            </ul>
+                        </li>
                         <li>
                             <strong>v0.4</strong>
                             <ul>

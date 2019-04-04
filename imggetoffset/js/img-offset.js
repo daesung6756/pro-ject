@@ -139,10 +139,28 @@ function resizeMoveDrawData() {
         $('.resualt-px').children().val("top:" + draggableOffsetTop + "px;left:"+ draggableOffsetLeft +'px;width:' + input[0].value + 'px;height:'+ input[1].value +'px');
     }
 }
+function appendBtn ($target) {
+    var $body = $('body');
+    var $tg = $($target).val();
+    if($tg !== null && $tg !== undefined && $tg !== ''){
+        $body.append('<div class="fixed-dim"><textarea><a href="" title="내용" class="tp_btn" style="' + $tg + '" target="_self"><span class="hidden">내용</span></a></textarea></div>');
+         $('.fixed-dim').children('textarea').select();
+        document.execCommand('Copy');
+    } else {
+        alert('정확한 수치가 없습니다.');
+        return false;
+    }
+}
 function boardCopyEvent(el) {
     var $getText = $(el);
-    $getText.select();
-    document.execCommand('Copy');
+    var $value = $getText.val();
+    if($value !== null && $value !== undefined && $value !== ''){
+        $getText.select();
+        document.execCommand('Copy');
+    } else {
+        alert('정확한 수치가 없습니다.');
+    }
+
 }
 function mouseEventKeyMove(direction) {
     var $direction = direction;
@@ -270,7 +288,6 @@ $(document).ready(function() {
                 break;
         }
     });
-
     $(document).on('click','.m-event-area',function(){
         resizeMoveGetData();
         resizeMoveDrawData();
@@ -324,7 +341,9 @@ $(document).ready(function() {
             return false;
         }
     });
-
+    $(document).on('click', '.fixed-dim', function() {
+        $(this).remove();
+    });
     $(document).on('click','.change-btn', function() {
         var input = $(".makeBox").find('.input-area').children();
         var $target = $('.rect-box');
