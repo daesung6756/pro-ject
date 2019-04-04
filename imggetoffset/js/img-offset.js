@@ -1,6 +1,5 @@
 //로컬 이미지 미리 보기
 function handleFileSelect(evt) {
-
     var files = evt.target.files; // FileList object
     var wrap = document.querySelector('.wrap');
     var rect = document.querySelector('.m-event-area');
@@ -121,10 +120,13 @@ function resizeMoveGetData() {
     draggableOffsetLeftPer = $perLeft;
     draggableOffsetWidthPer = $perWidth;
     draggableOffsetHeightPer = $perHeight;
+    $btnResualtWidth = $btnW;
+    $btnResualtHeight = $btnH;
 }
 function resizeMoveDrawData() {
     var input = $(".makeBox").find('.input-area').children();
     var $target = $('.make-rect-box');
+    var $wrapTop = $('.img-wrap').height();
     for (var i = 0; i < input.length ; i++) {}
     if(draggableOffsetTopPer !== null || draggableOffsetTopPer !== undefined && draggableOffsetLeftPer !== null && draggableOffsetLeftPer !== undefined){
         $('.resualt-per').children().val("top:" + (draggableOffsetTopPer- 0.09).toFixed(2)  + "%;left:"+ draggableOffsetLeftPer.toFixed(2) +'%;width:'+ draggableOffsetWidthPer.toFixed(2) + '%;height:' + draggableOffsetHeightPer.toFixed(2) + '%;');
@@ -153,31 +155,29 @@ function mouseEventKeyMove(direction) {
             $target.css({
                 "left" : $left - 1,
             });
-            console.log("left");
-            console.log($left-1);
-
+            resizeMoveGetData();
+            resizeMoveDrawData();
             break;
         case 'r':
             $target.css({
                 "left" : $left - (-1),
             });
-            console.log("right");
-            console.log($left+1);
+            resizeMoveGetData();
+            resizeMoveDrawData();
             break;
         case 't':
             $target.css({
                 "top" : $top - 1,
             });
-            console.log("top");
-            console.log($top-1);
-
+            resizeMoveGetData();
+            resizeMoveDrawData();
             break;
         case 'b':
             $target.css({
                 "top" : $top -(-1),
             });
-            console.log("bottom");
-            console.log($top+1);
+            resizeMoveGetData();
+            resizeMoveDrawData();
             break;
         default:
             break;
@@ -216,8 +216,24 @@ function colorChangeRadioEvent($el, $target) {
     }
 }
 
+function fixedTopTarget (e) {
+    var $this = $(e.path[0]);
+    var $target = $('.m-event-area');
+    var $getTop = $target.css('top');
+    $this.toggleClass('is-active');
+    if($this.hasClass('is-active')){
+        fixeding = true;
+        $this.text('고정 중');
+        $thisTop = $('.m-event-area').css('top');
+    } else {
+        $this.text('고정');
+        fixeding = false;
+    }
+}
+
 var resizing = false;
 var dragging = false;
+var fixeding = false;
 
 var draggableOffsetLeft = '';
 var draggableOffsetTop = '';
@@ -227,12 +243,12 @@ var draggableOffsetWidthPer ='';
 var draggableOffsetHeightPer = '';
 var $btnResualtWidth = '';
 var $btnResualtHeight = '';
-
+var $fixedTop = '';
+var $thisTop ='';
 
 $(document).ready(function() {
     $(document).on('keydown',function(e) {
         var $key = e.keyCode;
-        console.log($key);
         switch($key){
             case 37 : // left
                 e.preventDefault();
@@ -279,6 +295,7 @@ $(document).ready(function() {
             return false;
         }
         if(dragging){
+
             moveWrapClone('.rect-box', ".m-event-area");
             resizeMoveGetData();
             console.log("렉트 박스 : 마우스 무브");
@@ -288,18 +305,20 @@ $(document).ready(function() {
     $(document).on("mouseup", function() {
         if (resizing) {
             console.log("리사이즈버튼 마우스 업");
-            var $btnW = $(".m-event-area").width();
-            var $btnH = $(".m-event-area").height();
-            $btnResualtWidth = $btnW;
-            $btnResualtHeight = $btnH;
+            resizeMoveGetData();
             resizeMoveDrawData();
             resizing = false;
             return false;
         }
         if (dragging) {
+            if(fixeding){
+                $('.m-event-area').css({'top': $thisTop});
+                $('.m-event-area').click();
+            }
             console.log("렉트 박스 : 마우스 업");
             var $rect = $('.rect-box');
             $rect.css({'top': '0', 'left': '0'});
+            resizeMoveGetData();
             resizeMoveDrawData();
             dragging = false;
             return false;

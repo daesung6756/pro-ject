@@ -28,7 +28,7 @@
                <label for="colorSelect1"><input type="radio" id="colorSelect1" name="box-color-change" onchange="colorChangeRadioEvent('.radio-set', '.rect-box')">블랙</label>
                <label for="colorSelect2"><input type="radio" id="colorSelect2" name="box-color-change" onchange="colorChangeRadioEvent('.radio-set', '.rect-box')">그레이</label>
                <label for="colorSelect3"><input type="radio" id="colorSelect3" name="box-color-change" onchange="colorChangeRadioEvent('.radio-set', '.rect-box')">레드</label>
-               <label for="colorSelect4"><input type="radio" id="colorSelect4" name="box-color-change" onchange="colorChangeRadioEvent('.radio-set', '.rect-box')">옐로우</label>
+               <label for="colorSelect4"><input type="radio" id="colorSelect4" name="box-color-change" onchange="colorChangeRadioEvent('.radio-set', '.rect-box')" checked>옐로우</label>
             </div>
         </div>
         <div class="alpha-ctrl">
@@ -63,6 +63,7 @@
 
 <div class="m-event-area">
     <div class="event-inner">
+        <button type="button" class="fixed-btn" onclick="fixedTopTarget(event)">고정</button>
         <div class="rect-box"></div>
         <span class="resize-btn"></span>
     </div>
@@ -73,7 +74,7 @@
 
 <div class="wrap">
     <header class="header">
-        <h1 class="title tc">LEEDS GET IMAGES OFFSET GENERATOR v0.3</h1>
+        <h1 class="title tc">LEEDS GET IMAGES OFFSET GENERATOR v0.4</h1>
         <p class="title-desc tc">Made in Korea!</p>
         <div class="row mt40">
             <div class="column n2">
@@ -94,6 +95,13 @@
             <div class="column n2">
                 <div class="release-info">
                     <ul>
+                        <li>
+                            <strong>v0.4</strong>
+                            <ul>
+                                <li>Top 값 고정 버튼 기능 추가<br>(고정 버튼 클릭시 클릭 시점의 높이값으로 고정)</li>
+                                <li>초반 박스 사이즈 나오지 않던 부분 수정.</li>
+                            </ul>
+                        </li>
                         <li>
                             <strong>v0.3</strong>
                             <ul>
