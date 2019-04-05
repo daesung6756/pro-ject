@@ -44,7 +44,7 @@
             var $flexWrapChild = $('.flex-container').children();
             $target.css($option, $val);
             if ($flexWrap.attr("style") !== null && $flexWrap.attr("style") !== undefined && $flexWrap.attr("style") !== '') {
-                $('.resualt-container').text('.flex-container { ' + $flexWrap.attr('style') + '}');
+                $('.resualt-container').text('.flex-container { display:flex;' + $flexWrap.attr('style') + '}');
             }
             if ($flexWrapChild.attr("style") !== null && $flexWrapChild.attr("style") !== undefined && $flexWrapChild.attr("style") !== ''){
                 $('.resualt-in-box').text('.flex-container .in_box {' + $flexWrapChild.attr('style') + '}');
@@ -110,6 +110,17 @@
                 </ul>
             </li>
             <li>
+                <h3 class="title">place-content : </h3>
+                <p class="desc"><strong>justify-content</strong>과 <strong>align-content</strong>의 단축 속성</p>
+                <ul class="radio-list">
+                    <li><input type="radio" id="place-content1" name="getCssOptionAlignItems" onchange="cssSetter(event, 'place-content', '.flex-container')" value="center"><label for="place-content1">center</label></li>
+                    <li><input type="radio" id="place-content2" name="getCssOptionAlignItems" onchange="cssSetter(event, 'place-content', '.flex-container')" value="flex-start"><label for="place-content2">flex-start</label></li>
+                    <li><input type="radio" id="place-content3" name="getCssOptionAlignItems" onchange="cssSetter(event, 'place-content', '.flex-container')" value="flex-end"><label for="place-content3">flex-end</label></li>
+                    <li><input type="radio" id="place-content4" name="getCssOptionAlignItems" onchange="cssSetter(event, 'place-content', '.flex-container')" value="stretch"><label for="place-content4">stretch</label></li>
+                    <li><input type="radio" id="place-content5" name="getCssOptionAlignItems" onchange="cssSetter(event, 'place-content', '.flex-container')" value="baseline"><label for="place-content5">baseline</label></li>
+                </ul>
+            </li>
+            <li>
                 <h3 class="title">align-items : </h3>
                 <p class="desc">교차 축(cross-axis)에서 Items의 정렬 방법을 설정(1줄)</p>
                 <ul class="radio-list">
@@ -120,6 +131,7 @@
                     <li><input type="radio" id="align-items5" name="getCssOptionAlignItems" onchange="cssSetter(event, 'align-items', '.flex-container')" value="baseline"><label for="align-items5">baseline</label></li>
                 </ul>
             </li>
+
 
         </ul>
     </div>
@@ -144,6 +156,14 @@
                     <li><input type="radio" id="shrink1" name="getCssOptionBasis" onchange="cssSetter(event, 'flex-shrink','.in_box')" value="0"><label for="shrink1">0</label></li>
                     <li><input type="radio" id="shrink2" name="getCssOptionBasis" onchange="cssSetter(event, 'flex-shrink','.in_box')" value="1"><label for="shrink2">1</label></li>
                     <li><input type="radio" id="shrink3" name="getCssOptionBasis" onchange="cssSetter(event, 'flex-shrink','.in_box')" value="2"><label for="shrink3">2</label></li>
+                </ul>
+            </li>
+            <li>
+                <h3 class="title">flex : </h3>
+                <p class="desc">가로 값을 정해주는 역활을 한다.</p>
+                <ul class="radio-list">
+                    <li><input type="radio" id="flex1" name="getCssOptionBasis" onchange="cssSetter(event, 'flex','.in_box')" value="0"><label for="flex1">0</label></li>
+                    <li><input type="radio" id="flex2" name="getCssOptionBasis" onchange="cssSetter(event, 'flex','.in_box')" value="1"><label for="flex2">1</label></li>
                 </ul>
             </li>
         </ul>

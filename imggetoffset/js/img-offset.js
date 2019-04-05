@@ -268,6 +268,7 @@ var $fixedTop = '';
 var $thisTop ='';
 
 $(document).ready(function() {
+
     $(document).on('keydown',function(e) {
         var $key = e.keyCode;
         switch($key){
