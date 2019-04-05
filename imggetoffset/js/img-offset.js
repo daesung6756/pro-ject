@@ -146,6 +146,9 @@ function appendBtn ($target) {
         $body.append('<div class="fixed-dim"><textarea><a href="" title="내용" class="tp_btn" style="' + $tg + '" target="_self"><span class="hidden">내용</span></a></textarea></div>');
          $('.fixed-dim').children('textarea').select();
         document.execCommand('Copy');
+        setTimeout(function(){
+            $('.fixed-dim').remove();
+        },300);
     } else {
         alert('정확한 수치가 없습니다.');
         return false;
