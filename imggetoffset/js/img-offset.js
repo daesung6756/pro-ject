@@ -129,7 +129,7 @@ function resizeMoveDrawData() {
     var $wrapTop = $('.img-wrap').height();
     for (var i = 0; i < input.length ; i++) {}
     if(draggableOffsetTopPer !== null || draggableOffsetTopPer !== undefined && draggableOffsetLeftPer !== null && draggableOffsetLeftPer !== undefined){
-        $('.resualt-per').children().val("top:" + (draggableOffsetTopPer- 0.09).toFixed(2)  + "%;left:"+ draggableOffsetLeftPer.toFixed(2) +'%;width:'+ draggableOffsetWidthPer.toFixed(2) + '%;height:' + draggableOffsetHeightPer.toFixed(2) + '%;');
+        $('.resualt-per').children().val("top:" + (draggableOffsetTopPer - 0.02).toFixed(2)  + "%;left:"+ draggableOffsetLeftPer.toFixed(2) +'%;width:'+ draggableOffsetWidthPer.toFixed(2) + '%;height:' + draggableOffsetHeightPer.toFixed(2) + '%;');
     } else {
         $('.resualt-per').children().val("top:" + null + ";left:"+ null +';width:' + null + ';height:' + null);
     }
