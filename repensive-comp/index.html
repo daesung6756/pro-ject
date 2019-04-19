@@ -24,19 +24,15 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
                     </a>
                     <div class="scroll-panel">
-                        <ul>
-                            <li><a href="">메뉴1</a></li>
-                            <li><a href="">메뉴2</a></li>
-                            <li><a href="">메뉴3</a></li>
-                            <li><a href="">메뉴4</a></li>
-                            <li><a href="">메뉴4</a></li>
-                            <li><a href="">메뉴4</a></li>
-                            <li><a href="">메뉴4</a></li>
-                            <li><a href="">메뉴4</a></li>
-                            <li><a href="">메뉴4</a></li>
-                            <li><a href="">메뉴4</a></li>
-                            <li><a href="">메뉴4</a></li>
-                        </ul>
+                        <div>
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button"></button>
+                            <button type="button"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -44,209 +40,341 @@
         <div class="container">
             <div class="content">
                 <div class="section" id="case1">
-                    <h2 class="title">Table</h2>
-                    <h3 class="sub-tit">Row</h3>
-                    <div class="row-table-group">
-                        <div class="row-table-field">
-                            <label for="test1" class="field-th tal">이름</label>
-                            <div class="field-td">
-                                <input type="text" class="input-default-set size-s" value="홍길동" id="test1" placeholder="입력하세요."><span class="sub-desc"> ※어쩌구 저쩌구</span>
+                    <div class="section-inner">
+                        <h2 class="title">Table</h2>
+                        <h3 class="sub-tit">Row</h3>
+                        <div class="row-table-group">
+                            <div class="row-table-field">
+                                <label for="test1" class="field-th tal">이름</label>
+                                <div class="field-td">
+                                    <input type="text" class="input size-s" value="홍길동" id="test1" placeholder="입력하세요."><span class="sub-desc"> ※어쩌구 저쩌구</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row-table-field">
-                            <span class="field-th tal">주소</span>
-                            <div class="field-td">
-                                <div class="form-field">
-                                    <div class="field-set input-group">
-                                        <input type="text" class="input-default-set" id="sample4_postcode" placeholder="주소를 검색하세요." readonly><button type="button" onclick="sample4_execDaumPostcode()" class="btn-type btn">검색</button>
+                            <div class="row-table-field">
+                                <span class="field-th tal">주소</span>
+                                <div class="field-td">
+                                    <div class="form-field">
+                                        <div class="field-set search-type">
+                                            <input type="text" class="input" id="sample4_postcode" placeholder="주소를 검색하세요." readonly><button type="button" onclick="sample4_execDaumPostcode()" class="btn-type btn">검색</button>
+                                        </div>
+                                        <div class="field-set">
+                                            <input type="text" class="input size-l" id="sample4_roadAddress"  placeholder="도로명 주소 표기">
+                                        </div>
+                                        <div class="field-set">
+                                            <input type="text" class="input size-l" id="sample4_jibunAddress" placeholder="지번 주소 표기">
+                                        </div>
+                                        <p id="guide"></p>
                                     </div>
-                                    <div class="input-group">
-                                        <input type="text" class="input-default-set size-l" id="sample4_roadAddress"  placeholder="도로명 주소 표기">
+                                </div>
+                            </div>
+                            <div class="row-table-field">
+                                <label for="test3" class="field-th tal">연락처</label>
+                                <div class="field-td">
+                                    <div class="filed-set">
+                                        <input type="text" class="input size-l" id="test3" placeholder="입력하세요."><span class="sub-desc fc-red"> ※어쩌구 저쩌구</span>
                                     </div>
-                                    <div class="input-group">
-                                        <input type="text" class="input-default-set size-l" id="sample4_jibunAddress" placeholder="지번 주소 표기">
-                                    </div>
-                                    <p id="guide"></p>
+                                </div>
+                            </div>
+                            <div class="row-table-field">
+                                <label for="test4" class="field-th tal">예제4</label>
+                                <div class="field-td">
+                                    <input type="text" class="input size-s" value="홍길동" id="test4" placeholder="입력하세요."><p class="sub-desc"> ※어쩌구 저쩌구</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="row-table-field">
-                            <label for="test3" class="field-th tal">연락처</label>
-                            <div class="field-td">
-                                <div class="filed-set">
-                                    <input type="text" class="input-default-set size-l" id="test3" placeholder="입력하세요."><span class="sub-desc fc-red"> ※어쩌구 저쩌구</span>
-                                </div>
+                    </div>
+                    <div class="section-inner">
+                        <h3 class="sub-tit">Col</h3>
+                        <div class="col-table-group">
+                            <div class="scroll-notice">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M9.29289322,7 L3.70710678,7 L4.85355339,8.14644661 C5.04881554,8.34170876 5.04881554,8.65829124 4.85355339,8.85355339 C4.65829124,9.04881554 4.34170876,9.04881554 4.14644661,8.85355339 L2.14644661,6.85355339 C1.95118446,6.65829124 1.95118446,6.34170876 2.14644661,6.14644661 L4.14644661,4.14644661 C4.34170876,3.95118446 4.65829124,3.95118446 4.85355339,4.14644661 C5.04881554,4.34170876 5.04881554,4.65829124 4.85355339,4.85355339 L3.70710678,6 L9.29289322,6 L8.14644661,4.85355339 C7.95118446,4.65829124 7.95118446,4.34170876 8.14644661,4.14644661 C8.34170876,3.95118446 8.65829124,3.95118446 8.85355339,4.14644661 L10.8535534,6.14644661 C11.0488155,6.34170876 11.0488155,6.65829124 10.8535534,6.85355339 L8.85355339,8.85355339 C8.65829124,9.04881554 8.34170876,9.04881554 8.14644661,8.85355339 C7.95118446,8.65829124 7.95118446,8.34170876 8.14644661,8.14644661 L9.29289322,7 Z M14,9.5 L14,12.0474376 C14,12.3783481 13.8839855,12.698786 13.6721417,12.9529985 C13.1720143,13.5531514 12.2800608,13.6342381 11.6799078,13.1341106 L10.7560738,12.3642489 C10.4736449,12.1288916 10.11764,12 9.75,12 C9.48363526,12 9.24082605,12.1526146 9.12532205,12.3926334 L9.08962348,12.4668155 C8.95447865,12.7476481 8.99541029,13.0814869 9.19439734,13.321352 L13.607865,18.6414804 C14.3217788,19.502054 15.3818498,20 16.5,20 C18.9852814,20 21,17.9852814 21,15.5 L21,11.5 C21,11.2238576 20.7761424,11 20.5,11 C20.2238576,11 20,11.2238576 20,11.5 L20,12.5 C20,12.7761424 19.7761424,13 19.5,13 C19.2238576,13 19,12.7761424 19,12.5 L19,10.5 C19,10.2238576 18.7761424,10 18.5,10 C18.2238576,10 18,10.2238576 18,10.5 L18,12.5 C18,12.7761424 17.7761424,13 17.5,13 C17.2238576,13 17,12.7761424 17,12.5 L17,4.5 C17,4.22385763 16.7761424,4 16.5,4 C16.2238576,4 16,4.22385763 16,4.5 L16,5.5 L16,12.5 C16,12.7761424 15.7761424,13 15.5,13 C15.2238576,13 15,12.7761424 15,12.5 L15,5.5 C15,5.22385763 14.7761424,5 14.5,5 C14.2238576,5 14,5.22385763 14,5.5 L14,9.5 Z M13,9.49999945 L13,5.5 C13,4.67157288 13.6715729,4 14.5,4 C14.6951239,4 14.8815459,4.03725677 15.0525405,4.10504462 C15.2258938,3.46823386 15.808266,3 16.5,3 C17.3284271,3 18,3.67157288 18,4.5 L18,9.08535285 C18.1563895,9.03007711 18.3246823,9 18.5,9 C19.191734,9 19.7741062,9.46823386 19.9474595,10.1050446 C20.1184541,10.0372568 20.3048761,10 20.5,10 C21.3284271,10 22,10.6715729 22,11.5 L22,15.5 C22,18.5375661 19.5375661,21 16.5,21 C15.0842933,21 13.7421216,20.3695431 12.8382246,19.279958 L8.42475695,13.9598296 C7.97611908,13.4190278 7.88383427,12.6663521 8.18853292,12.0331845 L8.2242315,11.9590024 C8.50634865,11.3727595 9.09940726,11 9.75,11 C10.3515765,11 10.9341143,11.2109078 11.3962582,11.5960277 L12.3200922,12.3658894 C12.4959683,12.5124527 12.7573571,12.4886901 12.9039205,12.3128141 C12.9660017,12.2383166 13,12.1444116 13,12.0474376 L13,9.5 Z"/>
+                                </svg>
                             </div>
-                        </div>
-                        <div class="row-table-field">
-                            <label for="test4" class="field-th tal">예제4</label>
-                            <div class="field-td">
-                                <input type="text" class="input-default-set size-s" value="홍길동" id="test4" placeholder="입력하세요."><p class="sub-desc"> ※어쩌구 저쩌구</p>
-                            </div>
+                            <table class="">
+                                <caption class="blind">이런 저런 목록</caption>
+                                <colgroup>
+                                    <col style="width:150px;">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">제목이 길면 이렇게 처리 될 것이다</th>
+                                    <th scope="col">제목2</th>
+                                    <th scope="col">제목3</th>
+                                    <th scope="col">제목4</th>
+                                    <th scope="col">제목5</th>
+                                    <th scope="col">제목6</th>
+                                    <th scope="col">제목7</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>내용이 길면 이렇게 처리 될 것이다.</td>
+                                    <td>내용2</td>
+                                    <td>내용3</td>
+                                    <td>내용4</td>
+                                    <td>내용5</td>
+                                    <td>내용6</td>
+                                    <td>내용7</td>
+                                </tr>
+                                <tr>
+                                    <td>내용1</td>
+                                    <td>내용2</td>
+                                    <td>내용3</td>
+                                    <td>내용4</td>
+                                    <td>내용5</td>
+                                    <td>내용6</td>
+                                    <td>내용7</td>
+                                </tr>
+                                <tr>
+                                    <td>내용1</td>
+                                    <td>내용2</td>
+                                    <td>내용3</td>
+                                    <td>내용4</td>
+                                    <td>내용5</td>
+                                    <td>내용6</td>
+                                    <td>내용7</td>
+                                </tr>
+                                <tr>
+                                    <td>내용1</td>
+                                    <td>내용2</td>
+                                    <td>내용3</td>
+                                    <td>내용4</td>
+                                    <td>내용5</td>
+                                    <td>내용6</td>
+                                    <td>내용7</td>
+                                </tr>
+                                <tr>
+                                    <td>내용1</td>
+                                    <td>내용2</td>
+                                    <td>내용3</td>
+                                    <td>내용4</td>
+                                    <td>내용5</td>
+                                    <td>내용6</td>
+                                    <td>내용7</td>
+                                </tr>
+                                <tr>
+                                    <td>내용1</td>
+                                    <td>내용2</td>
+                                    <td>내용3</td>
+                                    <td>내용4</td>
+                                    <td>내용5</td>
+                                    <td>내용6</td>
+                                    <td>내용7</td>
+                                </tr>
+                                <tr>
+                                    <td>내용1</td>
+                                    <td>내용2</td>
+                                    <td>내용3</td>
+                                    <td>내용4</td>
+                                    <td>내용5</td>
+                                    <td>내용6</td>
+                                    <td>내용7</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-
-                    <h3 class="sub-tit">Col</h3>
-                    <div class="col-table-group">
-                        <div class="scroll-notice">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M9.29289322,7 L3.70710678,7 L4.85355339,8.14644661 C5.04881554,8.34170876 5.04881554,8.65829124 4.85355339,8.85355339 C4.65829124,9.04881554 4.34170876,9.04881554 4.14644661,8.85355339 L2.14644661,6.85355339 C1.95118446,6.65829124 1.95118446,6.34170876 2.14644661,6.14644661 L4.14644661,4.14644661 C4.34170876,3.95118446 4.65829124,3.95118446 4.85355339,4.14644661 C5.04881554,4.34170876 5.04881554,4.65829124 4.85355339,4.85355339 L3.70710678,6 L9.29289322,6 L8.14644661,4.85355339 C7.95118446,4.65829124 7.95118446,4.34170876 8.14644661,4.14644661 C8.34170876,3.95118446 8.65829124,3.95118446 8.85355339,4.14644661 L10.8535534,6.14644661 C11.0488155,6.34170876 11.0488155,6.65829124 10.8535534,6.85355339 L8.85355339,8.85355339 C8.65829124,9.04881554 8.34170876,9.04881554 8.14644661,8.85355339 C7.95118446,8.65829124 7.95118446,8.34170876 8.14644661,8.14644661 L9.29289322,7 Z M14,9.5 L14,12.0474376 C14,12.3783481 13.8839855,12.698786 13.6721417,12.9529985 C13.1720143,13.5531514 12.2800608,13.6342381 11.6799078,13.1341106 L10.7560738,12.3642489 C10.4736449,12.1288916 10.11764,12 9.75,12 C9.48363526,12 9.24082605,12.1526146 9.12532205,12.3926334 L9.08962348,12.4668155 C8.95447865,12.7476481 8.99541029,13.0814869 9.19439734,13.321352 L13.607865,18.6414804 C14.3217788,19.502054 15.3818498,20 16.5,20 C18.9852814,20 21,17.9852814 21,15.5 L21,11.5 C21,11.2238576 20.7761424,11 20.5,11 C20.2238576,11 20,11.2238576 20,11.5 L20,12.5 C20,12.7761424 19.7761424,13 19.5,13 C19.2238576,13 19,12.7761424 19,12.5 L19,10.5 C19,10.2238576 18.7761424,10 18.5,10 C18.2238576,10 18,10.2238576 18,10.5 L18,12.5 C18,12.7761424 17.7761424,13 17.5,13 C17.2238576,13 17,12.7761424 17,12.5 L17,4.5 C17,4.22385763 16.7761424,4 16.5,4 C16.2238576,4 16,4.22385763 16,4.5 L16,5.5 L16,12.5 C16,12.7761424 15.7761424,13 15.5,13 C15.2238576,13 15,12.7761424 15,12.5 L15,5.5 C15,5.22385763 14.7761424,5 14.5,5 C14.2238576,5 14,5.22385763 14,5.5 L14,9.5 Z M13,9.49999945 L13,5.5 C13,4.67157288 13.6715729,4 14.5,4 C14.6951239,4 14.8815459,4.03725677 15.0525405,4.10504462 C15.2258938,3.46823386 15.808266,3 16.5,3 C17.3284271,3 18,3.67157288 18,4.5 L18,9.08535285 C18.1563895,9.03007711 18.3246823,9 18.5,9 C19.191734,9 19.7741062,9.46823386 19.9474595,10.1050446 C20.1184541,10.0372568 20.3048761,10 20.5,10 C21.3284271,10 22,10.6715729 22,11.5 L22,15.5 C22,18.5375661 19.5375661,21 16.5,21 C15.0842933,21 13.7421216,20.3695431 12.8382246,19.279958 L8.42475695,13.9598296 C7.97611908,13.4190278 7.88383427,12.6663521 8.18853292,12.0331845 L8.2242315,11.9590024 C8.50634865,11.3727595 9.09940726,11 9.75,11 C10.3515765,11 10.9341143,11.2109078 11.3962582,11.5960277 L12.3200922,12.3658894 C12.4959683,12.5124527 12.7573571,12.4886901 12.9039205,12.3128141 C12.9660017,12.2383166 13,12.1444116 13,12.0474376 L13,9.5 Z"/>
-                            </svg>
-                        </div>
-                        <table class="">
-                            <caption class="blind">이런 저런 목록</caption>
-                            <colgroup>
-                                <col style="width:150px;">
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <thead>
-                            <tr>
-                                <th scope="col">제목이 길면 이렇게 처리 될 것이다</th>
-                                <th scope="col">제목2</th>
-                                <th scope="col">제목3</th>
-                                <th scope="col">제목4</th>
-                                <th scope="col">제목5</th>
-                                <th scope="col">제목6</th>
-                                <th scope="col">제목7</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>내용이 길면 이렇게 처리 될 것이다.</td>
-                                <td>내용2</td>
-                                <td>내용3</td>
-                                <td>내용4</td>
-                                <td>내용5</td>
-                                <td>내용6</td>
-                                <td>내용7</td>
-                            </tr>
-                            <tr>
-                                <td>내용1</td>
-                                <td>내용2</td>
-                                <td>내용3</td>
-                                <td>내용4</td>
-                                <td>내용5</td>
-                                <td>내용6</td>
-                                <td>내용7</td>
-                            </tr>
-                            <tr>
-                                <td>내용1</td>
-                                <td>내용2</td>
-                                <td>내용3</td>
-                                <td>내용4</td>
-                                <td>내용5</td>
-                                <td>내용6</td>
-                                <td>내용7</td>
-                            </tr>
-                            <tr>
-                                <td>내용1</td>
-                                <td>내용2</td>
-                                <td>내용3</td>
-                                <td>내용4</td>
-                                <td>내용5</td>
-                                <td>내용6</td>
-                                <td>내용7</td>
-                            </tr>
-                            <tr>
-                                <td>내용1</td>
-                                <td>내용2</td>
-                                <td>내용3</td>
-                                <td>내용4</td>
-                                <td>내용5</td>
-                                <td>내용6</td>
-                                <td>내용7</td>
-                            </tr>
-                            <tr>
-                                <td>내용1</td>
-                                <td>내용2</td>
-                                <td>내용3</td>
-                                <td>내용4</td>
-                                <td>내용5</td>
-                                <td>내용6</td>
-                                <td>내용7</td>
-                            </tr>
-                            <tr>
-                                <td>내용1</td>
-                                <td>내용2</td>
-                                <td>내용3</td>
-                                <td>내용4</td>
-                                <td>내용5</td>
-                                <td>내용6</td>
-                                <td>내용7</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
                 </div>
                 <div class="section" id="case2">
-                    <h2 class="title">List</h2>
-                    <h3 class="sub-tit">b-list dash(하이픈) 스타일</h3>
-                    <ul class="b-list style-dash">
-                        <li>Dash Style List</li>
-                        <li>Dash Style List</li>
-                        <li>Dash Style List</li>
-                        <li>Dash Style List</li>
-                        <li>Dash Style List</li>
-                    </ul>
-                    <h3 class="sub-tit">b-list Circle Style</h3>
-                    <ul class="b-list style-circle">
-                        <li>Circle Style List</li>
-                        <li>Circle Style List</li>
-                        <li>Circle Style List</li>
-                        <li>Circle Style List</li>
-                        <li>Circle Style List</li>
-                    </ul>
-                    <h3 class="sub-tit">b-list Rect Style</h3>
-                    <ul class="b-list style-rect">
-                        <li>Rect Style List</li>
-                        <li>Rect Style List</li>
-                        <li>Rect Style List</li>
-                        <li>Rect Style List</li>
-                        <li>Rect Style List</li>
-                    </ul>
-
-                    <h3 class="sub-tit">o-list default ( 2 depth )</h3>
-                    <ol class="o-list">
-                        <li>ordered Lists
-                            <ol class="o-list">
-                                <li>child List</li>
-                                <li>child List</li>
-                                <li>child List</li>
-                                <li>child List</li>
-                            </ol>
-                        </li>
-                        <li>ordered Lists
-                            <ol class="o-list">
-                                <li>child List</li>
-                                <li>child List</li>
-                                <li>child List</li>
-                                <li>child List</li>
-                            </ol>
-                        </li>
-                        <li>ordered Lists</li>
-                    </ol>
-                    <h3 class="sub-tit">o-list Alpha style</h3>
-                    <ol class="o-list style-alpha">
-                        <li>ordered Lists</li>
-                        <li>ordered Lists</li>
-                        <li>ordered Lists</li>
-                        <li>ordered Lists</li>
-                    </ol>
+                    <div class="section-inner">
+                        <h2 class="title">Form set</h2>
+                        <h3 class="sub-tit">Search-type (horizontal - default)</h3>
+                        <div class="field-set search-type">
+                            <input type="search" class="input">
+                            <button type="button" class="btn-type">검색</button>
+                        </div>
+                        <h3 class="sub-tit">Search-type (vertical)</h3>
+                        <div class="field-set search-type v-case">
+                            <input type="search" class="input">
+                            <button type="button" class="btn-type">검색</button>
+                        </div>
+                    </div>
+                    <div class="section-inner">
+                        <h3 class="sub-tit">tel-type(horizontal - default)</h3>
+                        <div class="field-set tel-type">
+                            <select class="select">
+                                <option>010</option>
+                                <option>011</option>
+                                <option>012</option>
+                                <option>013</option>
+                                <option>014</option>
+                            </select>
+                            <div class="field-set-inner">
+                                <input type="text" class="input">
+                                <input type="text" class="input">
+                            </div>
+                        </div>
+                        <h3 class="sub-tit">tel-type(vertical)</h3>
+                        <div class="field-set tel-type v-case">
+                            <select class="select">
+                                <option>010</option>
+                                <option>011</option>
+                                <option>012</option>
+                                <option>013</option>
+                                <option>014</option>
+                            </select>
+                            <div class="field-set-inner">
+                                <input type="text" class="input">
+                                <input type="text" class="input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-inner">
+                        <h3 class="sub-tit">input attribute - readonly</h3>
+                        <div class="field-set">
+                            <input type="text" class="input" readonly value="읽기 전용">
+                        </div>
+                        <h3 class="sub-tit">input attribute - disabled</h3>
+                        <div class="field-set">
+                            <input type="text" class="input" disabled value="사용 안함">
+                        </div>
+                    </div>
                 </div>
                 <div class="section" id="case3">
-                    <h2 class="title"></h2>
+                    <div class="section-inner">
+                        <h2 class="title">List</h2>
+                        <h3 class="sub-tit">b-list dash(하이픈) 스타일</h3>
+                        <ul class="b-list style-dash">
+                            <li>Dash Style List</li>
+                            <li>Dash Style List</li>
+                            <li>Dash Style List</li>
+                            <li>Dash Style List</li>
+                            <li>Dash Style List</li>
+                        </ul>
+                    </div>
+                    <div class="section-inner">
+                        <h3 class="sub-tit">b-list Circle Style</h3>
+                        <ul class="b-list style-circle">
+                            <li>Circle Style List</li>
+                            <li>Circle Style List</li>
+                            <li>Circle Style List</li>
+                            <li>Circle Style List</li>
+                            <li>Circle Style List</li>
+                        </ul>
+                    </div>
+                    <div class="section-inner">
+                        <h3 class="sub-tit">b-list Rect Style</h3>
+                        <ul class="b-list style-rect">
+                            <li>Rect Style List</li>
+                            <li>Rect Style List</li>
+                            <li>Rect Style List</li>
+                            <li>Rect Style List</li>
+                            <li>Rect Style List</li>
+                        </ul>
+                    </div>
+                    <div class="section-inner">
+                        <h3 class="sub-tit">o-list default ( 2 depth )</h3>
+                        <ol class="o-list">
+                            <li>ordered Lists
+                                <ol class="o-list">
+                                    <li>child List</li>
+                                    <li>child List</li>
+                                    <li>child List</li>
+                                    <li>child List</li>
+                                </ol>
+                            </li>
+                            <li>ordered Lists
+                                <ol class="o-list">
+                                    <li>child List</li>
+                                    <li>child List</li>
+                                    <li>child List</li>
+                                    <li>child List</li>
+                                </ol>
+                            </li>
+                            <li>ordered Lists</li>
+                        </ol>
+                    </div>
+                    <div class="section-inner">
+                        <h3 class="sub-tit">o-list Alpha style</h3>
+                        <ol class="o-list style-alpha">
+                            <li>ordered Lists</li>
+                            <li>ordered Lists</li>
+                            <li>ordered Lists</li>
+                            <li>ordered Lists</li>
+                        </ol>
+                    </div>
                 </div>
-                <div class="section" id="case4">
 
+                <div class="section" id="case4">
+                    <div class="section-inner">
+                        <h2 class="title">Tabs (Single)</h2>
+                        <h3 class="sub-tit">horizontal - type</h3>
+                        <div class="tabs test1">
+                            <div class="tab-navi scroll-horizontal">
+                                <ul>
+                                    <li class="is-active"><a href="" class="tab-btn">덴마크</a></li>
+                                    <li><a href="" class="tab-btn">루마니아</a></li>
+                                    <li><a href="" class="tab-btn">배트남</a></li>
+                                    <li><a href="" class="tab-btn">중국</a></li>
+                                    <li><a href="" class="tab-btn">터키</a></li>
+                                    <li><a href="" class="tab-btn">포르투칼</a></li>
+                                    <li><a href="" class="tab-btn">체코</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-container">
+                                <div class="tab-content is-show">Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper. Lorem Ipsum har ikke alene overlevet fem århundreder, men har også vundet indpas i elektronisk typografi uden væsentlige ændringer. Sætningen blev gjordt kendt i 1960'erne med lanceringen af Letraset-ark, som indeholdt afsnit med Lorem Ipsum, og senere med layoutprogrammer som Aldus PageMaker, som også indeholdt en udgave af Lorem Ipsum.</div>
+                                <div class="tab-content">Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective. Nu doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică practic neschimbată. A fost popularizată în anii '60 odată cu ieşirea colilor Letraset care conţineau pasaje Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum.</div>
+                                <div class="tab-content">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề bị thay đổi. Nó đã được phổ biến trong những năm 1960 nhờ việc bán những bản giấy Letraset in những đoạn Lorem Ipsum, và gần đây hơn, được sử dụng trong các ứng dụng dàn trang, như Aldus PageMaker.</div>
+                                <div class="tab-content">Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。</div>
+                                <div class="tab-content">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</div>
+                                <div class="tab-content">Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.</div>
+                                <div class="tab-content">Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-inner">
+                        <h3 class="sub-tit">Vertical - type</h3>
+                        <div class="tabs test2">
+                            <div class="tab-navi scroll-vertical">
+                                <div class="scroll-notice"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M96.003,0c-5.888,0-10.667,4.779-10.667,10.667v170.667c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667V10.667C106.669,4.779,101.891,0,96.003,0z"/><path d="M146.2,131.136c-4.16-4.16-10.923-4.16-15.083,0l-35.115,35.115l-35.136-35.115c-4.16-4.16-10.923-4.16-15.083,0c-4.16,4.16-4.16,10.923,0,15.083l42.667,42.667c2.091,2.069,4.821,3.115,7.552,3.115s5.461-1.045,7.531-3.115l42.667-42.667C150.36,142.059,150.36,135.296,146.2,131.136z"/><path d="M426.669,234.667c-8.768,0-16.939,2.667-23.723,7.211c-5.845-16.597-21.696-28.544-40.277-28.544c-7.765,0-15.061,2.091-21.333,5.739V106.667C341.336,83.136,322.2,64,298.669,64c-18.581,0-34.432,11.947-40.277,28.544c-6.784-4.544-14.955-7.211-23.723-7.211c-23.531,0-42.667,19.136-42.667,42.667v181.333l-37.077-27.797c-21.973-16.491-53.248-14.293-72.725,5.163c-12.48,12.48-12.48,32.768,0,45.248l151.915,151.936C252.248,502.016,276.376,512,302.019,512h49.984c64.683,0,117.333-52.629,117.333-117.333V277.333C469.336,253.803,450.2,234.667,426.669,234.667z M448.003,394.667c0,52.928-43.072,96-96,96h-49.984c-19.947,0-38.699-7.765-52.821-21.867L97.283,316.864c-4.16-4.16-4.16-10.923,0-15.083c6.613-6.592,15.445-9.984,24.32-9.984c7.211,0,14.464,2.24,20.544,6.805l54.123,40.597c3.243,2.432,7.595,2.816,11.179,1.003c3.605-1.813,5.888-5.504,5.888-9.536V128c0-11.755,9.557-21.333,21.333-21.333s21.333,9.579,21.333,21.333v160c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667V106.667c0-11.755,9.557-21.333,21.333-21.333s21.333,9.579,21.333,21.333V288c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32c0-11.755,9.557-21.333,21.333-21.333s21.333,9.579,21.333,21.333v32c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-10.667c0-11.755,9.557-21.333,21.333-21.333s21.333,9.579,21.333,21.333V394.667z"/></svg></div>
+                                <ul>
+                                    <li class="is-active"><a href="" class="tab-btn">덴마크</a></li>
+                                    <li><a href="" class="tab-btn">루마니아</a></li>
+                                    <li><a href="" class="tab-btn">배트남</a></li>
+                                    <li><a href="" class="tab-btn">중국</a></li>
+                                    <li><a href="" class="tab-btn">터키</a></li>
+                                    <li><a href="" class="tab-btn">포르투칼</a></li>
+                                    <li><a href="" class="tab-btn">체코</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-container">
+                                <div class="tab-content is-show">Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper. Lorem Ipsum har ikke alene overlevet fem århundreder, men har også vundet indpas i elektronisk typografi uden væsentlige ændringer. Sætningen blev gjordt kendt i 1960'erne med lanceringen af Letraset-ark, som indeholdt afsnit med Lorem Ipsum, og senere med layoutprogrammer som Aldus PageMaker, som også indeholdt en udgave af Lorem Ipsum.</div>
+                                <div class="tab-content">Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective. Nu doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică practic neschimbată. A fost popularizată în anii '60 odată cu ieşirea colilor Letraset care conţineau pasaje Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum.</div>
+                                <div class="tab-content">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề bị thay đổi. Nó đã được phổ biến trong những năm 1960 nhờ việc bán những bản giấy Letraset in những đoạn Lorem Ipsum, và gần đây hơn, được sử dụng trong các ứng dụng dàn trang, như Aldus PageMaker.</div>
+                                <div class="tab-content">Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。</div>
+                                <div class="tab-content">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</div>
+                                <div class="tab-content">Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.</div>
+                                <div class="tab-content">Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker.</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="section" id="case5">
-
+                    <div class="section-inner">
+                        <h2 class="title">Pagination</h2>
+                        <div class="pagination">
+                            <span class="ctrl-btn first"><a href="">First</a></span>
+                            <span class="ctrl-btn prev"><a href="">Prev</a></span>
+                            <ul>
+                                <li class="is-active"><a href="" class="number">1</a></li>
+                                <li><a href="" class="number">2</a></li>
+                                <li><a href="" class="number">3</a></li>
+                                <li><a href="" class="number">4</a></li>
+                                <li><a href="" class="number">5</a></li>
+                                <li><a href="" class="number">6</a></li>
+                                <li><a href="" class="number">7</a></li>
+                            </ul>
+                            <span class="ctrl-btn next"><a href="">Next</a></span>
+                            <span class="ctrl-btn end"><a href="">End</a></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

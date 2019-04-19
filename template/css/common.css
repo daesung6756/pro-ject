@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* layout common */
+.header {}
+.header .inner,
+.container .content,
+.footer .inner{width:1200px;margin:0 auto;background:#fff;}
+.container .content .inner {padding:20px;}
+.footer {}
+
+/* title */
+h1 {font-size:24px;font-weight:bold;line-height:1.4;}
+h1.title {position:relative;text-align:center;padding:20px 0;}
+h1.title a {position:absolute;right:0;top:50%;transform: translateY(-50%);font-size:14px;}
+h2 {font-size:20px;font-weight:bold;line-height:1.4}
+h2.title {position:relative;color: #197759;margin-bottom:20px;}
+h2.sub-title {text-align:center;padding:10px 0;border-top:1px dashed #ddd;}
+.title.rect-type {padding-left:12px;}
+.title.rect-type:after {content:'';position:absolute;left:2px;top:11px;width:5px;height:5px;background:#000;}
+.title.circle-type {padding-left:12px;}
+.title.circle-type:after {content:'';position:absolute;left:2px;top:13px;width:4px;height:4px;background:#000;border-radius:50%;}
+
+/* list */
+.d-list li,
+.c-list li {position:relative;padding-left:12px;line-height:1.4;}
+.c-list li + li,
+.d-list li + li {margin-top:5px;}
+.d-list li:before{content:'';position:absolute;top:10px;left:2px;width:4px;height:1px;background:#000;}
+.c-list li:before{content:'';position:absolute;top:12px;left:2px;width:3px;height:3px;background:#000;border-radius:50%}
+
+/* script event */
+.scroll-top {position:fixed;top:50%;right:50%;transform: translate(680px, -50%);opacity:0;visibility: hidden}
+.scroll-top button {width:70px;height:60px;border-radius: 10px;}
+.scroll-top.is-show {animation: fadeIn .3s forwards}
+
+
+/* animation */
+@keyframes fadeIn {
+    0%{opacity:0;visibility:hidden}
+    100%{opacity:1;visibility:visible}
+}
+
+@keyframes fadeOut {
+    0%{opacity:1;visibility:visible}
+    100%{opacity:0;visibility:hidden}
+}
