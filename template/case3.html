@@ -101,10 +101,11 @@
                     .event-detail .lt-row .lt-col.n5{width:240px;}
 
                     /* section 구분용 */
-                    .event-detail .img-group:hover {outline:5px solid #000;}
-                    .event-detail .img-section {display:block;font-size:0;}
+                    .event-detail .img-group {position:relative;}
+                    .event-detail .img-group:hover {outline:5px solid #000;z-index:999;}
+                    .event-detail .img-section {position:relative;display:block;font-size:0;}
                     .event-detail .img-section img {display:block;max-width:100%;}
-
+                    .event-detail .img-section .tp_btn {position:absolute;background:rgba(239,220,35,.4);z-index:1;font-size:14px;}
                 </style>
                 <!-- //어드민 입력 -->
             </div>
