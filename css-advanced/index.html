@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/front-ui.js"></script>
+    <style>
+        .wrap {background:#efefef;height:100%;}
+        .header {position:relative;}
+        .header .inner {position:relative;background:rgba(255,255,255,1);-moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);border-left:1px solid #ddd;border-right:1px solid #ddd;}
+        .header .inner:after {content:'';position:absolute;left:0;bottom:-10px;width:100%;height:10px;background:#fff;}
+        .header .inner .lnb {display:flex;justify-content: center;align-items:center;padding:10px 0 ;}
+        .header .inner .lnb li {position:relative;margin:5px;padding-bottom:10px;}
+        .header .inner .lnb li:after{content:'';position:absolute;bottom:-2px;left:0;height:2px;width:0;background: #ff9100;transition: width .2s;}
+        .header .inner .lnb li.is-active a{color:#000;}
+        .header .inner .lnb li.is-active:after {width:100%;}
+        .header.is-fixed {position:fixed;top:0;left:50%;width:1200px;transform: translateX(-50%);z-index:100;}
+        .header.is-fixed .inner {background:rgba(255,255,255,.8);-moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);}
+        .header.is-fixed .inner:after {display:none;}
+        .header.is-fixed + .container{padding-top:119px;}
+        .container .content{-webkit-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);-moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);border-left:1px solid #ddd;border-right:1px solid #ddd;}
+        .section + .section {margin-top:30px;}
+
+        .row .dummy-css {position:relative;padding:10px 0;text-align:center;background:#666;color:#fff;}
+        .row .dummy-css:nth-child(2n){background:#777;}
+        .row .dummy-css:hover{outline:1px solid #0f92f7;z-index:1;}
+        /*.row .dummy-css:after {content:'';position:absolute;left:0;top:0;width:1px;height:100%;background:#999;}*/
+
+        .blnak-box {display:inline-block;width:60px;height:50px;line-height:50px;background: rgba(243, 149, 16, 1)}
+        .blnak-box.wide{display:block;width:100%;}
+        .blnak-box.clear{width:auto;height:auto;}
+        .blnak-box:nth-child(1){background: rgba(243, 149, 16, 0.9)}
+        .blnak-box:nth-child(2){background: rgba(243, 149, 16, 0.8)}
+        .blnak-box:nth-child(3){background: rgba(243, 149, 16, 0.7)}
+        .blnak-box:nth-child(4){background: rgba(243, 149, 16, 0.6)}
+        .blnak-box:nth-child(5){background: rgba(243, 149, 16, 0.5)}
+        .blnak-box:nth-child(6){background: rgba(243, 149, 16, 0.4)}
+        .blnak-box:nth-child(7){background: rgba(243, 149, 16, 0.3)}
+
+        .ex-view {padding:5px 0;}
+        .ex-view + .ex-view {padding:0 0 5px 0;}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="inner">
+            <h1 class="title">Css common</h1>
+            <ul class="lnb">
+                <li><a href="#case1">Margin</a></li>
+                <li><a href="#case2">Padding</a></li>
+                <li><a href="#case3">Align</a></li>
+                <li><a href="#case4">Column</a></li>
+                <li><a href="#case5">Button</a></li>
+                <li><a href="html" class="scroll-top" title="맨 위로 이동"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="inner">
+                <div class="section" id="case1">
+                    <h2 class="title circle-type">Margin</h2>
+                    <div class="editer-wrap">
+                        <div class="ex-view">
+                            <div>
+                                <h3>Top</h3>
+                                <div class="blnak-box wide mt0">0</div>
+                                <div class="blnak-box wide mt10">10</div>
+                                <div class="blnak-box wide mt20">20</div>
+                                <div class="blnak-box wide mt30">30</div>
+                                <div class="blnak-box wide mt40">40</div>
+                                <div class="blnak-box wide mt50">50</div>
+                            </div>
+                            <div class="mt30">
+                                <h3>Left</h3>
+                                <div class="blnak-box ml0">0</div>
+                                <div class="blnak-box ml10">10</div>
+                                <div class="blnak-box ml20">20</div>
+                                <div class="blnak-box ml30">30</div>
+                                <div class="blnak-box ml40">40</div>
+                                <div class="blnak-box ml50">50</div>
+                            </div>
+                            <div class="mt30">
+                                <h3>Right</h3>
+                                <div class="blnak-box mr50">50</div>
+                                <div class="blnak-box mr40">40</div>
+                                <div class="blnak-box mr30">30</div>
+                                <div class="blnak-box mr20">20</div>
+                                <div class="blnak-box mr10">10</div>
+                                <div class="blnak-box mr0">0</div>
+                            </div>
+                            <div class="mt30">
+                                <h3>Bottom</h3>
+                                <div class="blnak-box wide mb50">50</div>
+                                <div class="blnak-box wide mb40">40</div>
+                                <div class="blnak-box wide mb30">30</div>
+                                <div class="blnak-box wide mb20">20</div>
+                                <div class="blnak-box wide mb10">10</div>
+                                <div class="blnak-box wide mb0">0</div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="remark">&#60;!--  Top --&#62;</li>
+                            <li><span class="name">.mt0</span>{margin-top:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mt10</span>{margin-top:<span class="data">10px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mt20</span>{margin-top:<span class="data">20px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mt30</span>{margin-top:<span class="data">30px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mt40</span>{margin-top:<span class="data">40px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mt50</span>{margin-top:<span class="data">50px</span> <span class="important">!important</span>;}</li>
+                            <li class="remark">&#60;!--  Right --&#62;</li>
+                            <li><span class="name">.mr0</span>{margin-right:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mr10</span>{margin-right:<span class="data">10px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mr20</span>{margin-right:<span class="data">20px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mr30</span>{margin-right:<span class="data">30px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mr40</span>{margin-right:<span class="data">40px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mr50</span>{margin-right:<span class="data">50px</span> <span class="important">!important</span>;}</li>
+                            <li class="remark">&#60;!--  Bottom --&#62;</li>
+                            <li><span class="name">.mb0</span>{margin-bottom:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mb10</span>{margin-bottom:<span class="data">10px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mb20</span>{margin-bottom:<span class="data">20px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mb30</span>{margin-bottom:<span class="data">30px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mb40</span>{margin-bottom:<span class="data">40px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.mb50</span>{margin-bottom:<span class="data">50px</span> <span class="important">!important</span>;}</li>
+                            <li class="remark">&#60;!--  Left --&#62;</li>
+                            <li><span class="name">.ml0</span>{margin-left:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.ml10</span>{margin-left:<span class="data">10px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.ml20</span>{margin-left:<span class="data">20px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.ml30</span>{margin-left:<span class="data">30px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.ml40</span>{margin-left:<span class="data">40px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.ml50</span>{margin-left:<span class="data">50px</span> <span class="important">!important</span>;}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section" id="case2">
+                    <h2 class="title circle-type">Padding</h2>
+                    <div class="editer-wrap">
+                        <div class="ex-view">
+                            <div>
+                                <h3>Top</h3>
+                                <div class="blnak-box clear pt0">0</div>
+                                <div class="blnak-box clear pt10">10</div>
+                                <div class="blnak-box clear pt20">20</div>
+                                <div class="blnak-box clear pt30">30</div>
+                                <div class="blnak-box clear pt40">40</div>
+                                <div class="blnak-box clear pt50">50</div>
+                            </div>
+                            <div class="mt30">
+                                <h3>Left</h3>
+                                <div class="blnak-box clear pl0">0</div>
+                                <div class="blnak-box clear pl10">10</div>
+                                <div class="blnak-box clear pl20">20</div>
+                                <div class="blnak-box clear pl30">30</div>
+                                <div class="blnak-box clear pl40">40</div>
+                                <div class="blnak-box clear pl50">50</div>
+                            </div>
+                            <div class="mt30">
+                                <h3>Right</h3>
+                                <div class="blnak-box clear pr50">50</div>
+                                <div class="blnak-box clear pr40">40</div>
+                                <div class="blnak-box clear pr30">30</div>
+                                <div class="blnak-box clear pr20">20</div>
+                                <div class="blnak-box clear pr10">10</div>
+                                <div class="blnak-box clear pr0">0</div>
+                            </div>
+                            <div class="mt30">
+                                <h3>Bottom</h3>
+                                <div class="blnak-box clear pb50">50</div>
+                                <div class="blnak-box clear pb40">40</div>
+                                <div class="blnak-box clear pb30">30</div>
+                                <div class="blnak-box clear pb20">20</div>
+                                <div class="blnak-box clear pb10">10</div>
+                                <div class="blnak-box clear pb0">0</div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="remark">&#60;!--  Top --&#62;</li>
+                            <li><span class="name">.pt0</span>{padding-top:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pt10</span>{padding-top:<span class="data">10px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pt20</span>{padding-top:<span class="data">20px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pt30</span>{padding-top:<span class="data">30px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pt40</span>{padding-top:<span class="data">40px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pt50</span>{padding-top:<span class="data">50px</span> <span class="important">!important</span>;}</li>
+                            <li class="remark">&#60;!--  Right --&#62;</li>
+                            <li><span class="name">.pr0</span>{padding-right:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pr10</span>{padding-right:<span class="data">10px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pr20</span>{padding-right:<span class="data">20px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pr30</span>{padding-right:<span class="data">30px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pr40</span>{padding-right:<span class="data">40px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pr50</span>{padding-right:<span class="data">50px</span> <span class="important">!important</span>;}</li>
+                            <li class="remark">&#60;!--  Bottom --&#62;</li>
+                            <li><span class="name">.pb0</span>{padding-bottom:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pb10</span>{padding-bottom:<span class="data">10px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pb20</span>{padding-bottom:<span class="data">20px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pb30</span>{padding-bottom:<span class="data">30px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pb40</span>{padding-bottom:<span class="data">40px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pb50</span>{padding-bottom:<span class="data">50px</span> <span class="important">!important</span>;}</li>
+                            <li class="remark">&#60;!--  Left --&#62;</li>
+                            <li><span class="name">.pl0</span>{padding-left:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pl10</span>{padding-left:<span class="data">10px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pl20</span>{padding-left:<span class="data">20px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pl30</span>{padding-left:<span class="data">30px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pl40</span>{padding-left:<span class="data">40px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.pl50</span>{padding-left:<span class="data">50px</span> <span class="important">!important</span>;}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section" id="case3">
+                    <h2 class="title circle-type">Align</h2>
+                    <div class="editer-wrap">
+                        <div class="ex-view">
+                            <div class="tal">
+                                <h3 class="mb10">Left</h3>
+                                <div class="blnak-box">.Box</div>
+                            </div>
+                        </div>
+                        <div class="ex-view">
+                            <div class="tac">
+                                <h3 class="mb10">Center</h3>
+                                <div class="blnak-box">.Box</div>
+                            </div>
+                        </div>
+                        <div class="ex-view">
+                            <div class="tar">
+                                <h3 class="mb10">Right</h3>
+                                <div class="blnak-box">.Box</div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="remark">&#60;!--  Left --&#62;</li>
+                            <li><span class="name">.tal</span>{text-align:<span class="data">left</span>;}</li>
+                            <li class="remark">&#60;!--  Center --&#62;</li>
+                            <li><span class="name">.tac</span>{text-align:<span class="data">center</span>;}</li>
+                            <li class="remark">&#60;!--  Right --&#62;</li>
+                            <li><span class="name">.tar</span>{text-align:<span class="data">right</span>;}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section" id="case4">
+                    <h2 class="title circle-type">Layout - Row  column</h2>
+                    <div class="ex-view">
+                        <div class="row">
+                            <div class="column n1 dummy-css" >n1</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column n2 dummy-css">n2</div>
+                            <div class="column n2 dummy-css">n2</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column n3 dummy-css">n3</div>
+                            <div class="column n3 dummy-css">n3</div>
+                            <div class="column n3 dummy-css">n3</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column n4 dummy-css">n4</div>
+                            <div class="column n4 dummy-css">n4</div>
+                            <div class="column n4 dummy-css">n4</div>
+                            <div class="column n4 dummy-css">n4</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column n5 dummy-css">n5</div>
+                            <div class="column n5 dummy-css">n5</div>
+                            <div class="column n5 dummy-css">n5</div>
+                            <div class="column n5 dummy-css">n5</div>
+                            <div class="column n5 dummy-css">n5</div>
+                        </div>
+                    </div>
+
+                    <div class="editer-wrap">
+                        <ul>
+                            <li class="remark">&#60;!--  row --&#62;</li>
+                            <li><span class="name">.row:after</span>{content:<span class="data">''</span>;clear:<span class="data">both</span>;display:<span class="data">block</span>;}</li>
+                            <li class="remark">&#60;!--  column --&#62;</li>
+                            <li><span class="name">.row .column</span>{float:<span class="data">left</span>;}</li>
+                            <li class="remark">&#60;!--  width --&#62;</li>
+                            <li><span class="name">.row .column.n1</span>{width:<span class="data">100%</span>;}</li>
+                            <li><span class="name">.row .column.n2</span>{width:<span class="data">50%</span>;}</li>
+                            <li><span class="name">.row .column.n3</span>{width:<span class="data">calc(100% / 3)</span>;}</li>
+                            <li><span class="name">.row .column.n4</span>{width:<span class="data">25%</span>;}</li>
+                            <li><span class="name">.row .column.n5</span>{width:<span class="data">20%</span>;}</li>
+                            <li class="remark">&#60;!--  margin --&#62;</li>
+                            <li><span class="name">.row + .row</span>{margin-top:20<span class="data">px</span>;}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section" id="case5">
+                    <h2 class="title circle-type">Button </h2>
+                    <div class="editer-wrap">
+                        <h3>Size</h3>
+                        <div class="ex-view">
+                            <button type="button" class="btn size-sm">small</button>
+                            <button type="button" class="btn">default</button>
+                            <button type="button" class="btn size-mid">middum</button>
+                            <button type="button" class="btn size-lg">large</button>
+                        </div>
+                        <div class="ex-view">
+                            <button type="button" class="btn size-wide">wide</button>
+                        </div>
+                        <h3 class="mt30">Background</h3>
+                        <div class="ex-view">
+                            <button type="button" class="btn">btn</button>
+                            <button type="button" class="btn bg-primary">bg-primary</button>
+                            <button type="button" class="btn bg-success">bg-success</button>
+                            <button type="button" class="btn bg-info">bg-info</button>
+                            <button type="button" class="btn bg-warning">bg-warning</button>
+                            <button type="button" class="btn bg-danger">bg-danger</button>
+                        </div>
+                        <h3 class="mt30">Round</h3>
+                        <div class="ex-view">
+                            <button type="button" class="btn btn-round">Btn-round</button>
+                            <button type="button" class="btn bg-primary btn-round">bg-primary</button>
+                            <button type="button" class="btn bg-success btn-round">bg-success</button>
+                            <button type="button" class="btn bg-info btn-round">bg-info</button>
+                            <button type="button" class="btn bg-warning btn-round">bg-warning</button>
+                            <button type="button" class="btn bg-danger btn-round">bg-danger</button>
+                        </div>
+                        <h3 class="mt30">Disabled</h3>
+                        <div class="ex-view">
+                            <button type="button" class="btn btn-disabled">Btn-round</button>
+                            <button type="button" class="btn bg-primary btn-disabled">bg-primary</button>
+                            <button type="button" class="btn bg-success btn-disabled">bg-success</button>
+                            <button type="button" class="btn bg-info btn-disabled">bg-info</button>
+                            <button type="button" class="btn bg-warning btn-disabled">bg-warning</button>
+                            <button type="button" class="btn bg-danger btn-disabled">bg-danger</button>
+                        </div>
+                        <ul>
+                            <li class="remark">&#60;!--  default --&#62;</li>
+                            <li><span class="name">.btn</span>{position:<span class="data">relative</span>;display:<span class="data">inline-block</span>;cursor:<span class="data">pointer</span>;background:<span class="data">#fff</span>;border:<span class="data">1px solid #dcdfe6</span>;line-height:<span class="data">1</span>;white-space:<span class="data">nowrap</span>;font-weight:<span class="data">500</span>;transition:<span class="data">.1s</span>;padding:<span class="data">12px 20px</span>;font-size:<span class="data">14px</span>;margin:<span class="data">0</span>;min-width:<span class="data">100px</span>;}</li>
+                            <li><span class="name">.btn:active</span>{top:<span class="data">1px</span>;left:<span class="data">1px</span>;}</li>
+                            <li><span class="name">.btn:hover</span>{color:<span class="data">#409eff</span>;border-color:<span class="data">#c6e2ff</span>;background-color:<span class="data">#ecf5ff</span>;}</li>
+                            <li class="remark">&#60;!--  Size --&#62;</li>
+                            <li><span class="name">.btn.size-sm</span>{min-width:<span class="data">80px</span>;}</li>
+                            <li><span class="name">.btn.size-mid</span>{min-width:<span class="data">160px</span>;}</li>
+                            <li><span class="name">.btn.size-lg</span>{min-width:<span class="data">200px</span>;}</li>
+                            <li><span class="name">.btn.size-wide</span>{min-width:<span class="data">100%</span>;}</li>
+                            <li class="remark">&#60;!--  Color --&#62;</li>
+                            <li><span class="name">.btn.bg-primary</span>{background:<span class="data">#409eff</span>;border-color:<span class="data">#409eff</span>;color:<span class="data">#fff</span>;}</li>
+                            <li><span class="name">.btn.bg-primary:hover</span>{background:<span class="data">#66b1ff</span>;border-color:<span class="data"> #66b1ff</span>;}</li>
+                            <li><span class="name">.btn.bg-success</span>{background:<span class="data">#67c23a</span>;border-color:<span class="data">#67c23a</span>;color:<span class="data">#fff</span>;}</li>
+                            <li><span class="name">.btn.bg-success:hover</span>{background:<span class="data">#85ce61</span>;border-color:<span class="data"> #85ce6</span>1;}</li>
+                            <li><span class="name">.btn.bg-info</span>{background:<span class="data">#909399</span>;border-color:<span class="data">#909399</span>;color:<span class="data">#fff</span>;}</li>
+                            <li><span class="name">.btn.bg-info:hover</span>{background:<span class="data">#a6a9ad</span>;border-color:<span class="data">#a6a9ad</span>;}</li>
+                            <li><span class="name">.btn.bg-warning</span>{background:<span class="data">#e6a23c</span>;border-color:<span class="data">#e6a23c</span>;color:<span class="data">#fff</span>;}</li>
+                            <li><span class="name">.btn.bg-warning:hover</span>{background:<span class="data">#ebb563</span>;border-color:<span class="data">#ebb563</span>;}</li>
+                            <li><span class="name">.btn.bg-danger</span>{background:<span class="data">#f56c6c</span>;border-color:<span class="data">#f56c6c</span>;color:<span class="data">#fff</span>;}</li>
+                            <li><span class="name">.btn.bg-danger:hover</span>{background:<span class="data">#f78989</span>;border-color:<span class="data">#f78989</span>;}</li>
+                            <li class="remark">&#60;!--  Round --&#62;</li>
+                            <li><span class="name">.btn.btn-round</span>{border-radius:<span class="data">20px</span>;}
+                            <li class="remark">&#60;!--  Disabled --&#62;</li>
+                            <li><span class="name">.btn.btn-disabled</span>{background-color:<span class="data">#fff</span>;border-color:<span class="data">#ebeef5</span>;color:<span class="data">#c0c4cc</span>;}</li>
+                            <li><span class="name">.btn.bg-primary.btn-disabled</span>{background:<span class="data">#66b1ff</span>;border-color:<span class="data"> #66b1ff</span>;}</li>
+                            <li><span class="name">.btn.bg-success.btn-disabled</span>{background:<span class="data">#85ce61</span>;border-color:<span class="data"> #85ce6</span>1;}</li>
+                            <li><span class="name">.btn.bg-info.btn-disabled</span>{background:<span class="data">#a6a9ad</span>;border-color:<span class="data">#a6a9ad</span>;}</li>
+                            <li><span class="name">.btn.bg-warning.btn-disabled</span>{background:<span class="data">#ebb563</span>;border-color:<span class="data">#ebb563</span>;}</li>
+                            <li><span class="name">.btn.bg-danger.btn-disabled</span>{background:<span class="data">#f78989</span>;border-color:<span class="data">#f78989</span>;}</li>
+                            <li><span class="name">.btn-disabled</span>{cursor:<span class="data">not-allowed</span>;}</li>
+                            <li><span class="name">.btn-disabled:active</span>{top:<span class="data">0</span>;left:<span class="data">0</span>;}</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="inner"></div>
+    </div>
+</div>
+</body>
+</html>
