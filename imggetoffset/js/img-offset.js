@@ -298,19 +298,19 @@ $(document).ready(function() {
         return false;
     });
     $(document).on('mousedown', ".rect-box",function(){
-        console.log("렉트 박스 : 마우스 다운");
+        //console.log("렉트 박스 : 마우스 다운");
         dragging = true;
         return false;
     });
     $(document).on("mousedown" , ".resize-btn", function() {
-        console.log("리사이즈버튼 마우스 다운");
+        //console.log("리사이즈버튼 마우스 다운");
         resizing = true;
         return false;
     });
 
     $(document).on("mousemove", function(e) {
         if (resizing) {
-            console.log("리사이즈버튼 마우스 무브");
+            //console.log("리사이즈버튼 마우스 무브");
             resizeStart(e);
             resizeMoveGetData();
             return false;
@@ -319,13 +319,13 @@ $(document).ready(function() {
 
             moveWrapClone('.rect-box', ".m-event-area");
             resizeMoveGetData();
-            console.log("렉트 박스 : 마우스 무브");
+           //console.log("렉트 박스 : 마우스 무브");
             return false;
         }
     });
     $(document).on("mouseup", function() {
         if (resizing) {
-            console.log("리사이즈버튼 마우스 업");
+            // console.log("리사이즈버튼 마우스 업");
             resizeMoveGetData();
             resizeMoveDrawData();
             resizing = false;
@@ -336,7 +336,7 @@ $(document).ready(function() {
                 $('.m-event-area').css({'top': $thisTop});
                 $('.m-event-area').click();
             }
-            console.log("렉트 박스 : 마우스 업");
+            //console.log("렉트 박스 : 마우스 업");
             var $rect = $('.rect-box');
             $rect.css({'top': '0', 'left': '0'});
             resizeMoveGetData();
@@ -357,7 +357,13 @@ $(document).ready(function() {
             'height' : input[1].value + 'px',
         })
     });
-
+    /* 20190424 추가 드레그 범위 지정 - 이벤트 버블링 현상  */
+    $(document).on('mouseenter', '.box-control', function(){
+        $('.makeBox').draggable({disabled: true});
+    });
+    $(document).on('mouseleave', '.box-control', function(){
+        $('.makeBox').draggable({disabled: false});
+    });
     $('.rect-box').draggable({containment : '.img-wrap'});
     $('.makeBox').draggable();
 

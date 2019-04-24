@@ -13,21 +13,32 @@ function scrollAnimation (e){
 }
 
 function stickyHeader() {
-    var body = $('html, body').scrollTop();
-    var header = $('.header');
+    var $body = $('html, body').scrollTop();
+    var $header = $('.header');
+    var $height = $header.height();
+    var $container = $('.container');
 
-    if(body > 0) {
-        header.addClass('is-fixed');
+    if($body > 0) {
+        $header.addClass('is-fixed');
+        $container.css({'paddingTop': $height + 'px'});
     } else {
-        header.removeClass('is-fixed');
+        $header.removeClass('is-fixed');
+        $container.css({'paddingTop': '0'});
     }
 }
 
-(function($){
-    $(document).on('click','.lnb li a',scrollAnimation);
-    $(document).on('scroll', stickyHeader);
+$(document).on('click','.lnb li a, .scroll-top', scrollAnimation);
+$(document).on('scroll', stickyHeader);
+var sectionNum = 0;
 
-    $(document).ready(function() {
+$(document).ready(function() {
 
+    $('.section').each(function(){
+        var $lnb = $('.lnb ul');
+        var dataName = $(this).attr('data-name');
+        console.log(dataName);
+        ++sectionNum;
+        $(this).attr('id', "case"+ sectionNum );
+        $lnb.append('<lI><a href=#case' + sectionNum + '>'+ dataName + '</a></lI>');
     });
-})(jQuery);
+});

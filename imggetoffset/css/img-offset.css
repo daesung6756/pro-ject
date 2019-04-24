@@ -50,7 +50,7 @@ html, body{width:100%;height:100%;}
 .file-up input:hover {background:#efefef;}
 
 /* set */
-.radio-set label{font-size:12px;vertical-align: top;line-height:16px;}
+.radio-set label{font-size:12px;vertical-align: top;line-height:16px;cursor:pointer;padding:5px 0;}
 
 .m-event-area {display:none;position:fixed;top:0;left:0;z-index:100;}
 .m-event-area.is-show {display:block;}

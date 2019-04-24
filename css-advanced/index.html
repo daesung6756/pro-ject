@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CSS 고도화</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
@@ -12,99 +12,182 @@
         .wrap {background:#efefef;height:100%;}
         .header {position:relative;}
         .header .inner {position:relative;background:rgba(255,255,255,1);-moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);border-left:1px solid #ddd;border-right:1px solid #ddd;}
+        .header h1.title {background:#fff;border-bottom:1px dotted #ddd;transition: background .3s}
+        .header h1.title  .scroll-top {position:absolute;right:20px;top:50%;transform: translateY(-50%);padding:10px;border-radius:10px;}
         .header .inner:after {content:'';position:absolute;left:0;bottom:-10px;width:100%;height:10px;background:#fff;}
-        .header .inner .lnb {display:flex;justify-content: center;align-items:center;padding:10px 0 ;}
-        .header .inner .lnb li {position:relative;margin:5px;padding-bottom:10px;}
+        .header .inner .lnb {position:relative;display:inline-block;width:100%;max-width:600px;padding:10px 30px 10px 0;overflow:hidden;}
+        .header .inner .lnb ul:after {content:'';clear:both;display:block;}
+        .header .inner .lnb li {float:left;position:relative;margin:5px;padding-bottom:10px;}
         .header .inner .lnb li:after{content:'';position:absolute;bottom:-2px;left:0;height:2px;width:0;background: #ff9100;transition: width .2s;}
         .header .inner .lnb li.is-active a{color:#000;}
         .header .inner .lnb li.is-active:after {width:100%;}
-        .header.is-fixed {position:fixed;top:0;left:50%;width:1200px;transform: translateX(-50%);z-index:100;}
-        .header.is-fixed .inner {background:rgba(255,255,255,.8);-moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);}
+        .header.is-fixed {position:fixed;top:0;left:50%;max-width:1200px;width:100%;transform: translateX(-50%);z-index:100;transition: background .2s;}
+        .header.is-fixed h1.title {background:rgba(0,0,0,.8);color:#fff;transition: background .3s;}
+        .header.is-fixed h1.title .scroll-top {background:#fff;}
+        .header.is-fixed .inner {background:rgba(255,255,255,.8);-moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);transition: background .3s}
         .header.is-fixed .inner:after {display:none;}
-        .header.is-fixed + .container{padding-top:119px;}
         .container .content{-webkit-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);-moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);border-left:1px solid #ddd;border-right:1px solid #ddd;}
         .section + .section {margin-top:30px;}
 
-        .row .dummy-css {position:relative;padding:10px 0;text-align:center;background:#666;color:#fff;}
+        .row .dummy-css {position:relative;padding:20px 0;text-align:center;background:#666;color:#fff;font-size:16px;}
         .row .dummy-css:nth-child(2n){background:#777;}
         .row .dummy-css:hover{outline:1px solid #0f92f7;z-index:1;}
         /*.row .dummy-css:after {content:'';position:absolute;left:0;top:0;width:1px;height:100%;background:#999;}*/
 
-        .blnak-box {display:inline-block;width:60px;height:50px;line-height:50px;background: rgba(243, 149, 16, 1)}
-        .blnak-box.wide{display:block;width:100%;}
-        .blnak-box.clear{width:auto;height:auto;}
-        .blnak-box:nth-child(1){background: rgba(243, 149, 16, 0.9)}
-        .blnak-box:nth-child(2){background: rgba(243, 149, 16, 0.8)}
-        .blnak-box:nth-child(3){background: rgba(243, 149, 16, 0.7)}
-        .blnak-box:nth-child(4){background: rgba(243, 149, 16, 0.6)}
-        .blnak-box:nth-child(5){background: rgba(243, 149, 16, 0.5)}
-        .blnak-box:nth-child(6){background: rgba(243, 149, 16, 0.4)}
-        .blnak-box:nth-child(7){background: rgba(243, 149, 16, 0.3)}
+        .blank-box {display:inline-block;width:60px;height:50px;line-height:50px;background: rgba(243, 149, 16, 1);font-size:16px;}
+        .blank-box.wide{display:block;width:100%;}
+        .blank-box.clear{width:auto;height:auto;}
+        .blank-box.clear + .blank-box.clear {margin-left:10px;}
+        .blank-box:nth-child(1){background: rgba(243, 149, 16, 0.9)}
+        .blank-box:nth-child(2){background: rgba(243, 149, 16, 0.8)}
+        .blank-box:nth-child(3){background: rgba(243, 149, 16, 0.7)}
+        .blank-box:nth-child(4){background: rgba(243, 149, 16, 0.6)}
+        .blank-box:nth-child(5){background: rgba(243, 149, 16, 0.5)}
+        .blank-box:nth-child(6){background: rgba(243, 149, 16, 0.4)}
+        .blank-box:nth-child(7){background: rgba(243, 149, 16, 0.3)}
+        .blank-box:hover {outline: 1px solid #0f92f7;z-index:100;}
 
-        .ex-view {padding:5px 0;}
-        .ex-view + .ex-view {padding:0 0 5px 0;}
+        .ex-view {padding:5px 0;font-size:0;}
+        .ex-view button {margin:5px;}
+        .ex-view h3 {margin-bottom:10px;}
+        .ex-view + .ex-view {margin-top:20px;}
+
+        /* repensive */
+        @media screen and (max-width:768px) {
+            .header.is-fixed {width:calc(100% - 20px);}
+            .header.is-fixed .inner{background: rgba(255,255,255,1);transition: background .3s}
+            .header .inner .lnb {padding:20px 50px 20px 20px;max-height:200px;overflow-y:auto;}
+            .header .inner .lnb .scroll-top {right:10px;}
+        }
     </style>
 </head>
 <body>
 <div class="wrap">
     <div class="header">
-        <div class="inner">
-            <h1 class="title">Css common</h1>
-            <ul class="lnb">
-                <li><a href="#case1">Margin</a></li>
-                <li><a href="#case2">Padding</a></li>
-                <li><a href="#case3">Align</a></li>
-                <li><a href="#case4">Column</a></li>
-                <li><a href="#case5">Button</a></li>
-                <li><a href="html" class="scroll-top" title="맨 위로 이동"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg></a></li>
-            </ul>
+        <div class="inner tac">
+            <h1 class="title">Css common<span class="sub-desc">2019</span>
+                <a href="html" class="scroll-top" title="맨 위로 이동"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg></a>
+            </h1>
+            <div class="lnb">
+                <ul></ul>
+            </div>
         </div>
     </div>
     <div class="container">
         <div class="content">
             <div class="inner">
-                <div class="section" id="case1">
+
+                <!-- defalut -->
+                <!--<div class="section" data-name="name">-->
+                    <!--<h2 class="title circle-type">name</h2>-->
+                    <!--<div class="editer-wrap">-->
+                        <!--<div class="ex-view">-->
+                        <!--</div>-->
+
+                        <!--<ul class="mt40">-->
+                            <!--<li class="remark">&#60;!&#45;&#45;  Top &#45;&#45;&#62;</li>-->
+                            <!--<li><span class="name">.mt0</span>{margin-top:<span class="data">0</span> <span class="important">!important</span>;}</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!-- Flex -->
+                <div class="section" data-name="Flex">
+                    <h2 class="title circle-type">Flex</h2>
+                    <div class="editer-wrap">
+                        <div class="ex-view">
+                        </div>
+
+                        <ul class="mt40">
+                            <li class="remark">&#60;!--  Top --&#62;</li>
+                            <li><span class="name">.mt0</span>{margin-top:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Font-Size -->
+                <div class="section" data-name="Font-Size">
+                    <h2 class="title circle-type">Font-Size</h2>
+                    <div class="editer-wrap">
+                        <div class="ex-view">
+                        </div>
+
+                        <ul class="mt40">
+                            <li class="remark">&#60;!--  Top --&#62;</li>
+                            <li><span class="name">.mt0</span>{margin-top:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Font-color -->
+                <div class="section" data-name="Font-color">
+                    <h2 class="title circle-type"> Font-color</h2>
+                    <div class="editer-wrap">
+                        <div class="ex-view">
+                        </div>
+
+                        <ul class="mt40">
+                            <li class="remark">&#60;!--  Top --&#62;</li>
+                            <li><span class="name">.mt0</span>{margin-top:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <div class="section" data-name="Title">
+                    <h2 class="title circle-type">Title</h2>
+                    <div class="editer-wrap">
+                        <div class="ex-view">
+                        </div>
+
+                        <ul class="mt40">
+                            <li class="remark">&#60;!--  Top --&#62;</li>
+                            <li><span class="name">.mt0</span>{margin-top:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Margin -->
+                <div class="section" data-name="Margin">
                     <h2 class="title circle-type">Margin</h2>
                     <div class="editer-wrap">
                         <div class="ex-view">
-                            <div>
-                                <h3>Top</h3>
-                                <div class="blnak-box wide mt0">0</div>
-                                <div class="blnak-box wide mt10">10</div>
-                                <div class="blnak-box wide mt20">20</div>
-                                <div class="blnak-box wide mt30">30</div>
-                                <div class="blnak-box wide mt40">40</div>
-                                <div class="blnak-box wide mt50">50</div>
-                            </div>
-                            <div class="mt30">
-                                <h3>Left</h3>
-                                <div class="blnak-box ml0">0</div>
-                                <div class="blnak-box ml10">10</div>
-                                <div class="blnak-box ml20">20</div>
-                                <div class="blnak-box ml30">30</div>
-                                <div class="blnak-box ml40">40</div>
-                                <div class="blnak-box ml50">50</div>
-                            </div>
-                            <div class="mt30">
-                                <h3>Right</h3>
-                                <div class="blnak-box mr50">50</div>
-                                <div class="blnak-box mr40">40</div>
-                                <div class="blnak-box mr30">30</div>
-                                <div class="blnak-box mr20">20</div>
-                                <div class="blnak-box mr10">10</div>
-                                <div class="blnak-box mr0">0</div>
-                            </div>
-                            <div class="mt30">
-                                <h3>Bottom</h3>
-                                <div class="blnak-box wide mb50">50</div>
-                                <div class="blnak-box wide mb40">40</div>
-                                <div class="blnak-box wide mb30">30</div>
-                                <div class="blnak-box wide mb20">20</div>
-                                <div class="blnak-box wide mb10">10</div>
-                                <div class="blnak-box wide mb0">0</div>
-                            </div>
+                            <h3>Top</h3>
+                            <div class="blank-box wide mt0">0</div>
+                            <div class="blank-box wide mt10">10</div>
+                            <div class="blank-box wide mt20">20</div>
+                            <div class="blank-box wide mt30">30</div>
+                            <div class="blank-box wide mt40">40</div>
+                            <div class="blank-box wide mt50">50</div>
                         </div>
-                        <ul>
+                        <div class="ex-view">
+                            <h3>Left</h3>
+                            <div class="blank-box ml0">0</div>
+                            <div class="blank-box ml10">10</div>
+                            <div class="blank-box ml20">20</div>
+                            <div class="blank-box ml30">30</div>
+                            <div class="blank-box ml40">40</div>
+                            <div class="blank-box ml50">50</div>
+                        </div>
+                        <div class="ex-view">
+                            <h3>Right</h3>
+                            <div class="blank-box mr50">50</div>
+                            <div class="blank-box mr40">40</div>
+                            <div class="blank-box mr30">30</div>
+                            <div class="blank-box mr20">20</div>
+                            <div class="blank-box mr10">10</div>
+                            <div class="blank-box mr0">0</div>
+                        </div>
+                        <div class="ex-view">
+                            <h3>Bottom</h3>
+                            <div class="blank-box wide mb50">50</div>
+                            <div class="blank-box wide mb40">40</div>
+                            <div class="blank-box wide mb30">30</div>
+                            <div class="blank-box wide mb20">20</div>
+                            <div class="blank-box wide mb10">10</div>
+                            <div class="blank-box wide mb0">0</div>
+                        </div>
+                        <ul class="mt50">
                             <li class="remark">&#60;!--  Top --&#62;</li>
                             <li><span class="name">.mt0</span>{margin-top:<span class="data">0</span> <span class="important">!important</span>;}</li>
                             <li><span class="name">.mt10</span>{margin-top:<span class="data">10px</span> <span class="important">!important</span>;}</li>
@@ -137,48 +220,47 @@
                     </div>
                 </div>
 
-                <div class="section" id="case2">
+                <!-- Padding -->
+                <div class="section" data-name="Padding">
                     <h2 class="title circle-type">Padding</h2>
                     <div class="editer-wrap">
                         <div class="ex-view">
-                            <div>
-                                <h3>Top</h3>
-                                <div class="blnak-box clear pt0">0</div>
-                                <div class="blnak-box clear pt10">10</div>
-                                <div class="blnak-box clear pt20">20</div>
-                                <div class="blnak-box clear pt30">30</div>
-                                <div class="blnak-box clear pt40">40</div>
-                                <div class="blnak-box clear pt50">50</div>
-                            </div>
-                            <div class="mt30">
-                                <h3>Left</h3>
-                                <div class="blnak-box clear pl0">0</div>
-                                <div class="blnak-box clear pl10">10</div>
-                                <div class="blnak-box clear pl20">20</div>
-                                <div class="blnak-box clear pl30">30</div>
-                                <div class="blnak-box clear pl40">40</div>
-                                <div class="blnak-box clear pl50">50</div>
-                            </div>
-                            <div class="mt30">
-                                <h3>Right</h3>
-                                <div class="blnak-box clear pr50">50</div>
-                                <div class="blnak-box clear pr40">40</div>
-                                <div class="blnak-box clear pr30">30</div>
-                                <div class="blnak-box clear pr20">20</div>
-                                <div class="blnak-box clear pr10">10</div>
-                                <div class="blnak-box clear pr0">0</div>
-                            </div>
-                            <div class="mt30">
-                                <h3>Bottom</h3>
-                                <div class="blnak-box clear pb50">50</div>
-                                <div class="blnak-box clear pb40">40</div>
-                                <div class="blnak-box clear pb30">30</div>
-                                <div class="blnak-box clear pb20">20</div>
-                                <div class="blnak-box clear pb10">10</div>
-                                <div class="blnak-box clear pb0">0</div>
-                            </div>
+                            <h3>Top</h3>
+                            <div class="blank-box clear pt0">0</div>
+                            <div class="blank-box clear pt10">10</div>
+                            <div class="blank-box clear pt20">20</div>
+                            <div class="blank-box clear pt30">30</div>
+                            <div class="blank-box clear pt40">40</div>
+                            <div class="blank-box clear pt50">50</div>
                         </div>
-                        <ul>
+                        <div class="ex-view">
+                            <h3>Left</h3>
+                            <div class="blank-box clear pl0">0</div>
+                            <div class="blank-box clear pl10">10</div>
+                            <div class="blank-box clear pl20">20</div>
+                            <div class="blank-box clear pl30">30</div>
+                            <div class="blank-box clear pl40">40</div>
+                            <div class="blank-box clear pl50">50</div>
+                        </div>
+                        <div class="ex-view">
+                            <h3>Right</h3>
+                            <div class="blank-box clear pr50">50</div>
+                            <div class="blank-box clear pr40">40</div>
+                            <div class="blank-box clear pr30">30</div>
+                            <div class="blank-box clear pr20">20</div>
+                            <div class="blank-box clear pr10">10</div>
+                            <div class="blank-box clear pr0">0</div>
+                        </div>
+                        <div class="ex-view">
+                            <h3>Bottom</h3>
+                            <div class="blank-box clear pb50">50</div>
+                            <div class="blank-box clear pb40">40</div>
+                            <div class="blank-box clear pb30">30</div>
+                            <div class="blank-box clear pb20">20</div>
+                            <div class="blank-box clear pb10">10</div>
+                            <div class="blank-box clear pb0">0</div>
+                        </div>
+                        <ul class="mt50">
                             <li class="remark">&#60;!--  Top --&#62;</li>
                             <li><span class="name">.pt0</span>{padding-top:<span class="data">0</span> <span class="important">!important</span>;}</li>
                             <li><span class="name">.pt10</span>{padding-top:<span class="data">10px</span> <span class="important">!important</span>;}</li>
@@ -211,28 +293,29 @@
                     </div>
                 </div>
 
-                <div class="section" id="case3">
+                <!-- Align -->
+                <div class="section" data-name="Align">
                     <h2 class="title circle-type">Align</h2>
                     <div class="editer-wrap">
                         <div class="ex-view">
                             <div class="tal">
-                                <h3 class="mb10">Left</h3>
-                                <div class="blnak-box">.Box</div>
+                                <h3>Left</h3>
+                                <div class="blank-box">.Box</div>
                             </div>
                         </div>
                         <div class="ex-view">
                             <div class="tac">
-                                <h3 class="mb10">Center</h3>
-                                <div class="blnak-box">.Box</div>
+                                <h3>Center</h3>
+                                <div class="blank-box">.Box</div>
                             </div>
                         </div>
                         <div class="ex-view">
                             <div class="tar">
-                                <h3 class="mb10">Right</h3>
-                                <div class="blnak-box">.Box</div>
+                                <h3>Right</h3>
+                                <div class="blank-box">.Box</div>
                             </div>
                         </div>
-                        <ul>
+                        <ul class="mt50">
                             <li class="remark">&#60;!--  Left --&#62;</li>
                             <li><span class="name">.tal</span>{text-align:<span class="data">left</span>;}</li>
                             <li class="remark">&#60;!--  Center --&#62;</li>
@@ -243,42 +326,52 @@
                     </div>
                 </div>
 
-                <div class="section" id="case4">
+                <!-- Float layout --->
+                <div class="section" data-name="Float Layout">
                     <h2 class="title circle-type">Layout - Row  column</h2>
-                    <div class="ex-view">
-                        <div class="row">
-                            <div class="column n1 dummy-css" >n1</div>
-                        </div>
-
-                        <div class="row">
-                            <div class="column n2 dummy-css">n2</div>
-                            <div class="column n2 dummy-css">n2</div>
-                        </div>
-
-                        <div class="row">
-                            <div class="column n3 dummy-css">n3</div>
-                            <div class="column n3 dummy-css">n3</div>
-                            <div class="column n3 dummy-css">n3</div>
-                        </div>
-
-                        <div class="row">
-                            <div class="column n4 dummy-css">n4</div>
-                            <div class="column n4 dummy-css">n4</div>
-                            <div class="column n4 dummy-css">n4</div>
-                            <div class="column n4 dummy-css">n4</div>
-                        </div>
-
-                        <div class="row">
-                            <div class="column n5 dummy-css">n5</div>
-                            <div class="column n5 dummy-css">n5</div>
-                            <div class="column n5 dummy-css">n5</div>
-                            <div class="column n5 dummy-css">n5</div>
-                            <div class="column n5 dummy-css">n5</div>
-                        </div>
-                    </div>
 
                     <div class="editer-wrap">
-                        <ul>
+                        <div class="ex-view">
+                            <h3>Width 100%</h3>
+                            <div class="row">
+                                <div class="column n1 dummy-css" >n1</div>
+                            </div>
+                        </div>
+                        <div class="ex-view">
+                            <h3>Width 50%</h3>
+                            <div class="row">
+                                <div class="column n2 dummy-css">n2</div>
+                                <div class="column n2 dummy-css">n2</div>
+                            </div>
+                        </div>
+                        <div class="ex-view">
+                            <h3>Width 33.3333%</h3>
+                            <div class="row">
+                                <div class="column n3 dummy-css">n3</div>
+                                <div class="column n3 dummy-css">n3</div>
+                                <div class="column n3 dummy-css">n3</div>
+                            </div>
+                        </div>
+                        <div class="ex-view">
+                            <h3>Width 25%</h3>
+                            <div class="row">
+                                <div class="column n4 dummy-css">n4</div>
+                                <div class="column n4 dummy-css">n4</div>
+                                <div class="column n4 dummy-css">n4</div>
+                                <div class="column n4 dummy-css">n4</div>
+                            </div>
+                        </div>
+                        <div class="ex-view">
+                            <h3>Width 20%</h3>
+                            <div class="row">
+                                <div class="column n5 dummy-css">n5</div>
+                                <div class="column n5 dummy-css">n5</div>
+                                <div class="column n5 dummy-css">n5</div>
+                                <div class="column n5 dummy-css">n5</div>
+                                <div class="column n5 dummy-css">n5</div>
+                            </div>
+                        </div>
+                        <ul class="mt50">
                             <li class="remark">&#60;!--  row --&#62;</li>
                             <li><span class="name">.row:after</span>{content:<span class="data">''</span>;clear:<span class="data">both</span>;display:<span class="data">block</span>;}</li>
                             <li class="remark">&#60;!--  column --&#62;</li>
@@ -295,11 +388,29 @@
                     </div>
                 </div>
 
-                <div class="section" id="case5">
-                    <h2 class="title circle-type">Button </h2>
+                <!-- Button-dafault -->
+                <div class="section" data-name="Button">
+                    <h2 class="title circle-type">Button</h2>
                     <div class="editer-wrap">
-                        <h3>Size</h3>
                         <div class="ex-view">
+                            <h3>Size</h3>
+                            <button type="button" class="btn">default</button>
+                        </div>
+                        <ul class="mt50">
+                            <li class="remark">&#60;!--  default --&#62;</li>
+                            <li><span class="name">.btn</span>{position:<span class="data">relative</span>;display:<span class="data">inline-block</span>;cursor:<span class="data">pointer</span>;background:<span class="data">#fff</span>;border:<span class="data">1px solid #dcdfe6</span>;line-height:<span class="data">1</span>;white-space:<span class="data">nowrap</span>;font-weight:<span class="data">500</span>;transition:<span class="data">.1s</span>;padding:<span class="data">12px 20px</span>;font-size:<span class="data">14px</span>;margin:<span class="data">0</span>;min-width:<span class="data">100px</span>;}</li>
+                            <li><span class="name">.btn:active</span>{top:<span class="data">1px</span>;left:<span class="data">1px</span>;}</li>
+                            <li><span class="name">.btn:hover</span>{color:<span class="data">#409eff</span>;border-color:<span class="data">#c6e2ff</span>;background-color:<span class="data">#ecf5ff</span>;}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Button-size -->
+                <div class="section" data-name="Button-size">
+                    <h2 class="title circle-type">Button Size</h2>
+                    <div class="editer-wrap">
+                        <div class="ex-view">
+                            <h3>Size</h3>
                             <button type="button" class="btn size-sm">small</button>
                             <button type="button" class="btn">default</button>
                             <button type="button" class="btn size-mid">middum</button>
@@ -308,8 +419,22 @@
                         <div class="ex-view">
                             <button type="button" class="btn size-wide">wide</button>
                         </div>
-                        <h3 class="mt30">Background</h3>
+                        <ul class="mt50">
+                            <li class="remark">&#60;!--  Size --&#62;</li>
+                            <li><span class="name">.btn.size-sm</span>{min-width:<span class="data">80px</span>;}</li>
+                            <li><span class="name">.btn.size-mid</span>{min-width:<span class="data">160px</span>;}</li>
+                            <li><span class="name">.btn.size-lg</span>{min-width:<span class="data">200px</span>;}</li>
+                            <li><span class="name">.btn.size-wide</span>{min-width:<span class="data">100%</span>;}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Button-background -->
+                <div class="section" data-name="Button-background">
+                    <h2 class="title circle-type">Button Background</h2>
+                    <div class="editer-wrap">
                         <div class="ex-view">
+                            <h3>Background</h3>
                             <button type="button" class="btn">btn</button>
                             <button type="button" class="btn bg-primary">bg-primary</button>
                             <button type="button" class="btn bg-success">bg-success</button>
@@ -317,34 +442,7 @@
                             <button type="button" class="btn bg-warning">bg-warning</button>
                             <button type="button" class="btn bg-danger">bg-danger</button>
                         </div>
-                        <h3 class="mt30">Round</h3>
-                        <div class="ex-view">
-                            <button type="button" class="btn btn-round">Btn-round</button>
-                            <button type="button" class="btn bg-primary btn-round">bg-primary</button>
-                            <button type="button" class="btn bg-success btn-round">bg-success</button>
-                            <button type="button" class="btn bg-info btn-round">bg-info</button>
-                            <button type="button" class="btn bg-warning btn-round">bg-warning</button>
-                            <button type="button" class="btn bg-danger btn-round">bg-danger</button>
-                        </div>
-                        <h3 class="mt30">Disabled</h3>
-                        <div class="ex-view">
-                            <button type="button" class="btn btn-disabled">Btn-round</button>
-                            <button type="button" class="btn bg-primary btn-disabled">bg-primary</button>
-                            <button type="button" class="btn bg-success btn-disabled">bg-success</button>
-                            <button type="button" class="btn bg-info btn-disabled">bg-info</button>
-                            <button type="button" class="btn bg-warning btn-disabled">bg-warning</button>
-                            <button type="button" class="btn bg-danger btn-disabled">bg-danger</button>
-                        </div>
-                        <ul>
-                            <li class="remark">&#60;!--  default --&#62;</li>
-                            <li><span class="name">.btn</span>{position:<span class="data">relative</span>;display:<span class="data">inline-block</span>;cursor:<span class="data">pointer</span>;background:<span class="data">#fff</span>;border:<span class="data">1px solid #dcdfe6</span>;line-height:<span class="data">1</span>;white-space:<span class="data">nowrap</span>;font-weight:<span class="data">500</span>;transition:<span class="data">.1s</span>;padding:<span class="data">12px 20px</span>;font-size:<span class="data">14px</span>;margin:<span class="data">0</span>;min-width:<span class="data">100px</span>;}</li>
-                            <li><span class="name">.btn:active</span>{top:<span class="data">1px</span>;left:<span class="data">1px</span>;}</li>
-                            <li><span class="name">.btn:hover</span>{color:<span class="data">#409eff</span>;border-color:<span class="data">#c6e2ff</span>;background-color:<span class="data">#ecf5ff</span>;}</li>
-                            <li class="remark">&#60;!--  Size --&#62;</li>
-                            <li><span class="name">.btn.size-sm</span>{min-width:<span class="data">80px</span>;}</li>
-                            <li><span class="name">.btn.size-mid</span>{min-width:<span class="data">160px</span>;}</li>
-                            <li><span class="name">.btn.size-lg</span>{min-width:<span class="data">200px</span>;}</li>
-                            <li><span class="name">.btn.size-wide</span>{min-width:<span class="data">100%</span>;}</li>
+                        <ul class="mt50">
                             <li class="remark">&#60;!--  Color --&#62;</li>
                             <li><span class="name">.btn.bg-primary</span>{background:<span class="data">#409eff</span>;border-color:<span class="data">#409eff</span>;color:<span class="data">#fff</span>;}</li>
                             <li><span class="name">.btn.bg-primary:hover</span>{background:<span class="data">#66b1ff</span>;border-color:<span class="data"> #66b1ff</span>;}</li>
@@ -356,8 +454,44 @@
                             <li><span class="name">.btn.bg-warning:hover</span>{background:<span class="data">#ebb563</span>;border-color:<span class="data">#ebb563</span>;}</li>
                             <li><span class="name">.btn.bg-danger</span>{background:<span class="data">#f56c6c</span>;border-color:<span class="data">#f56c6c</span>;color:<span class="data">#fff</span>;}</li>
                             <li><span class="name">.btn.bg-danger:hover</span>{background:<span class="data">#f78989</span>;border-color:<span class="data">#f78989</span>;}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Button-round -->
+                <div class="section" data-name="Button-round">
+                    <h2 class="title circle-type">Button Round</h2>
+                    <div class="editer-wrap">
+                        <div class="ex-view">
+                            <h3>Round</h3>
+                            <button type="button" class="btn btn-round">btn Btn-round</button>
+                            <button type="button" class="btn bg-primary btn-round">btn bg-primary btn-round</button>
+                            <button type="button" class="btn bg-success btn-round">btn bg-success btn-round</button>
+                            <button type="button" class="btn bg-info btn-round">btn bg-info btn-round</button>
+                            <button type="button" class="btn bg-warning btn-round">btn bg-warning btn-round</button>
+                            <button type="button" class="btn bg-danger btn-round">btn bg-danger btn-round</button>
+                        </div>
+                        <ul class="mt50">
                             <li class="remark">&#60;!--  Round --&#62;</li>
                             <li><span class="name">.btn.btn-round</span>{border-radius:<span class="data">20px</span>;}
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Button-disabled -->
+                <div class="section" data-name="Button-disabled">
+                    <h2 class="title circle-type">Button Disabled</h2>
+                    <div class="editer-wrap">
+                        <div class="ex-view">
+                            <h3>Disabled</h3>
+                            <button type="button" class="btn btn-disabled">btn btn-disabled</button>
+                            <button type="button" class="btn bg-primary btn-disabled">btn bg-primary btn-disabled</button>
+                            <button type="button" class="btn bg-success btn-disabled">btn bg-success btn-disabled</button>
+                            <button type="button" class="btn bg-info btn-disabled">btn bg-info btn-disabled</button>
+                            <button type="button" class="btn bg-warning btn-disabled">btn bg-warning btn-disabled</button>
+                            <button type="button" class="btn bg-danger btn-disabled">btn bg-danger btn-disabled</button>
+                        </div>
+                        <ul class="mt50">
                             <li class="remark">&#60;!--  Disabled --&#62;</li>
                             <li><span class="name">.btn.btn-disabled</span>{background-color:<span class="data">#fff</span>;border-color:<span class="data">#ebeef5</span>;color:<span class="data">#c0c4cc</span>;}</li>
                             <li><span class="name">.btn.bg-primary.btn-disabled</span>{background:<span class="data">#66b1ff</span>;border-color:<span class="data"> #66b1ff</span>;}</li>
@@ -367,7 +501,6 @@
                             <li><span class="name">.btn.bg-danger.btn-disabled</span>{background:<span class="data">#f78989</span>;border-color:<span class="data">#f78989</span>;}</li>
                             <li><span class="name">.btn-disabled</span>{cursor:<span class="data">not-allowed</span>;}</li>
                             <li><span class="name">.btn-disabled:active</span>{top:<span class="data">0</span>;left:<span class="data">0</span>;}</li>
-
                         </ul>
                     </div>
                 </div>
@@ -378,5 +511,8 @@
         <div class="inner"></div>
     </div>
 </div>
+<script type="text/javascript">
+
+</script>
 </body>
 </html>
