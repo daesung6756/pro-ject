@@ -1,11 +1,11 @@
 function cssSetter (e , $property, $classNmae , $index, $indexVal) {
-    var $this = e.path[0];
+    var $this = e.target;
     var $val = $this.value;
     var $target = $($classNmae);
     var $option = $property;
     var $flexWrap = $('.flex-container');
     var $flexWrapChild = $('.flex-container').children();
-
+    var $th = this;
     $target.css($option, $val);
     if ($flexWrap.attr("style") !== null && $flexWrap.attr("style") !== undefined && $flexWrap.attr("style") !== '') {
         $('.resualt-container').html('.flex-container { display:flex;<span>' + $flexWrap.attr('style') + '</span>}');
@@ -23,6 +23,12 @@ function cssSetter (e , $property, $classNmae , $index, $indexVal) {
     } else {
         $('.resualt-in-box-first').html('');
     }
+}
+function slidePanelControl (e) {
+    var panel = $(this).parent('h3.title').siblings('.panel');
+    e.preventDefault();
+    $(this).toggleClass('is-rotate');
+    panel.toggleClass('is-show');
 }
 function makeInBox () {
     var $length = $('.flex-container .in_box').length;

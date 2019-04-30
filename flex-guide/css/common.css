@@ -5,7 +5,7 @@ strong {font-weight:bold;}
 .inner {width:100%;max-width:1200px;margin:0 auto}
 .section {width:100%;max-width:1200px;margin:0 auto;padding-bottom:50px;}
 
-.title {font-weight:bold;}
+.title {font-weight:bold;line-height:1.4;}
 h1.title {font-size:22px;}
 h2.title {font-size:20px;}
 h3.title {font-size:18px;}
@@ -21,6 +21,9 @@ h5.title {font-size:14px;}
 .status-group {position:absolute;top:50%;right:0;transform: translateY(-50%);color:#fff;height:22px;font-size:10px;line-height:1;background:rgba(0,0,0,.7);padding:5px;}
 .status-group span{display:inline-block;width:12px;height:12px;vertical-align:top;border-radius:50%;border:1px solid rgba(0,0,0,.3);}
 .status-group span + span {margin-left:5px;}
+
+.radio-list label.is-active {background:#303030;color: #ffdc14;text-indent:10px;border-radius:20px;transition: all .3s;padding-bottom:2px;}
+.radio-list li {height:26px;vertical-align: top;}
 
 .overlay-nav {position:fixed;top:0;min-width:300px;max-width:500px;width:40%;height:100%;padding:10px;left:0;transform: translateX(-100%);transition: transform .3s ease-in-out;background:rgba(0,0,0,.8);color:#fff;z-index:1;overflow-y:auto;}
 .overlay-nav::-webkit-scrollbar {width: 0 !important;}
@@ -96,7 +99,7 @@ h5.title {font-size:14px;}
 
 /* accordian */
 .desc-list {border-top:2px solid #999;}
-.panel {border-bottom:1px solid #ddd;}
+.accordian .panel  {border-bottom:1px solid #ddd;}
 .panel .acc-header {position:relative;display:block;padding:18px 50px 18px 10px;border-bottom:1px solid #ddd;text-overflow: ellipsis;overflow:hidden;white-space:nowrap;cursor:pointer;}
 .panel .acc-header::after {content:'';position:absolute;right:30px;top:50%;transform: translateY(-50%);width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid #666;border-right: 5px solid transparent;border-left: 5px solid  transparent;}
 .panel .acc-body{max-height:0;transition: max-height .3s ease-in-out;overflow:hidden;padding:0;opacity:0;line-height:1.4;word-break: keep-all}
