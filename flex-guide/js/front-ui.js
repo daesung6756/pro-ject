@@ -41,6 +41,15 @@ function removeBox () {
     var $last = $length - 1;
     $('.flex-container .in_box').eq($last).remove();
 }
+function openSideNav () {
+    $('.control-nav').toggleClass('is-show');
+    $('.mobile-hidden-btn').toggleClass('is-active');
+    if($('.mobile-hidden-btn').hasClass('is-active')){
+        $('.mobile-hidden-btn').text('사이드 메뉴 닫기');
+    } else {
+        $('.mobile-hidden-btn').text('사이드 메뉴 열기');
+    }
+}
 function containerWidthCtrl (){
     var $container = $('.flex-container');
     var $val = $(this).val();
