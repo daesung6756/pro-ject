@@ -17,6 +17,23 @@ h1.title {position:relative;text-align:center;padding:20px 0;}
 h1.title a {position:absolute;right:0;top:50%;transform: translateY(-50%);font-size:14px;}
 h1.title span.sub-desc {display:inline-block;margin-left:10px;font-size:14px;color:#999;}
 
+.sub-desc{font-size:14px;font-weight:400;color:#999;line-height:1.4;}
+.tit > span:first-child {line-height:1.6;vertical-align:top;}
+.tit > .tit-desc {font-weight:400;color:#ccc;margin-left:10px;word-break: keep-all;line-height:1;vertical-align: middle;}
+h1.tit{font-size:22px;font-weight:900;}
+h2.tit{font-size:20px;font-weight:900;}
+h3.tit{font-size:18px;font-weight:600;}
+h4.tit{font-size:16px;font-weight:600;}
+h5.tit{font-size:14px;font-weight:400;}
+h6.tit{font-size:14px;font-weight:200;}
+
+h1.tit .tit-desc {font-size:16px;}
+h2.tit .tit-desc {font-size:16px;}
+h3.tit .tit-desc {font-size:14px;}
+h4.tit .tit-desc {font-size:14px;}
+h5.tit .tit-desc {font-size:12px;}
+h6.tit .tit-desc {font-size:12px;}
+
 h2 {font-size:20px;font-weight:bold;line-height:1.4}
 h2.title {position:relative;color: #197759;margin-bottom:20px;}
 h2.sub-title {text-align:center;padding:10px 0;border-top:1px dashed #ddd;}

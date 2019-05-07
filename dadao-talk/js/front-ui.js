@@ -1,5 +1,8 @@
-
 const userData = {
+    userLogin:{
+        id :'dadaotalk',
+        password:'123456789'
+    },
     user:[
         {
             id:'Watson',
@@ -20,10 +23,41 @@ const userData = {
             phone: '(916)-488-3214',
             name:'allan watson',
             pic : 'https://randomuser.me/api/portraits/men/36.jpg'
+        },
+        {
+            id:'Watson2',
+            password:'donner2',
+            email: 'allan.watson28@example.com',
+            birthday:'4/7/1972',
+            address: '4544 Mockingbird Hill',
+            phone: '(916)-488-3214',
+            name:'allan watson',
+            pic : 'https://randomuser.me/api/portraits/men/36.jpg'
+        },
+        {
+            id:'Watson2',
+            password:'donner2',
+            email: 'allan.watson28@example.com',
+            birthday:'4/7/1972',
+            address: '4544 Mockingbird Hill',
+            phone: '(916)-488-3214',
+            name:'allan watson',
+            pic : 'https://randomuser.me/api/portraits/men/36.jpg'
+        },
+        {
+            id:'Watson2',
+            password:'donner2',
+            email: 'allan.watson28@example.com',
+            birthday:'4/7/1972',
+            address: '4544 Mockingbird Hill',
+            phone: '(916)-488-3214',
+            name:'allan watson',
+            pic : 'https://randomuser.me/api/portraits/men/36.jpg'
         }
     ]
 };
-
+let $id = userData.userLogin.id;
+let $pass = userData.userLogin.password;
 (function($){
     $.fn.extend({
         resualtTextData : function() {
@@ -81,3 +115,19 @@ const userData = {
 
 })(jQuery);
 
+$(document).on('change','.form-input.b-line-type', function(){
+    let myName = $(this).attr('name');
+    let myValue = $(this).val();
+    $(this).parents('form').find("input[type='hidden'][name=" + myName +"]").val(myValue);
+});
+$(document).on('click','#nickNmaeMake', function(e){
+    let $getId = $('input[name="user_id"]').val();
+    let $getpw = $('input[name="user_pass"]').val();
+    e.preventDefault();
+    if($id === String($getId) && $pass === String($getpw) ){
+        alert('로그인이 성공 하였습니다.\n Enjoy Baby');
+        location.href= "chat.html";
+    } else {
+        alert('아이디와 비밀번호가 맞지 않습니다.');
+    }
+});

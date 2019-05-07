@@ -28,6 +28,9 @@ h3.sub-title {margin-bottom:10px;}
 .title.circle-type {padding-left:12px;}
 .title.circle-type:after {content:'';position:absolute;left:2px;top:13px;width:4px;height:4px;background:#000;border-radius:50%;}
 
+/* blind */
+.blind{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+
 /* list */
 .d-list li,
 .c-list li {position:relative;padding-left:12px;line-height:1.4;}
