@@ -6,60 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/css-advanced.css">
     <script src="js/jquery-3.4.0.min.js"></script>
     <script src="js/front-ui.js"></script>
-    <style>
-        .wrap {background:#efefef;height:100%;}
-        .header {position:relative;}
-        .header .inner {position:relative;background:rgba(255,255,255,1);-moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);border-left:1px solid #ddd;border-right:1px solid #ddd;}
-        .header h1.title {background:#fff;border-bottom:1px dotted #ddd;transition: background .3s}
-        .header h1.title  .scroll-top {position:absolute;right:20px;top:50%;transform: translateY(-50%);padding:10px;border-radius:10px;}
-        .header .inner:after {content:'';position:absolute;left:0;bottom:-10px;width:100%;height:10px;background:#fff;}
-        .header .inner .lnb {position:relative;display:inline-block;width:100%;max-width:600px;padding:10px 30px 10px 0;overflow:hidden;}
-        .header .inner .lnb ul:after {content:'';clear:both;display:block;}
-        .header .inner .lnb li {float:left;position:relative;margin:5px;padding-bottom:10px;}
-        .header .inner .lnb li:after{content:'';position:absolute;bottom:-2px;left:0;height:2px;width:0;background: #ff9100;transition: width .2s;}
-        .header .inner .lnb li.is-active a{color:#000;}
-        .header .inner .lnb li.is-active:after {width:100%;}
-        .header.is-fixed {position:fixed;top:0;left:50%;max-width:1200px;width:100%;transform: translateX(-50%);z-index:100;transition: background .2s;}
-        .header.is-fixed h1.title {background:rgba(0,0,0,.8);color:#fff;transition: background .3s;}
-        .header.is-fixed h1.title .scroll-top {background:#fff;}
-        .header.is-fixed .inner {background:rgba(255,255,255,.8);-moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);transition: background .3s}
-        .header.is-fixed .inner:after {display:none;}
-        .container .content{-webkit-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);-moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);box-shadow: 5px 5px 5px 0 rgba(0,0,0,.1);border-left:1px solid #ddd;border-right:1px solid #ddd;}
-        .section + .section {margin-top:30px;}
-
-        .row .dummy-css {position:relative;padding:20px 0;text-align:center;background:#666;color:#fff;font-size:16px;}
-        .row .dummy-css:nth-child(2n){background:#777;}
-        .row .dummy-css:hover{outline:1px solid #0f92f7;z-index:1;}
-        /*.row .dummy-css:after {content:'';position:absolute;left:0;top:0;width:1px;height:100%;background:#999;}*/
-
-        .blank-box {display:inline-block;width:60px;height:50px;line-height:50px;background: rgba(243, 149, 16, 1);font-size:16px;}
-        .blank-box.wide{display:block;width:100%;}
-        .blank-box.clear{width:auto;height:auto;}
-        .blank-box.clear + .blank-box.clear {margin-left:10px;}
-        .blank-box:nth-child(1){background: rgba(243, 149, 16, 0.9)}
-        .blank-box:nth-child(2){background: rgba(243, 149, 16, 0.8)}
-        .blank-box:nth-child(3){background: rgba(243, 149, 16, 0.7)}
-        .blank-box:nth-child(4){background: rgba(243, 149, 16, 0.6)}
-        .blank-box:nth-child(5){background: rgba(243, 149, 16, 0.5)}
-        .blank-box:nth-child(6){background: rgba(243, 149, 16, 0.4)}
-        .blank-box:nth-child(7){background: rgba(243, 149, 16, 0.3)}
-        .blank-box:hover {outline: 1px solid #0f92f7;z-index:100;}
-
-        .ex-view {padding:5px 0;font-size:0;}
-        .ex-view button {margin:5px;}
-        .ex-view h3 {margin-bottom:10px;}
-        .ex-view + .ex-view {margin-top:20px;}
-
-        /* repensive */
-        @media screen and (max-width:768px) {
-            .header.is-fixed {width:calc(100% - 20px);}
-            .header.is-fixed .inner{background: rgba(255,255,255,1);transition: background .3s}
-            .header .inner .lnb {padding:20px 50px 20px 20px;max-height:200px;overflow-y:auto;}
-            .header .inner .lnb .scroll-top {right:10px;}
-        }
-    </style>
 </head>
 <body>
 <div class="wrap">
@@ -91,16 +40,194 @@
                     <!--</div>-->
                 <!--</div>-->
 
-                <!-- Flex -->
-                <div class="section" data-name="Flex">
-                    <h2 class="title circle-type">Flex</h2>
+                <!-- radio -->
+                <div class="section" data-name="radio">
+                    <h2 class="title circle-type">Radio custom</h2>
                     <div class="editer-wrap">
                         <div class="ex-view">
+                            <h3>Default</h3>
+                            <div style="padding:10px;" class="bg-white">
+                                <div class="radio-group">
+                                    <div class="radio">
+                                        <input type="radio" name="radio-default" id="radio1">
+                                        <span class="fake"></span>
+                                        <label for="radio1" class="label">Yes</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="radio-default" id="radio1-1">
+                                        <span class="fake"></span>
+                                        <label for="radio1-1" class="label">No</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="mt50">Radio Group</h3>
+                            <div style="padding:10px;" class="bg-white">
+                                <div class="radio-group">
+                                    <div class="radio">
+                                        <input type="radio" name="radio-items" id="radio2">
+                                        <span class="fake"></span>
+                                        <label for="radio2" class="label">라디오 목록 1</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="radio-items" id="radio3">
+                                        <span class="fake"></span>
+                                        <label for="radio3" class="label">라디오 목록 2</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="radio-items" id="radio4">
+                                        <span class="fake"></span>
+                                        <label for="radio4" class="label">라디오 목록 3</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="radio-items" id="radio5">
+                                        <span class="fake"></span>
+                                        <label for="radio5" class="label">라디오 목록 4</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="mt40">
+                            <li class="remark">&#60;!-- default(rect) --&#62;</li>
+                            <li><span class="name">.radio</span> {position:<span class="data">relative</span>;display:<span class="data">inline-block</span>;}</li>
+                            <li><span class="name">.radio <span class="important">input</span>[type=<span class="data">"radio"</span>]</span> {position:<span class="data">absolute</span>;top:<span class="data">0</span>;left:<span class="data">0</span>;width:<span class="data">1px</span>;height:<span class="data">1px</span>;z-index:<span class="data">0</span>;}</li>
+                            <li><span class="name">.radio .fake </span>{position:<span class="data">absolute</span>;left:<span class="data">0</span>;top:<span class="data">0</span>;background:<span class="data">url('../images/component/radio-default.png') center center no-repeat</span>;background-size:<span class="data">contain</span>;width:<span class="data">20px</span>;height:<span class="data">20px</span>;}</li>
+                            <li><span class="name">.radio <span class="important">input</span>[type=<span class="data">"radio"</span>]:checked + .fake</span>{background:<span class="data">url('../images/component/radio-checked.png') center center no-repeat</span>;background-size:<span class="data">contain</span>;}</li>
+                            <li><span class="name">.radio .label</span> {position:<span class="data">relative</span>;display:<span class="data">block</span>;padding-left:<span class="data">24px</span>;;font-size:<span class="data">14px</span>;line-height:<span class="data">20px</span>;color:<span class="data">#303030</span>;cursor:<span class="data">pointer</span>;white-space:<span class="data"> normal</span>;word-break:<span class="data"> keep-all</span>;vertical-align:<span class="data"> -1px</span>}</li>
+
+                            <li class="remark">&#60;!-- group --&#62;</li>
+                            <li><span class="name">.radio-group .radio</span> {margin-left:<span class="data">5px;</span>}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Check-box -->
+                <div class="section" data-name="check-box">
+                    <h2 class="title circle-type">Check box custom</h2>
+                    <div class="editer-wrap">
+                        <div class="ex-view">
+                            <h3>Rect</h3>
+                            <div style="padding:10px;" class="bg-white">
+                                <div class="check-box">
+                                    <input type="checkbox" id="checkBox">
+                                    <span class="fake"></span>
+                                    <label for="checkBox" class="label">동의동의 동의동 의동의동의 동의 동의동의 동의 의동 의동의동의 동의동의동의 동의동의동의동의<span class="sub-desc fc-red">(필수)</span></label>
+                                </div>
+                            </div>
+
+                            <h3 class="mt50">Circle</h3>
+                            <div style="padding:10px;" class="bg-white">
+                                <div class="check-box circle-type">
+                                    <input type="checkbox" id="checkBox2">
+                                    <span class="fake"></span>
+                                    <label for="checkBox2" class="label">동의동의 동의동 의동의동의 동의 동의동의 동의 의동 의동의동의 동의동의동의 동의동의동의동의<span class="sub-desc fc-red">(필수)</span></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="mt40">
+                            <li class="remark">&#60;!-- default(rect) --&#62;</li>
+                            <li><span class="name">.check-box</span> {position:<span class="data">relative</span>;display:<span class="data">inline-block</span>;}</li>
+                            <li><span class="name">.check-box <span class="important">input</span>[type=<span class="data">"checkbox"</span>]</span> {position:<span class="data">absolute</span>;top:<span class="data">0</span>;left:<span class="data">0</span>;width:<span class="data">1px</span>;height:<span class="data">1px</span>;z-index:<span class="data">0</span>;}</li>
+                            <li><span class="name">.check-box .fake </span>{position:<span class="data">absolute</span>;left:<span class="data">0</span>;top:<span class="data">0</span>;background:<span class="data">url('../images/component/checkbox-default.png') center center no-repeat</span>;background-size:<span class="data">contain</span>;width:<span class="data">20px</span>;height:<span class="data">20px</span>;}</li>
+                            <li><span class="name">.check-box <span class="important">input</span>[type=<span class="data">"checkbox"</span>]:checked + .fake</span>{background:<span class="data">url('../images/component/checkbox-checked.png') center center no-repeat</span>;background-size:<span class="data">contain</span>;}</li>
+                            <li><span class="name">.check-box .label</span> {position:<span class="data">relative</span>;display:<span class="data">block</span>;padding-left:<span class="data">24px</span>;font-size:<span class="data">14px</span>;line-height:<span class="data">20px</span>;color:<span class="data">#303030</span>;cursor:<span class="data">pointer</span>;white-space:<span class="data"> normal</span>;word-break:<span class="data"> keep-all</span>;vertical-align:<span class="data"> -1px</span>}</li>
+                            <li><span class="name">.check-box .label .sub-desc</span> {font-size:<span class="data">12px</span>;margin-left<span class="data">:5px</span>;}</li>
+                            <li class="remark">&#60;!-- circle-type --&#62;</li>
+                            <li><span class="name">.check-box.circle-type .fake</span> {background:<span class="data">url('../images/component/checkbox-circle-default.png') no-repeat</span>;background-size:<span class="data">contain</span>;}</li>
+                            <li><span class="name">.check-box.circle-type <span class="important">input</span>[type=<span class="data">"checkbox"</span>]:checked + .fake</span> {background:<span class="data">url('../images/component/checkbox-circle-checked.png') no-repeat</span>;background-size:<span class="data">contain</span>;}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Location Navi -->
+                <div class="section" data-name="Location Nav">
+                    <h2 class="title circle-type">Location Nav</h2>
+                    <div class="editer-wrap">
+                        <div class="ex-view">
+                            <h3>Location Nav Default</h3>
+                            <div class="location-drop-navi bg-white">
+                                <ul>
+                                    <li class="empty"><a href="">Depth1</a></li>
+                                    <li class="empty"><a href="">Depth2</a></li>
+                                    <li class="empty"><a href="">Depth3</a></li>
+                                    <li class="empty"><a href="">Depth4</a></li>
+                                    <li class="empty"><a href="">Depth5</a></li>
+                                </ul>
+                            </div>
+
+                            <h3 class="mt50">Location Navi Drop sub-navi</h3>
+                            <div class="location-drop-navi bg-white">
+                                <ul>
+                                    <li class="empty"><a href="">Depth1</a></li>
+                                    <li><span>Depth2</span>
+                                        <div class="sub-navi">
+                                            <ul>
+                                                <li><a href="">Sub-navi 1</a></li>
+                                                <li><a href="">Sub-navi 2</a></li>
+                                                <li><a href="">Sub-navi 3</a></li>
+                                                <li><a href="">Sub-navi 4</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><span>Depth3</span>
+                                        <div class="sub-navi">
+                                            <ul>
+                                                <li><a href="">Sub-navi 1</a></li>
+                                                <li><a href="">Sub-navi 2</a></li>
+                                                <li><a href="">Sub-navi 3</a></li>
+                                                <li><a href="">Sub-navi 4</a></li>
+                                                <li><a href="">Sub-navi 5</a></li>
+                                                <li><a href="">Sub-navi 6</a></li>
+                                                <li><a href="">Sub-navi 7</a></li>
+                                                <li><a href="">Sub-navi 8</a></li>
+                                                <li><a href="">Sub-navi 9</a></li>
+                                                <li><a href="">Sub-navi 10</a></li>
+                                                <li><a href="">Sub-navi 11</a></li>
+                                                <li><a href="">Sub-navi 12</a></li>
+                                                <li><a href="">Sub-navi 13</a></li>
+                                                <li><a href="">Sub-navi 14</a></li>
+                                                <li><a href="">Sub-navi 15</a></li>
+                                                <li><a href="">Sub-navi 16</a></li>
+                                                <li><a href="">Sub-navi 17</a></li>
+                                                <li><a href="">Sub-navi 18</a></li>
+                                                <li><a href="">Sub-navi 19</a></li>
+                                                <li><a href="">Sub-navi 20</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><span>Depth4</span>
+                                        <div class="sub-navi">
+                                            <ul>
+                                                <li><a href="">Sub-navi 1</a></li>
+                                                <li><a href="">Sub-navi 2</a></li>
+                                                <li><a href="">Sub-navi 3</a></li>
+                                                <li><a href="">Sub-navi 4</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="empty"><a href="">Depth5</a></li>
+                                </ul>
+                            </div>
                         </div>
 
                         <ul class="mt40">
                             <li class="remark">&#60;!--  Top --&#62;</li>
                             <li><span class="name">.mt0</span>{margin-top:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.location-drop-navi > <span class="important">ul</span>:after</span> {content:<span class="data">''</span>;clear:<span class="data">both</span>;display:<span class="data">block</span>;}
+                            <li><span class="name">.location-drop-navi > <span class="important">ul</span></span> {line-height:<span class="data">1</span>;font-size:<span class="data">0</span>;margin:<span class="data">0</span>;}
+                            <li><span class="name">.location-drop-navi > <span class="important">ul</span> > <span class="important">li</span></span> {position:<span class="data">relative</span>;float:<span class="data">left</span>;font-size:<span class="data">14px</span>;line-height:<span class="data">1.4</span>;padding-right:<span class="data">17px</span>;margin:<span class="data">5px 7px 5px 5px}
+                            <li><span class="name">.location-drop-navi > <span class="important">ul</span> > <span class="important">li</span>.empty </span> {padding-right:<span class="data">0</span>;}
+                            <li><span class="name">.location-drop-navi > <span class="important">ul</span> > <span class="important">li</span>.empty:after </span> {display:<span class="data">none</span>;}
+                            <li><span class="name">.location-drop-navi > <span class="important">ul</span> > <span class="important">li</span>:after </span> {content:<span class="data">''</span>;position:<span class="data">absolute</span>;right:<span class="data">0</span>;top:<span class="data">3px</span>;width:<span class="data">12px</span>;height:<span class="data">12px</span>;background:<span class="data">url('../images/icons/icon-top-circle-arrow.png') no-repeat</span>;background-size:<span class="data">contain</span>;-webkit-transform:<span class="data">rotate(0deg)</span>;-ms-transform:<span class="data">rotate(0deg)</span>;transform:<span class="data">rotate(0deg)</span>;-webkit-transition:<span class="data"> -webkit-transform .3s</span>;transition:<span class="data"> -webkit-transform .3s</span>;-o-transition:<span class="data"> transform .3s</span>;transition:<span class="data"> transform .3s</span>;}
+                            <li><span class="name">.location-drop-navi > <span class="important">ul</span> > <span class="important">li</span>:hover:after</span> {-webkit-transform:<span class="data">rotate(180deg)</span>;-ms-transform:<span class="data">rotate(180deg)</span>;transform:<span class="data">rotate(180deg)</span>;-webkit-transition:<span class="data"> -webkit-transform .3s</span>;transition:<span class="data"> -webkit-transform .3s</span>;-o-transition:<span class="data"> transform .3s</span>;transition:<span class="data"> transform .3s</span>;}
+                            <li><span class="name">.location-drop-navi > <span class="important">ul</span> > <span class="important">li</span> + <span class="important">li</span> {padding-left:<span class="data">18px</span>;}
+                            <li><span class="name">.location-drop-navi > <span class="important">ul</span> > <span class="important">li</span> + <span class="important">li</span>:before </span> {content:<span class="data">''</span>;position:<span class="data">absolute</span>;left:<span class="data">0</span>;top:<span class="data">50%</span>;-webkit-transform:<span class="data">translateY(-50%) rotate(360deg)</span>;-ms-transform:<span class="data">translateY(-50%) rotate(360deg)</span>;transform:<span class="data">translateY(-50%) rotate(360deg)</span>;width:<span class="data">6px</span>;height:<span class="data">6px</span>;background:<span class="data">url('../images/icons/icon-left-arrow.png') no-repeat</span>;background-size:<span class="data">contain</span>;opacity:<span class="data">.4}
+                            <li><span class="name">.location-drop-navi .sub-navi </span> {display:<span class="data">none</span>;position:<span class="data">absolute</span>;min-width:<span class="data">100%</span>;top:<span class="data">calc(100% - 1px)</span>;left:<span class="data">50%</span>;-webkit-transform:<span class="data">translateX(-50%)</span>;-ms-transform:<span class="data">translateX(-50%)</span>;transform:<span class="data">translateX(-50%)</span>;max-height:<span class="data">200px</span>;overflow:<span class="data">hidden</span>;overflow-y:<span class="data">auto</span>;border:<span class="data">2px solid #303030</span>;background:<span class="data">#fff</span>;color:<span class="data">#303030</span>;padding:<span class="data">10px</span>;z-index:<span class="data">2</span>;}
+                            <li><span class="name">.location-drop-navi > <span class="important">ul</span> > <span class="important">li</span> > <span class="important">span</span></span> {color:<span class="data">#999</span>;}
+                            <li><span class="name">.location-drop-navi .sub-navi > <span class="important">ul</span> > <span class="important">li</span></span> {white-space:<span class="data">nowrap</span>;}
+                            <li><span class="name">.location-drop-navi > <span class="important">ul</span> > <span class="important">li</span>:hover .sub-navi</span> {display:<span class="data">block</span>;}
                         </ul>
                     </div>
                 </div>
@@ -110,11 +237,36 @@
                     <h2 class="title circle-type">Font-Size</h2>
                     <div class="editer-wrap">
                         <div class="ex-view">
+                            <h3>Size</h3>
+                            <p class="fs12 mt10">글자크기 12</p>
+                            <p class="fs13 mt10">글자크기 13</p>
+                            <p class="fs14 mt10">글자크기 14</p>
+                            <p class="fs15 mt10">글자크기 15</p>
+                            <p class="fs16 mt10">글자크기 16</p>
+                            <p class="fs17 mt10">글자크기 17</p>
+                            <p class="fs18 mt10">글자크기 18</p>
+                            <p class="fs19 mt10">글자크기 19</p>
+                            <p class="fs20 mt10">글자크기 20</p>
+                            <p class="fs21 mt10">글자크기 21</p>
+                            <p class="fs22 mt10">글자크기 22</p>
+                            <p class="fs23 mt10">글자크기 23</p>
+                            <p class="fs24 mt10">글자크기 24</p>
                         </div>
 
                         <ul class="mt40">
-                            <li class="remark">&#60;!--  Top --&#62;</li>
-                            <li><span class="name">.mt0</span>{margin-top:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs12</span>{font-size:<span class="data">12px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs13</span>{font-size:<span class="data">13 px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs14</span>{font-size:<span class="data">14px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs15</span>{font-size:<span class="data">15px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs16</span>{font-size:<span class="data">16px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs17</span>{font-size:<span class="data">17px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs18</span>{font-size:<span class="data">18px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs19</span>{font-size:<span class="data">19px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs20</span>{font-size:<span class="data">20px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs21</span>{font-size:<span class="data">21px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs22</span>{font-size:<span class="data">22px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs23</span>{font-size:<span class="data">23px</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fs24</span>{font-size:<span class="data">24px</span> <span class="important">!important</span>;}</li>
                         </ul>
                     </div>
                 </div>
@@ -124,11 +276,22 @@
                     <h2 class="title circle-type"> Font-color</h2>
                     <div class="editer-wrap">
                         <div class="ex-view">
+                            <h3>Color</h3>
+                            <p class="fc-blue fs16 mt10">글자색 파랑</p>
+                            <p class="fc-yellow fs16 mt10">글자색 노랑</p>
+                            <p class="fc-red fs16 mt10">글자색 빨강</p>
+                            <p class="fc-grey fs16 mt10">글자색 회색</p>
+                            <p class="fc-black fs16 mt10">글자색 검정색</p>
+                            <p class="fc-white fs16 mt10">글자색 흰색</p>
                         </div>
 
                         <ul class="mt40">
-                            <li class="remark">&#60;!--  Top --&#62;</li>
-                            <li><span class="name">.mt0</span>{margin-top:<span class="data">0</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fc-blue</span>{color:<span class="data">#4eadff</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fc-yellow</span>{color:<span class="data">#ffdc00</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fc-red</span>{color:<span class="data">#ff3f00</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fc-grey</span>{color:<span class="data">#9A9A9A</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fc-black</span>{color:<span class="data">#303030</span> <span class="important">!important</span>;}</li>
+                            <li><span class="name">.fc-white</span>{color:<span class="data">#fff</span> <span class="important">!important</span>;}</li>
                         </ul>
                     </div>
                 </div>

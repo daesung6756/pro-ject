@@ -6,7 +6,7 @@ html, body {min-width:320px;}
 .header {}
 .header .inner,
 .container .content,
-.footer .inner{max-width:1200px;width:100%;margin:0 auto;background:#fff;}
+.footer .inner{max-width:1200px;width:100%;margin:0 auto;}
 .container .content .inner {padding:20px;}
 .footer {}
 .scroll-top svg{width:20px;height:20px;}
