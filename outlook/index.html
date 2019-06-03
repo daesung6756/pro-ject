@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Outlook 오피스365</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/jquery.scrollbar.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/outlook.css">
+        <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
+        <script type="text/javascript" src="js/front-ui.js"></script>
+    </head>
+<body style="height:100% !important;">
+<!-- overlay-nav -->
+<div class="overlay-nav">
+    <div class="overlay-inner tabs">
+        <div class="nav-wrap">
+            <ul class="nav-list tab-nav">
+                <li><a href="" class="overlay-close event-disabled"><i class="icon icon-white-left-circle-arrow"></i><span class="blind"></span></a></li>
+                <li class="is-active"><a href="#tab0-1">정보</a></li>
+                <li><a href="#tab0-2">열기 및 내보내기</a></li>
+                <li><a href="#tab0-3">다른 이름으로 저장</a></li>
+                <li><a href="#tab0-4">첨부 파일 저장</a></li>
+                <li><a href="#tab0-5">인쇄</a></li>
+                <li class="line-quarter"><a href="#tab0-6">Office 계정</a></li>
+                <li><a href="#tab0-7">피드백</a></li>
+                <li><a href="#tab0-8">옵션</a></li>
+                <li><a href="#tab0-9">끝내기</a></li>
+            </ul>
+        </div>
+        <div class="nav-container tab-container">
+            <div class="tab-content is-show" id="tab0-1" >
+                <div class="section">
+                    <h2>계정 정보</h2>
+                    <div>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="button">계정 추가</button>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>계정 설정</h3>
+                            <p>이 계정에 대한 설정을 변경하거나 다른 연결을 추가로 설정합니다.</p>
+                            <ul>
+                                <li>웹에서 이계정에 엑세스합니다.<br><a href="https://owa.sktelecom.com/owa/">https://owa.sktelecom.com/owa/</a></li>
+                                <li><a href="https://owa.sktelecom.com/owa/">iPhone, iPad, Android 또는 Windows 10 Mobile용 Outlook 앱을 당누로드하세요.</a></li>
+                            </ul>
+                            <div>
+                                <div></div>
+                                <a href="">변경</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>자동 회신(부재 중)</h3>
+                            <p>자동 회신을 사용하면 부재 중, 휴가 중 또는 전자 메일 메시지에 회신할 수 없을 때 다른 사람에게 알릴 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>계정 설정</h3>
+                            <p>지운 편지함을 비우고 항목을 보관하여 사서함 크기를 관리합니다.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>규칙 및 알림</h3>
+                            <p>규칙 및 알람을 사용하여 받는 전자 메일 메시지를 구성하고 항목이 추가, 변경 또는 제거되었을 때 업데이트를 받습니다.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>느리고 비활성화된 COM 추가 기능</h3>
+                            <p>Outlook 환경에 영향을 주는 COM 추가 기능을 관리합니다.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>추가 기능 관리</h3>
+                            <p>oUTLOOK용 웹 추가 기능을 관리하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="tab0-2" >컨텐츠2</div>
+            <div class="tab-content" id="tab0-3" >컨텐츠3</div>
+            <div class="tab-content" id="tab0-4" >컨텐츠4</div>
+            <div class="tab-content" id="tab0-5" >컨텐츠5</div>
+            <div class="tab-content" id="tab0-6" >컨텐츠6</div>
+            <div class="tab-content" id="tab0-7" >컨텐츠7</div>
+            <div class="tab-content" id="tab0-8" >컨텐츠8</div>
+            <div class="tab-content" id="tab0-9" >컨텐츠9</div>
+        </div>
+    </div>
+</div>
+<!-- //overlay-nav -->
+
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <div class="top-bar">
+            <div class="left-control">
+                <ul class="ctrl-list">
+                    <li class="is-first"><a href=""><i class="icon icon-refrash"></i></a></li>
+                    <li class="is-disabled"><a href=""><i class="icon icon-back-history"></i></a></li>
+                    <li><a href=""><i class="icon icon-fast-group"></i></a></li>
+                </ul>
+            </div>
+            <p class="tac">보낸 편지함 - daesung.lee4@parthner.sk.com  -  Outlook</p>
+            <div class="right-control">
+                <ul class="ctrl-list">
+                    <li>
+                        <a href="" class="head-drop-btn"><i class="icon icon-white-hidden-list"></i><span class="blind"></span></a>
+                        <ul class="drop-list">
+                            <li>
+                                <a href="" class="open-full-screen">
+                                    <strong class="tit">리본 메뉴 자동숨기기</strong>
+                                    <span class="desc">리본 메뉴를 숨깁니다. 리본 메뉴를<br>표시하려면 응용프로그램 위쪽을 클릭하십시요.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="hide-sub-nav">
+                                    <strong class="tit">탭 표시</strong>
+                                    <span class="desc">리본 메뉴 탭만 표시합니다. 명령을<br>표시하려면 탭을 클릭하세요.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="show-sub-nav">
+                                    <strong class="tit">탭 및 알림 표시</strong>
+                                    <span class="desc">리본 메뉴 탭과 명령을 항상 표시합니다.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="icon icon-white-minu"></i><span class="blind">창 최소화</span></a></li>
+                    <li><a href="" class="close-full-screen"><i class="icon icon-white-full-window"></i><span class="blind">전체창모드 전환</span></a></li>
+                    <li class="is-close"><a href="#"><i class="icon icon-white-window-close"></i><span class="blind">창 닫기</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="inner tabs">
+            <div class="main-nav">
+                <ul class="tab-nav">
+                    <li><a href="" class="overlay-open event-disabled">파일</a></li>
+                    <li class="is-active"><a href="#tab1-1">홈</a></li>
+                    <li><a href="#tab1-2">보내기/받기</a></li>
+                    <li><a href="#tab1-3">폴더</a></li>
+                    <li><a href="#tab1-4">보기</a></li>
+                    <li><a href="#tab1-5">도움말</a></li>
+                    <li><div class="form-set"><input type="text" placeholder="도움말"></div></li>
+                </ul>
+                <div class="util">
+                </div>
+            </div>
+            <div class="sub-nav tab-container" >
+                <div class="tab-content is-show" id="tab1-1">
+                    <div class="column">
+                        <ul class="cc" style="display:flex;">
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-line"></i><br><span>새 <br>전자 메일</span></a></li>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>새 항목</span></a></li>
+                        </ul>
+                        <p>새로 만들기</p>
+                    </div>
+                    <div class="column">
+                        <ul class="" style="display:flex;">
+                            <li>
+                                <ul class="row-ul">
+                                    <li><a href=""><i class="icon icon-email-line"></i><span>무시</span></a></li>
+                                    <li><a href=""><i class="icon icon-email-line"></i><span>정리</span></a></li>
+                                    <li><a href=""><i class="icon icon-email-line"></i><span>정크</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>삭제</span></a></li>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>보<br>관</span></a></li>
+                        </ul>
+                        <p>삭제</p>
+                    </div>
+                    <div class="column">
+                        <ul class="" style="display:flex;">
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>회신</span></a></li>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>전체<br>회신</span></a></li>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>전달</span></a></li>
+                            <li>
+                                <ul class="row-ul">
+                                    <li><a href=""><i class="icon icon-email-line"></i><span>모임</span></a></li>
+                                    <li><a href=""><i class="icon icon-email-line"></i><span>메신저</span></a></li>
+                                    <li><a href=""><i class="icon icon-email-line"></i><span>자세히</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>응답</p>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>빠른 단계</p>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>이동</span></a></li>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>규칙</span></a></li>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>OneNote</span></a></li>
+                        </ul>
+                        <p>이동</p>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>읽지 않음/<br>읽음</span></a></li>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>범주</span></a></li>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>추가<br>작업</span></a></li>
+                        </ul>
+                        <p>태그</p>
+                    </div>
+                    <div class="column">
+                        <ul class="row-ul">
+                            <li><input type="text"></li>
+                            <li><a href=""><i class="icon icon-email-duo"></i><span>주소록</span></a></li>
+                            <li><a href=""><i class="icon icon-email-duo"></i><span>전체 메일 필터링</span></a></li>
+                        </ul>
+                        <p>찾기</p>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>소리내어<br>읽기</span></a></li>
+                        </ul>
+                        <p>음성</p>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>추가 기능<br>가져오기</span></a></li>
+                        </ul>
+                        <p>추가 기능</p>
+                    </div>
+                </div>
+                <div class="tab-content" id="tab1-2">
+                    <ul>
+                        <li>메뉴1메뉴1메뉴1메뉴1메뉴1</li>
+                        <li>메뉴2메뉴2메뉴2메뉴2메뉴2</li>
+                        <li>메뉴3메뉴3메뉴3메뉴3메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="tab1-3">
+                    <ul>
+                        <li>메뉴1메뉴1메뉴1메뉴1메뉴1</li>
+                        <li>메뉴2메뉴2메뉴2메뉴2메뉴2</li>
+                        <li>메뉴3메뉴3메뉴3메뉴3메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="tab1-4">
+                    <ul>
+                        <li>메뉴1메뉴1메뉴1메뉴1메뉴1</li>
+                        <li>메뉴2메뉴2메뉴2메뉴2메뉴2</li>
+                        <li>메뉴3메뉴3메뉴3메뉴3메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="tab1-5">
+                    <ul>
+                        <li>메뉴1메뉴1메뉴1메뉴1메뉴1</li>
+                        <li>메뉴2메뉴2메뉴2메뉴2메뉴2</li>
+                        <li>메뉴3메뉴3메뉴3메뉴3메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+
+    <!-- container -->
+    <div class="container" >
+        <div class="content" >
+            <div class="flex-frame">
+
+                <div class="flex-item aside">
+                    <div class="flex-body">
+                        <div class="aside-list accordian single-type">
+                            <div class="accordian-head single-ellipsis"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>즐겨찾기</div>
+                            <div class="accordian-panel">
+                                <ul>
+                                    <li><a href="">받은 편지함</a></li>
+                                    <li><a href="">보낸 편지함</a></li>
+                                    <li><a href="">지운 편지함</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="scrollbar-wrap scrollbar-inner">
+                            <div class="aside-list accordian single-type line-quarter">
+                                <div class="accordian-head single-ellipsis"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button><a href="">daesung.lee4@parther.sk.com</a></div>
+                                <div class="accordian-panel">
+                                    <ul>
+                                        <li><a href="">받은 편지함</a></li>
+                                        <li><a href="">임시 보관함</a></li>
+                                        <li><a href="">보낸 편지함</a></li>
+                                        <li><a href="">지운 편지함</a></li>
+                                        <li><a href="">RSS 피드</a></li>
+                                        <li><a href="">보낼 편지함</a></li>
+                                        <li><a href="">정크 메일</a></li>
+                                        <li><a href="">검색 폴더</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="aside-list accordian single-type">
+                            <div class="accordian-head single-ellipsis"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button><a href="">daesung.lee@emotion.co.kr</a></div>
+                            <div class="accordian-panel">
+                                <ul>
+                                    <li><a href="">받은 편지함</a></li>
+                                    <li><a href="">임시 보관함</a></li>
+                                    <li><a href="">보낸 편지함</a></li>
+                                    <li><a href="">지운 편지함</a></li>
+                                    <li><a href="">RSS 피드</a></li>
+                                    <li><a href="">twd 받은 편지함</a></li>
+                                    <li><a href="">twd 보낸 편지함</a></li>
+                                    <li><a href="">대화 내용</a></li>
+                                    <li><a href="">보관</a></li>
+                                    <li><a href="">보낼 편지함</a></li>
+                                    <li><a href="">정크 메일</a></li>
+                                    <li><a href="">검색 폴더</a></li>
+                                </ul>
+                                <div class="aside-list accordian single-type">
+                                    <div class="accordian-head single-ellipsis"><button type="button" class="open-panel is-active"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>그룹</div>
+                                    <div class="accordian-panel">
+                                        <ul>
+                                            <li><a href="">TWD 운영기획 99개 초과</a></li>
+                                            <li><a href="">TWD</a></li>
+                                            <li><a href="">e-motion FIG</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="floating-nav">
+                        <ul class="out-list list-active">
+                            <li><a href=""><i class="icon icon-calendar-grey"></i><span class="blind">메일 리스트</span></a></li>
+                            <li><a href=""><i class="icon icon-email-fill-grey"></i><span class="blind">달력</span></a></li>
+                            <li>
+                                <a href="" class="event-hiddenLayer"><i class="icon icon-find-user-grey"></i><span class="blind">사용자</span></a>
+                                <div class="hidden-layer offset-c">
+
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="event-hiddenLayer"><i class="icon icon-calendar-checked-grey"></i><span class="blind">작업</span></a>
+                                <div class="hidden-layer offset-c">
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="event-hiddenLayer"><i class="icon icon-hexahedron-double-grey"></i><span class="blind">추가 기능</span></a>
+                                <div class="hidden-layer offset-c">
+                                </div>
+                            </li>
+                            <li class="is-more">
+                                <a href="" class="event-over-list"><i class="icon icon-more-grey"></i><span class="blind">더보기</span></a>
+                                <ul class="hidden-layer">
+                                    <li class="is-fixed"><a href="">탐색 옵션</a></li>
+                                    <li><a href="">메뉴2</a></li>
+                                    <li><a href="">메뉴3</a></li>
+                                    <li><a href="">메뉴4</a></li>
+                                    <li><a href="">메뉴5</a></li>
+                                    <li><a href="">메뉴6</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex-item list tabs">
+
+                    <div class="item-head">
+                        <div class="field-set btn-type">
+                            <input type="text" class="form-set" id="mailSearch">
+                            <label for="mailSearch"><button type="button" class="form-btn"><i class="icon icon-search-glass"></i><span class="blind">검색</span></button></label>
+                            <div class="search-option select">
+                                <select>
+                                    <option value="현재 폴더">현재 폴더</option>
+                                    <option value="하위 폴더">하위 폴더</option>
+                                    <option value="현재 사서함">현재 사서함</option>
+                                    <option value="모든 사서함">모든 사서함</option>
+                                    <option value="모든 Outlook 항목">모든 Outlook 항목</option>
+                                </select>
+                                <button type="button" class="mail-drop-btn">모든 사서함<i class="icon icon-down-black-arrow"></i></button>
+                                <ul class="drop-list">
+                                    <li><a href="">현재 폴더</a></li>
+                                    <li><a href="">하위 폴더</a></li>
+                                    <li><a href="">현재 사서함</a></li>
+                                    <li><a href="">모든 사서함</a></li>
+                                    <li><a href="">모든 Outlook 항목</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="tab-nav">
+                           <li class="is-active"><a href="#tab2-1">모든 항목</a></li>
+                           <li><a href="#tab2-2">읽지 않음</a></li>
+                        </ul>
+                        <div>
+                            <div class="search-fillter">
+                                <button type="button">읽지 않음: 기준 날짜<i class="icon"></i></button>
+                                <div class="drop-list">
+                                    <p></p>
+                                    <div>
+                                        <input type="radio" name="dddd1">
+                                        <input type="radio" name="dddd1">
+                                        <input type="radio" name="dddd1">
+                                        <input type="radio" name="dddd1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-body tab-container">
+                        <div class="tab-content is-show " id="tab2-1">
+                            <div class="mail-list-wrap">
+                                <div class="scrollbar-inner">
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>오늘</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class="is-moved"><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                                <!--<div class="">-->
+                                                <!--<ul>-->
+                                                <!--<li></li>-->
+                                                <!--</ul>-->
+                                                <!--</div>-->
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>어제</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>수요일</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>화요일</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>월요일</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>지난 주</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>지난 2주</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="notice tac" >
+                                        <p>서버의 이 폴더에 더 많은 항목이 있습니다.</p>
+                                        <a href="">Microsoft Exchange에서 더 많은 항목을 보려면 여기를 클릭하세요.</a>
+                                    </div><div class="inner-section accordian single-type">
+                                    <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>오늘</div>
+                                    <ul class="mail-list-content accordian-panel">
+                                        <li>
+                                            <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                            <div class="list-set">
+                                                <p class="sender">이대성님/티월드운영</p>
+                                                <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                <div class="util">
+                                                    <div class="sub-menu">
+                                                        <span class="is-moved"><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                        <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                    </div>
+                                                    <span class="time">오후 1:55</span>
+                                                    <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                </div>
+                                            </div>
+                                            <!--<div class="">-->
+                                            <!--<ul>-->
+                                            <!--<li></li>-->
+                                            <!--</ul>-->
+                                            <!--</div>-->
+                                        </li>
+                                        <li>
+                                            <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                            <div class="list-set">
+                                                <p class="sender">이대성님/티월드운영</p>
+                                                <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                <div class="util">
+                                                    <div class="sub-menu">
+                                                        <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                        <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                    </div>
+                                                    <span class="time">오후 1:55</span>
+                                                    <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>어제</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>수요일</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>화요일</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>월요일</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>지난 주</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="inner-section accordian single-type">
+                                        <div class="mail-list-head accordian-head"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>지난 2주</div>
+                                        <ul class="mail-list-content accordian-panel">
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="select-btn"><span class="blind">메일 선택</span></button>
+                                                <div class="list-set">
+                                                    <p class="sender">이대성님/티월드운영</p>
+                                                    <p class="tit">[퍼블리싱] 손흥민 응원 프로모션 미션 페이지 제작 요청</p>
+                                                    <p class="desc">To. 이대성 선입님 안녕하세요.</p>
+                                                    <div class="util">
+                                                        <div class="sub-menu">
+                                                            <span class=""><i class="icon icon-moved-arrow"></i><span class="blind">보관함으로 이동 된 이메일</span></span>
+                                                            <a href="" title="플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기" class="flag-event"><i class="icon icon-flag"></i><span class="blind">플래그 항목 지정&#13;마우스 오른쪽 클릭하여 모든 옵션 보기</span></a>
+                                                        </div>
+                                                        <span class="time">오후 1:55</span>
+                                                        <a href="" class="del-btn" title="이 항목 삭제"><i class="icon icon-wastebasket"></i><span class="blind">이 항목 삭제</span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="notice tac" >
+                                        <p>서버의 이 폴더에 더 많은 항목이 있습니다.</p>
+                                        <a href="">Microsoft Exchange에서 더 많은 항목을 보려면 여기를 클릭하세요.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="tab2-2">
+                            <div class="mail-list-wrap">
+                                <div class="scrollbar-inner">
+                                    <ul>
+                                        <li>
+                                            <p>여기에 표시할 항목을 찾을 수 없습니다.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex-item view">
+                    <div class="flex-inner">
+                        <div class="flex-head">
+                            <ul class="util">
+                                <li><a href=""><i class="icon icon-reply-email"></i><span>회신</span></a></li>
+                                <li><a href=""><i class="icon icon-all-reply-email"></i><span>전체회신</span></a></li>
+                                <li><a href=""><i class="icon icon-forward-email"></i><span>전달</span></a></li>
+                                <li><a href=""><i class="icon icon-messenger"></i><span>메신저</span></a></li>
+                            </ul>
+                            <div class="info">
+                                <div class="user-info">
+                                    <div class="pic">
+                                        <div class="pic-inner">
+                                            <span class="status-view is-checked"><i class="icon icon-circle"></i><span class="blind">접속 상태 표시</span></span>
+                                            <div class="photo">
+                                                <img src="https://randomuser.me/api/portraits/men/2.jpg">
+                                            </div>
+                                            <div class="fake"><i class="icon icon-profile-user"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="info-desc">
+                                        <div class="time">2019-05-28 (화) 오전 9:24</div>
+                                        <div class="user row">
+                                            <div class="column" >
+                                                <a href="">이대성/티월드 운영</a>
+                                            </div>
+                                            <div class="column">
+                                                <ul class="user-list nowrap">
+                                                    <li><a href=""><span class="status-view is-checked"><i class="icon icon-circle"></i><span class="blind">접속 상태 표시</span></span>김소연님/티월드 다이렉트운영</a></li>
+                                                    <li><a href=""><span class="status-view"><i class="icon icon-circle"></i><span class="blind">접속 상태 표시</span></span>김현수님/티월드 다이렉트운영</a></li>
+                                                    <li><a href=""><span class="status-view"><i class="icon icon-circle"></i><span class="blind">접속 상태 표시</span></span>박영준님/티월드 다이렉트운영</a></li>
+                                                    <li><a href=""><span class="status-view"><i class="icon icon-circle"></i><span class="blind">접속 상태 표시</span></span>백승엽님/티월드 다이렉트운영</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="title">RE: [T기프트] 신규 4건 어드빈 반영 요청</div>
+                                    </div>
+                                </div>
+                                <div class="list-extend">
+                                    <div class="ddd type1">
+                                        <span>받는사람</span>
+                                        <ul class="user-list">
+                                            <li><a href=""><span class="status-view is-checked"><i class="icon icon-circle"></i><span class="blind">접속 상태 표시</span></span>김소연님/티월드 다이렉트운영</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ddd type2">
+                                        <span>참조</span>
+                                        <ul class="user-list">
+                                            <li><a href=""><span class="status-view is-checked"><i class="icon icon-circle"></i><span class="blind">접속 상태 표시</span></span>김소연님/티월드 다이렉트운영</a></li>
+                                            <li><a href=""><span class="status-view"><i class="icon icon-circle"></i><span class="blind">접속 상태 표시</span></span>김현수님/티월드 다이렉트운영</a></li>
+                                            <li><a href=""><span class="status-view"><i class="icon icon-circle"></i><span class="blind">접속 상태 표시</span></span>박영준님/티월드 다이렉트운영</a></li>
+                                            <li><a href=""><span class="status-view"><i class="icon icon-circle"></i><span class="blind">접속 상태 표시</span></span>백승엽님/티월드 다이렉트운영</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top:7px;display:flex;font-size:12px;">
+                                <div>보존정책 매일 사서함 3주후 삭제 (3주)</div>
+                                <div>만료 날짜 <span>2019-06-18</span></div>
+                            </div>
+                            <div class="notice">
+                                <p class="attention">이 항목은 20일 후에 만료 됩니다. 이항목을 더 오래 보관하려면 다른 보존 정책을 적용하십시요.</p>
+                                <a href="" class="event-extend extend-btn"><i class="icon icon-line-arrow-down"></i><span class="blind">프로필 확대</span></a>
+                            </div>
+                        </div>
+                        <div class="flex-body" style="height:calc(100% - 140px) !important;overflow:hidden;">
+                            <div class="mail-section-wrap scrollbar-inner" style="">
+                                <div class="mail-section">
+                                    <div style="white-space:normal;word-break: break-all;line-height:1.4;font-size:13px;">
+                                        <strong style="font-weight:bold;text-decoration: underline;">TO. 고대영 주임님.</strong><br>
+                                        <br>
+                                        <span>안녕하세요. 김소연입니다.</span><br>
+                                        <br>
+                                        <span>하기업무에 대한 퍼블리싱 검수부탁드립니다.</span><br>
+                                        <br>
+                                        <span>감사합니다.</span><br>
+                                        <br>
+                                        <strong style="display:inline-block;padding:3px 0;font-weight:bold;background:#f7ff00;">[갤럭시 S10]</strong><br>
+                                        <a href="http://pc.twd.emotion.co.kr/tshop/html/html/adminReview/device_GalaxyS10.html" style="color:#387ed6;font-weight:600;text-decoration:underline">http://pc.twd.emotion.co.kr/tshop/html/html/adminReview/device_GalaxyS10.html</a><br>
+                                        <br>
+                                        <strong style="display:inline-block;padding:3px 0;font-weight:bold;background:#f7ff00;">[갤럭시 S10 플러스]</strong><br>
+                                        <a href="http://pc.twd.emotion.co.kr/tshop/html/html/adminReview/device_GalaxyS10.html" style="color:#387ed6;font-weight:600;text-decoration:underline">http://pc.twd.emotion.co.kr/tshop/html/html/adminReview/device_GalaxyS10.html</a><br>
+                                        <br>
+                                        <strong style="display:inline-block;padding:3px 0;font-weight:bold;background:#f7ff00;">[갤럭시 S10e]</strong><br>
+                                        <a href="http://pc.twd.emotion.co.kr/tshop/html/html/adminReview/device_GalaxyS10.html" style="color:#387ed6;font-weight:600;text-decoration:underline">http://pc.twd.emotion.co.kr/tshop/html/html/adminReview/device_GalaxyS10.html</a><br>
+                                        <br>
+                                    </div>
+                                    <div class="sign">
+                                        <p class="desc-type1"><strong>김소연  Soyeon Kim</strong></p>
+                                        <p class="desc-quarter">팀원 / Front-end Developer, Front-end Innovation Group</p>
+                                        <p class="desc-before-box type1"><span>M</span>+82 10 2685 0404</p>
+                                        <p class="desc-before-box type1"><span>T</span>+82 2 542 1987 ( ext 5132)</p>
+                                        <p class="desc-before-box type1"><span>F</span>+82 2 542 1988</p>
+                                        <div class="logo"><img src="images/sign-logo.png" alt="emotion"></div>
+                                        <p class="desc-quarter">Full service Digital Agency</p>
+                                        <p class="desc-before-box type2"><span>website</span><a href="www.emotion.co.kr">www.emotion.co.kr</a></p>
+                                        <p class="desc-before-box type2"><span>facebook</span><a href="www.facebook.com/emotion.co.kr">www.facebook.com/emotion.co.kr</a></p>
+                                        <p class="desc-type2">InWoo Bldg 4-5F, 145, Dosandero, Gangnam-gu, Seoul 06036, Korea</p>
+                                    </div>
+                                </div>
+                                <div class="mail-section">
+                                    <div style="white-space:normal;word-break: break-all;line-height:1.4;font-size:13px;">
+                                        <strong style="font-weight:bold;text-decoration: underline;">TO. 고대영 주임님.</strong><br>
+                                        <br>
+                                        <span>안녕하세요. 김소연입니다.</span><br>
+                                        <br>
+                                        <span>하기업무에 대한 퍼블리싱 검수부탁드립니다.</span><br>
+                                        <br>
+                                        <span>감사합니다.</span><br>
+                                        <br>
+                                        <strong style="display:inline-block;padding:3px 0;font-weight:bold;background:#f7ff00;">[갤럭시 S10]</strong><br>
+                                        <a href="http://pc.twd.emotion.co.kr/tshop/html/html/adminReview/device_GalaxyS10.html" style="color:#387ed6;font-weight:600;text-decoration:underline">http://pc.twd.emotion.co.kr/tshop/html/html/adminReview/device_GalaxyS10.html</a><br>
+                                        <br>
+                                        <strong style="display:inline-block;padding:3px 0;font-weight:bold;background:#f7ff00;">[갤럭시 S10 플러스]</strong><br>
+                                        <a href="http://pc.twd.emotion.co.kr/tshop/html/html/adminReview/device_GalaxyS10.html" style="color:#387ed6;font-weight:600;text-decoration:underline">http://pc.twd.emotion.co.kr/tshop/html/html/adminReview/device_GalaxyS10.html</a><br>
+                                        <br>
+                                        <strong style="display:inline-block;padding:3px 0;font-weight:bold;background:#f7ff00;">[갤럭시 S10e]</strong><br>
+                                        <a href="http://pc.twd.emotion.co.kr/tshop/html/html/adminReview/device_GalaxyS10.html" style="color:#387ed6;font-weight:600;text-decoration:underline">http://pc.twd.emotion.co.kr/tshop/html/html/adminReview/device_GalaxyS10.html</a><br>
+                                        <br>
+                                    </div>
+                                    <div class="sign">
+                                        <p class="desc-type1"><strong>김소연  Soyeon Kim</strong></p>
+                                        <p class="desc-quarter">팀원 / Front-end Developer, Front-end Innovation Group</p>
+                                        <p class="desc-before-box type1"><span>M</span>+82 10 2685 0404</p>
+                                        <p class="desc-before-box type1"><span>T</span>+82 2 542 1987 ( ext 5132)</p>
+                                        <p class="desc-before-box type1"><span>F</span>+82 2 542 1988</p>
+                                        <div class="logo"><img src="images/sign-logo.png" alt="emotion"></div>
+                                        <p class="desc-quarter">Full service Digital Agency</p>
+                                        <p class="desc-before-box type2"><span>website</span><a href="www.emotion.co.kr">www.emotion.co.kr</a></p>
+                                        <p class="desc-before-box type2"><span>facebook</span><a href="www.facebook.com/emotion.co.kr">www.facebook.com/emotion.co.kr</a></p>
+                                        <p class="desc-type2">InWoo Bldg 4-5F, 145, Dosandero, Gangnam-gu, Seoul 06036, Korea</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-overlay-nav">side nav</div>
+            </div>
+        </div>
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <div class="footer" style="height:30px;background:#efefef;">
+        <div class="inner">
+        </div>
+    </div>
+    <!-- //footer -->
+</div>
+</body>
+</html>
