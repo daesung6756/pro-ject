@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Joojak Talk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/users-data.js"></script>
+    <script src="js/front-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="inner tac">
+            <h1 class="title">JooJak Talk<span class="sub-desc">2019 v0.5</span></h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="phone-wrap">
+                <div class="phone-inner">
+                    <div class="chat-header">
+                        <div class="player">
+                        </div>
+                        <div class="info">
+                            <div class="name"></div>
+                            <div class="option">
+                                <ul>
+                                    <li><a href="" title="내 서랍"><i class="icon icon-drawers"><span class="blind">내 서랍</span></i></a></li>
+                                    <li><a href="" title="검색"><i class="icon icon icon-search"><span class="blind">검색</span></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="util">
+                            <div class="util-inner">
+                                <ul class="room-control">
+                                    <li><a href="" title="최소화"><i class="icon icon-min-size"><span class="blind">최소화</span></i></a></li>
+                                    <li><a href="" title="최대화"><i class="icon icon-max-size"><span class="blind">최대화</span></i></a></li>
+                                    <li><a href="" title="닫기"><i class="icon icon-close-x"><span class="blind">닫기</span></i></a></li>
+                                </ul>
+                                <ul class="options">
+                                    <li><a href="" class="push-event-btn on" title="알림" data-push="push-control"><i class="icon"><span class="blind">알림 설정/해제</span></i></a></li>
+                                    <li><a href="" class="layer-event-btn" title="메뉴" data-layer="layer-menu"><i class="icon icon-nav-hambuger"><span class="blind">메뉴</span></i></a></li>
+                                </ul>
+                                <div class="layer-nav" data-layer-panel="layer-menu">
+                                    <ul>
+                                        <li><a href="">대화상대 초대</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">톡 게시판</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">내 서랍</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">항상 위</a></li>
+                                        <li><a href="">알림</a></li>
+                                        <li><a href="">즐겨찾기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-wrap">
+                        <div id="view" class="view"></div>
+                        <div class="my-chat"></div>
+                        <div class="popup push" data-push-content="push-control">
+                            <div class="pop-wrap">
+                                <div class="pop-head"></div>
+                                <div class="pop-content">
+                                    <i class="icon"><span class="blind">알림 설정</span></i>
+                                </div>
+                                <div class="pop-foot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="join-chat"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="inner"></div>
+    </div>
+</div>
+</body>
+</html>
+</html>

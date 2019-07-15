@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>작업물 리스트</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/front-ui.js"></script>
+    <style>
+        .header,
+        .content,
+        .footer {position:relative;}
+        .blind{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+        table.intro-tbl th {border-top:1px solid #ddd;border-bottom:1px solid #ddd;text-align:center;padding:10px;}
+        table.intro-tbl th + th {border-left:1px solid #ddd;}
+        table.intro-tbl td {border-bottom:1px solid #ddd;text-align:left;padding:8px 10px;line-height:1.4;font-size:14px;}
+        table.intro-tbl td a {display:block;overflow:hidden;}
+        table.intro-tbl td a span{display:inline-block;}
+        table.intro-tbl td + td {border-left:1px solid #ddd;}
+        table.intro-tbl td:nth-child(1){background:#ddd;text-align:center;}
+        table.intro-tbl .num-box {display:inline-block;min-width:25px;font-size:11px;text-align:center;border:1px solid #aaa;border-radius:5px;background:#fff;padding:5px;}
+
+        .ani-slide-down-up {animation: slideUpDown .5s forwards;}
+
+        @-webkit-keyframes slideUpDown {
+            0% {-webkit-transform: translateY(0);transform: translateY(0)}
+            50% {-webkit-transform: translateY(100%);transform: translateY(100%)}
+            51% {-webkit-transform: translateY(-100%);transform: translateY(-100%)}
+            100% {-webkit-transform: translateY(0);transform: translateY(0)}
+        }
+        @keyframes slideUpDown {
+            0% {-webkit-transform: translateY(0);transform: translateY(0)}
+            50% {-webkit-transform: translateY(100%);transform: translateY(100%)}
+            51% {-webkit-transform: translateY(-100%);transform: translateY(-100%)}
+            100% {-webkit-transform: translateY(0);transform: translateY(0)}
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="inner tac">
+            <h1 class="blind">작업물 목록</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+
+            <table class="intro-tbl">
+                <caption class="blind">작업물 목록</caption>
+                <colgroup>
+                   <col>
+                   <col>
+                   <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Num</th>
+                        <th>파일</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-orderedList="ddd">
+                        <td><a href="http://150.24.218.64:8080/flex" title=""><span data-orderedList-text="ddd">Flex 가이드</span></a></td>
+                        <td></td>
+                    </tr>
+                    <tr data-orderedList="ddd">
+                        <td><a href="http://150.24.218.64:8080/temp" title=""><span data-orderedList-text="ddd">기획전 템플릿 가이드</span></a></td>
+                        <td></td>
+                    </tr>
+                    <tr data-orderedList="ddd">
+                        <td><a href="http://150.24.218.64:8080/css" title=""><span data-orderedList-text="ddd">css 공통 가이드</span></a></td>
+                        <td></td>
+                    </tr>
+                    <tr data-orderedList="ddd">
+                        <td><a href="http://150.24.218.64:8080/img" title=""><span data-orderedList-text="ddd">이미지 포지션 값 추출기</span></a></td>
+                        <td></td>
+                    </tr>
+                    <tr data-orderedList="ddd">
+                        <td><a href="http://150.24.218.64:8080/talk" title=""><span data-orderedList-text="ddd">주작 톡</span></a></td>
+                        <td></td>
+                    </tr>
+                    <tr data-orderedList="ddd">
+                        <td><a href="http://150.24.218.64:8080/resp" title=""><span data-orderedList-text="ddd">반응형 컴포넌트 가이드</span></a></td>
+                        <td></td>
+                    </tr>
+                    <tr data-orderedList="ddd">
+                        <td><a href="http://150.24.218.64:8080/swiper" title=""><span data-orderedList-text="ddd">스와이퍼 돔컨트롤 사용 가이드</span></a></td>
+                        <td></td>
+                    </tr>
+                    <tr data-orderedList="ddd">
+                        <td><a href="http://150.24.218.64:8080/repe" title=""><span data-orderedList-text="ddd">테스트1</span></a></td>
+                        <td></td>
+                    </tr>
+                    <tr data-orderedList="ddd">
+                        <td><a href="http://150.24.218.64:8080/out" title=""><span data-orderedList-text="ddd">아웃룩</span></a></td>
+                        <td></td>
+                    </tr>
+                    <tr data-orderedList="ddd">
+                        <td><a href="http://150.24.218.64:8080/guide" title=""><span data-orderedList-text="ddd">가이드1</span></a></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="inner"></div>
+    </div>
+</div>
+</body>
+</html>
