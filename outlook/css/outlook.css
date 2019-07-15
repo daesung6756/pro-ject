@@ -10,12 +10,12 @@ button {cursor:pointer;}
 .container {height:calc(100% - 203px)}
 .container .content {max-width:100%;margin:0;height:100%;}
 .container .flex-frame {display:flex;height:100% !important;padding-top:5px;}
-.container .flex-frame .flex-item {position:relative;height:100% !important;padding:10px 5px;overflow:hidden;}
+.container .flex-frame .flex-item {position:relative;height:100% !important;padding:10px 5px;}
 .container .flex-frame .flex-item.aside,
 .container .flex-frame .flex-item.list {border-right:1px solid #ddd;height:100% !important}
 .container .flex-frame .flex-item.aside .item-body {height:calc(100% - 164px) !important}
 .container .flex-frame .flex-item.aside .scrollbar-wrap {height:100%}
-.container .flex-frame .flex-item.aside {width:200px;min-width:60px;}
+.container .flex-frame .flex-item.aside {width:200px;min-width:42px;}
 .container .flex-frame .flex-item.list,
 .container .flex-frame .flex-item.view {padding:10px;min-width:320px;}
 .container .flex-frame .flex-item.view {flex-grow:1}
@@ -178,11 +178,12 @@ button {cursor:pointer;}
 .event-hiddenLayer:hover + .hidden-layer {display:block;}
 
 /* --------------------- aside ------------------------------- */
-.flex-item.aside {flex-basis: 500px;background:#fbfbfb}
+.flex-item.aside {background:#fbfbfb;transition: width .2s;width:auto;}
 .flex-item.aside .item-body{position:relative;}
 .flex-item.aside .floating-nav {position:absolute;left:0;bottom:0;width:100%;border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:#e4e4e4;}
-.flex-item.aside .floating-nav .out-list {display:flex;position:relative;}
-.flex-item.aside .floating-nav .out-list > li {position:relative;}
+.flex-item.aside .floating-nav .nav-inner {position:relative;font-size:0;}
+.flex-item.aside .floating-nav .out-list {display:inline-block;position:relative;width:auto;font-size:0;white-space: nowrap;}
+.flex-item.aside .floating-nav .out-list > li {position:relative;display:inline-block;vertical-align: top;}
 .flex-item.aside .floating-nav .out-list > li > a {display:block;width:42px;height:42px;}
 .flex-item.aside .floating-nav .out-list > li:hover > a {background:#cde6f7}
 .flex-item.aside .floating-nav .out-list > li:hover > a.event-hiddenLayer + .hidden-layer {display:block;}
@@ -193,12 +194,24 @@ button {cursor:pointer;}
 .flex-item.aside .floating-nav .out-list > li.is-active .icon-calendar-checked-grey {background:url('../images/icons/icon-calendar-checked-grey-over.png') center center no-repeat;}
 .flex-item.aside .floating-nav .out-list > li.is-active .icon-hexahedron-double-grey {background:url('../images/icons/icon-hexahedron-double-grey-over.png') center center no-repeat;}
 .flex-item.aside .floating-nav .out-list > li.is-active .icon-more-grey {background:url('../images/icons/icon-more-grey-over.png') center center no-repeat;}
-.flex-item.aside .floating-nav .is-more.is-active .hidden-layer{display:block;}
+.flex-item.aside .floating-nav .is-more.is-active .hidden-layer{display:block;z-index:1;}
 .flex-item.aside .floating-nav .is-more .hidden-layer > li.is-fixed {border-bottom:1px dotted #ddd;}
 .flex-item.aside .floating-nav .is-more .hidden-layer > li > a {position:relative;padding:0 20px 0 30px;display:block;background:#fff;text-decoration:none;color:#000;font-size:13px;white-space:nowrap;line-height:24px;bordeR:1px solid #fff;}
 .flex-item.aside .floating-nav .is-more .hidden-layer > li > a .icon {position:absolute;width:16px;height:16px;margin:4px 0 0 4px;}
 .flex-item.aside .floating-nav .is-more .hidden-layer > li:hover > a {background:#ddd;}
 .flex-item.aside .floating-nav .out-list > li.is-more.is-active .hidden-layer {display:block;}
+.flex-item.aside .item-body {height:100%;}
+.flex-item.aside .item-body .group1 {width:auto;overflow:hidden;}
+.flex-item.aside .item-body .group2 {position:relative;width:0;height:0;}
+.flex-item.aside .item-body .group2 ul{position:relative;top:130px;display:flex;transform: rotate(-90deg);}
+.flex-item.aside .item-body .group2 ul li a{display:block;padding:10px;min-width:40px;white-space: nowrap;}
+.flex-item.aside .item-body .group2 ul li a:hover {background:#4eadff;}
+.flex-item.aside.is-mini {transition: width .2s;padding:0;width:42px;}
+.flex-item.aside.is-mini .item-body .group1 {width:0;height:0;}
+.flex-item.aside.is-mini .item-body .group2 {position:relative;width:auto;height:100%;}
+.flex-item.aside.is-mini .floating-nav {background:#fff;}
+.flex-item.aside.is-mini .floating-nav .out-list {position:relative;white-space: normal;}
+.flex-item.aside.is-mini .floating-nav .out-list {}
 
 /* --------------------- list ------------------------------- */
 .flex-item.list .tab-nav{display:flex;padding:10px 0;}
@@ -251,6 +264,12 @@ button {cursor:pointer;}
 .flex-item.list .mail-list-content li.is-active .list-set .desc{font-size:13px;}
 .flex-item.list .mail-list-content li.is-active .select-btn {display:block;background: rgba(45, 86, 169, 1)}
 .flex-item.list .mail-list-content li.is-selected {background:#cde6f7;outline:1px dotted #000;z-index:100;}
+
+.flex-item.list .item-group {position:relative;}
+.flex-item.list .item-group.padding-right-type {padding-right:100px;}
+.flex-item.list .item-group .search-fillter {position:absolute;top:0;right:0;z-index:10;}
+.flex-item.list .item-group .search-fillter .drop-list {display:none;background:#fff;}
+.flex-item.list .item-group .search-fillter.is-show .drop-list{display:block;}
 
 /* --------------------- view ------------------------------- */
 .flex-item.view .mail-section-wrap {height:100% !important;}
@@ -340,6 +359,9 @@ button {cursor:pointer;}
 .mail-section .sign .desc-before-box > span {position:absolute;left:0;line-height:24px;font-weight:bold;color:#999;}
 .mail-section .sign .desc-before-box > a {font-weight:bold;color:#000;text-decoration:underline}
 .mail-section .sign .desc-before-box + .desc-type2 {margin-top:5px;}
+
+/* jquery css reset */
+.ui-resizable-e {cursor:col-resize;}
 
 @-webkit-keyframes fadeSlideIn {
     0%{margin-left:10px;opacity:0;}

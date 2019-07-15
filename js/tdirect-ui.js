@@ -256,6 +256,7 @@ var UI = {
                 $content.eq(index).show();
 
                 var txt = $(this).find("a").text();
+                console.log(txt);
                 var $tgArea = $(this).parents('.tab-sub-wrap').find('.g-invisible');
                 $tgArea.text(txt);
             });

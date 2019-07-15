@@ -166,20 +166,27 @@
             </div>
             <div class="sub-nav tab-container" >
                 <div class="tab-content is-show" id="tab1-1">
-                    <div class="column">
+                    <div class="column case1">
                         <ul class="cc" style="display:flex;">
                             <li><a href="" class="icon-btn"><i class="icon icon-email-line"></i><br><span>새 <br>전자 메일</span></a></li>
                             <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>새 항목</span></a></li>
                         </ul>
                         <p>새로 만들기</p>
                     </div>
-                    <div class="column">
+                    <div class="column case2">
                         <ul class="" style="display:flex;">
                             <li>
                                 <ul class="row-ul">
                                     <li><a href=""><i class="icon icon-email-line"></i><span>무시</span></a></li>
                                     <li><a href=""><i class="icon icon-email-line"></i><span>정리</span></a></li>
-                                    <li><a href=""><i class="icon icon-email-line"></i><span>정크</span></a></li>
+                                    <li>
+                                        <a href=""><i class="icon icon-email-line"></i><span>정크</span></a>
+                                        <div class="drop-area">
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>삭제</span></a></li>
@@ -187,7 +194,7 @@
                         </ul>
                         <p>삭제</p>
                     </div>
-                    <div class="column">
+                    <div class="column case3">
                         <ul class="" style="display:flex;">
                             <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>회신</span></a></li>
                             <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>전체<br>회신</span></a></li>
@@ -202,7 +209,7 @@
                         </ul>
                         <p>응답</p>
                     </div>
-                    <div class="column">
+                    <div class="column case4">
                         <ul>
                             <li></li>
                             <li></li>
@@ -212,7 +219,7 @@
                         </ul>
                         <p>빠른 단계</p>
                     </div>
-                    <div class="column">
+                    <div class="column case5">
                         <ul>
                             <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>이동</span></a></li>
                             <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>규칙</span></a></li>
@@ -220,7 +227,7 @@
                         </ul>
                         <p>이동</p>
                     </div>
-                    <div class="column">
+                    <div class="column case6">
                         <ul>
                             <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>읽지 않음/<br>읽음</span></a></li>
                             <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>범주</span></a></li>
@@ -228,7 +235,7 @@
                         </ul>
                         <p>태그</p>
                     </div>
-                    <div class="column">
+                    <div class="column case7">
                         <ul class="row-ul">
                             <li><input type="text"></li>
                             <li><a href=""><i class="icon icon-email-duo"></i><span>주소록</span></a></li>
@@ -236,13 +243,13 @@
                         </ul>
                         <p>찾기</p>
                     </div>
-                    <div class="column">
+                    <div class="column case8">
                         <ul>
                             <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>소리내어<br>읽기</span></a></li>
                         </ul>
                         <p>음성</p>
                     </div>
-                    <div class="column">
+                    <div class="column case9">
                         <ul>
                             <li><a href="" class="icon-btn"><i class="icon icon-email-duo"></i><br><span>추가 기능<br>가져오기</span></a></li>
                         </ul>
@@ -428,137 +435,173 @@
             <div class="flex-frame">
 
                 <div class="flex-item aside">
-                    <div class="flex-body">
-                        <div class="aside-list accordian single-type">
-                            <div class="accordian-head single-ellipsis"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>즐겨찾기</div>
-                            <div class="accordian-panel">
-                                <ul>
-                                    <li><a href="">받은 편지함</a></li>
-                                    <li><a href="">보낸 편지함</a></li>
-                                    <li><a href="">지운 편지함</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="scrollbar-wrap scrollbar-inner">
-                            <div class="aside-list accordian single-type line-quarter">
-                                <div class="accordian-head single-ellipsis"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button><a href="">daesung.lee4@parther.sk.com</a></div>
+                    <div class="item-body">
+                        <div class="group1">
+                            <div class="aside-list accordian single-type">
+                                <div class="accordian-head single-ellipsis"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>즐겨찾기</div>
                                 <div class="accordian-panel">
                                     <ul>
                                         <li><a href="">받은 편지함</a></li>
-                                        <li><a href="">임시 보관함</a></li>
                                         <li><a href="">보낸 편지함</a></li>
                                         <li><a href="">지운 편지함</a></li>
-                                        <li><a href="">RSS 피드</a></li>
-                                        <li><a href="">보낼 편지함</a></li>
-                                        <li><a href="">정크 메일</a></li>
-                                        <li><a href="">검색 폴더</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="aside-list accordian single-type">
-                            <div class="accordian-head single-ellipsis"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button><a href="">daesung.lee@emotion.co.kr</a></div>
-                            <div class="accordian-panel">
-                                <ul>
-                                    <li><a href="">받은 편지함</a></li>
-                                    <li><a href="">임시 보관함</a></li>
-                                    <li><a href="">보낸 편지함</a></li>
-                                    <li><a href="">지운 편지함</a></li>
-                                    <li><a href="">RSS 피드</a></li>
-                                    <li><a href="">twd 받은 편지함</a></li>
-                                    <li><a href="">twd 보낸 편지함</a></li>
-                                    <li><a href="">대화 내용</a></li>
-                                    <li><a href="">보관</a></li>
-                                    <li><a href="">보낼 편지함</a></li>
-                                    <li><a href="">정크 메일</a></li>
-                                    <li><a href="">검색 폴더</a></li>
-                                </ul>
-                                <div class="aside-list accordian single-type">
-                                    <div class="accordian-head single-ellipsis"><button type="button" class="open-panel is-active"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>그룹</div>
+                            <div class="scrollbar-wrap scrollbar-inner">
+                                <div class="aside-list accordian single-type line-quarter">
+                                    <div class="accordian-head single-ellipsis"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button><a href="">daesung.lee4@parther.sk.com</a></div>
                                     <div class="accordian-panel">
                                         <ul>
-                                            <li><a href="">TWD 운영기획 99개 초과</a></li>
-                                            <li><a href="">TWD</a></li>
-                                            <li><a href="">e-motion FIG</a></li>
+                                            <li><a href="">받은 편지함</a></li>
+                                            <li><a href="">임시 보관함</a></li>
+                                            <li><a href="">보낸 편지함</a></li>
+                                            <li><a href="">지운 편지함</a></li>
+                                            <li><a href="">RSS 피드</a></li>
+                                            <li><a href="">보낼 편지함</a></li>
+                                            <li><a href="">정크 메일</a></li>
+                                            <li><a href="">검색 폴더</a></li>
                                         </ul>
+                                    </div>
+                                </div>
+                                <div class="aside-list accordian single-type">
+                                    <div class="accordian-head single-ellipsis"><button type="button" class="open-panel"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button><a href="">daesung.lee@emotion.co.kr</a></div>
+                                    <div class="accordian-panel">
+                                        <ul>
+                                            <li><a href="">받은 편지함</a></li>
+                                            <li><a href="">임시 보관함</a></li>
+                                            <li><a href="">보낸 편지함</a></li>
+                                            <li><a href="">지운 편지함</a></li>
+                                            <li><a href="">RSS 피드</a></li>
+                                            <li><a href="">twd 받은 편지함</a></li>
+                                            <li><a href="">twd 보낸 편지함</a></li>
+                                            <li><a href="">대화 내용</a></li>
+                                            <li><a href="">보관</a></li>
+                                            <li><a href="">보낼 편지함</a></li>
+                                            <li><a href="">정크 메일</a></li>
+                                            <li><a href="">검색 폴더</a></li>
+                                        </ul>
+                                        <div class="aside-list accordian single-type">
+                                            <div class="accordian-head single-ellipsis"><button type="button" class="open-panel is-active"><i class="icon icon-down-black-arrow"></i><span class="blind">목록 열기</span></button>그룹</div>
+                                            <div class="accordian-panel">
+                                                <ul>
+                                                    <li><a href="">TWD 운영기획 99개 초과</a></li>
+                                                    <li><a href="">TWD</a></li>
+                                                    <li><a href="">e-motion FIG</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="group2">
+                            <ul>
+                                <li><a href="">메뉴1</a></li>
+                                <li><a href="">메뉴2</a></li>
+                                <li><a href="">메뉴3</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="floating-nav">
-                        <ul class="out-list list-active">
-                            <li><a href=""><i class="icon icon-calendar-grey"></i><span class="blind">메일 리스트</span></a></li>
-                            <li><a href=""><i class="icon icon-email-fill-grey"></i><span class="blind">달력</span></a></li>
-                            <li>
-                                <a href="" class="event-hiddenLayer"><i class="icon icon-find-user-grey"></i><span class="blind">사용자</span></a>
-                                <div class="hidden-layer offset-c">
+                        <div class="nav-inner">
+                            <ul class="out-list list-active">
+                                <li><a href=""><i class="icon icon-calendar-grey"></i><span class="blind">메일 리스트</span></a></li>
+                                <li><a href=""><i class="icon icon-email-fill-grey"></i><span class="blind">달력</span></a></li>
+                                <li>
+                                    <a href="" class="event-hiddenLayer"><i class="icon icon-find-user-grey"></i><span class="blind">사용자</span></a>
+                                    <div class="hidden-layer offset-c">
 
-                                </div>
-                            </li>
-                            <li>
-                                <a href="" class="event-hiddenLayer"><i class="icon icon-calendar-checked-grey"></i><span class="blind">작업</span></a>
-                                <div class="hidden-layer offset-c">
-                                </div>
-                            </li>
-                            <li>
-                                <a href="" class="event-hiddenLayer"><i class="icon icon-hexahedron-double-grey"></i><span class="blind">추가 기능</span></a>
-                                <div class="hidden-layer offset-c">
-                                </div>
-                            </li>
-                            <li class="is-more">
-                                <a href="" class="event-over-list"><i class="icon icon-more-grey"></i><span class="blind">더보기</span></a>
-                                <ul class="hidden-layer">
-                                    <li class="is-fixed"><a href="">탐색 옵션</a></li>
-                                    <li><a href="">메뉴2</a></li>
-                                    <li><a href="">메뉴3</a></li>
-                                    <li><a href="">메뉴4</a></li>
-                                    <li><a href="">메뉴5</a></li>
-                                    <li><a href="">메뉴6</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="event-hiddenLayer"><i class="icon icon-calendar-checked-grey"></i><span class="blind">작업</span></a>
+                                    <div class="hidden-layer offset-c">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="event-hiddenLayer"><i class="icon icon-hexahedron-double-grey"></i><span class="blind">추가 기능</span></a>
+                                    <div class="hidden-layer offset-c">
+                                    </div>
+                                </li>
+                                <li class="is-more">
+                                    <a href="" class="event-over-list"><i class="icon icon-more-grey"></i><span class="blind">더보기</span></a>
+                                    <ul class="hidden-layer">
+                                        <li class="is-fixed"><a href="">탐색 옵션</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <div class="flex-item list tabs">
 
                     <div class="item-head">
-                        <div class="field-set btn-type">
-                            <input type="text" class="form-set" id="mailSearch">
-                            <label for="mailSearch"><button type="button" class="form-btn"><i class="icon icon-search-glass"></i><span class="blind">검색</span></button></label>
-                            <div class="search-option select">
-                                <select>
-                                    <option value="현재 폴더">현재 폴더</option>
-                                    <option value="하위 폴더">하위 폴더</option>
-                                    <option value="현재 사서함">현재 사서함</option>
-                                    <option value="모든 사서함">모든 사서함</option>
-                                    <option value="모든 Outlook 항목">모든 Outlook 항목</option>
-                                </select>
-                                <button type="button" class="mail-drop-btn">모든 사서함<i class="icon icon-down-black-arrow"></i></button>
-                                <ul class="drop-list">
-                                    <li><a href="">현재 폴더</a></li>
-                                    <li><a href="">하위 폴더</a></li>
-                                    <li><a href="">현재 사서함</a></li>
-                                    <li><a href="">모든 사서함</a></li>
-                                    <li><a href="">모든 Outlook 항목</a></li>
-                                </ul>
+                        <div class="item-group">
+                            <div class="field-set btn-type">
+                                <input type="text" class="form-set" id="mailSearch">
+                                <label for="mailSearch"><button type="button" class="form-btn"><i class="icon icon-search-glass"></i><span class="blind">검색</span></button></label>
+                                <div class="search-option select">
+                                    <select>
+                                        <option value="현재 폴더">현재 폴더</option>
+                                        <option value="하위 폴더">하위 폴더</option>
+                                        <option value="현재 사서함">현재 사서함</option>
+                                        <option value="모든 사서함">모든 사서함</option>
+                                        <option value="모든 Outlook 항목">모든 Outlook 항목</option>
+                                    </select>
+                                    <button type="button" class="mail-drop-btn">모든 사서함<i class="icon icon-down-black-arrow"></i></button>
+                                    <ul class="drop-list">
+                                        <li><a href="">현재 폴더</a></li>
+                                        <li><a href="">하위 폴더</a></li>
+                                        <li><a href="">현재 사서함</a></li>
+                                        <li><a href="">모든 사서함</a></li>
+                                        <li><a href="">모든 Outlook 항목</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <ul class="tab-nav">
-                           <li class="is-active"><a href="#tab2-1">모든 항목</a></li>
-                           <li><a href="#tab2-2">읽지 않음</a></li>
-                        </ul>
-                        <div>
-                            <div class="search-fillter">
-                                <button type="button">읽지 않음: 기준 날짜<i class="icon"></i></button>
-                                <div class="drop-list">
-                                    <p></p>
-                                    <div>
-                                        <input type="radio" name="dddd1">
-                                        <input type="radio" name="dddd1">
-                                        <input type="radio" name="dddd1">
-                                        <input type="radio" name="dddd1">
+                        <div class="item-group padding-right-type">
+                            <ul class="tab-nav">
+                               <li class="is-active"><a href="#tab2-1">모든 항목</a></li>
+                               <li><a href="#tab2-2">읽지 않음</a></li>
+                            </ul>
+                            <div>
+                                <div class="search-fillter">
+                                    <button type="button">기준 날짜<i class="icon"></i></button>
+                                    <div class="drop-list">
+                                        <div>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="">모든 메일(M)</a></li>
+                                                <li><a href="">읽지 않은 메일(R)</a></li>
+                                                <li><a href="">멘션 된 메일(E)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p>정렬 기준</p>
+                                            <ul>
+                                                <li><a href="">날짜(D)</a></li>
+                                                <li><a href="">보낸 사람(F)</a></li>
+                                                <li><a href="">받는 사람(T)</a></li>
+                                                <li><a href="">범주(E)</a></li>
+                                                <li><a href="">플래그 상태(L)</a></li>
+                                                <li><a href="">플래그 시작 날짜(G)</a></li>
+                                                <li><a href="">플래그 기한(U)</a></li>
+                                                <li><a href="">크기(S)</a></li>
+                                                <li><a href="">제목(J)</a></li>
+                                                <li><a href="">종류(Y)</a></li>
+                                                <li><a href="">첨부파일(A)</a></li>
+                                                <li><a href="">계정(O)</a></li>
+                                                <li><a href="">중요도(I)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p>정</p>
+                                            <ul>
+                                                <li><a href="">최신(N)을(를) 맨 위</a></li>
+                                                <li><a href="">내림차 순(L)을(를) 맨 위</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1122,8 +1165,8 @@
                 </div>
 
                 <div class="flex-item view">
-                    <div class="flex-inner">
-                        <div class="flex-head">
+                    <div class="item-inner">
+                        <div class="item-head">
                             <ul class="util">
                                 <li><a href=""><i class="icon icon-reply-email"></i><span>회신</span></a></li>
                                 <li><a href=""><i class="icon icon-all-reply-email"></i><span>전체회신</span></a></li>
