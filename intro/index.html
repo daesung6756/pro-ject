@@ -5,109 +5,244 @@
     <title>작업물 리스트</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/intro.css">
     <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/intro-table-data.js"></script>
     <script src="js/front-ui.js"></script>
-    <style>
-        .header,
-        .content,
-        .footer {position:relative;}
-        .blind{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
-        table.intro-tbl th {border-top:1px solid #ddd;border-bottom:1px solid #ddd;text-align:center;padding:10px;}
-        table.intro-tbl th + th {border-left:1px solid #ddd;}
-        table.intro-tbl td {border-bottom:1px solid #ddd;text-align:left;padding:8px 10px;line-height:1.4;font-size:14px;}
-        table.intro-tbl td a {display:block;overflow:hidden;}
-        table.intro-tbl td a span{display:inline-block;}
-        table.intro-tbl td + td {border-left:1px solid #ddd;}
-        table.intro-tbl td:nth-child(1){background:#ddd;text-align:center;}
-        table.intro-tbl .num-box {display:inline-block;min-width:25px;font-size:11px;text-align:center;border:1px solid #aaa;border-radius:5px;background:#fff;padding:5px;}
-
-        .ani-slide-down-up {animation: slideUpDown .5s forwards;}
-
-        @-webkit-keyframes slideUpDown {
-            0% {-webkit-transform: translateY(0);transform: translateY(0)}
-            50% {-webkit-transform: translateY(100%);transform: translateY(100%)}
-            51% {-webkit-transform: translateY(-100%);transform: translateY(-100%)}
-            100% {-webkit-transform: translateY(0);transform: translateY(0)}
-        }
-        @keyframes slideUpDown {
-            0% {-webkit-transform: translateY(0);transform: translateY(0)}
-            50% {-webkit-transform: translateY(100%);transform: translateY(100%)}
-            51% {-webkit-transform: translateY(-100%);transform: translateY(-100%)}
-            100% {-webkit-transform: translateY(0);transform: translateY(0)}
-        }
-    </style>
 </head>
-<body>
+<body class="bb-theme">
 <div class="wrap">
     <div class="header">
-        <div class="inner tac">
-            <h1 class="blind">작업물 목록</h1>
+        <div class="inner">
+            <div class="flex-section">
+                <div class="flex-article-10">
+                    <h1 class="tit h1-ani-group">
+                        <span class="img1"><img src="images/icons/apple-logo.png" alt=""></span>
+                        <span class="text1">그 많은</span>
+                        <span class="text2">누가 다 먹었나</span>
+                    </h1>
+                </div>
+<!--                <div class="flex-article-3">-->
+<!--                    <ul class="gnb">-->
+<!--                        <li><a href="" target="_blank">Gnb 1</a></li>-->
+<!--                        <li><a href="" target="_blank">Gnb 2</a></li>-->
+<!--                        <li><a href="" target="_blank">Gnb 3</a></li>-->
+<!--                        <li><a href="" target="_blank">Gnb 4</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="flex-article-2">-->
+<!--                    <ul class="util-list">-->
+<!--                        <li><a href="" target="_blank">util 1</a></li>-->
+<!--                        <li><a href="" target="_blank">util 2</a></li>-->
+<!--                        <li><a href="" target="_blank">util 3</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+            </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container mt50">
         <div class="content">
 
-            <table class="intro-tbl">
-                <caption class="blind">작업물 목록</caption>
-                <colgroup>
-                   <col>
-                   <col>
-                   <col>
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>Num</th>
-                        <th>파일</th>
-                        <th>비고</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr data-orderedList="ddd">
-                        <td><a href="http://150.24.218.64:8080/flex" title=""><span data-orderedList-text="ddd">Flex 가이드</span></a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-orderedList="ddd">
-                        <td><a href="http://150.24.218.64:8080/temp" title=""><span data-orderedList-text="ddd">기획전 템플릿 가이드</span></a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-orderedList="ddd">
-                        <td><a href="http://150.24.218.64:8080/css" title=""><span data-orderedList-text="ddd">css 공통 가이드</span></a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-orderedList="ddd">
-                        <td><a href="http://150.24.218.64:8080/img" title=""><span data-orderedList-text="ddd">이미지 포지션 값 추출기</span></a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-orderedList="ddd">
-                        <td><a href="http://150.24.218.64:8080/talk" title=""><span data-orderedList-text="ddd">주작 톡</span></a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-orderedList="ddd">
-                        <td><a href="http://150.24.218.64:8080/resp" title=""><span data-orderedList-text="ddd">반응형 컴포넌트 가이드</span></a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-orderedList="ddd">
-                        <td><a href="http://150.24.218.64:8080/swiper" title=""><span data-orderedList-text="ddd">스와이퍼 돔컨트롤 사용 가이드</span></a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-orderedList="ddd">
-                        <td><a href="http://150.24.218.64:8080/repe" title=""><span data-orderedList-text="ddd">테스트1</span></a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-orderedList="ddd">
-                        <td><a href="http://150.24.218.64:8080/out" title=""><span data-orderedList-text="ddd">아웃룩</span></a></td>
-                        <td></td>
-                    </tr>
-                    <tr data-orderedList="ddd">
-                        <td><a href="http://150.24.218.64:8080/guide" title=""><span data-orderedList-text="ddd">가이드1</span></a></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- section -->
+            <div class="section">
+                <h2 class="tit">iNTRO</h2>
+                <div class="flex-section">
+                    <div class="flex-article-5">
+                        <div class="article-inner left">
+                            <strong>※ H TITLE 정의</strong>
+                            <h1 class="tit d-sign mt20">H1 TITLE 공간<span class="desc h1-type">※ 이곳은 h1 보조 알림</span></h1>
+                            <p class="desc h1-type">※ 이곳은 h1 타입의 보조 설명</p>
+
+                            <h2 class="tit d-sign mt20">H2 TITLE 공간<span class="desc">※ 이곳은 h2 보조 알림</span></h2>
+                            <p class="desc h2-type">※ 이곳은 h2 타입의 보조 설명.</p>
+
+                            <h3 class="tit d-sign mt20">H3 TITLE 공간<span class="desc">※ 이곳은 h2 보조 알림</span></h3>
+                            <p class="desc h3-type">※ 이곳은 h3 타입의 보조 설명.</p>
+
+                            <h4 class="tit d-sign mt20">H4 TITLE 공간<span class="desc">※ 이곳은 h2 보조 알림</span></h4>
+                            <p class="desc h4-type">※ 이곳은 h4 타입의 보조 설명.</p>
+
+                            <h5 class="tit d-sign mt20">H5 TITLE 공간<span class="desc">※ 이곳은 h2 보조 알림</span></h5>
+                            <p class="desc h5-type">※ 이곳은 h5 타입의 보조 설명.</p>
+
+                            <h6 class="tit d-sign mt20">H6 TITLE 공간<span class="desc">※ 이곳은 h2 보조 알림</span></h6>
+                            <p class="desc h6-type">※ 이곳은 h6 타입의 보조 설명.</p>
+                        </div>
+                    </div>
+                    <div class="flex-article-5">
+                        <div class="article-inner right">
+                            <h2 class="tit d-sign ">Col - Table<span class="desc">※ 실제 Json 파일 활용시 json 호출 필요.</span></h2>
+                            <p class="desc h2-type">※ data json 형태로 호출.</p>
+
+                            <!-- col table -->
+                            <div class="intro-tbl-col mt20"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section -->
+            <div class="section">
+                <h3 class="tit box-type fc-blue">접근성 체크 리스트<span class="desc">Row - Table Group (Json)</span></h3>
+                <ul class="tabs-nav">
+                    <li><a href="markup" data-tab="ddd" class="is-active">마크업</a></li>
+                    <li><a href="uxui" data-tab="ddd">기획(UX/UI)</a></li>
+                    <li><a href="develop" data-tab="ddd">개발</a></li>
+                </ul>
+                <div class="section-article mt30" data-tab-content="ddd">
+                    <h3 class="tit c-sign">마크업<span class="desc">※ 최종수정일:2014.06.09</span></h3>
+                    <p class="desc h3-type">※ 이 체크리스트는 <strong>NHN Web Content Accessibility Guidelines (NWCAG) 1.0</strong>를 기반으로 실무에서 살펴봐야 하는 항목들을 제시합니다.</p>
+                    <!-- row table -->
+                    <div class="intro-tbl-row mt20"></div>
+                </div>
+
+                <div class="section-article mt30" data-tab-content="ddd">
+                    <h3 class="tit c-sign">기획(UX/UI)<span class="desc">※ 최종수정일:2014.06.09</span></h3>
+                    <p class="desc h3-type">※ 이 체크리스트는 <strong>NHN Web Content Accessibility Guidelines (NWCAG) 1.0</strong>를 기반으로 실무에서 살펴봐야 하는 항목들을 제시합니다.</p>
+                    <!-- row table -->
+                    <div class="intro-tbl-row2 mt20"></div>
+                </div>
+
+                <div class="section-article mt30" data-tab-content="ddd">
+                    <h3 class="tit c-sign">개발<span class="desc">※ 최종수정일:2014.06.09</span></h3>
+                    <p class="desc h3-type">※ 이 체크리스트는 <strong>NHN Web Content Accessibility Guidelines (NWCAG) 1.0</strong>를 기반으로 실무에서 살펴봐야 하는 항목들을 제시합니다.</p>
+                    <!-- row table -->
+                    <div class="intro-tbl-row3 mt20"></div>
+                </div>
+            </div>
+
+            <!-- section -->
+            <div class="section">
+                <h3 class="tit box-type fc-blue">접근성 평가 도구 소개<span class="desc">※ 출처 - <a href="https://www.wah.or.kr:444/Participation/online-wah.asp" target="_blank" title="새창열기">웹 접근성 연구소</a></span></h3>
+                <div>
+                    <div class="section-article dot-top-line">
+                        <div class="mt20"><h4 class="tit">Open-WAX</h4></div>
+                        <ul class="list-01 b-dash mt20">
+                            <li>
+                                <span class="bold-9 fc-white">프로그램 명 : Open-WAX</span>
+                            </li>
+                            <li>
+                                <span class="bold-9 fc-white">이미지</span>
+                                <ul class="list-02 mt10">
+                                    <li><img src="https://www.wah.or.kr:444/images/Guide/Open-wax.gif" alt="Open-WAX 프로그램 이미지"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="bold-9 fc-white">특징</span>
+                                <ul class="list-02 b-circle mt10">
+                                    <li>브라우저 플러그인 방식(Firefox, Chrome 등과 함께 사용)</li>
+                                    <li>1 페이지씩 검사</li>
+                                    <li>16개 항목 검사</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="bold-9 fc-white">설치방법</span>
+                                <ul class="list-02 b-circle mt10">
+                                    <li><span>Chrome</span> 브라우저 &gt; 도구 더보기 &gt; 확장 프로그램 &gt; “OpenWAX” 검색</li>
+                                    <li><span>FireFox</span> 브라우저 &gt; 도구 &gt; 부가기능 &gt; “openwax” 검색</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="section-article dot-top-line">
+                        <div class="mt20"><h4 class="tit">WAVE</h4></div>
+                        <ul class="list-01 b-dash mt20">
+                            <li><span class="bold-9 fc-white">프로그램 명 : WAVE</span></li>
+                            <li><span class="bold-9 fc-white">이미지</span>
+                                <ul class="list-02 b-circle mt10">
+                                    <li><img src="https://www.wah.or.kr:444/images/Guide/wave.gif" alt="WAVE 프로그램 이미지"></li>
+                                </ul>
+                            </li>
+                            <li><span class="bold-9 fc-white">특징</span>
+                                <ul class="list-02 b-circle mt10">
+                                    <li>서비스 페이지 및 브라우저 플러그인 방식 제공</li>
+                                    <li>1 페이지씩 검사</li>
+                                    <li>검사 결과를 요청한 페이지 위에 직관적인 형태로 표시</li>
+                                </ul>
+                            </li>
+                            <li><span class="bold-9 fc-white">제작 : </span>WebAIM</li>
+                            <li><span class="bold-9 fc-white">설치방법</span>
+                                <ul class="list-02 b-circle mt10">
+                                    <li>서비스 페이지 : <a href="http://wave.webaim.org" class="blue" title="WAVE 다운로드 접속">http://wave.webaim.org</a> 접속</li>
+                                    <li><span>Chrome</span> 브라우저 &gt; 도구 더보기 &gt; 확장 프로그램 &gt; “WAVE” 검색</li>
+                                    <li><span>FireFox</span> 브라우저 &gt; 도구 &gt; 부가기능 &gt; “WAVE” 검색</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="section-article dot-top-line">
+                        <div class="mt20"><h4 class="tit">AChecker</h4></div>
+                        <ul class="list-01 b-dash mt20">
+                            <li><span class="bold-9 fc-white">프로그램 명 : AChecker</span></li>
+                            <li><span class="bold-9 fc-white">이미지</span>
+                                <ul class="list-02 mt10">
+                                    <li><img src="https://www.wah.or.kr:444/images/Guide/wave.gif" alt="AChecker 프로그램 이미지"></li>
+                                </ul>
+                            </li>
+                            <li><span class="bold-9 fc-white">특징</span>
+                                <ul class="list-02 b-circle mt10">
+                                    <li>서비스 페이지 제공</li>
+                                    <li>URL, HTML 파일, HTML 마크업 평가지원</li>
+                                    <li>옵션을 제공하여, 접근성 준수수준(Level) 등을 지정하여 평가 가능</li>
+                                </ul>
+                            </li>
+                            <li><span class="bold-9 fc-white">제작 : </span>University of Toronto</li>
+                            <li><span class="bold-9 fc-white">설치방법</span>
+                                <ul class="list-02 mt10">
+                                    <li>URL : <a href="http://achecker.ca/checker/" class="blue" title="AChecker 다운로드 접속">http://achecker.ca/checker/</a> 접속</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="section-article dot-top-line">
+                        <div class="mt20"><h4 class="tit">Colour Contrast Analyser</h4></div>
+                        <ul class="list-01 b-dash mt20">
+                            <li><span class="bold-9 fc-white">프로그램 명 : Colour Contrast Analyser</span></li>
+                            <li><span class="bold-9 fc-white">이미지</span>
+                                <ul class="list-02 b-circle mt10">
+                                    <li><img src="https://www.wah.or.kr:444/images/Guide/Colour_Contrast_Analyser.gif" alt="Colour Contrast Analyser 프로그램 이미지"></li>
+                                </ul>
+                            </li>
+                            <li><span class="bold-9 fc-white">특징</span>
+                                <ul class="list-02 b-circle mt10">
+                                    <li>응용 소프트웨어 방식(설치 프로그램 별도제공)</li>
+                                    <li>1 페이지씩 검사</li>
+                                    <li>16개 항목 검사(전문가의 판단을 도움)</li>
+                                </ul>
+                            </li>
+                            <li><span class="bold-9 fc-white">제작 : </span>The Paciello Group</li>
+                            <li><span class="bold-9 fc-white">설치방법</span>
+                                <ul class="list-02 b-circle mt10">
+                                    <li>URL : <a href="https://www.paciellogroup.com/resources/contrastanalyser/" class="blue" title="Colour Contrast Analyser 다운로드 접속">https://www.paciellogroup.com/resources/contrastanalyser/</a> 접속 후 다운로드</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt20"><h4 class="tit">해외 웹 접근성 평가도구 리스트</h4></div>
+                    <ul class="list-01 b-dash mt20">
+                        <li>W3C 홈페이지에 소개되어 있는 웹 접근성 평가도구 리스트(89개)를 아래 페이지에서 확인 가능
+                            <ul class="list-02 b-circle mt10">
+                                <li>URL : <a href="https://www.w3.org/WAI/ER/tools/" class="blue" title="W3C 홈페이지 접속">https://www.w3.org/WAI/ER/tools/</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
-        <div class="inner"></div>
+        <div class="inner">
+            <div class="address-group">
+                <p>777, Cheonhoyet-gil, Gangdong-gu, Seoul, Republic of Korea</p>
+                <p class="mt10">통신판매업 어쩌구 저쩌구 : 42342323 호</p>
+                <p class="mt10">copyright @Lee dae-sung.</p>
+            </div>
+        </div>
     </div>
 </div>
 </body>
