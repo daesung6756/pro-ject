@@ -1,7 +1,7 @@
 const colOption1 = [
-    {key:'num', headline:'Num', width:'40px'},
-    {key:'file', headline:'파일',width:'auto'},
-    {key:'etc', headline:'비고',width:'150px'}
+    {key:'num', headline:'Num', width:'40px', align:'center',indent:'0'},
+    {key:'file', headline:'파일',width:'auto',align:'left',indent:'5px'},
+    {key:'etc', headline:'비고',width:'34px',align:'center',indent:'0'}
 ];
 const rowData1 = [
     {'file':'Twd 기획전 템플릿 가이드', 'url':'http://150.24.218.42:8080/temp', 'target':'_blank', 'etc':'·'},
@@ -18,7 +18,7 @@ const rowData1 = [
 ];
 
 const rowTableColOption = [
-    {key:'ths', width:'150px', align:'center', valign:'middle'},
+    {key:'ths', width:'20%', align:'center', valign:'middle'},
     {key:'content',width:'auto', align:'left',valign:'top'},
 ];
 const rowData2 = [

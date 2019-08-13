@@ -30,6 +30,14 @@ body {background:#272626}
 
 .tooltip {position:absolute;left:50%;bottom:100%;transform:translateX(-50%);margin-left:0;margin-bottom:20px;background:#db712e;color:#fff;border-radius:10px;padding:10px;line-height:1.2;text-align:left;box-shadow: 10px 10px 10px 0 rgba(0,0,0,.2);font-size:12px;white-space:nowrap;}
 
+.field-set.search-bar {position:relative;display:inline-block;padding:0 30px;height:50px;background: #ffffff;border-radius:10px;font-size:0;}
+.field-set.search-bar input {position:relative;display:inline-block;width:200px;height:100%;border:0;z-index:1;background:#fff;}
+.field-set.search-bar .search-btn{display:inline-block;padding:15px;margin:0;transform: translateX(-50px);vertical-align:top;border:0;transition: transform .3s;cursor:pointer;}
+.field-set.search-bar .search-btn .icon {background: #b3b3b3;transform:translateX(-190px);transition: transform .3s;}
+.field-set.search-bar input:focus {outline: none;}
+.field-set.search-bar input:focus + .search-btn {position:relative;transform: translateX(0);}
+.field-set.search-bar input:focus + .search-btn .icon{background:#000;transform: translateX(0)}
+
 @keyframes bgActive {
     0%{background:#ff8080}
     50%{background:#fff;}

@@ -107,6 +107,14 @@ let UI = {
             });
         });
     },
+    asearchBar: function(z){
+        let $this = $(el);
+        let $list = $()
+        let $word = $(this).val();
+        $('.accordian-list li').hide(0);
+        let temp = $('.accordian-list li .question .tit:contains(' + $word + ')');
+        $(temp).parents('li').show();
+    }
 };
 
 $(function() {

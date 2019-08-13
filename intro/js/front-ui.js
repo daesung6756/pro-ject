@@ -6,6 +6,10 @@ let UI = {
         this.tableRowDraw('.intro-tbl-row', rowTableColOption, rowData2);
         this.tableRowDraw('.intro-tbl-row2',rowTableColOption, rowData3);
         this.tableRowDraw('.intro-tbl-row3',rowTableColOption, rowData4);
+        this.toggleClassTarget('.overlay.d-right', '.tbl-event-btn', 'is-show');
+        this.tooltip();
+        this.headetStickyEvent();
+        this.scrollTopStickyBtn();
     },
     tabs: function(){
         let $hash = window.location.href;
@@ -57,11 +61,11 @@ let UI = {
 
                     $.each($col, function (j, dt) {
                         if (dt["key"] === 'file') {
-                            $(makeTr).append('<td><a href="' + row['url'] + '" title="' + row[dt["key"]] + ' 바로가기" target="' + row['target'] + '"><span class="event-span">' + row[dt["key"]] + '</span></a></td>');
+                            $(makeTr).append('<td style="text-align:' + dt["align"] + ';text-indent:' + dt["indent"] + '"><a href="' + row['url'] + '" title="' + row[dt["key"]] + ' 바로가기" target="' + row['target'] + '"><span class="event-span">' + row[dt["key"]] + '</span></a></td>');
                         } else if (dt["key"] === 'num') {
-                            $(makeTr).append('<td><span class="num-box">' + i + '</span></td>');
+                            $(makeTr).append('<td style="text-align:' + dt["align"] + ';text-indent:' + dt["indent"] + '"><span class="num-box">' + i + '</span></td>');
                         } else {
-                            $(makeTr).append('<td>' + row[dt["key"]] + '</td>');
+                            $(makeTr).append('<td style="text-align:' + dt["align"] + ';text-indent:' + dt["indent"] + '">' + row[dt["key"]] + '</td>');
                         }
 
                     });
@@ -103,18 +107,126 @@ let UI = {
         }
     },
     tableAni : function (tname, aname){
-        var $tableTr = $(tname +' tbody tr'),
+        let $tableTr = $(tname +' tbody tr'),
             currentHighlight = 0,
             N = 2;
+
         $tableTr.eq(0).addClass(aname);
         setInterval(function(){
             currentHighlight = (currentHighlight + 1) % $tableTr.length;
             $tableTr.removeClass(aname).eq(currentHighlight).addClass(aname);
         },N * 1000);
     },
+    photoListAni: function(sec) {
+        let $listLi =  $('.photo-list li'),
+            currentHighlight = 0,
+            N = sec;
+
+            if($aniEvent !== true){
+                $listLi.eq(0).addClass("ani-on");
+                let $inter = setInterval(function () {
+                    currentHighlight = (currentHighlight + 1) % $listLi.length;
+                    $listLi.eq(currentHighlight).addClass("ani-on");
+                    console.log("인터벌 클리어 확인");
+                    if ((currentHighlight + 1) === $listLi.length) {
+                        clearInterval($inter);
+                        return false;
+                    }
+                }, N * 100);
+                $aniEvent = true;
+            } else {
+                return false;
+            }
+
+    },
+    tooltip: function () {
+        let tooltipGroup = [];
+        $('[data-tooltip]').each(function() {
+            if($.inArray($(this).data('tooltip') , tooltipGroup) === -1){
+                tooltipGroup.push($(this).data('tooltip'));
+            }
+        });
+
+        $.each(tooltipGroup , function(key, value) {
+            let $target = $('[data-tooltip=\''+ value +'\']');
+
+            $target.on('mouseenter',function(){
+                let dataValue = value.replace(" ", "&nbsp;");
+
+                if($(this).find('.tooltip').length !== 1){
+                    let $makeTools = $(this).append('<span class="tooltip"></span>');
+                    let $thisToolTip = $(this).find('.tooltip');
+
+                    $thisToolTip.html(dataValue);
+
+                    let $width = $(window).width();
+                    let $toolTipOffsetLeft = $thisToolTip.offset().left;
+                    let $toolTipOffsetRight = $toolTipOffsetLeft + $thisToolTip.outerWidth();
+                    let $moveOffset = ($toolTipOffsetRight - $width) + 20;
+
+                    if($toolTipOffsetRight > $width) {
+                        $thisToolTip.css({'marginLeft': -($moveOffset) + 'px'});
+                    }
+
+                } else {
+                    return false;
+                }
+
+            }).mouseleave(function() {
+                $(this).find('.tooltip').remove('.tooltip');
+                return false;
+            });
+        });
+    },
+    toggleClassTarget : function ( el, el2 , className ){
+        let $el = $(el);
+        let $clickEl = el2;
+        let $eventClass = className;
+
+        $(document).on('click', $clickEl, function(){
+            let $title = $(this).attr('title');
+            if($el.hasClass($eventClass)){
+                $el.removeClass($eventClass);
+                $(this).attr('title','리스트 열기');
+            } else {
+                $el.addClass($eventClass);
+                $(this).attr('title','리스트 닫기');
+            }
+        });
+    },
+    headetStickyEvent : function(){
+        let $html = $('html, body');
+        let $wrap = $('.wrap');
+        let $this = $('.header');
+        let $htmlScrollTop = $html.scrollTop();
+        let $elHeight = parseInt($this.innerHeight());
+        if($htmlScrollTop > $elHeight){
+            $this.addClass('is-fixed');
+        } else {
+            $this.removeClass('is-fixed');
+        }
+    },
+    scrollTopStickyBtn: function() {
+        let $html = $('html, body');
+        let $htmlScrollTop = $html.scrollTop();
+    }
 };
 
-
+let $aniEvent = false;
 $(document).ready(function(){
     UI.init();
+});
+$(window).on('scroll', function(){
+    let $photoListWrap = $('.photo-list').offset().top/2;
+    let $scrollTop = $('html, body').scrollTop();
+
+
+    if($scrollTop > $photoListWrap ) {
+        UI.photoListAni('2');
+    }
+    UI.headetStickyEvent();
+    UI.scrollTopStickyBtn();
+});
+$(window).on('resize', function(){
+    UI.tooltip();
 });

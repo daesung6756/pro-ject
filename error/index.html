@@ -20,8 +20,8 @@
     <div class="container">
         <div class="content">
             <div class="field-set search-bar">
+                <span class="icon-musica-searcher" style="font-size:20px;"></span>
                 <input type="text" id="searchBar">
-                <label for="searchBar" class="search-btn">검색</label>
             </div>
             <div class="section">
                 <h2 class="tit">Errors</h2>
@@ -34,13 +34,8 @@
     </div>
 </div>
 <script>
-    $(document).on('click', '.search-btn', function(){
-        let $word = $(this).siblings('input[id="searchBar"]').val();
-        let $lists = datas.qa;
+    $(document).on('keyup', '#searchBar', function(){
 
-        $.each($lists, function(key, value){
-            console.log($lists[key].quest);
-        });
     })
 </script>
 </body>
