@@ -1,9 +1,9 @@
-const colOption1 = [
+var colOption1 = [
     {key:'num', headline:'Num', width:'40px', align:'center',indent:'0'},
     {key:'file', headline:'파일',width:'auto',align:'left',indent:'5px'},
     {key:'etc', headline:'비고',width:'34px',align:'center',indent:'0'}
 ];
-const rowData1 = [
+var rowData1 = [
     {'file':'Twd 기획전 템플릿 가이드', 'url':'http://150.24.218.42:8080/temp', 'target':'_blank', 'etc':'·'},
     {'file':'Css 공통 가이드', 'url':'http://150.24.218.42:8080/css', 'target':'_blank', 'etc':'·'},
     {'file':'반응형 컴퍼넌트 가이드', 'url':'http://150.24.218.42:8080/resp', 'target':'_blank', 'etc':'·'},
@@ -15,13 +15,14 @@ const rowData1 = [
     {'file':'Flex 가이드', 'url':'http://150.24.218.42:8080/flex', 'target':'_blank', 'etc':'·'},
     {'file':'이미지 포지션 값 추출기', 'url':'http://150.24.218.42:8080/img', 'target':'_blank', 'etc':'·'},
     {'file':'Console Error 정리', 'url':'http://150.24.218.42:8080/error', 'target':'_blank', 'etc':'·'},
+    {'file':'커피 자판기', 'url':'http://150.24.218.42:8080/machine', 'target':'_blank', 'etc':'·'},
 ];
 
-const rowTableColOption = [
+var rowTableColOption = [
     {key:'ths', width:'20%', align:'center', valign:'middle'},
     {key:'content',width:'auto', align:'left',valign:'top'},
 ];
-const rowData2 = [
+var rowData2 = [
     {'ths':'필수', 'content':'이미지(그림, 사진, 로고, 차트, 다이어그램, 배경처리된 이미지, 동적으로 제공하는 이미지, 플래시의 Name값 등)에 적절한 대체 텍스트를 제공하는가?'},
     {'ths':'-', 'content': 'table에 caption이 적절하게 선언되었는가?'},
     {'ths':'-', 'content':'thead,tbody,tfoot으로 그룹핑 되어 있는가? (th로 그룹핑 안될경우 thead생략가능, tbody만 있을 경우 tbody생략 가능)'},
@@ -36,7 +37,7 @@ const rowData2 = [
     {'ths':'-', 'content':'폼 콘트롤 요소에는 적절한 label을 제공하며, 폼 콘트롤 요소의 id값과 label의 for값을 동일하게 제공하는가?'},
 ];
 
-const rowData3 = [
+var rowData3 = [
     {'ths':'필수', 'content':'[권고] 이미지(그림, 사진, 로고, 차트, 다이어그램, 배경처리된 이미지, 동적으로 제공하는 이미지, 플래시의 Name값 등)를 제공하는 서비스의 운영 어드민에 대체 텍스트 입력을 위한 입력필드가 마련되어 있는가?'},
     {'ths':'필수', 'content':'정보전달을 위한 영상 및 음성 정보에 텍스트(자막, 원고) 또는 수화를 제공하는가?'},
     {'ths':'필수', 'content':'캡차 사용 시, 이미지 캡차 이외에도 다른 대체 수단(음성,이메일,OTP인증 등)을 제공하는가?'},
@@ -52,7 +53,7 @@ const rowData3 = [
     {'ths':'-', 'content':'사용자가 의도하지 않은 기능(초점 변화, 서식 전송, 새 창, 팝업, 레이어)이 실행된 곳은 없는가?'},
 ];
 
-const rowData4 = [
+var rowData4 = [
     {'ths':'-', 'content':'프레임이 사용될 때 프레임의 제목이 title 속성 값에 제대로 반영이 되었는가?'},
     {'ths':'-', 'content':'사용자 입력 오류가 발생했을 시, 사용자에게 알려주고 수정이 필요한 곳에 포커스가 이동하는가?'},
 ];

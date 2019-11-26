@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>인천 | 매장 컨설팅 리포트</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery-3.3.0.min.js"></script>
+    <script type="text/javascript" src="js/plugin/plotly/plotly.min.js"></script>
+    <script type="text/javascript" src="js/polyfill/typedarray.js"></script>
+    <script type="text/javascript" src="js/front-ui-graph2.js"></script>
+    <script src="https://api2.sktelecom.com/tmap/js?version=1&format=javascript&appKey=05cf64b4-680b-4c4d-9ca9-744dd73068c7"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <!–[if lt IE 9]>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]–>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="inner tac">
+                <h1 class="title">인천중구대리점 송도신도시직영점 '매장 컨설팅 리포트'</h1>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div class="container">
+            <div class="content">
+
+                <section class="section">
+                    <h2 class="title">당월 유무선 실적 변화</h2>
+                    <div class="layout-row">
+                        <div class="column n2 full-line n2 desc-group-type1">
+                            <div class="ib-row">
+                                <div class="column n2">
+                                    <h3 class="title">당월 무선 실적(누적)</h3>
+                                    <strong class="block-type">73<span>건</span></strong>
+                                    <em class="block-type fc-blue">당월 예상 건수 <span>112</span>건</em>
+                                    <div class="desc-type1">중고기변 제외<br>데이터함께 쓰기 제외<br>2nd Device 제외</div>
+                                </div>
+                                <div class="column n2">
+                                    <h3 class="title">당월 유선 실적(누적)</h3>
+                                    <strong class="block-type">4<span>건</span></strong>
+                                    <em class="block-type fc-blue">당월 예상 건수 <span>4</span>건</em>
+                                    <div class="desc-type1">온가족 프리,<br>온가족 플랜,<br>온가족 무료 고려</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column n2 full-line" style="height:302px">
+                            <h3 class="title">최근 4주간 주차별 실적 Trend</h3>
+                            <div class="table-wrap">
+                                <table class="table-col">
+                                    <caption class="blind">최근 4간 주차별 실적 목록</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">주</th>
+                                            <th scope="col">010</th>
+                                            <th scope="col">MNP</th>
+                                            <th scope="col">기변</th>
+                                            <th scope="col">합계</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>4주전</td>
+                                            <td>7(17%)</td>
+                                            <td>5(12%)</td>
+                                            <td>29(70%)</td>
+                                            <td>41건</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3주전</td>
+                                            <td>5(17%)</td>
+                                            <td>1(3%)</td>
+                                            <td>22(78%)</td>
+                                            <td>28건</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2주전</td>
+                                            <td>7(25%)</td>
+                                            <td>5(17%)</td>
+                                            <td>16(57%)</td>
+                                            <td>28건</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1주전</td>
+                                            <td>3(17%)</td>
+                                            <td>0(0%)</td>
+                                            <td>14(82%)</td>
+                                            <td>17건</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layout-row">
+                        <div class="column full-line" style="width:750px;">
+                            <h3 class="title">연간 무선 실적 Trend <span class="sub-text">*5건 미만 텍스트 미표시</span></h3>
+                            <div id="graph1">
+
+                            </div>
+                        </div>
+                        <div class="column full-line" style="margin-left:10px;width:240px;height:358px">
+                            <h3 class="title">Coaching Tip</h3>
+                            <p class="desc">인천중구대리점 송도신도시직영점은 2018년 10월 무선실적이 총 73건으로 월말까지 112건이 예상됩니다.<br>월별 실적 트렌트를 보면 옆의 그래프와 같이 감소추세입니다. 전월과 비교하면 MNP의 변화가 두드러질것으로 예상되며 약 50% 감소할것으로 보입니다. 타사 고객 유치를 위한 인근 거주, 유동인구 분석이 필요합니다.</p>
+                        </div>
+                    </div>
+
+                    <h2 class="title">실적상세 분석</h2>
+                    <div class="layout-row">
+                        <div class="column n4 full-line">
+                            <div id="graph2">
+                            </div>
+                            <div id="graph2table">
+
+                            </div>
+                        </div>
+                        <div class="column n4 full-line">
+                            <div id="graph3">
+                            </div>
+                            <div id="graph3table">
+
+                            </div>
+                        </div>
+                        <div class="column n4 full-line">
+                            <div id="graph4">
+                            </div>
+                            <div id="graph4table">
+
+                            </div>
+                        </div>
+                        <div class="column n4 full-line" style="height:592px;">
+                            <h3 class="title">Coaching Tip</h3>
+                            <p class="desc">인천중구대리점 송도신도시직영점에서 지난 8주간 제조사를 기준으로 보면 삼성 단말 판매 비중은 67.7%, LG 단말 판매 비중은 13.1%, 애플 단말 판매 비중은 11.8%이며, 그 중에서도 삼성 단말기는 인천마케팅팀의 비중(72.2%)과 비교하면 4.5% 낮은 수치를 보여줍니다.<br><br>연령대 별로 살펴보면 10대 고객의 비중이 높으며 10대 고객의 비중(17.7%)은 인천마케팅팀 차원에서는 Top 5에 들지 못할정도로 낮습니다.<br><br>마지막으로, 요금제별로 보면 29이하 고객의 비중이 높으며 29이하 요금제 고객의 비중(48.3%)은 인천마케팅팀의 비중(48.8%)과 비교하면 0.5% 낮은 수치를 보여줍니다.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+
+                    <div class="box-grey-desc">
+                        금주차에는 매장의 '영향반경'과 '독점지수' 및 인구분포(유동, 거주, 내방, 유치) 등의 정보를 제공하고 있습니다.<br>'영향반경(초록색 원)'은 새롭게 정의된 용어로 '해당 매장에서 구매하는 고객이 주로 어디에 거주하는 지'를 역추적해낸 지수입니다.<br>- 사용자는 영향반경을 통해 어느 정도 거리 내의 고객이 매장에 오는 지 알 수 있습니다.(거주지/직장 추정 위치 기준)<br><br>'독점지수' 역시 새롭게 정의된 용어로 '매장 주변에 거주하는 고객이 주로 어떤 매장에 방문하는 지'를 뽑은 지수입니다.<br>- 사용자는 독점지수를 통해 해당 매장의 지역 내 차지하는 영향력을 알 수 있습니다.
+                    </div>
+
+                    <div class="layout-row">
+                        <div class="column" style="width:100%;height:450px;">
+                            <div id="map_div_multi">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layout-row full-line">
+                        <div class="column n3">
+                            <h3 class="title2 tac">해당 지역 내 매장의 영향반경 분포</h3>
+                            <div class="table-wrap">
+                                <table class="table-col">
+                                    <caption class="blind">해당 지역 내 매장의 영향반경 분포</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>매장 명</th>
+                                            <th>영향반경</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>참스타대리점<br>남동공단직영점</td>
+                                            <td>1.543 km</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PS&M1 대리점<br>송도점</td>
+                                            <td>1.22 km</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PS&M1 대리점<br>연수구청점</td>
+                                            <td>1.135 km</td>
+                                        </tr>
+                                        <tr>
+                                            <td>연수청학대리점<br>본점</td>
+                                            <td>0.978 km</td>
+                                        </tr>
+                                        <tr>
+                                            <td>인천중구대리점<br>송도신도시직영점</td>
+                                            <td>0.935 km</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="column n3">
+                            <h3 class="title2 tac">해당 지역 내 매장의 독점지수 분포</h3>
+                            <div class="table-wrap">
+                                <table class="table-col">
+                                <caption class="blind">해당 지역 내 매장의 독점지수 분포</caption>
+                                <thead>
+                                <tr>
+                                    <th>매장 명</th>
+                                    <th>독점지수</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>인천중구 대리점<br>인천중구 글로벌점</td>
+                                    <td>86.7%</td>
+                                </tr>
+                                <tr>
+                                    <td>인천중구 대리점<br>지식정보역점</td>
+                                    <td>75.0%</td>
+                                </tr>
+                                <tr>
+                                    <td>참스타 대리점<br>동춘직영점</td>
+                                    <td>60.7%</td>
+                                </tr>
+                                <tr>
+                                    <td>인천중구 대리점<br>옥령시장점</td>
+                                    <td>60.0%</td>
+                                </tr>
+                                <tr>
+                                    <td>인천중구 대리점<br>송도신도시직영점</td>
+                                    <td>37.8%</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                        <div class="column n3">
+                            <div id="graph5"></div>
+                        </div>
+                    </div>
+
+                    <div class="layout-row full-line">
+                        <div class="column">
+                            <div id="graphFill">
+
+                            </div>
+                            <div class="grey-desc"><span>매장 인근 유동인구, 내방고객, 구매고객의 연령 분포는 위의 그래프와 같습니다. (X축: 연령대, Y축 고객 비율)</span></div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="section">
+                    <div class="layout-row full-line desc-group-type2">
+                        <div class="ib-row">
+                            <div class="column n3">
+                                <strong class="title block-type">수도권마케팅본부</strong>
+                                <em class="desc block-type">전월 무선 판매량: <span>87906</span>건</em>
+                                <div id="graph6">
+
+                                </div>
+                                <div id="graph9">
+
+                                </div>
+                            </div>
+                            <div class="column n3">
+                                <strong class="title block-type">송도동</strong>
+                                <em class="desc block-type">전월 무선 판매량: <span>457</span>건</em>
+                                <div id="graph7">
+
+                                </div>
+                                <div id="graph10">
+
+                                </div>
+                            </div>
+                            <div class="column n3">
+                                <strong class="title block-type">인천중구대리점 송도신도시직영점</strong>
+                                <em class="desc block-type">전월 무선 판매량: <span>146</span>건</em>
+                                <div id="graph8">
+
+                                </div>
+                                <div id="graph11">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layout-row">
+                        <div class="column" style="width:500px;height:236px;">
+                            <!-- tmap-->
+                            <div id="map_div1" class="map-wrap"></div>
+                            <!-- //tmap-->
+                        </div>
+                        <div class="column n2 desc-group-type5">
+                            <div class="pd-inner">
+                                <p class="desc">인천중구대리점 송도신도시직영점 반경 1km에는 <br>8개의 경쟁사 매장, 8개의 판매점, 3개의 소매매장이 위치하고 있습니다.<br><br>인근 1km 내에서 판매량이 가장 많은 매장은<br>PS&M1 대리점 송도점입니다.<br>PS&M1 대리점 송도점은 입지기반 예상판매량 대비 판매량이 8건 적고,<br>인천중구대리점 송도신도시직영점은 입지기반 예상판매량 대비 판매량이 14건 많습니다.<br>또한 내방고객 판매율은 인천중구대리점 송도신도시직영점이<br>PS&M1 대리점 송도점에 비해 5.5% 적습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layout-row">
+                        <div class="ib-row">
+                            <div class="column n2">
+                                <div class="grey-tit tac mr5">인천중구대리점 송도신도시직영점</div>
+                            </div>
+                            <div class="column n2">
+                                <div class="grey-tit tac ml5">PS&M1 대리점 송도점</div>
+                            </div>
+                        </div>
+                        <div class="tbl-wrap">
+                            <table class="tbl-col">
+                                <caption class="blind">인천중구대리점 송도신도시직영점과 PS&M1 대리점 송도점 판매량 리스트</caption>
+                                <colgroup>
+                                    <col style="width:33%">
+                                    <col>
+                                    <col style="width:33%">
+                                </colgroup>
+                                <tr>
+                                    <td><em>146</em></td>
+                                    <td><em>전월 무선 실적</em></td>
+                                    <td><em>83</em></td>
+                                </tr>
+                                <tr>
+                                    <td><em>132</em></td>
+                                    <td><em>입지기반 예상판매량</em></td>
+                                    <td><em>91</em></td>
+                                </tr>
+                                <tr>
+                                    <td><em>22.4%</em></td>
+                                    <td><em>내방대비 판매량</em></td>
+                                    <td><em>27.9%</em></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">단말기 판매<br>Top-5</td>
+                                </tr>
+                            </table>
+                            <div class="ib-row">
+                                <div class="column n2">
+                                    <div id="graph12"></div>
+                                </div>
+                                <div class="column n2">
+                                    <div id="graph13"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="section">
+                    <div class="layout-row">
+                        <h2 class="title2">인천중구대리점 송도신도시직영점에서, 구매한 고객 거주지 추정 (최근 3개월 기준)</h2>
+                        <div class="ib-row">
+                            <div class="column" style="width:600px;height:322px;">
+                                <div id="map_div2" class="map-wrap"></div>
+                            </div>
+                            <div class="column desc-group-type3">
+                                <div class="full-line">
+                                    <strong class="title">구매고객의 주 거주지: 송도동<br>거주지 추정 기준:</strong><br>
+                                    <p class="desc">- 무선신호 기반의 고객추정위치</p>
+                                </div>
+                                <div class="full-line">
+                                    <h3 class="title2">Coaching Tip</h3>
+                                    <p class="desc">왼쪽 그림은 인천중구대리점 송도신도시직영점에서<br>구매한 고객들의 거주지를 추정한 결과입니다.<br>색깔이 짙을수록 최근 3개월 내 단말기를 구매한<br>고객이 많이 거주한다는 의미이며, 그림 상에서<br>주로 송도동에 거주한다는 사실을 알 수 있습니다.<br>따라서 해당 지역에 거주하는 고객들 대상으로<br>적극적인 홍보가 필요합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout-row">
+                        <h2 class="title2">PS&M1 대리점 송도점 매장에서, 구매한 고객 거주지 추정 (최근 3개월 기준)</h2>
+                        <div class="ib-row">
+                            <div class="column" style="width:600px;height:322px;">
+                                <div id="map_div3" class="map-wrap"></div>
+                            </div>
+                            <div class="column desc-group-type3">
+                                <div class="full-line">
+                                    <strong class="title">구매고객의 주 거주지: 송도동<br>거주지 추정 기준:</strong><br>
+                                    <p class="desc">- 무선신호 기반의 고객추정위치</p>
+                                </div>
+                                <div class="full-line">
+                                    <h3 class="title2">Coaching Tip</h3>
+                                    <p class="desc">왼쪽 그림은 PS&M1 대리점 송도점에서<br>구매한 고객들의 거주지를 추정한 결과입니다.<br>마찬가지로, 색깔이 짙을수록<br>고객이 많이 거주한다는 의미이며,<br>인천중구대리점 송도신도시직영점의 주 고객 추정 거주지와<br>동일합니다. 따라서 해당 지역에 거주민들 대상으로<br>적극적이고 차별화된 홍보가 필요합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout-row desc-group-type4">
+                        <h2 class="title2">상권(매장 기준 반경 1km 이내 거주 추정 고객 대상) 내 채널별 경쟁 현황</h2>
+                        <div class="ib-row full-line ">
+                            <div class="column n2">
+                                <h3 class="title">상권 내 소매채널 비율</h3>
+                                <div class="ib-row">
+                                    <div class="column">
+                                        <div id="graph14"></div>
+                                    </div>
+                                    <div class="column">
+                                        <table class="tbl-col2">
+                                            <caption class="blind">상권 내 소매채널 비율 목록</caption>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">건수(점유비)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>소매</td>
+                                                <td>192 (46%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>도매</td>
+                                                <td>221 (53%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>기타</td>
+                                                <td>1 (0%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>본 매장</td>
+                                                <td>51 (12%)</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column n2">
+                                <h3 class="title">Coaching Tip</h3>
+                                <p class="desc">해당 상권의 소매 비율은 46%, 도매 비율은 53% 이며<br>그 중 인천중구대리점 송도신도시직영점이 차지하는 비중은 12% 수준입니다.<br>해당 상권 도매 채널을 통해 가장 많이 팔리는 단말은 갤럭시노트9이며,<br>소매 대비하여 상대적으로 판매 비중이 높은 단말은 갤럭시 A8 Star입니다.<br>갤럭시 A8 Star 단말의 판매 경쟁력 향상을 위한<br>판매 단가 점검, 재고 확보 등이 필요합니다.</p>
+                            </div>
+                        </div>
+                        <div class="ib-row full-line">
+                            <div class="column n2">
+                                <h3 class="title">소매채널 단말기 판매 Top 5</h3>
+                                <div class="ib-row">
+                                    <div class="column">
+                                        <table class="tbl-col2">
+                                            <caption class="blind">소매채널 단말기 판매 목록</caption>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">단말기명</th>
+                                                <th scope="col">건수(점유비)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>갤럭시노트9</td>
+                                                <td>51 (26%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>갤럭시 WIDE3</td>
+                                                <td>31 (16%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>갤럭시 S9</td>
+                                                <td>16 (8%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>아이폰 8</td>
+                                                <td>13 (6%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>아이폰 X</td>
+                                                <td>9 (4%)</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="column">
+                                        <div id="graph15"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column n2">
+                                <h3 class="title">도매채널 단말기 판매 Top 5</h3>
+                                <div class="ib-row">
+                                    <div class="column">
+                                        <table class="tbl-col2">
+                                            <caption class="blind">도매채널 단말기 판매 목록</caption>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">단말기명</th>
+                                                <th scope="col">건수(점유비)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>갤럭시 노트9</td>
+                                                <td>66 (29%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>갤럭시 S9</td>
+                                                <td>22 (9%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>갤럭시 WIDE3</td>
+                                                <td>19 (8%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>갤럭시 A8 Star</td>
+                                                <td>16 (7%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>갤럭시노트 8</td>
+                                                <td>12 (5%)</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="column">
+                                        <div id="graph16"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- //container -->
+
+        <!-- footer -->
+        <footer id="footer" class="footer">
+
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+</html>

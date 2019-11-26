@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>스터디 | 탭</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery-3.3.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <style>
+        .dummy-list {margin-top:10px;}
+        .dummy-list:after {content:'';display:block;clear:both;}
+        .dummy-list li {float:left;}
+        .dummy-list li + li {margin-left:5px;}
+        .dummy-list button{padding:5px; background:#fff;border:1px solid #ddd;cursor:pointer;font-size:0;}
+        .dummy-list .icon + span {vertical-align:top;margin-left:10px; font-size:12px;}
+        .dummy-list li.on button {border:1px solid #f70000}
+        .dummy-list li.on .icon-mt-share {background-image:url('images/icons/icon-share-red.png')}
+        .dummy-list li.on .icon + span {color:#f70000}
+        .dummy-list .icon {width:14px;height:14px;}
+    </style>
+    <!–[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]–>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="inner">
+            <h1>Tabs</h1>
+            <p>date : 2019.04.30</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">0. Guide</h2>
+                <ul style="margin-top:10px;">
+                    <li style="position:relative;padding:4px 0;"><strong class="fc-blue">data-tab="value" 메뉴에 삽입</strong></li>
+                    <li style="position:relative;padding:4px 0;"><strong class="fc-blue">data-tab-content="value" 탭 컨텐츠에 삽입</strong></li>
+                    <li style="line-height:1.4;font-size:14px;">data-tab="value" (length) === data-tab-content="value" (length) <br>갯수는 동일 해야된다. data-tab="value" index와 data-tab-content="value"의 index를 매칭하기 때문이다.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">1. Default (1 Depth)</h2>
+                <div>
+                    <ul class="dummy-list">
+                        <li data-tab="test1" class="on"><button type="button" title="공유하기 탭1" ><i class="icon icon-mt-share"><span class="blind">탭 1 활성화<</span></i><span>공유하기 1</span></button></li>
+                        <li data-tab="test1" class="" ><button type="button" title="공유하기 탭2" ><i class="icon icon-mt-share"><span class="blind">탭 2 활성화<</span></i><span>공유하기 2</span></button></li>
+                        <li data-tab="test1" class="" ><button type="button" title="공유하기 탭3" ><i class="icon icon-mt-share"><span class="blind">탭 3 활성화<</span></i><span>공유하기 3</span></button></li>
+                    </ul>
+                </div>
+                <div class="" data-tab-content="test1">
+                    <ol style="padding:20px;line-height:1.6">
+                        <li>우선순위 1. <a href="">instagram</a></li>
+                        <li>우선순위 2. <a href="">kakao Talk</a></li>
+                        <li>우선순위 3. <a href="">Facebook</a></li>
+                    </ol>
+                </div>
+                <div class="" data-tab-content="test1">
+                    <ol style="padding:20px;line-height:1.6">
+                        <li>우선순위 1. <a href="">instagram</a></li>
+                        <li>우선순위 2. <a href="">Facebook</a></li>
+                        <li>우선순위 3. <a href="">kakao Talk</a></li>
+                    </ol>
+                </div>
+                <div class="" data-tab-content="test1">
+                    <ol style="padding:20px;line-height:1.6">
+                        <li>우선순위 1. <a href="">Facebook</a></li>
+                        <li>우선순위 2. <a href="">kakao Talk</a></li>
+                        <li>우선순위 3. <a href="">instagram</a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">2. 1 Depth + Fade effect</h2>
+                <p class="section-tit-desc"><strong class="fc-red">data-tab="value" class="fade-effect"</strong></p>
+                <div>
+                    <ul class="dummy-list">
+                        <li data-tab="test2" class="fade-effect on"><button type="button" title="공유하기 탭1" ><i class="icon icon-mt-share"><span class="blind">탭 1 활성화<</span></i><span>공유하기 1</span></button></li>
+                        <li data-tab="test2" class="fade-effect" ><button type="button" title="공유하기 탭2" ><i class="icon icon-mt-share"><span class="blind">탭 2 활성화<</span></i><span>공유하기 2</span></button></li>
+                        <li data-tab="test2" class="fade-effect" ><button type="button" title="공유하기 탭3" ><i class="icon icon-mt-share"><span class="blind">탭 3 활성화<</span></i><span>공유하기 3</span></button></li>
+                    </ul>
+                </div>
+                <div class="" data-tab-content="test2">
+                    <ol style="padding:20px;line-height:1.6">
+                        <li>우선순위 1. <a href="">instagram</a></li>
+                        <li>우선순위 2. <a href="">kakao Talk</a></li>
+                        <li>우선순위 3. <a href="">Facebook</a></li>
+                    </ol>
+                </div>
+                <div class="" data-tab-content="test2">
+                    <ol style="padding:20px;line-height:1.6">
+                        <li>우선순위 1. <a href="">instagram</a></li>
+                        <li>우선순위 2. <a href="">Facebook</a></li>
+                        <li>우선순위 3. <a href="">kakao Talk</a></li>
+                    </ol>
+                </div>
+                <div class="" data-tab-content="test2">
+                    <ol style="padding:20px;line-height:1.6">
+                        <li>우선순위 1. <a href="">Facebook</a></li>
+                        <li>우선순위 2. <a href="">kakao Talk</a></li>
+                        <li>우선순위 3. <a href="">instagram</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">1. 2 Depth (예시)</h2>
+                <div>
+                    <ul class="dummy-list">
+                        <li data-tab="test3" class="on"><button type="button" title="공유하기 탭1" ><i class="icon icon-mt-share"><span class="blind"></span></i><span>공유하기 1</span></button></li>
+                        <li data-tab="test3"><button type="button" title="탭2" ><i class="icon icon-mt-share"><span class="blind"></span></i><span>공유하기 2</span></button></li>
+                        <li data-tab="test3"><button type="button" title="탭3" ><i class="icon icon-mt-share"><span class="blind"></span></i><span>공유하기 3</span></button></li>
+                    </ul>
+                </div>
+                <div class="" data-tab-content="test3">
+                    <div>
+                        <ul class="dummy-list">
+                            <li data-tab="test3-1" class="on"><button type="button" title="공유하기 탭1" ><i class="icon icon-mt-share"><span class="blind"></span></i><span>공유하기 1-1</span></button></li>
+                            <li data-tab="test3-1"><button type="button" title="탭2" ><i class="icon icon-mt-share"><span class="blind"></span></i><span>공유하기 1-2</span></button></li>
+                            <li data-tab="test3-1"><button type="button" title="탭3" ><i class="icon icon-mt-share"><span class="blind"></span></i><span>공유하기 1-3</span></button></li>
+                        </ul>
+                    </div>
+                    <div class="" data-tab-content="test3-1">1</div>
+                    <div class="" data-tab-content="test3-1">2</div>
+                    <div class="" data-tab-content="test3-1">3</div>
+                </div>
+                <div class="" data-tab-content="test3">
+                    <div>
+                        <ul class="dummy-list">
+                            <li data-tab="test3-2" class="on"><button type="button" title="탭1" ><i class="icon icon-mt-share"><span class="blind"></span></i><span>공유하기 2-1</span></button></li>
+                            <li data-tab="test3-2"><button type="button" title="탭2" ><i class="icon icon-mt-share"><span class="blind"></span></i><span>공유하기 2-2</span></button></li>
+                            <li data-tab="test3-2"><button type="button" title="탭3" ><i class="icon icon-mt-share"><span class="blind"></span></i><span>공유하기 2-3</span></button></li>
+                        </ul>
+                    </div>
+                    <div class="" data-tab-content="test3-2">1</div>
+                    <div class="" data-tab-content="test3-2">2</div>
+                    <div class="" data-tab-content="test3-2">3</div>
+                </div>
+                <div class="" data-tab-content="test3">
+                    <div>
+                        <ul class="dummy-list">
+                            <li data-tab="test3-3" class="on"><button type="button" title="탭1" ><i class="icon icon-mt-share"><span class="blind"></span></i><span>공유하기 3-1</span></button></li>
+                            <li data-tab="test3-3"><button type="button" title="탭2" ><i class="icon icon-mt-share"><span class="blind"></span></i><span>공유하기 3-2</span></button></li>
+                            <li data-tab="test3-3"><button type="button" title="탭3" ><i class="icon icon-mt-share"><span class="blind"></span></i><span>공유하기 3-3</span></button></li>
+                        </ul>
+                    </div>
+                    <div class="" data-tab-content="test3-3">1</div>
+                    <div class="" data-tab-content="test3-3">2</div>
+                    <div class="" data-tab-content="test3-3">3</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="inner">
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/tabs.js"></script>
+</body>
+</html>

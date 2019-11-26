@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>스터디 | 스와이퍼 플러그인</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery-3.3.0.min.js"></script>
+    <script type="text/javascript" src="js/plugin/swiper/swiper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/swiper.min.css">
+    <style>
+        /* 임시 스와이퍼 */
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            min-height:300px;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+
+    <!–[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]–>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="inner">
+            <h1>Swiper Plugin</h1>
+            <p>date : 2019.05.30</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">0. Guide</h2>
+                <ul style="margin-top:10px;">
+                    <li style="position:relative;padding:4px 0 4px 20px;"><span class="circle bg-red mr5"></span><strong class="fc-red">단순 클래스만 삽입</strong></li>
+                    <li style="position:relative;padding:4px 0 4px 20px;"><span class="circle bg-blue mr5"></span><strong class="fc-blue">마크업 삽입</strong></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">1. Default</h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=1"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=2"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=3"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=4"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=5"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=6"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=7"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=8"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=9"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=10"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">2. Fade</h2>
+                <p class="section-tit-desc"><strong class="fc-red">class="swiper-container fade-effect"</strong></p>
+                <div class="swiper-container fade-effect">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=1"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=2"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=3"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=4"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=5"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=6"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=7"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=8"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=9"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=10"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">3. loop</h2>
+                <p class="section-tit-desc"><strong class="fc-red">class="swiper-container loop-type"</strong></p>
+                <div class="swiper-container loop-type">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=1"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=2"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=3"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=4"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=5"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=6"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=7"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=8"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=9"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=10"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">4. Navigation</h2>
+                <p class="section-tit-desc"><strong class="fc-blue">class="swiper-button-next", class="swiper-button-prev"</strong></p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=1"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=2"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=3"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=4"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=5"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=6"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=7"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=8"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=9"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=10"></div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">5. Pagination</h2>
+                <p class="section-tit-desc"><strong class="fc-blue">class="swiper-button-next", class="swiper-button-prev"</strong></p>
+                <div class="swiper-container loop-type">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=1"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=2"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=3"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=4"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=5"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=6"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=7"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=8"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=9"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=10"></div>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">6. Navigation + Pagination</h2>
+                <p class="section-tit-desc"><strong class="fc-blue">class="swiper-button-next", class="swiper-button-prev", class="swiper-pagination"</strong></p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=1"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=2"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=3"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=4"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=5"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=6"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=7"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=8"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=9"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=10"></div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">7. 응용 loop + Navigation + Pagination </h2>
+                <p class="section-tit-desc"><strong class="fc-red">class="swiper-container loop-type"</strong> + <br><strong class="fc-blue">class="swiper-button-next", class="swiper-button-prev", class="swiper-pagination"</strong></p>
+                <div class="swiper-container loop-type">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=1"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=2"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=3"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=4"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=5"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=6"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=7"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=8"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=9"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=10"></div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-tit b-dotted-line">8. 응용 fade-effect + Pagination </h2>
+                <p class="section-tit-desc"><strong class="fc-red">class="swiper-container fade-effect"</strong> + <br><strong class="fc-blue">class="swiper-pagination"</strong></p>
+                <div class="swiper-container fade-effect">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=1"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=2"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=3"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=4"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=5"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=6"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=7"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=8"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=9"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/1024x250?text=10"></div>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="inner">
+            <p>Twd 내부 스터디 진행</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/swiper-each.js"></script>
+</body>
+</html>

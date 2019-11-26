@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="../js/underscore.js"></script>
+    <style type="text/css">
+        HTML {BACKGROUND:#a3cca2}
+        table {border-collapse: collapse;border-spacing: 0;}
+        .blind {overflow:hidden;width:1px;height:1px;*height:0;padding:0;margin-top:-1px;font-size:0;line-height:0;text-indent:-999px}
+
+        .circle-point {display:inline-block;width:10px;height:10px;border-radius: 50%;margin-left:5px;}
+        .circle-point.completed {background: rgb(43, 177, 75)}
+        .circle-point.ing {background: rgb(0,158,242)}
+        .circle-point.none {background: rgb(214, 214, 214)}
+
+        .today-date {margin:10px 0;}
+        .today-date > span { font-size:14px; }
+        .today-date > span + span {margin-left:5px;}
+
+        .table-status {madgin-bottom:20px;}
+
+        .table-wrap {margin-top:30px}
+
+        .tb-list1 {width:100%;}
+        .tb-list1 tr:hover {background: rgb(234, 248, 255);}
+        .tb-list1 th ,
+        .tb-list1 td {padding:6px 0;text-align:center;border:1px solid rgb(182, 193, 211);}
+        .tb-list1 th {background: rgb(207, 218, 236);color: #54667d}
+
+        .tac {text-align:center;}
+        .tar {text-align:right;}
+    </style>
+</head>
+<body>
+<div>
+    <h1>Study List</h1>
+    <div>기간 : 2019년 01월 01일 ~ 2019년 12월 31일</div>
+    <div class="today-date tac"></div>
+    <div class="table-status tac">스터디 진행 상태 안내 : <span class="circle-point completed"></span> 완료 ,<span class="circle-point none"></span> 미진행</div>
+</div>
+<div class="table-wrap">
+    <table class="tb-list1">
+        <caption class="blind">프로젝트 진행 목록</caption>
+        <thead>
+        <tr>
+            <th scope="col">1 Depth</th>
+            <th scope="col">2 Depth</th>
+            <th scope="col">3 Depth</th>
+            <th scope="col">날짜</th>
+            <th scope="col">파일명</th>
+            <th scope="col">참석</th>
+            <th scope="col">진행상황</th>
+            <th scope="col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1. T map API</td>
+            <td>·</td>
+            <td>·</td>
+            <td>·</td>
+            <td><a href="tmap_api.html" target="_blank">tmap_api.html</a></td>
+            <td>박효진, 이대성, 김소연</td>
+            <td><span class="circle-point completed"></span></td>
+            <td>·</td>
+        </tr>
+        <tr>
+            <td>2. Plotly plugin</td>
+            <td>·</td>
+            <td>·</td>
+            <td>·</td>
+            <td><a href="plotly_plugin.html" target="_blank">plotly_plugin.html</a></td>
+            <td>박효진, 이대성, 김소연</td>
+            <td><span class="circle-point completed"></span></td>
+            <td>·</td>
+        </tr>
+        <tr>
+            <td>3. Swiper Plugin</td>
+            <td>·</td>
+            <td>·</td>
+            <td>·</td>
+            <td><a href="swiper_plugin.html" target="_blank">swiper_plugin.html</a></td>
+            <td>박효진, 이대성, 김소연</td>
+            <td><span class="circle-point completed"></span></td>
+            <td>·</td>
+        </tr>
+        <tr>
+            <td>4. Tabs</td>
+            <td>·</td>
+            <td>·</td>
+            <td>·</td>
+            <td><a href="tabs.html" target="_blank">tabs.html</a></td>
+            <td>박효진, 이대성, 김소연</td>
+            <td><span class="circle-point completed"></span></td>
+            <td>·</td>
+        </tr>
+        <tr>
+            <td>5. Dim popup</td>
+            <td>·</td>
+            <td>·</td>
+            <td>·</td>
+            <td><a href="dim_popup.html" target="_blank">dim_popup.html</a></td>
+            <td>박효진, 이대성, 김소연</td>
+            <td><span class="circle-point completed"></span></td>
+            <td>·</td>
+        </tr>
+        <tr>
+            <td>6. Toggle </td>
+            <td>·</td>
+            <td>·</td>
+            <td>·</td>
+            <td><a href="toggle.html" target="_blank">toggle.html</a></td>
+            <td>박효진, 이대성, 김소연</td>
+            <td><span class="circle-point completed"></span></td>
+            <td>·</td>
+        </tr>
+        <tr>
+            <td>7. jQuery UI Accordian</td>
+            <td>·</td>
+            <td>·</td>
+            <td>·</td>
+            <td><a href="jquery_ui_accordian.html" target="_blank">jquery_ui_accordian.html</a></td>
+            <td>박효진, 이대성, 김소연</td>
+            <td><span class="circle-point completed"></span></td>
+            <td>·</td>
+        </tr>
+        <tr>
+            <td>8. jQuery UI Tooltip</td>
+            <td>·</td>
+            <td>·</td>
+            <td>·</td>
+            <td><a href="ui_tolltip.html" target="_blank">ui_tolltip.html</a></td>
+            <td>박효진, 이대성, 김소연</td>
+            <td><span class="circle-point completed"></span></td>
+            <td>·</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    function Test () {
+
+    }
+    Test.prototype.method = function() {
+        throw "Not implemented"
+    };
+    (new Test()).method();
+</script>
+<script type="text/javascript">
+    function getTodayDate( el , choice ){
+        var el = $(el),
+            thisDate = new Date(),
+            yyyy = thisDate.getFullYear(),
+            mm = thisDate.getMonth() + 1,
+            dd = thisDate.getDate(),
+            thh = thisDate.getHours(),
+            tmm = thisDate.getMinutes(),
+            tss = thisDate.getSeconds();
+        if(dd < 10){
+            dd = '0' + dd;
+        }
+        if(mm < 10){
+            mm = '0' + mm;
+        }
+        if(thh > 12 ) {
+            thh = 'Pm ' + (thh - 12);
+        } else {
+            thh = 'Am ' + (thh);
+        }
+        if(choice === 'day') {
+            thisDate =
+                '<span class="years">' + yyyy + '년' + '</span>' +
+                '<span class="month">' + mm +'월' +'</span>' +
+                '<span class="day">' + dd +'일' + '</span>';
+        } else if(choice === 'time'){
+            thisDate =
+                '<span class="hour">' + thh + '시' +'</span>' +
+                '<span class="min">' + tmm +'분' +'</span>' +
+                '<span class="sec">' + tss +'초' + '</span>';
+        } else if(choice === 'all'){
+            thisDate =
+                '<span class="years">' + yyyy + '년' + '</span>' +
+                '<span class="month">' + mm +'월' +'</span>' +
+                '<span class="day">' + dd +'일' + '</span>' +
+                '<span class="hour">' + thh + '시' +'</span>' +
+                '<span class="min">' + tmm +'분' +'</span>' +
+                '<span class="sec">' + tss +'초' + '</span>';
+        }
+        el.html(thisDate);
+    }
+    $(document).ready(function() {
+        setInterval(function(){
+            getTodayDate( '.today-date' , 'all' );
+        },1000);
+    });
+
+</script>
+<script>
+
+</script>
+</body>
+</html>

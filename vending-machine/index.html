@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자판기</title>
+    <script src="js/jquery-3.3.0.min.js"></script>
+    <script src="js/underscore.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/vmachine.css" />
+    <!--[if lt IE 9] -->
+        <script src="js/html5shiv.js"></script>
+    <!--[endif]-->
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="inner">
+                <h1 class="tac">커피 자판기</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <div class="machine bs-10">
+                    <div class="machine-inner ibs-10">
+                        <div class="machine-head">
+                            <div class="inner ibs-20">
+                                <span class="txt1">Fail in coffee</span>
+                                <span class="txt2">Forget love,</span>
+                                <span class="txt3">"All you need is love and more coffee."</span>
+                                <p class="txt4"></p>
+                            </div>
+                        </div>
+                        <div class="machine-main row">
+                            <div class="column left">
+                                <ul class="products-list">
+                                    <li>
+                                        <button type="button" class="bs-5" value="500" title="500">
+                                            <span class="pic"><img src="http://m.pinktree.kr/web/product/big/cb348good500.jpg" alt=""></span>
+                                            밀크커피
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="bs-5" value="400" title="400">
+                                            <span class="pic"><img src="http://m.pinktree.kr/web/product/big/cb348good500.jpg" alt=""></span>
+                                            설탕커피
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="bs-5" value="300" title="300">
+                                            <span class="pic"><img src="http://m.pinktree.kr/web/product/big/cb348good500.jpg" alt=""></span>
+                                            프림커피
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="bs-5" value="700" title="700">
+                                            <span class="pic"><img src="http://m.pinktree.kr/web/product/big/cb348good500.jpg" alt=""></span>
+                                            믹스커피
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="bs-5" value="200" title="200">
+                                            <span class="pic"><img src="http://m.pinktree.kr/web/product/big/cb348good500.jpg" alt=""></span>
+                                            블랙커피
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="bs-5" value="100" title="100">
+                                            <span class="pic"><img src="http://m.pinktree.kr/web/product/big/cb348good500.jpg" alt=""></span>
+                                            우유
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="bs-5" value="300" title="300">
+                                            <span class="pic"><img src="http://m.pinktree.kr/web/product/big/cb348good500.jpg" alt=""></span>
+                                            율무차
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="bs-5" value="200" title="200">
+                                            <span class="pic"><img src="http://m.pinktree.kr/web/product/big/cb348good500.jpg" alt=""></span>
+                                            유자차
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="bs-5" value="1000" title="1000">
+                                            <span class="pic"><img src="http://m.pinktree.kr/web/product/big/cb348good500.jpg" alt=""></span>
+                                            쌍화차
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="bs-5" value="500" title="500">
+                                            <span class="pic"><img src="http://m.pinktree.kr/web/product/big/cb348good500.jpg" alt=""></span>
+                                            생강차
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="column right tar">
+                                <div>
+                                    <div class="info-group">
+                                        <div class="select-info">
+                                            <span id="selectProducts" class="">상품명 : 0원</span>
+                                        </div>
+                                        <div class="coin-info ">
+                                            <span id="coins" class="">잔액 : 0원</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt10" style="position:relative;">
+                                        <img src="images/input-coin-bg.png" alt="" style="display:block;width:200px;">
+                                        <button type="button" class="reset-btn" id="coinReset"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="machine-foot">
+                            <div class="inner ibs-70">
+                                <div class="output" id="output"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer"></div>
+        <div class="pocket">
+            <div class="tac"><button class="money w100" value="100"></button></div>
+            <div class="tac mt10"><button class="money w500" value="500"></button></div>
+        </div>
+    </div>
+    <script src="js/machine.js"></script>
+</body>
+</html>

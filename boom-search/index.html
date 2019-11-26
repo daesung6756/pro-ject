@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>지뢰찾기</title>
+    <script src="js/jquery-3.3.0.min.js"></script>
+    <script src="js/underscore.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <style type="text/css">
+        h1 {font-size:24px;font-weight:900;}
+        .header .inner {width:1200px;margin:0 auto;}
+        .container .content {width:1200px;margin:0 auto;}
+
+        .input-set label {display:inline-block;}
+
+        .templete-type1 {padding:10px;border:2px dotted #dddd;}
+        .templete-type1 input[type="number"] {border:2px solid #909090;height:40px;text-indent:10px;min-width:200px;}
+        .templete-type1 input[type="number"]:focus {outline:2px solid #000;position:relative;top:1px;left:1px;}
+        .templete-type1 button[type="button"] {min-width:60px;padding:0 20px;margin:0;height:40px;line-height:40px;vertical-align:top;background:#0f92f7;color:#fff;font-weight:bold;border:1px solid #2a8dd4;cursor:pointer;}
+        .templete-type1 button[type="button"]:active {position:relative;top:1px;left:1px;}
+        .templete-type1 button[type="button"]:hover {;background: #36a8f7;transition: background .3s;}
+
+        .draw-table {text-align:center;}
+        .draw-table .draw-inner {margin:0 auto;min-width:10px;max-width:200px;}
+        .draw-table table {display:none;}
+        .draw-table table tr td {position:relative;border:1px solid #000;min-width:20px;height:20px;}
+        .draw-table table tr td button {position:absolute;top:0;left:0;width:100%;height:100%;}
+        .draw-table.is-show table {display:table}
+
+        .booms {border:2px solid #ddd;}
+        /* common */
+        /* box shadow */
+        .bs-5 {box-shadow:5px 5px 5px 0 rgba(0,0,0,.2)}
+        .bs-10 {box-shadow:10px 10px 10px 0 rgba(0,0,0,.2)}
+
+        /* background color */
+        .bg-red {background:#f70000}
+
+        .is-end {color:#f70000;}
+    </style>
+    <!--[if lt IE 9] -->
+        <script src="js/html5shiv.js"></script>
+    <!--[endif]-->
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="inner">
+                <h1 class="tac">지뢰 찾기 게임</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <div class="input-set templete-type1 tac">
+                    <label for="tableCol">
+                        <input type="number" id="tableCol" class="bs-5"  maxlength="3" placeholder="가로" />
+                    </label>
+                    <label for="tableRow">
+                        <input type="number" id="tableRow" class="bs-5"  maxlength="3" placeholder="세로" />
+                    </label>
+                    <label for="boomNum">
+                        <input type="number" id="boomNum" class="bs-5"  maxlength="3" placeholder="지뢰갯수" />
+                    </label>
+                    <button type="button" id="optionInputBtn" class="bs-5">게임시작</button>
+                </div>
+                <div class="draw-table">
+                    <div class="draw-inner">
+                        <div class="booms">
+                            <div class="boom-head">
+                                <span><button type="button">ㅇㅇ</button></span>
+                                <span id="gameTimer" class="count">000</span>
+                                <span><button type="button">ㅇㅇ</button></span>
+                            </div>
+                            <table>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+
+        </div>
+    </div>
+<script src="js/gameControll.js"></script>
+</body>

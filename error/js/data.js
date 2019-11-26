@@ -17,5 +17,15 @@ const datas = {
             quest:'Syntax error, unrecognized expression: [data-tooltip=복사버 튼을 릭하시면 ]',
             answer:'기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');',
         },
+        {
+            dataName:'accordian1',
+            quest:'Syntax error, unrecognized expression: [data-tooltip=복사버 튼을 릭하시면 ]',
+            answer:'기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');',
+        },
+        {
+            dataName:'accordian1',
+            quest:'Syntax error, unrecognized expression: [data-tooltip=복사버 튼을 릭하시면 ]',
+            answer:'기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');기존 $(\'[data-tooltip=\'+ value +\']\'); $(\'[data-tooltip=\\\'\'+ value +\'\\\']\');',
+        },
     ]
 };

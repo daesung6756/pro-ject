@@ -1,95 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/imggetoffset/css/img-offset.css" line="3" />
-    <bookmark url="file://$PROJECT_DIR$/imggetoffset/js/img-offset.js" line="335" />
-    <bookmark url="file://$PROJECT_DIR$/flex-guide/index.html" line="74" />
-    <bookmark url="file://$PROJECT_DIR$/flex-guide/js/popup.js" line="21" />
-    <bookmark url="file://$PROJECT_DIR$/template/case1.html" line="104" />
-    <bookmark url="file://$PROJECT_DIR$/template/case5.html" line="75" />
-    <bookmark url="file://$PROJECT_DIR$/css-advanced/index.html" line="510" />
-    <bookmark url="file://$PROJECT_DIR$/css-advanced/css/common.css" line="20" />
-    <bookmark url="file://$PROJECT_DIR$/css-advanced/css/common.css" line="79" />
-    <bookmark url="file://$PROJECT_DIR$/outlook/images/icons" />
-    <bookmark url="file://$PROJECT_DIR$/guide-page/index.html" line="20" />
-    <bookmark url="file://$PROJECT_DIR$/talk/chat.html" line="32" />
-    <bookmark url="file://$PROJECT_DIR$/talk/js/users-data.js" line="13" />
-    <bookmark url="file://$PROJECT_DIR$/twd/css/twd.css" line="103" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac616bb4-2468-4271-9686-3a159f0b6ecd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pro-ject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css-advanced/images/component/radio-checked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css-advanced/images/component/radio-default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error/images/rope_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flex-guide/images/icons/icon-white-x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/images/icons/icon-hambugger-btn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/video/marvel-logo-video.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outlook/js/colResizable-1.6.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outlook/js/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outlook/js/jquery.scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/css/animation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/css/jquery.scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/css/swiper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/css/swiper_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/images/icons/icon-hambugger-btn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/images/icons/icon-swiper-arrow-next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/images/icons/icon-swiper-arrow-prev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/js/front-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/js/jquery-3.4.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/js/jquery.scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swiper/js/swiper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/css/chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/gobg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/icons/icon-black-bell-cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/icons/icon-black-bell.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/icons/icon-black-hambuger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/icons/icon-black-rectbox.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/icons/icon-black-underline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/icons/icon-close-black-x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/icons/icon-drawers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/icons/icon-search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/jkjbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/leebg.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/nambg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/nayjbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/parkhjbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/phone-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/youbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/talk/images/youdkbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerCcase1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerCcase2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerCcase3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerCcase6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase1-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase3-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase4-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase4-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase4-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase5-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase6-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/icons/icon-scroll-top-arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error/css/error.css" beforeDir="false" afterPath="$PROJECT_DIR$/error/css/error.css" afterDir="false" />
+    <list default="true" id="ac616bb4-2468-4271-9686-3a159f0b6ecd" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/boom-search/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boom-search/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boom-search/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boom-search/js/gameControll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boom-search/js/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boom-search/js/jquery-3.3.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boom-search/js/polyfill/typedarray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boom-search/js/underscore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/images/cat-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/images/cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/images/left-mouse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/images/right-mouse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/images/switch-off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/images/switch-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/images/tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/css/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/css/plugin/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/dim_popup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/favicon/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-800.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-800.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-800.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-800.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-800.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/images/icons/icon-cross-bold-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/images/icons/icon-share.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/images/icons/tmap_maker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/images/icons/tmap_maker_grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/jquery_ui_accordian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/front-ui-graph1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/front-ui-graph2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/jquery-3.3.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/plugin/plotly/plotly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/plugin/swiper/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/polyfill/typedarray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/prototype-study.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/swiper-each.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/toggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/js/ui-tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/plotly_plugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/swiper_plugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/tabs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/tmap_api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/toggle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study/ui_tolltip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg-login-form/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg-login-form/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg-login-form/css/svg-login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg-login-form/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg-login-form/js/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg-login-form/js/jquery-3.3.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg-login-form/js/polyfill/typedarray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg-login-form/js/svgLogin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svg-login-form/js/underscore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/css/vmachine.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/images/1000won.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/images/100won.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/images/500won.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/images/icon-coffee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/images/input-coin-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/images/paper-cup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/images/reset-btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/js/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/js/jquery-3.3.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/js/machine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/js/polyfill/typedarray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/js/underscore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/error/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/error/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error/js/front-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/error/js/front-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/error/js/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/css/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro/css/intro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/images/icons/apple-logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/js/front-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/front-ui.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/js/intro-table-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/intro-table-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/video/marvel-logo-video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/twd/index.html" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,9 +102,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="pro-ject" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,106 +114,9 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>colc</find>
-      <find>swiper</find>
-      <find>swiper-container</find>
-      <find>desc-group</find>
-      <find>section</find>
-      <find>gnb</find>
-      <find>.inner</find>
-      <find>overlay-nav</find>
-      <find>chat-line today-notice</find>
-      <find>balloon-wrap</find>
-      <find>photo</find>
-      <find>.id</find>
-      <find>case</find>
-      <find>layer-nav</find>
-      <find>accordion</find>
-      <find>toggle</find>
-      <find>togglecla</find>
-      <find>toggleclass</find>
-      <find>$today</find>
-      <find>pic</find>
-      <find>tab</find>
-      <find>tab :</find>
-      <find>view-wrap</find>
-      <find>alert</find>
-      <find>fc-blue</find>
-      <find>32</find>
-      <find>\</find>
-      <find>photoListGroup</find>
-      <find>block-</find>
-      <find>sub-tit</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>E:\git\pro-ject\sass</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/sass/index.html" />
-        <option value="$PROJECT_DIR$/scss/css/common.css" />
-        <option value="$PROJECT_DIR$/scss/css/animation.css" />
-        <option value="$PROJECT_DIR$/scss/js/front-ui.js" />
-        <option value="$PROJECT_DIR$/scss/css/scss_style.css" />
-        <option value="$PROJECT_DIR$/scss/index.html" />
-        <option value="$PROJECT_DIR$/outlook/css/common.css" />
-        <option value="$PROJECT_DIR$/outlook/index.html" />
-        <option value="$PROJECT_DIR$/outlook/css/outlook.css" />
-        <option value="$PROJECT_DIR$/outlook/js/front-ui.js" />
-        <option value="$PROJECT_DIR$/guide-page/js/front-ui.js.html" />
-        <option value="$PROJECT_DIR$/guide-page/css/reset.css" />
-        <option value="$PROJECT_DIR$/guide-page/js/front-ui.js" />
-        <option value="$PROJECT_DIR$/guide-page/css/common.css" />
-        <option value="$PROJECT_DIR$/fullpage/css/common.css" />
-        <option value="$PROJECT_DIR$/fullpage/index.html" />
-        <option value="$PROJECT_DIR$/imggetoffset/css/common.css" />
-        <option value="$PROJECT_DIR$/guide-page/index.html" />
-        <option value="$PROJECT_DIR$/guide-page/css/animations.css" />
-        <option value="$PROJECT_DIR$/repensive/css/swiper.min.css" />
-        <option value="$PROJECT_DIR$/js/tdirect-ui.js" />
-        <option value="$PROJECT_DIR$/repensive/css/scss_style.css" />
-        <option value="$PROJECT_DIR$/repensive/css/swiper_style.css" />
-        <option value="$PROJECT_DIR$/dadao-talk/css/chat.css" />
-        <option value="$PROJECT_DIR$/dadao-talk/index.html" />
-        <option value="$PROJECT_DIR$/dadao-talk/chat.html" />
-        <option value="$PROJECT_DIR$/dadao-talk/js/front-ui.js" />
-        <option value="$PROJECT_DIR$/dadao-talk/js/users-data.js" />
-        <option value="$PROJECT_DIR$/sign/index.html" />
-        <option value="$PROJECT_DIR$/repensive/js.js" />
-        <option value="$PROJECT_DIR$/repensive/js/direct-ui.js" />
-        <option value="$PROJECT_DIR$/repensive/js/jq.min.js" />
-        <option value="$PROJECT_DIR$/repensive/css/common.css" />
-        <option value="$PROJECT_DIR$/repensive/index.html" />
-        <option value="$PROJECT_DIR$/repensive/js/front-ui.js" />
-        <option value="$PROJECT_DIR$/twd/js/data-twd.js" />
-        <option value="$PROJECT_DIR$/twd/css/common.css" />
-        <option value="$PROJECT_DIR$/twd/css/twd.css" />
-        <option value="$PROJECT_DIR$/twd/index.html" />
-        <option value="$PROJECT_DIR$/error/css/common.css" />
-        <option value="$PROJECT_DIR$/twd/js/front-ui.js" />
-        <option value="$PROJECT_DIR$/error/js/data.js" />
-        <option value="$PROJECT_DIR$/intro/css/common.css" />
-        <option value="$PROJECT_DIR$/error/css/svg.css" />
-        <option value="$PROJECT_DIR$/error/index.html" />
-        <option value="$PROJECT_DIR$/error/css/error.css" />
-        <option value="$PROJECT_DIR$/error/js/front-ui.js" />
-        <option value="$PROJECT_DIR$/intro/js/intro-table-data.js" />
-        <option value="$PROJECT_DIR$/intro/js/front-ui.js" />
-        <option value="$PROJECT_DIR$/intro/css/intro.css" />
-        <option value="$PROJECT_DIR$/intro/index.html" />
-      </list>
-    </option>
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -220,54 +124,13 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1916" />
-    <option name="y" value="-4" />
-    <option name="width" value="1928" />
-    <option name="height" value="1208" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="pro-ject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pro-ject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pro-ject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pro-ject" type="462c0819:PsiDirectoryNode" />
-              <item name="twd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pro-ject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pro-ject" type="462c0819:PsiDirectoryNode" />
-              <item name="twd" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pro-ject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pro-ject" type="462c0819:PsiDirectoryNode" />
-              <item name="twd" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1TXb5Rag1v5UYeBvpK1Pq6oIbaG" />
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/intro/video" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/intro/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -275,19 +138,19 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\git\pro-ject\intro\video" />
-      <recent name="E:\git\pro-ject\intro\images\icons" />
-      <recent name="E:\git\pro-ject\error\images\icons" />
-      <recent name="E:\git\pro-ject\error\css" />
-      <recent name="E:\git\pro-ject\error\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\git\pro-ject\intro\images" />
+      <recent name="E:\git\pro-ject\vending-machine" />
       <recent name="E:\git\pro-ject\repensive\js" />
       <recent name="E:\git\pro-ject\repensive\images\icons" />
       <recent name="E:\git\pro-ject\outlook\images" />
-      <recent name="E:\git\pro-ject\outlook\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\pro-ject\intro\images" />
+      <recent name="E:\git\pro-ject\svg-login-form" />
+      <recent name="E:\git\pro-ject\vending-machine\images" />
+      <recent name="E:\git\pro-ject\vending-machine" />
+      <recent name="E:\git\pro-ject\boomserach" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -442,7 +305,58 @@
       <workItem from="1565324824255" duration="11000" />
       <workItem from="1565573929750" duration="2327000" />
       <workItem from="1565597235287" duration="2166000" />
-      <workItem from="1565653527938" duration="2889000" />
+      <workItem from="1565653527938" duration="4283000" />
+      <workItem from="1565671346301" duration="9000" />
+      <workItem from="1565674562920" duration="1866000" />
+      <workItem from="1565682709748" duration="11000" />
+      <workItem from="1569291738485" duration="13660000" />
+      <workItem from="1569371576927" duration="4287000" />
+      <workItem from="1569376798706" duration="7069000" />
+      <workItem from="1569458177548" duration="9499000" />
+      <workItem from="1569545756685" duration="11584000" />
+      <workItem from="1569802542500" duration="1574000" />
+      <workItem from="1569805276254" duration="1127000" />
+      <workItem from="1569808734446" duration="1806000" />
+      <workItem from="1569825471426" duration="835000" />
+      <workItem from="1569989911118" duration="10833000" />
+      <workItem from="1570408758366" duration="677000" />
+      <workItem from="1570410832703" duration="1195000" />
+      <workItem from="1570498261338" duration="1921000" />
+      <workItem from="1571020048043" duration="5336000" />
+      <workItem from="1571031118180" duration="8000" />
+      <workItem from="1572583872173" duration="1294000" />
+      <workItem from="1572916041165" duration="1857000" />
+      <workItem from="1572929395499" duration="42000" />
+      <workItem from="1572929448841" duration="383000" />
+      <workItem from="1573002622621" duration="5465000" />
+      <workItem from="1573175288742" duration="9702000" />
+      <workItem from="1573431998739" duration="794000" />
+      <workItem from="1573437274805" duration="5590000" />
+      <workItem from="1573518207184" duration="5606000" />
+      <workItem from="1573546834086" duration="599000" />
+      <workItem from="1573609207220" duration="3208000" />
+      <workItem from="1573625632308" duration="5539000" />
+      <workItem from="1573691976549" duration="714000" />
+      <workItem from="1573716473018" duration="607000" />
+      <workItem from="1573719212871" duration="5000" />
+      <workItem from="1573781304669" duration="3562000" />
+      <workItem from="1574038493699" duration="17646000" />
+      <workItem from="1574127597964" duration="996000" />
+      <workItem from="1574128610145" duration="2502000" />
+      <workItem from="1574131182323" duration="13472000" />
+      <workItem from="1574146855511" duration="3856000" />
+      <workItem from="1574209497182" duration="7723000" />
+      <workItem from="1574217544053" duration="1239000" />
+      <workItem from="1574222516016" duration="869000" />
+      <workItem from="1574229060466" duration="5473000" />
+      <workItem from="1574236917606" duration="3442000" />
+      <workItem from="1574295611380" duration="1694000" />
+      <workItem from="1574298552046" duration="22791000" />
+      <workItem from="1574382064169" duration="23611000" />
+      <workItem from="1574646417214" duration="11509000" />
+      <workItem from="1574664058419" duration="4500000" />
+      <workItem from="1574671435759" duration="33000" />
+      <workItem from="1574727910221" duration="6512000" />
     </task>
     <task id="LOCAL-00001" summary="[이대성] 이미지 위치 값 가져오기 제네레이터">
       <created>1554266632969</created>
@@ -605,11 +519,15 @@
       <option name="project" value="LOCAL" />
       <updated>1564116707543</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update">
+      <created>1565663289127</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1565663289127</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="910990000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -619,49 +537,6 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1916" y="-4" width="1928" height="1208" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49658003" visible="true" weight="0.11247335" />
-      <window_info id="Structure" order="1" sideWeight="0.50407606" side_tool="true" weight="0.16240682" />
-      <window_info id="Favorites" order="2" sideWeight="0.50342" side_tool="true" weight="0.16240682" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32934684" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" x="1941" y="423" width="1878" height="354" id="TODO" order="6" type="WINDOWED" weight="0.32477063" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.31554738" />
-      <window_info anchor="bottom" x="1941" y="422" width="1878" height="356" id="Terminal" order="9" type="WINDOWED" weight="0.3266055" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3293578" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49658003" visible="true" weight="0.12153518" />
-      <window_info id="Structure" order="1" sideWeight="0.50407606" side_tool="true" weight="0.16240682" />
-      <window_info id="Favorites" order="2" sideWeight="0.50342" side_tool="true" weight="0.16240682" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32934684" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" x="1941" y="423" width="1878" height="354" id="TODO" order="6" type="WINDOWED" weight="0.32477063" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.31559634" />
-      <window_info anchor="bottom" x="1941" y="422" width="1878" height="356" id="Terminal" order="9" type="WINDOWED" weight="0.3266055" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3293578" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -683,20 +558,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -733,301 +595,6 @@
     <MESSAGE value="repensive" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/repensive/css/swiper.min.css" />
-    <entry file="file://$PROJECT_DIR$/guide-page/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guide-page/js/front-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Navigation + Pagination( Progressbar type ).url" />
-    <entry file="file://$PROJECT_DIR$/repensive/css/swiper_style.css" />
-    <entry file="file://$PROJECT_DIR$/swiper/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="23" column="65" lean-forward="true" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiper/js/front-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/talk/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intro/js/jquery-3.4.0.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/talk/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/talk/css/chat.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="60" column="171" selection-start-line="60" selection-start-column="171" selection-end-line="60" selection-end-column="171" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="125" column="18" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/talk/js/front-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="131" column="11" lean-forward="true" selection-start-line="131" selection-start-column="11" selection-end-line="131" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/talk/js/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sign/index.html" />
-    <entry file="file://$PROJECT_DIR$/js/tdirect-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="269" column="63" lean-forward="true" selection-start-line="269" selection-start-column="63" selection-end-line="269" selection-end-column="63" />
-          <folding>
-            <element signature="e#81081#83668#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repensive/js/jq.min.js" />
-    <entry file="file://$PROJECT_DIR$/repensive/js/tdirect-ui.js" />
-    <entry file="file://$PROJECT_DIR$/repensive/js/jquery-3.4.0.min.js" />
-    <entry file="file://$PROJECT_DIR$/repensive/css/common.css" />
-    <entry file="file://$PROJECT_DIR$/repensive/index.html" />
-    <entry file="file://$PROJECT_DIR$/repensive/css/reset.css" />
-    <entry file="file://$PROJECT_DIR$/repensive/js/front-ui.js" />
-    <entry file="file://$PROJECT_DIR$/css-advanced/css/css-advanced.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/talk/js/users-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twd/js/data-twd.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twd/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiper/css/swiper_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiper/css/swiper.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiper/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiper/css/common.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swiper/css/animation.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error/js/jquery-3.4.0.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twd/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twd/css/twd.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="72" column="178" lean-forward="true" selection-start-line="71" selection-end-line="72" selection-end-column="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twd/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twd/js/front-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="107" column="53" selection-start-line="107" selection-start-column="53" selection-end-line="107" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error/images/rope_bg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error/js/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/simple-line-icons/simple-line-icons.min.css" />
-    <entry file="file://$PROJECT_DIR$/error/css/icons.css" />
-    <entry file="file://$PROJECT_DIR$/intro/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intro/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="115" column="29" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error/css/error.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="250" lean-forward="true" selection-start-line="18" selection-end-line="18" selection-end-column="250" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error/js/front-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="109" column="28" lean-forward="true" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intro/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#video#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#7;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#8;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#9;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#10;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#11;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#12;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#13;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#13;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#15;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#14;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#14;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intro/js/front-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intro/js/intro-table-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intro/css/intro.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

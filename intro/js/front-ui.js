@@ -1,4 +1,4 @@
-let UI = {
+var UI = {
     init : function(){
         this.tabs();
         this.tableColDraw('.intro-tbl-col', colOption1, rowData1);
@@ -8,12 +8,16 @@ let UI = {
         this.tableRowDraw('.intro-tbl-row3',rowTableColOption, rowData4);
         this.toggleClassTarget('.overlay.d-right', '.tbl-event-btn', 'is-show');
         this.tooltip();
-        this.headetStickyEvent();
+        this.headetStickyBar();
         this.scrollTopStickyBtn();
+        this.windowKeyCodeCheck();
+        this.mainVisualSwitchEvent();
+        this.visualMouseClickEvent();
+        this.popup()
     },
     tabs: function(){
-        let $hash = window.location.href;
-        let tabGroup = [];
+        var $hash = window.location.href;
+        var tabGroup = [];
         $('[data-tab]').each(function(key, value){
             if($.inArray($(this).data('tab'), tabGroup) === -1){
                 tabGroup.push($(this).data('tab'));
@@ -21,14 +25,14 @@ let UI = {
         });
 
         $.each(tabGroup, function(key, value){
-            let $tabs = $('[data-tab=' + value + ']');
-            let $contents = $('[data-tab-content=' + value + ']');
-            let $onIndex = $tabs.index($tabs.filter('.is-active'));
+            var $tabs = $('[data-tab=' + value + ']');
+            var $contents = $('[data-tab-content=' + value + ']');
+            var $onIndex = $tabs.index($tabs.filter('.is-active'));
             $contents.hide();
             $contents.eq($onIndex).show();
             $tabs.on('click', function(e){
-                let $index = $tabs.index(this);
-                let $href = $(this).attr('href');
+                var $index = $tabs.index(this);
+                var $href = $(this).attr('href');
                 console.log($hash + $href);
                 e.preventDefault();
                 $tabs.removeClass('is-active');
@@ -42,12 +46,12 @@ let UI = {
     tableColDraw: function(wrap, cols, rows){
         if(cols && rows && cols !== undefined && rows !== undefined) {
             if ($('.intro-tbl-col')) {
-                let $col = cols;
-                let $row = rows;
-                let makeTable = $('<table>');
-                let makeThead = $('<thead>');
-                let makeTbody = $('<tbody>');
-                let $colgroup = $('<colgroup>');
+                var $col = cols;
+                var $row = rows;
+                var makeTable = $('<table>');
+                var makeThead = $('<thead>');
+                var makeTbody = $('<tbody>');
+                var $colgroup = $('<colgroup>');
                 $(wrap).append($(makeTable));
                 $(makeTable).addClass('tbl-col').append($($colgroup)).append($(makeThead)).append($(makeTbody));
                 $(makeThead).append('<tr>');
@@ -56,8 +60,8 @@ let UI = {
                     $(makeThead).find('tr').append('<th scope="col">' + dt["headline"] + '</th>');
                 });
                 $.each($row, function (i, row) {
-                    let makeTr = $('<tr>');
-                    let $nrow = $(makeTbody).prepend($(makeTr));
+                    var makeTr = $('<tr>');
+                    var $nrow = $(makeTbody).prepend($(makeTr));
 
                     $.each($col, function (j, dt) {
                         if (dt["key"] === 'file') {
@@ -77,11 +81,11 @@ let UI = {
     tableRowDraw: function (wrap, cols, rows) {
         if(cols && rows && cols !== undefined && rows !== undefined) {
             if ($('.intro-tbl-row')) {
-                let $col = cols;
-                let $row = rows;
-                let makeTable = $('<table>');
-                let makeTbody = $('<tbody>');
-                let $colgroup = $('<colgroup>');
+                var $col = cols;
+                var $row = rows;
+                var makeTable = $('<table>');
+                var makeTbody = $('<tbody>');
+                var $colgroup = $('<colgroup>');
                 $(wrap).append($(makeTable));
                 $(makeTable).addClass('tbl-row').append($($colgroup)).append($(makeTbody));
 
@@ -89,8 +93,8 @@ let UI = {
                     $($colgroup).append('<col style="width:' + dt["width"] + '">');
                 });
                 $.each($row, function (i, row) {
-                    let makeTr = $('<tr>');
-                    let $nrow = $(makeTbody).append($(makeTr));
+                    var makeTr = $('<tr>');
+                    var $nrow = $(makeTbody).append($(makeTr));
 
                     $.each($col, function (j, dt) {
                         if (dt['key'] === 'ths') {
@@ -107,7 +111,7 @@ let UI = {
         }
     },
     tableAni : function (tname, aname){
-        let $tableTr = $(tname +' tbody tr'),
+        var $tableTr = $(tname +' tbody tr'),
             currentHighlight = 0,
             N = 2;
 
@@ -117,14 +121,14 @@ let UI = {
             $tableTr.removeClass(aname).eq(currentHighlight).addClass(aname);
         },N * 1000);
     },
-    photoListAni: function(sec) {
-        let $listLi =  $('.photo-list li'),
+    /*photoListAni: function(sec) {
+        var $listLi =  $('.photo-list li'),
             currentHighlight = 0,
             N = sec;
 
             if($aniEvent !== true){
                 $listLi.eq(0).addClass("ani-on");
-                let $inter = setInterval(function () {
+                var $inter = setInterval(function () {
                     currentHighlight = (currentHighlight + 1) % $listLi.length;
                     $listLi.eq(currentHighlight).addClass("ani-on");
                     console.log("인터벌 클리어 확인");
@@ -137,10 +141,9 @@ let UI = {
             } else {
                 return false;
             }
-
-    },
+    },*/
     tooltip: function () {
-        let tooltipGroup = [];
+        var tooltipGroup = [];
         $('[data-tooltip]').each(function() {
             if($.inArray($(this).data('tooltip') , tooltipGroup) === -1){
                 tooltipGroup.push($(this).data('tooltip'));
@@ -148,21 +151,21 @@ let UI = {
         });
 
         $.each(tooltipGroup , function(key, value) {
-            let $target = $('[data-tooltip=\''+ value +'\']');
+            var $target = $('[data-tooltip=\''+ value +'\']');
 
             $target.on('mouseenter',function(){
-                let dataValue = value.replace(" ", "&nbsp;");
+                var dataValue = value.replace(" ", "&nbsp;");
 
                 if($(this).find('.tooltip').length !== 1){
-                    let $makeTools = $(this).append('<span class="tooltip"></span>');
-                    let $thisToolTip = $(this).find('.tooltip');
+                    var $makeTools = $(this).append('<span class="tooltip"></span>');
+                    var $thisToolTip = $(this).find('.tooltip');
 
                     $thisToolTip.html(dataValue);
 
-                    let $width = $(window).width();
-                    let $toolTipOffsetLeft = $thisToolTip.offset().left;
-                    let $toolTipOffsetRight = $toolTipOffsetLeft + $thisToolTip.outerWidth();
-                    let $moveOffset = ($toolTipOffsetRight - $width) + 20;
+                    var $width = $(window).width();
+                    var $toolTipOffsetLeft = $thisToolTip.offset().left;
+                    var $toolTipOffsetRight = $toolTipOffsetLeft + $thisToolTip.outerWidth();
+                    var $moveOffset = ($toolTipOffsetRight - $width) + 20;
 
                     if($toolTipOffsetRight > $width) {
                         $thisToolTip.css({'marginLeft': -($moveOffset) + 'px'});
@@ -178,13 +181,20 @@ let UI = {
             });
         });
     },
+    singleToggleBtn : function(el, className) {
+        var $el = $(el);
+        var $toggleClass = className;
+        $el.on('click', $el, function(){
+            $el.toggleClass($toggleClass);
+        });
+    },
     toggleClassTarget : function ( el, el2 , className ){
-        let $el = $(el);
-        let $clickEl = el2;
-        let $eventClass = className;
+        var $el = $(el);
+        var $clickEl = el2;
+        var $eventClass = className;
 
         $(document).on('click', $clickEl, function(){
-            let $title = $(this).attr('title');
+            var $title = $(this).attr('title');
             if($el.hasClass($eventClass)){
                 $el.removeClass($eventClass);
                 $(this).attr('title','리스트 열기');
@@ -194,39 +204,136 @@ let UI = {
             }
         });
     },
-    headetStickyEvent : function(){
-        let $html = $('html, body');
-        let $wrap = $('.wrap');
-        let $this = $('.header');
-        let $htmlScrollTop = $html.scrollTop();
-        let $elHeight = parseInt($this.innerHeight());
+    headetStickyBar : function(){
+        var $html = $('html, body');
+        var $wrap = $('.wrap');
+        var $this = $('.header');
+        var $spot = $('.visual-spot');
+        var $htmlScrollTop = $html.scrollTop();
+        var $elHeight = parseInt($spot.innerHeight());
         if($htmlScrollTop > $elHeight){
+            $this.addClass('is-active');
+        } else if( $htmlScrollTop > 0){
             $this.addClass('is-fixed');
+            $this.removeClass('is-active');
         } else {
             $this.removeClass('is-fixed');
+            $this.removeClass('is-active');
         }
     },
     scrollTopStickyBtn: function() {
-        let $html = $('html, body');
-        let $htmlScrollTop = $html.scrollTop();
+        var $html = $('html, body');
+        var $htmlScrollTop = $html.scrollTop();
+        var $btn = $('.scroll-floating button');
+        $btn.on('click',function() {
+            $html.animate({scrollTop : 0}, 300);
+        });
+    },
+    windowKeyCodeCheck : function () {
+        $(window).on('keydown',function(e){
+            // 키보드 ` 키 값으로 오버레이 레이어 팝업 토글
+            if(e.keyCode === 192){
+                $(".overlay").toggleClass("is-show");
+                $(".tbl-event-btn").toggleClass("is-show");
+            }
+        });
+    },
+    mainVisualSwitchEvent : function(){
+        var $on = false;
+        var $toggleBtn = $('.toggle-switch');
+        var $visual = $('.visual-spot');
+        var $mouse = $('.mouse');
+        var $theme = $("body");
+
+        $toggleBtn.on('click', function(){
+            if($(this).hasClass('is-on')){
+                $(this).removeClass('is-on');
+                $visual.removeClass('is-on');
+                $theme.removeClass('x-mas');
+                $mouse.css({"display":"inline-block"});
+            } else {
+                $(this).addClass('is-on');
+                $visual.addClass('is-on');
+                $theme.addClass('x-mas');
+            }
+        })
+
+    },
+    visualMouseClickEvent : function () {
+        var mouseGroup=[];
+
+        $('.mouse').each(function(key, value){
+            mouseGroup.push(this);
+        });
+
+        console.log(mouseGroup);
+
+        $.each(mouseGroup, function(key, value){
+            var $this = $(value);
+            $this.on('click', function(e){
+                $(this).css({
+                    "display":"none"
+                });
+            });
+        });
+    },
+    popup : function(){
+        var popGroup = [];
+
+        $("[data-pop]").each(function(){
+            if($.inArray($(this).data('pop'), popGroup) === -1){
+                popGroup.push($(this).data('pop'));
+            }
+        });
+
+        $.each(popGroup, function(key, value){
+            var $open = $("[data-pop=" + value +"]");
+            var $close = $("[data-pop-close=" + value +"]");
+            var $target = $("#" + value);
+            var $body = $("body");
+
+            $open.on('click', function(){
+                $body.addClass("is-lock");
+                $target.addClass('is-show');
+
+                if($target.hasClass('is-dim')){
+                    $target.append("<div class='dimmed'></div>")
+                } else {
+                    return false;
+                }
+            });
+
+            $close.on('click', function(){
+                $body.removeClass("is-lock");
+                $target.removeClass('is-show');
+            });
+        })
+
+    },
+    popCallback : function (){
+
     }
 };
 
-let $aniEvent = false;
+var $aniEvent = false;
+
+//ready
 $(document).ready(function(){
     UI.init();
 });
+//scroll
 $(window).on('scroll', function(){
-    let $photoListWrap = $('.photo-list').offset().top/2;
-    let $scrollTop = $('html, body').scrollTop();
+    var $photoListWrap = $('.photo-list').offset().top/2;
+    var $scrollTop = $('html, body').scrollTop();
 
 
-    if($scrollTop > $photoListWrap ) {
+/*    if($scrollTop > $photoListWrap ) {
         UI.photoListAni('2');
-    }
-    UI.headetStickyEvent();
+    }*/
+    UI.headetStickyBar();
     UI.scrollTopStickyBtn();
 });
+//resize
 $(window).on('resize', function(){
     UI.tooltip();
 });

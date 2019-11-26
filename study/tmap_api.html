@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>대전 | 매장 컨설팅 리포트</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery-3.3.0.min.js"></script>
+    <script type="text/javascript" src="js/plugin/plotly/plotly.min.js"></script>
+    <script type="text/javascript" src="js/polyfill/typedarray.js"></script>
+    <script type="text/javascript" src="js/front-ui-graph1.js"></script>
+    <script src="https://api2.sktelecom.com/tmap/js?version=1&format=javascript&appKey=05cf64b4-680b-4c4d-9ca9-744dd73068c7"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <!–[if lt IE 9]>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]–>
+</head>
+<body>
+    <div id="wrap" class="wrap">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="inner tac">
+                <h1 class="title">한솔대리점 갈마사거리점 '매장 컨설팅 리포트'</h1>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div id="main" class="container">
+            <div class="content">
+
+                <section class="section">
+                    <h2 class="title">당월 유무선 실적 변화</h2>
+                    <div class="layout-row">
+                        <div class="column full-line n2 desc-group-type1" style="height:315px;">
+
+                            <div class="ib-row">
+                                <div class="column n2">
+                                    <h3 class="title">당월 무선 실적</h3>
+                                    <strong class="block-type">4<span>건</span></strong>
+                                    <em class="block-type fc-blue">당월 누적 <span>19</span>건 예상</em>
+                                </div>
+                                <div class="column n2">
+                                    <h3 class="title">당월 유선 실적</h3>
+                                    <strong class="block-type">0<span>건</span></strong>
+                                    <em class="block-type fc-blue">당월 누적 <span>0</span>건 예상</em>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="column full-line n2">
+                            <div id="graph1"></div>
+                            <div class="grey-desc">
+                                <span>지난 4주간 기변 관련 판매가 가장 많았으며 2주전에 비해 지난주 기변 실적은 증가하였습니다.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layout-row">
+                        <div class="column n1 full-line">
+                            <div id="graph2"></div>
+                            <div class="grey-desc">
+                                <span>월 단위로 변화 트렌드를 살펴보면 무선 실적은 다소 증가하는 추세라고 볼 수 있겠습니다.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layout-row full-line">
+                        <div class="ib-row">
+                            <div class="column n3" >
+                                <div id="graph3"></div>
+                                <div id="graph3table"></div>
+                            </div>
+                            <div class="column n3">
+                                <div id="graph4"></div>
+                                <div id="graph4table"></div>
+                            </div>
+                            <div class="column n3">
+                                <div id="graph5"></div>
+                                <div id="graph5table"></div>
+                            </div>
+                        </div>
+                        <div class="grey-desc">
+                            <span>지난 8 주간 제조사를 기준으로 보면 삼성 폰 선호도가 가장 높았으며,<br> 40대 고객이 가장 많이 구매하였고, 구매할 때 주로 29이하 요금제에 가입하는 현상을 보입니다.</span>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="section">
+                    <div class="layout-row full-line desc-group-type2">
+                        <div class="ib-row">
+                            <div class="column n3">
+                                <strong class="title block-type">중부마케팅본부</strong>
+                                <em class="desc block-type">전월 무선 판매량: <span>21112</span>건</em>
+                                <div id="graph6">
+
+                                </div>
+                                <div id="graph9">
+
+                                </div>
+                            </div>
+                            <div class="column n3">
+                                <strong class="title block-type">갈마동</strong>
+                                <em class="desc block-type">전월 무선 판매량: <span>56</span>건</em>
+                                <div id="graph7">
+
+                                </div>
+                                <div id="graph10">
+
+                                </div>
+                            </div>
+                            <div class="column n3">
+                                <strong class="title block-type">한솔대리점 갈마사거리점</strong>
+                                <em class="desc block-type">전월 무선 판매량: <span>24</span>건</em>
+                                <div id="graph8">
+
+                                </div>
+                                <div id="graph11">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layout-row">
+                        <div class="column" style="width:500px;height:217px;">
+                            <!-- tmap-->
+                            <div id="map_div1" class="map-wrap"></div>
+                            <!-- //tmap-->
+                        </div>
+                        <div class="column n2 desc-group-type5">
+                            <div class="pd-inner">
+                                <p class="desc">한솔대리점 갈마사거리점 반경 1km에는 <br>11개의 경쟁사 매장, 37개의 판매점, 6개의 대리점이 위치하고 있습니다.<br><br>인근 1km 내에서 판매량이 가장 많은 매장은<br>한민대리점 타임월드점입니다.<br>한민대리점 타임월드점은 입지기반 예상판매량 대비 판매량이 23건 적고,<br>한솔대리점 갈마사거리점은 입지기반 예상판매량 대비 판매량이 3건 적습니다.
+        <br>또한 내방고객 판매율은 한솔대리점 갈마사거리점이<br>한민대리점 타임월드점에 비해 7.4% 적습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layout-row">
+                        <div class="ib-row">
+                            <div class="column n2">
+                                <div class="grey-tit tac mr5">한솔대리점 갈마사거리점</div>
+                            </div>
+                            <div class="column n2">
+                                <div class="grey-tit tac ml5">한민대리점 타임월드점</div>
+                            </div>
+                        </div>
+                        <div class="tbl-wrap">
+                            <table class="tbl-col">
+                                <caption class="blind">한솔대리점 한민대리점 판매량 리스트</caption>
+                                <colgroup>
+                                    <col style="width:33%">
+                                    <col>
+                                    <col style="width:33%">
+                                </colgroup>
+                                <tr>
+                                    <td><em>24</em></td>
+                                    <td><em>전월 무선 실적</em></td>
+                                    <td><em>110</em></td>
+                                </tr>
+                                <tr>
+                                    <td><em>27</em></td>
+                                    <td><em>입지기반 예상판매량</em></td>
+                                    <td><em>133</em></td>
+                                </tr>
+                                <tr>
+                                    <td><em>18.6%</em></td>
+                                    <td><em>내방대비 판매량</em></td>
+                                    <td><em>26.0%</em></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">단말기 판매<br>Top-5</td>
+                                </tr>
+                            </table>
+                            <div class="ib-row">
+                                <div class="column n2">
+                                    <div id="graph12"></div>
+                                </div>
+                                <div class="column n2">
+                                    <div id="graph13"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="section">
+                    <div class="layout-row">
+                        <h2 class="title2">한솔대리점 갈마사거리점에서, 구매한 고객 거주지 추정 (최근 3개월 기준)</h2>
+                        <div class="ib-row">
+                            <div class="column" style="width:600px;height:322px;">
+                                <div id="map_div2" class="map-wrap"></div>
+                            </div>
+                            <div class="column desc-group-type3">
+                                <div class="full-line">
+                                    <strong class="title">구매고객의 주 거주지: 갈마동<br>거주지 추정 기준:</strong><br>
+                                    <p class="desc">- 무선신호 기반의 고객추정위치</p>
+                                </div>
+                                <div class="full-line">
+                                    <h3 class="title2">Coaching Tip</h3>
+                                    <p class="desc">왼쪽 그림은 한솔대리점 갈마사거리점에서<br>구매한 고객들의 거주지를 추정한 결과입니다.<br>색깔이 짙을수록 최근 3개월 내 단말기를 구매한<br>고객이 많이 거주한다는 의미이며, 그림 상에서<br>주로 갈마동에 거주한다는 사실을 알 수 있습니다.<br>따라서 해당 지역에 거주하는 고객들 대상으로<br>적극적인 홍보가 필요합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout-row">
+                        <h2 class="title2">한민대리점 타임월드점 매장에서, 구매한 고객 거주지 추정 (최근 3개월 기준)</h2>
+                        <div class="ib-row">
+                            <div class="column" style="width:600px;height:322px;">
+                                <div id="map_div3" class="map-wrap"></div>
+                            </div>
+                            <div class="column desc-group-type3">
+                                <div class="full-line">
+                                    <strong class="title">구매고객의 주 거주지: 둔산동<br>거주지 추정 기준:</strong>
+                                    <p class="desc">- 무선신호 기반의 고객추정위치</p>
+                                </div>
+                                <div class="full-line">
+                                    <h3 class="title2">Coaching Tip</h3>
+                                    <p class="desc">왼쪽 그림은 한민대리점 타임월드점에서<br>구매한 고객들의 거주지를 추정한 결과입니다.<br>색깔이 짙을수록 최근 3개월 내 단말기를 구매한<br>고객이 많이 거주한다는 의미이며, 그림 상에서<br>주로 갈마동에 거주한다는 사실을 알 수 있습니다.<br>따라서 해당 지역에 거주하는 고객들 대상으로<br>적극적인 홍보가 필요합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout-row desc-group-type4">
+                        <h2 class="title2">상권(매장 기준 반경 1km 이내 거주 추정 고객 대상) 내 채널별 경쟁 현황</h2>
+                        <div class="ib-row full-line ">
+                            <div class="column n2">
+                                <h3 class="block-type title">상권 내 소매채널 비율</h3>
+                                <div class="ib-row">
+                                    <div class="column">
+                                        <div id="graph14"></div>
+                                    </div>
+                                    <div class="column">
+                                        <table class="tbl-col2">
+                                            <caption class="blind">상권 내 소매채널 비율 목록</caption>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">건수(점유비)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>소매</td>
+                                                <td>236 (49%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>도매</td>
+                                                <td>244 (50%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>기타</td>
+                                                <td>0 (0%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>본 매장</td>
+                                                <td>13 (2%)</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column n2">
+                                <h3 class="title">Coaching Tip</h3>
+                                <p class="desc">해당 상권의 소매 비율은 49%, 도매 비율은 50% 이며<br>그 중 한솔대리점 갈마사거리점이 차지하는 비중은 2% 수준입니다.<br>해당 상권 도매 채널을 통해 가장 많이 팔리는 단말은 갤럭시노트9이며,<br>소매 대비하여 상대적으로 판매 비중이 높은 단말은 갤럭시S9입니다.<br>갤럭시S9 단말의 판매 경쟁력 향상을 위한<br>판매 단가 점검, 재고 확보 등이 필요합니다.</p>
+                            </div>
+                        </div>
+                        <div class="ib-row full-line">
+                            <div class="column n2">
+                                <h3 class="title">소매채널 단말기 판매 Top 5</h3>
+                                <div class="ib-row">
+                                    <div class="column">
+                                        <table class="tbl-col2">
+                                            <caption class="blind">소매채널 단말기 판매 목록</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">단말기명</th>
+                                                    <th scope="col">건수(점유비)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>갤럭시노트9</td>
+                                                    <td>49 (20%)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>갤럭시 WIDE3</td>
+                                                    <td>28 (11%)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>아이폰 8</td>
+                                                    <td>22 (9%)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>아이폰 X</td>
+                                                    <td>20 (8%)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>갤럭시A8 Star</td>
+                                                    <td>16 (6%)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="column">
+                                        <div id="graph15"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column n2">
+                                <h3 class="block-type title">도매채널 단말기 판매 Top 5</h3>
+                                <div class="ib-row">
+                                    <div class="column">
+                                        <table class="tbl-col2">
+                                            <caption class="blind">도매채널 단말기 판매 목록</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">단말기명</th>
+                                                    <th scope="col">건수(점유비)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>갤럭시 노트9</td>
+                                                    <td>65 (26%)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>갤럭시 S9</td>
+                                                    <td>32 (13%)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>갤럭시 WIDE3</td>
+                                                    <td>22 (9%)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>갤럭시 A8 Star</td>
+                                                    <td>16 (6%)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>아이폰 8</td>
+                                                    <td>15 (6%)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="column">
+                                        <div id="graph16"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <!-- //container -->
+
+        <!-- footer -->
+        <footer id="footer" class="footer">
+
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+</html>
