@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>기획전 부분 옵티마이징 마크업 형태</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/twd.css">
+    <script src="js/jquery-3.4.0.min.js"></script>
+
+    <script src="js/front-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="inner">
+            <a href="index.html" target="_self" class="history-back-btn">목록으로 돌아가기</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="section">
+                <!-- 옵티마이징 -->
+                <div class="section-article">
+                    <div class="inner">
+                        <h2 class="tit d-sign fc-orange">기획전 부분 옵티마이징 마크업 형태<span class="desc">※ 구글에서 제공되는 유료 서비스</span></h2>
+                        <p class="desc h2-type">어드민에 새로 등록하지 않고, 상용화 된 게시물 컨텐츠 내부의 순서를 재배열 할 수 있도록 구글에서 제공되는 서비스이며, 재배열 된 순서로 고객들의 쿠기 정보에 따라 다르게 보이게 할 수 있다. 전달 받은 사항이 명확하지 않아 해당 내용은 언제든 수정 될 수 있으며. 사용 된 클래스명은 클라이언트 측에서 제공한 것이다. <br><strong class="fc-222">부분 옵티마이징이란?</strong> Key visual을 제외하고 특정 고정 영역이 같이 제공 되는 경우이며, 해당 방식은 순서를 재배열 하는 것이 아니라 단순히 지정 클래스의 SHOW/HIDE의 목적으로 사용된다. </p>
+                        <h3 class="tit mt10">View</h3>
+                        <div class="view-wrap mt20">
+                            <div><img src="https://via.placeholder.com/1024x100/2a2a2a/cccccc?text=Key Visual" alt=""></div>
+                            <div><img src="https://via.placeholder.com/1024x100/2a2a2a/cccccc?text=Section 1 : content_a_1 (show)" alt=""></div>
+                            <div><img src="https://via.placeholder.com/1024x100/2a2a2a/cccccc?text=Section 2 : content_b_1 (show)" alt=""></div>
+                            <div><img src="https://via.placeholder.com/1024x100/2a2a2a/cccccc?text=Section 1 : content_a_2 (hide)" alt=""></div>
+                            <div><img src="https://via.placeholder.com/1024x100/2a2a2a/cccccc?text=Section 2 : content_b_2 (hide)" alt=""></div>
+                            <div><img src="https://via.placeholder.com/1024x100/2a2a2a/cccccc?text=Section 3" alt=""></div>
+                        </div>
+                        <h3 class="tit mt20">Code</h3>
+                        <div class="editer-wrap mt20">
+                            <div class="control">
+                                <div class="inner">
+                                    <ul>
+                                        <li><button type="button" title="복사" data-editer-copy="editerAcase1"><i class="icon icon-copy-to-clipboard"><span class="blind">복사</span></i></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="editer">
+                                <div class="lines" data-editer="editerAcase1"></div>
+                                <!-- textarea area -->
+                                <textarea class="textarea" data-editer-textarea="editerAcase1" readonly>
+<!-- 어드민 ST -->
+<div>
+    <!-- key visual -->
+    <div>
+        <div class="img-section">
+            <img src="이미지 경로" alt="간단한 대체 텍스트">
+            <div class="hidden">장문 대체텍스트</div>
+        </div>
+    </div>
+
+    <!-- 옵티마이징 처리 영역 -->
+    <div>
+        <!-- section 1 -->
+        <div class="content_a_1">
+            <div class="img-section">
+                <img src="" alt="">
+                <div class="hidden"></div>
+            </div>
+        </div>
+
+        <!-- section 2 -->
+        <div class="content_b_1">
+            <div class="img-section">
+                <img src="" alt="">
+                <div class="hidden"></div>
+            </div>
+        </div>
+
+        <!-- display: none 영역 -->
+        <div class="content_a_2" style="display:none"></div>
+        <div class="content_b_2" style="display:none"></div>
+    </div>
+    <!-- // 옵티마이징 처리 영역 -->
+
+    <!-- section 3 고정 영역-->
+    <div>
+        <div class="img-section">
+            <img src="" alt="">
+            <div class="hidden"></div>
+        </div>
+    </div>
+</div>
+<!--// 어드민 end --></textarea>
+                                <!-- //textarea area -->
+                            </div>
+                        </div>
+                        <h3 class="tit mt20">Style - Pc web</h3>
+                        <div class="editer-wrap mt20">
+                            <div class="control">
+                                <div class="inner">
+                                    <ul>
+                                        <li><button type="button" title="복사" data-editer-copy="editerAcase2"><i class="icon icon-copy-to-clipboard"><span class="blind">복사</span></i></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="editer">
+                                <div class="lines" data-editer="editerAcase2"></div>
+                                <!-- textarea area -->
+                                <textarea class="textarea" data-editer-textarea="editerAcase2" readonly>
+<style type="text/css">
+        .event-detail .img-section {position: relative;}
+        .event-detail .img-section .tp_btn {position: absolute;background: transparent;z-index: 1}
+        .event-detail .img-section .tp_btn.share-css-clear {right:auto;top:auto;}
+        .event-detail .img-section .tp_btn.show {background: rgba(244,255,52, .4)}
+        .event-detail img {vertical-align: top;display:block}
+        .event-detail button.tp_btn {padding: 0;color: transparent; background-color: transparent; border: none;}
+        .event-detail .modal .modal-body {width: 550px; padding: 0;}
+        .event-detail .modal .modal-body img {width: 100%;}
+        .event-detail .modal.modal-alert .btn-close {top: 20px;right: 20px;}
+</style></textarea>
+                                <!-- //textarea area -->
+                            </div>
+                        </div>
+                        <h3 class="tit mt20">Style - Mobile web</h3>
+                        <div class="editer-wrap mt20">
+                            <div class="control">
+                                <div class="inner">
+                                    <ul>
+                                        <li><button type="button" title="복사" data-editer-copy="editerAcase3"><i class="icon icon-copy-to-clipboard"><span class="blind">복사</span></i></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="editer">
+                                <div class="lines" data-editer="editerAcase3"></div>
+                                <!-- textarea area -->
+                                <textarea class="textarea" data-editer-textarea="editerAcase3" readonly>
+<style type="text/css">
+    .promo-wrap .img-section {position: relative;}
+    .promo-wrap .img-section .tp_btn {position: absolute;background: transparent;z-index: 1}
+    .promo-wrap .img-section .tp_btn.show {background: rgba(244,255,52, .4)}
+    .promo-wrap img {vertical-align: top;display:block}
+    .promo-wrap button.tp_btn {padding: 0;color: transparent; background-color: transparent; border: none;}
+    .promo-wrap .modal .modal-dialog {padding: 0;}
+    .promo-wrap .modal .modal-dialog .modal-body {width: 300px; padding: 0;background-color: transparent; border-radius: 0;}
+    .promo-wrap .modal .modal-dialog .modal-body .modal-content {padding-bottom: 0;}
+</style></textarea>
+                                <!-- //textarea area -->
+                            </div>
+                        </div>
+                        <h3 class="tit mt20">안내 사항</h3>
+                        <ul class="b-list mt10 fs-13">
+                            <li><strong>Class명 규칙</strong>: content_순서(<em>알파벳</em>)_보이기(<em>1:show / 2:hide</em>) <br>=> <strong>ex)</strong> class="<em>content_a_1</em>"</li>
+                            <li>옵티마이징 규칙은 경우에 따라서 변동 될 수 있으므로, 작업시 요청 기획자에게 확인 후 작업.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //옵티마이징 -->
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="inner">
+            <p>서울시 중구 광희동 1가 237 11층 이모션</p>
+            <p>website	www.emotion.co.kr</p>
+            <p>facebook	www.facebook.com/emotion.co.kr</p>
+            <p>E-motion Creative Technology Division Front Innovation Group Twd Conduct TFT</p>
+            <p>000-0000-0000-000-0--0-000</p>
+        </div>
+    </div>
+</div>
+<div class="scrolltop-wrap">
+    <button type="button" class="scrolltop-btn" title="맨 위로"><i class="icon icon-scroll-top"><span class="blind">맨 위로</span></i></button>
+</div>
+</body>
+</html>

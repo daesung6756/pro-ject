@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--2019.03.29 -->
+    <meta name="format-detection" content="telephone=no"/>
+    <!--//2019.03.29 -->
+    <title>이벤트</title>
+    <link type="text/css" rel="stylesheet" href="../../responsive/asset/css/common.css" />
+    <script src="../../responsive/asset/js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+    <div class="container">
+        <div class="event-wrap">
+            <form>
+                <div class="title-area">
+                    <h1 class="type2"><img src="../../responsive/asset/images/h1-title_2.png"></h1>
+                </div>
+                <div class="form-area">
+                    <div class="input-warp">
+                        <p class="text">아래의 정보를 입력해주세요!</p>
+                    </div>
+                    <div class="input-warp">
+                        <h2>신청자 정보</h2>
+                        <div class="inner">
+                            <div class="field-set">
+                                <input type="text" class="form-set" name="userName" placeholder="이름"/>
+                            </div>
+                            <div class="field-set btn-type">
+                                <input type="tel"  class="form-set" name="userPhone" placeholder="휴대폰번호" maxlength="11" oninput="maxLengthCheck(this)"/><button type="button" onclick="test()">인증번호 전송</button>
+                            </div>
+                            <div class="field-set btn-type">
+                                <input type="text" class="form-set" name="confirmNumber" placeholder="인증번호" maxlength="6">
+                                <!-- disabled 제거 시 활성화 -->
+                                <button type="button" id="number" disabled>확인</button>
+                                <span class="count-down-area"><span class="min">02</span>:<span class="sec">59</span></span>
+                            </div>
+                            <p class="notice-desc">정확한 휴대폰 번호를 입력해주세요.</p>
+                        </div>
+                    </div>
+                    <div class="input-warp">
+                        <h2>SNS 계정 URL(중복 기입 가능)</h2>
+                        <div class="inner">
+
+                            <div class="field-set check-type">
+                                <label class="check-box" for="test1">
+                                    <input type="checkbox" id="test1" class="check-input">
+                                    <span class="fake"></span>
+                                    페이스북
+                                </label>
+                                <input type="text" class="form-set" disabled="disabled" placeholder="URL 입력">
+                            </div>
+
+                            <div class="field-set check-type" >
+                                <label class="check-box">
+                                    <input type="checkbox" class="check-input">
+                                    <span class="fake"></span>
+                                    인스타그램
+                                </label>
+                                <input type="text" class="form-set" disabled="disabled" placeholder="URL 입력">
+                            </div>
+
+                            <div class="field-set check-type">
+                                <label class="check-box">
+                                    <input type="checkbox" class="check-input">
+                                    <span class="fake"></span>
+                                    블로그
+                                </label>
+                                <input type="text" class="form-set" disabled="disabled" placeholder="URL 입력">
+                            </div>
+
+                            <div class="field-set check-type">
+                                <label class="check-box">
+                                    <input type="checkbox" class="check-input">
+                                    <span class="fake"></span>
+                                    유튜브
+                                </label>
+                                <input type="text" class="form-set" disabled="disabled" placeholder="URL 입력">
+                            </div>
+
+                            <div class="field-set check-type">
+                                <label class="check-box">
+                                    <input type="checkbox" class="check-input">
+                                    <span class="fake"></span>
+                                    트위터
+                                </label>
+                                <input type="text" class="form-set" disabled="disabled" placeholder="URL 입력">
+                            </div>
+
+                            <div class="field-set check-type">
+                                <label class="check-box">
+                                    <input type="checkbox" class="check-input">
+                                    <span class="fake"></span>
+                                    기타
+                                </label>
+                                <input type="text" class="form-set" disabled="disabled" placeholder="URL 입력">
+                            </div>
+
+                            <p class="notice-desc">자신이 주로 사용하는 개인 SNS 계정의 URL을 입력해주세요.</p>
+                        </div>
+                    </div>
+                    <div class="chk-warp">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="agree1" />
+                                <label for="agree1">개인정보 수집 및 이용 동의 <span>(필수)</span></label>
+                                <button type="button" class="js-modal-open link-btn" data-target="#agree-1">자세히 보기</button>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="agree2" />
+                                <label for="agree2">개인정보 취급 위탁 동의 <span>(필수)</span></label>
+                                <button type="button" class="js-modal-open link-btn" data-target="#agree-2">자세히 보기</button>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="agree3" />
+                                <label for="agree3">마케팅 수집 동의 <span>(선택)</span></label>
+                                <button type="button" class="js-modal-open link-btn" data-target="#agree-3">자세히 보기</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-area">
+                        <button type="button">체험단 신청하기</button>
+                    </div>
+                </div>
+            </form><!--//form-->
+        </div><!--//event-wrap-->
+        <div class="info">
+            <h2>유의사항</h2>
+            <ul class="bullet_style">
+                <li>체험단은 다른 통신사 고객도 참여 가능합니다.</li>
+                <li>신청자 1명당 1회선만 체험회선 제공 가능합니다.
+                (비정상적인 방법으로 진행하는 경우에는 즉각 체험회선 중단 예정입니다.)</li>
+                <li>체험단 신청 후 당첨MMS 수신 이후에 LG V50 체험폰 주문이 가능합니다.</li>
+                <li>체험용 휴대폰은 개인명의가 아닌 법인명의로 사전 일괄 개통 예정이므로 별도의 번호이동, 기기변경 절차가 필요하지 않습니다.</li>
+                <li>위 체험단은 SK텔레콤 임직원 및 법인 사업자는 제외됩니다.</li>
+                <li>체험단 모집 내용(기간/대상 등)은 사정에 따라 예고 없이 중단, 변경될 수 있습니다.</li>
+                <li>체험용 회선은 본인인증을 위한 법인실사용자 등록이 불가합니다.</li>
+                <li>체험용 회선(전화번호)에 대해서는 제공 요금제(5GX 프라임) 외 요금제로 변경이 불가합니다.</li>
+                <li>체험용 회선(전화번호)에 대해서는 ‘제공 요금제(5GX 프라임)’을 초과하는
+                이용요금에 대해서는 고객에게 과금 예정입니다.</li>
+                <li>제공되는 부가서비스는 고객 개별 요청에 의한 처리는 불가합니다.
+                    <p>※ 필수 가입 부가서비스 : 휴대폰결제 이용 차단, 060발신차단, 팅060발신차단, 소액결제 불가, 국제전화 차단, 로밍 차단 (해지 불가)</p>
+                    <p>※ 위의 부가서비스 외에 부가서비스 가입은 불가하며, 가입 시 별도 청구 예정입니다.</p></li>
+                <li>체험용 회선은 번호변경이 불가합니다.</li>
+                <li>제공 휴대폰은 단말기 변경/ USIM 카드 변경/ USIM 기변은 불가하며 A/S, 교품 등
+                해당 모델 내에서만 변경 가능합니다.</li>
+                <li>제공 휴대폰은 체험기간(개통 후 1년 이내)종료 후 일괄 반납 예정입니다.
+                (휴대폰 반납시 파손/분실에 대한 부분은 고객에게 비용 청구될 수 있습니다)</li>
+                <li>자세한 활동 내용은 추후 공식 홈페이지에 게시하거나 선발자에게 개별로 알려드립니다.</li>
+                <li>매월 진행되는 SNS 미션은 체험단에게 별도 안내되며, 미 진행 시 사전 예고 없이
+                체험이 중단 될 수 있습니다.</li>
+                <li>비정상적인 신청 / 체험폰 훼손(중고판매&명의변경) 시 즉각적으로 체험이 중단될 수
+                있습니다.</li>
+                <li>입력 정보에 대해서는 체험단으로만 사용 예정이며, 사실과 다른 정보 입력 시에도
+                신청 취소 될 수 있습니다.</li>
+                <li>체험폰 주문 시 본인인증 단계에서 접속자 폭주로 인하여 지연이 발생할 수 있음을
+                양해 부탁드립니다.</li>
+                <li>체험단 참여는 온라인을 통해서만 신청 및 주문이 가능합니다.</li>
+                <li>당첨자 발표는 2019년 4월 30일 공지사항 및 MMS를 통해 안내 됩니다.</li>
+                <li>이벤트 관련 문의 : T world 다이렉트 고객센터 1599-0224(유료)
+                상담시간 평일 09:00~21:00, 토요일 10:00 ~ 15:00</li>
+            </ul>
+        </div>
+    </div><!--//container-->
+</div>
+
+<!--modal-->
+
+<div class="modal" id="agree-1">
+    <div class="modal-container">
+        <div class="contents">
+            <button type="button" class="js-modal-close close-icon" data-target="#agree-1"><span class="blind">닫기</span></button>
+            <div class="top"><h2>개인정보 수집 및 이용 동의</h2></div>
+            <div class="mid">
+                <ol class="margin10">
+                    <li>개인정보 수집 범위 : 이름, 휴대폰번호, SNS</li>
+                    <li>개인정보 수집 및 이용 목적 : 이벤트 참여 및 운영</li>
+                    <li>개인정보 보유 및 이용 기간 : 이벤트 종료 후 2개월 이내 파기</li>
+                    <li>개인정보 수집 및 이용에 동의하지 않을 수 있으나, 미동의 시 이벤트 참여가 불가능합니다.</li>
+                </ol>
+            </div>
+            <div class="bottom">
+                <button type="button" class="js-modal-close" data-target="#agree-1">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="agree-2">
+    <div class="modal-container">
+        <div class="contents">
+            <button type="button" class="js-modal-close close-icon" data-target="#agree-2"><span class="blind">닫기</span></button>
+            <div class="top"><h2>개인정보 취급 위탁 동의</h2></div>
+            <div class="mid">
+                <ol class="margin10">
+                    <li>제공자 : SK텔레콤㈜</li>
+                    <li>제공받는자 : ㈜이모션글로벌, LG전자</li>
+                    <li>제공받는자의 이용목적 : 
+                        <ul>
+                            <li>- 이벤트 참여 및 운영 (㈜이모션글로벌)</li>
+                            <li>- 휴대폰 회수 (LG전자)</li>
+                        </ul>
+                    </li>
+                    <li>제공하는 개인정보 항목 : 이름, 휴대폰번호, SNS</li>
+                    <li>보유 및 이용기간 : 
+                        <ul>
+                            <li>- 이벤트 종료 후 2개월 이내 파기 (㈜이모션글로벌)</li>
+                            <li>- 휴대폰 회수 후 2개월 이내 파기 (LG전자)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="bottom">
+                <button type="button" class="js-modal-close" data-target="#agree-2">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="agree-3">
+    <div class="modal-container">
+        <div class="contents">
+            <button type="button" class="js-modal-close close-icon" data-target="#agree-3"><span class="blind">닫기</span></button>
+            <div class="top"><h2>마케팅 수집 동의</h2></div>
+            <div class="mid">
+                <ol>
+                    <li>개인정보 수집 범위 : 이름, 휴대폰번호, SNS</li>
+                    <li>개인정보 수집 및 이용 목적 : T월드 다이렉트 진행 프로모션 관련 이벤트 운영</li>
+                    <li>개인정보 보유 및 이용 기간 : 3개월간 개인정보 동의</li>
+                </ol>
+                <p class="margin10">*본 동의는 이벤트 응모 시 선택적 사항으로 동의를 거부할 권리가 있으며, 동의를 거부하시는 경우에도 이벤트는 응모하실 수 있습니다.</p>
+            </div>
+            <div class="bottom">
+                <button type="button" class="js-modal-close" data-target="#agree-3">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function test(e, name) {
+        e.preventDefault();
+    }
+    //input type number maxlength check
+    function maxLengthCheck(object){
+        if (object.value.length > object.maxLength){
+            object.value = object.value.slice(0, object.maxLength);
+        }
+    }
+    $(document).on('change', ".check-type .check-box", function(){
+        var $checkInput = $(this).find('.check-input').prop('checked');
+        var $input =  $(this).nextAll('.form-set');
+        if($checkInput ){
+            $input.attr('disabled', false);
+            $input.focus();
+        } else {
+            $input.val('');
+            $input.attr('disabled', true);
+        }
+        console.log($checkInput);
+        console.log($input.attr('disabled'));
+    });
+</script>
+
+
+<!--script-->
+<script src="../../responsive/asset/js/ui.js" ></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>아코디언 이벤트</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/twd.css">
+    <style>
+        .accordian {border-top:2px solid #333;}
+        .accordian .triger {min-height:50px;line-height:50px;cursor:pointer;border-bottom:1px solid #333;}
+        .accordian .panel {display:none;}
+        .accordian .panel .inner {padding:20px;}
+        .accordian .on .triger {border-bottom:1px dotted #ddd;}
+        .accordian .on .panel {display:block;border-bottom:1px solid #333;}
+    </style>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/front-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="inner">
+            <a href="index.html" target="_self" class="history-back-btn">목록으로 돌아가기</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="section">
+                <!--article-->
+                <div class="section-article">
+                    <div class="inner">
+                        <h2 class="tit d-sign fc-orange">간단한 멀티 아코디언 이벤트</h2>
+                        <h3 class="tit mt10">View</h3>
+                        <div class="view-wrap mt20">
+                            <ul class="accordian" data-accordian="ex1">
+                                <li data-accordian-panel="ex1" class="on">
+                                    <div class="triger">section1</div>
+                                    <div class="panel">
+                                        <div class="inner">panel 1</div>
+                                    </div>
+                                </li>
+                                <li data-accordian-panel="ex1" >
+                                    <div class="triger">section2</div>
+                                    <div class="panel">
+                                        <div class="inner">panel 2</div>
+                                    </div>
+                                </li>
+                                <li data-accordian-panel="ex1">
+                                    <div class="triger">section3</div>
+                                    <div class="panel">
+                                        <div class="inner">panel 3</div>
+                                    </div>
+                                </li>
+                                <li data-accordian-panel="ex1">
+                                    <div class="triger">section4</div>
+                                    <div class="panel">
+                                        <div class="inner">panel 4</div>
+                                    </div>
+                                </li>
+                                <li data-accordian-panel="ex1">
+                                    <div class="triger">section5</div>
+                                    <div class="panel">
+                                        <div class="inner">panel 5</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="tit mt20">Code</h3>
+                        <div class="editer-wrap mt20">
+                            <div class="control">
+                                <div class="inner">
+                                    <ul>
+                                        <li><button type="button" title="복사" data-editer-copy="editerDcase1"><i class="icon icon-copy-to-clipboard"><span class="blind">복사</span></i></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="editer">
+                                <div class="lines" data-editer="editerDcase1"></div>
+                                <!-- textarea area -->
+                                <textarea class="textarea" data-editer-textarea="editerDcase1" readonly="">
+<!-- 마크업 -->
+<ul class="accordian" data-accordian="데이터값">
+    <li data-accordian-panel="데이터값" class="on"> <!-- 처음 보이는 판넬 -->
+        <div class="triger">section1</div>
+        <div class="panel">
+            <div class="inner">panel 1</div>
+        </div>
+    </li>
+    <li data-accordian-panel="데이터값" >
+        <div class="triger">section2</div>
+        <div class="panel">
+            <div class="inner">panel 2</div>
+        </div>
+    </li>
+    <li data-accordian-panel="데이터값">
+        <div class="triger">section3</div>
+        <div class="panel">
+            <div class="inner">panel 3</div>
+        </div>
+    </li>
+    <li data-accordian-panel="데이터값">
+        <div class="triger">section4</div>
+        <div class="panel">
+            <div class="inner">panel 4</div>
+        </div>
+    </li>
+    <li data-accordian-panel="데이터값">
+        <div class="triger">section5</div>
+        <div class="panel">
+            <div class="inner">panel 5</div>
+        </div>
+    </li>
+</ul>
+                                    <!-- 스크립트 -->
+<script>
+function planningAccordian (){
+    var accordianGroup = [];
+
+    $('[data-accordian]').each(function(key, value){
+        if($.inArray($(this).data('accordian') , accordianGroup) === -1){
+            accordianGroup.push($(this).data('accordian'));
+        }
+    });
+
+    $.each(accordianGroup , function(key, value) {
+        var $panel = $("[data-accordian-panel=" + value + "]");
+        var $btn = $panel.children('.triger');
+
+        $btn.click('click',function(e){
+            e.preventDefault();
+            if($(this).parent().hasClass('on')) {
+                $panel.removeClass('on');
+            } else {
+                $panel.removeClass('on');
+                $(this).parent().addClass('on');
+            }
+
+        });
+    });
+}
+</script></textarea>
+                                <!-- //textarea area -->
+                            </div>
+                        </div>
+                        <h3 class="tit mt20">Style</h3>
+                        <div class="editer-wrap mt20">
+                            <div class="control">
+                                <div class="inner">
+                                    <ul>
+                                        <li><button type="button" title="복사" data-editer-copy="editerDcase2"><i class="icon icon-copy-to-clipboard"><span class="blind">복사</span></i></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="editer">
+                                <div class="lines" data-editer="editerDcase2"></div>
+                                <!-- textarea area -->
+                                <textarea class="textarea" data-editer-textarea="editerDcase2" readonly="">
+<style>
+    .accordian {border-top:2px solid #333;}
+    .accordian .triger {min-height:50px;line-height:50px;cursor:pointer;border-bottom:1px solid #333;}
+    .accordian .panel {display:none;}
+    .accordian .panel .inner {padding:20px;}
+    .accordian .on .triger {border-bottom:1px dotted #ddd;}
+    .accordian .on .panel {display:block;border-bottom:1px solid #333;}
+</style></textarea>
+                                <!-- //textarea area -->
+                            </div>
+                        </div>
+                        <!-- //공통 마크업 구조 -->
+                        <h3 class="tit mt20">안내 사항</h3>
+                        <ul class="b-list mt10 fs-13">
+                            <li>- twd 스테이징 서버에 테스트 필요.</li>
+                            <li>- 사용시 디자인 클래스와 이벤트용 클래스를 분기해서 사용.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--//article-->
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="inner">
+            <p>서울시 중구 광희동 1가 237 11층 이모션</p>
+            <p>website	www.emotion.co.kr</p>
+            <p>facebook	www.facebook.com/emotion.co.kr</p>
+            <p>E-motion Creative Technology Division Front Innovation Group Twd Conduct TFT</p>
+            <p>000-0000-0000-000-0--0-000</p>
+        </div>
+    </div>
+</div>
+<div class="scrolltop-wrap">
+    <button type="button" class="scrolltop-btn" title="맨 위로"><i class="icon icon-scroll-top"><span class="blind">맨 위로</span></i></button>
+</div>
+<script type="text/javascript">
+    function planningAccordian (){
+       var accordianGroup = [];
+
+       $('[data-accordian]').each(function(key, value){
+           if($.inArray($(this).data('accordian') , accordianGroup) === -1){
+               accordianGroup.push($(this).data('accordian'));
+           }
+       });
+
+       $.each(accordianGroup , function(key, value) {
+           var $panel = $("[data-accordian-panel=" + value + "]");
+           var $btn = $panel.children('.triger');
+
+           $btn.click('click',function(e){
+               e.preventDefault();
+                if($(this).parent().hasClass('on')) {
+                    $panel.removeClass('on');
+                } else {
+                    $panel.removeClass('on');
+                    $(this).parent().addClass('on');
+                }
+
+            });
+       });
+    }
+    planningAccordian();
+
+    $(function(){
+
+    });
+</script>
+</body>
+</html>

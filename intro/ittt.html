@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>접근성 정보</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/renderingMarkup.js"></script>
+    <script src="js/intro-table-data.js"></script>
+    <script src="js/front-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+    <div class="header"></div>
+    <!-- //header -->
+
+    <!-- visual spot -->
+    <div class="visual-spot"></div>
+    <!-- //visual spot -->
+
+    <!-- container -->
+    <div class="container">
+        <div class="content">
+
+            <!-- section 1 -->
+            <div class="section">
+                <div class="section-inner">
+                    <div class="blink-event-set">
+                        <span class="bim box-blink-ani"></span>
+                        <span class="lamp"></span>
+                        <span class="light box-blink-ani box-shadow-ani"></span>
+                        <button type="button" class="panel-btn1 toggle-switch"  data-tooltip="스위치!!"><span class="blind">전등 효과 켜기/끄기</span></button>
+                    </div>
+
+                    <h3 class="tit box-blink-ani">It Technical term List</h3>
+                    <div class="search-wrap">
+                        <div class="form-set lable-search">
+                            <label for="searcTtList">
+                                <input type="search" id="searcTtList" placeholder="검색어를 입력하세요.">
+                            </label>
+                        </div>
+                        <div class="search-count"><span>검색결과 : </span><span class="num">(0)</span></div>
+                        <ul class="disc-list">
+                            <li>숫자, 영문, 한글 검색 됩니다.</li>
+                            <li>대소문자 구분 필요합니다.</li>
+                            <li>초성으로 검색되지 않습니다.</li>
+                            <li>입력과 동시에 검색 됩니다.</li>
+                        </ul>
+                        <ul class="disc-list search-output"></ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!-- //footer -->
+</div>
+</body>
+</html>
+

@@ -2,7 +2,7 @@ let UI ={
     init : function(){
         this.stickyEvents();
         this.textareaEditer();
-        this.tabs();
+        // this.tabs();
         this.tooltip();
         this.scrollTopEvent('.scrolltop-btn');
     },
@@ -37,7 +37,7 @@ let UI ={
             });
         });
     },
-    tabs: function(){
+    /*tabs: function(){
         let $hash = window.location.href;
         let tabGroup = [];
         $('[data-tab]').each(function(key, value){
@@ -64,7 +64,7 @@ let UI ={
             });
 
         });
-    },
+    },*/
     stickyEvents : function(){
         let $html = parseInt($(document).height()) - parseInt($(window).height());
         let $headerHeight = parseInt($('.header').height());
@@ -113,14 +113,10 @@ let UI ={
 
         $.each(tooltipGroup , function(key, value) {
             let $target = $('[data-tooltip=\''+ value +'\']');
-            // let $target = $('[data-tooltip='+ value +']');
             $target.on('mouseenter',function(){
                 let dataValue = value.replace(" ", "&nbsp;");
-                // dataValue = dataValue.replaceAll("%A0","%20");
-                // dataValue = unescape(dataValue);
-                // console.log();
                 if($(this).find('.tooltip').length !== 1){
-                    let $tool = $(this).append('<div class="tooltip"></div>');
+                    let $tool = $(this).append('<span class="tooltip"></span>');
                     $(this).find('.tooltip').html(dataValue);
                 } else {
                     return false;

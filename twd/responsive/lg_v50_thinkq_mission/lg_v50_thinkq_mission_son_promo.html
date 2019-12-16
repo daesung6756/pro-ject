@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--2019.03.29 -->
+    <meta name="format-detection" content="telephone=no"/>
+    <!--//2019.03.29 -->
+    <title>이벤트</title>
+    <link type="text/css" rel="stylesheet" href="../../responsive/asset/css/common.css" />
+    <script src="../../responsive/asset/js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+    <div class="container">
+        <div class="event-wrap">
+            <form>
+                <div class="top-title"><img src="../../responsive/asset/images/top-title_4_2.png" alt="SKT 5GX X LG V50 ThinQ 출시기념"></div>
+                <div class="title-area2">
+                    <h1 class="type2"><img src="../../responsive/asset/images/h1-title_6.png" alt="손흥민 우승기원 미션!"></h1>
+                </div>
+                <div class="form-area">
+                    <div class="input-warp no-bg mt50">
+                        <h2 class="mt50">신청자 정보<span class="required">(필수)</span></h2>
+                        <div class="inner">
+                            <div class="field-set">
+                                <input type="text" class="form-set mt0" name="userName" placeholder="이름"/>
+                            </div>
+                            <div class="field-set mt0 pb0">
+                                <input type="tel"  class="form-set" name="userPhone" placeholder="휴대폰번호" maxlength="11">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-warp no-bg">
+                        <h2 class="mt0">미션 수행 URL 입력<span class="required">(필수)</span></h2>
+                        <div class="inner pb0">
+                            <div class="field-set">
+                                <input type="text" class="form-set mt0" placeholder="URL 입력해주세요.">
+                            </div>
+                            <p class="notice-desc fc-red mt0">미션 수행에 대한 SNS 게시물 URL 정보를 입력해주세요.</p>
+                        </div>
+                    </div>
+                    <div class="btn-area type2">
+                        <button type="button">등록하기</button>
+                    </div>
+                </div>
+            </form><!--//form-->
+        </div><!--//event-wrap-->
+        <div class="info">
+            <h2 class="rect-title">안내사항</h2>
+            <ul class="bullet_style">
+                <li>당첨된 고객님께서는 이벤트 참여 일정 기간 동안 하기 필수 미션을 <br>진행해 주셔야 합니다. <br>- 필수 미션 : 경기 당일 직캠 영상 라이브, 일정 내 일별 이미지 <br>SNS 업로드, 원정 기간 V로그 업로드</li>
+                <li>필수 미션 미완수에 대한 불이익이 있을 수 있습니다.</li>
+                <li>미션 등록 SNS 공유 결과물(이미지/영상)은 사전 ‘저작권/편집권/초상권’ 동의에 따라 ‘비공개/삭제’하지 않도록 해주시기 바랍니다.</li>
+                <li>미션 소재는 MMS로 안내 드린 것처럼 ‘V50 ThinQ 기능/SKT 5G 컨텐츠 2가지’를 중심으로 진행바랍니다.</li>
+            </ul>
+            <h2 class="rect-title">문의처</h2>
+            <ul class="bullet_style">
+                <li>본 이벤트는 SK텔레콤의 위탁을 받아 대행사에서 운영, 관리합니다.</li>
+                <li>이벤트 관련 문의: T월드 다이렉트 상담센터 1599-0224(유료) <br>상담시간: 평일 09:00~21:00, 토요일 10:00~15:00</li>
+            </ul>
+        </div>
+    </div><!--//container-->
+</div>
+
+<script>
+    function test(e, name) {
+        e.preventDefault();
+    }
+    //input type number maxlength check
+    function maxLengthCheck(object){
+        if (object.value.length > object.maxLength){
+            object.value = object.value.slice(0, object.maxLength);
+        }
+    }
+    // $(document).on('change', ".check-type .check-box", function(){
+    //     var $checkInput = $(this).find('.check-input').prop('checked');
+    //     var $input =  $(this).nextAll('.form-set');
+    //     if($checkInput ){
+    //         $input.attr('disabled', false);
+    //         $input.focus();
+    //     } else {
+    //         $input.val('');
+    //         $input.attr('disabled', true);
+    //     }
+    //     console.log($checkInput);
+    //     console.log($input.attr('disabled'));
+    // });
+</script>
+
+
+<!--script-->
+<script src="../../responsive/asset/js/ui.js" ></script>
+</body>
+</html>

@@ -1,98 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac616bb4-2468-4271-9686-3a159f0b6ecd" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/boom-search/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boom-search/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boom-search/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boom-search/js/gameControll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boom-search/js/html5shiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boom-search/js/jquery-3.3.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boom-search/js/polyfill/typedarray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boom-search/js/underscore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/images/cat-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/images/cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/images/left-mouse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/images/right-mouse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/images/switch-off.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/images/switch-on.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/images/tree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/css/plugin/swiper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/dim_popup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/favicon/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-800.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-800.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-800.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-800.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-800.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/fonts/nanum-gothic-v13-latin_korean-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/images/icons/icon-cross-bold-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/images/icons/icon-share.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/images/icons/tmap_maker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/images/icons/tmap_maker_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/jquery_ui_accordian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/front-ui-graph1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/front-ui-graph2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/html5shiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/jquery-3.3.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/plugin/plotly/plotly.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/plugin/swiper/swiper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/polyfill/typedarray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/popup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/prototype-study.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/swiper-each.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/toggle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/js/ui-tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/plotly_plugin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/swiper_plugin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/tabs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/tmap_api.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/toggle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study/ui_tolltip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg-login-form/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg-login-form/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg-login-form/css/svg-login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg-login-form/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg-login-form/js/html5shiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg-login-form/js/jquery-3.3.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg-login-form/js/polyfill/typedarray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg-login-form/js/svgLogin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svg-login-form/js/underscore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/css/vmachine.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/images/1000won.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/images/100won.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/images/500won.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/images/icon-coffee.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/images/input-coin-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/images/paper-cup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/images/reset-btn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/js/html5shiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/js/jquery-3.3.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/js/machine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/js/polyfill/typedarray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/js/underscore.js" afterDir="false" />
+    <list default="true" id="ac616bb4-2468-4271-9686-3a159f0b6ecd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/intro/images/blank-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/images/icons/icon-search-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/images/list/twd-pc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/2019-home-package-sample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/2019-planning-event-sample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/2019-strong-point-device-sample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/2019-strong-point-smart-home-sample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/2019-strong-point-tgift-sample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/accessory_01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/accessory_02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/device_01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/device_02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/event-accordian-target-move.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/event-accordian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/event-alert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/event-change0img-src.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/event-confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/event-layer-popup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/event-scroll-top.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/event-tab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/event-target-move.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/event-toggle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/event-tooltip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/event-window-popup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/gate-promo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/images/click-event-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase4-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase4-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase5-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase6-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/images/gate-promo-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/images/main-banner-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/images/terms-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/images/value-ad-sv-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/main-banner-event.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/planning-default-markup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/planning-goggle-optimizing-part-markup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/planning-goggle-optimizing-section-markup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/planning-goggle-optimizing-target-markup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/fonts/NotoSansKR-Bold-Hestia.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/fonts/NotoSansKR-Bold-Hestia.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/fonts/NotoSansKR-DemiLight-Hestia.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/fonts/NotoSansKR-DemiLight-Hestia.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/20190527-title-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/5gx-title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/bg_line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/bg_line2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/ccpp-table.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/checked-input.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/chk-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/chk-title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/chk1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/chk2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/close_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/galaxy-note10-title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title-mission.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_4_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_4_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_4_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icon-radio-checked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icon-radio-type2-checked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icon-radio-type2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icon-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icon-select-arrow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icon-white-x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icpp-table.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icpp-table2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lg_v50_mission_login_title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lgv50_11_mission.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lgv50_11_mission_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lgv50_6_mission_step1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lgv50_6_mission_step2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lgv50_7_mission.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lgv50_9_mission.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/mt-pp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/note10-friend-title.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/rate-smile-half.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/rate-smile-off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/rate-smile-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/show-history.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/title-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/title-bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/top-title_4_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/top-title_4_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/top-title_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot1-checked.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot2-checked.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot3-checked.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot4-checked.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot5-checked.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot6-checked.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/unchecked-input.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/js/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/js/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/js/jquery.raty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/js/ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/june/lg_v50_thinkq_mission_login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/june/lg_v50_thinkq_mission_promo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/lg_v50_thinkq_mission_son_promo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/lg_v50_thinkq_promo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/lg_v50_thinkq_rsv_son_promo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/lg_v50_thinkq_rsv_son_win_promo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/lg_v50_thinkq_winners.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/strong-point-default.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/strong-point-type1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/strong-point-type2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/strong-point-type3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/terms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/tgift_01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/tgift_02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd/value-added-service.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/error/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/error/js/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/css/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro/css/intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/images/cat-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/images/cat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/images/icons/icon-thor-hammer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/images/logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/js/front-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/front-ui.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/js/intro-table-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/intro-table-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/video/marvel-logo-video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tdirect-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twd/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/twd/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twd/css/twd.css" beforeDir="false" afterPath="$PROJECT_DIR$/twd/css/twd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twd/images/editerDcase3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twd/images/editerDcase4-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/twd/images/editerDcase4-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twd/images/editerDcase4-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/twd/images/editerDcase4-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twd/images/editerDcase4-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/twd/images/editerDcase4-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twd/images/editerDcase5-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/twd/images/editerDcase5-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twd/images/editerDcase6-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/twd/images/editerDcase6-1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/twd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/twd/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twd/js/data-twd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twd/js/front-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/twd/js/front-ui.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,9 +164,9 @@
       <list>
         <option value="tsconfig.json" />
         <option value="package.json" />
+        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -139,18 +195,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\git\pro-ject\intro\images\list" />
       <recent name="E:\git\pro-ject\intro\images" />
-      <recent name="E:\git\pro-ject\vending-machine" />
-      <recent name="E:\git\pro-ject\repensive\js" />
-      <recent name="E:\git\pro-ject\repensive\images\icons" />
-      <recent name="E:\git\pro-ject\outlook\images" />
+      <recent name="E:\git\pro-ject\twd" />
+      <recent name="E:\git\pro-ject\twd\images" />
+      <recent name="E:\git\pro-ject\intro\images\icons" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\git\pro-ject\intro\images" />
-      <recent name="E:\git\pro-ject\svg-login-form" />
-      <recent name="E:\git\pro-ject\vending-machine\images" />
-      <recent name="E:\git\pro-ject\vending-machine" />
-      <recent name="E:\git\pro-ject\boomserach" />
+      <recent name="E:\git\pro-ject\intro\images\list" />
+      <recent name="E:\git\pro-ject\twd\images" />
+      <recent name="E:\git\pro-ject\twd" />
+      <recent name="E:\git\pro-ject\intro\images\icons" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -356,7 +412,35 @@
       <workItem from="1574646417214" duration="11509000" />
       <workItem from="1574664058419" duration="4500000" />
       <workItem from="1574671435759" duration="33000" />
-      <workItem from="1574727910221" duration="6512000" />
+      <workItem from="1574727910221" duration="9525000" />
+      <workItem from="1574745940546" duration="9967000" />
+      <workItem from="1574814065496" duration="16748000" />
+      <workItem from="1574900943670" duration="4061000" />
+      <workItem from="1574907952406" duration="6869000" />
+      <workItem from="1574993904299" duration="4732000" />
+      <workItem from="1575332770120" duration="28720000" />
+      <workItem from="1575419451231" duration="823000" />
+      <workItem from="1575432979479" duration="2853000" />
+      <workItem from="1575435871059" duration="18000" />
+      <workItem from="1575441023295" duration="7404000" />
+      <workItem from="1575505209525" duration="5522000" />
+      <workItem from="1575511334837" duration="13273000" />
+      <workItem from="1575527123815" duration="5463000" />
+      <workItem from="1575532598965" duration="1497000" />
+      <workItem from="1575534215982" duration="2112000" />
+      <workItem from="1575591587129" duration="7704000" />
+      <workItem from="1575603912415" duration="3000000" />
+      <workItem from="1575607550820" duration="1883000" />
+      <workItem from="1575615871463" duration="1317000" />
+      <workItem from="1575621879500" duration="621000" />
+      <workItem from="1575851110737" duration="9476000" />
+      <workItem from="1575862850310" duration="6560000" />
+      <workItem from="1575872399605" duration="7510000" />
+      <workItem from="1575937273403" duration="28935000" />
+      <workItem from="1576023810104" duration="25648000" />
+      <workItem from="1576109978803" duration="18741000" />
+      <workItem from="1576132352981" duration="7846000" />
+      <workItem from="1576197274487" duration="25891000" />
     </task>
     <task id="LOCAL-00001" summary="[이대성] 이미지 위치 값 가져오기 제네레이터">
       <created>1554266632969</created>
@@ -526,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565663289127</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="update">
+      <created>1574736098704</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1574736098704</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">

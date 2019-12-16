@@ -2,485 +2,62 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>작업물 리스트</title>
+    <title>작업물 내역</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/intro.css">
     <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/renderingMarkup.js"></script>
     <script src="js/intro-table-data.js"></script>
     <script src="js/front-ui.js"></script>
 </head>
-<body class="bb-theme">
-<div class="overlay d-right">
-    <div class="overlay-inner">
-        <button type="button" class="tbl-event-btn" title="리스트 닫기"><i class="icon icon-arrow-down-white1"><span>닫기</span><span class="blind">리스트 닫기</span></i></button>
-        <div class="intro-tbl-col"></div>
-    </div>
-</div>
+<body>
 <div class="wrap">
+
     <!-- header -->
-    <div class="header">
-        <div class="inner">
-            <div class="in-left">
-                <div style="">
-                    <button type="button" data-pop="gnb">버튼1</button>
+    <div class="header"></div>
+    <!--// header -->
 
-                    <div class="popup-wrap is-dim wide" id="gnb">
-                        <div class="pop">
-                            <div class="pop-head">
-                                <h2 class="pop-tit">이곳은 제목이 들어 가는 곳입니다.이곳은 제목이 들어 가는 곳입니다.이곳은 제목이 들어 가는 곳입니다.이곳은 제목이 들어 가는 곳입니다.이곳은 제목이 들어 가는 곳입니다.이곳은 제목이 들어 가는 곳입니다.이곳은 제목이 들어 가는 곳입니다.이곳은 제목이 들어 가는 곳입니다.이곳은 제목이 들어 가는 곳입니다.이곳은 제목이 들어 가는 곳입니다.이곳은 제목이 들어 가는 곳입니다.이곳은 제목이 들어 가는 곳입니다.</h2>
-                                <button type="button" data-pop-close="gnb" class="x-close">닫기<span class="blind">팝업 닫기</span></button>
-                            </div>
-                            <div class="pop-content">
-                                <div class="gnb">
-                                    <ul class="gnb-list">
-                                        <li><a href="">메뉴1</a></li>
-                                        <li><a href="">메뉴2</a></li>
-                                        <li><a href="">메뉴3</a></li>
-                                        <li><a href="">메뉴4</a></li>
-                                        <li><a href="">메뉴5</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                        <li><a href="">메뉴6</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="pop-foot">
-                                <div class="foot-inner">
-                                    <button type="button" data-pop-close="gnb">닫기<span class="blind">팝업 닫기</span></button>
-                                    <button type="button" data-pop-close="gnb">닫기<span class="blind">팝업 닫기</span></button>
-                                    <button type="button" data-pop-close="gnb">닫기<span class="blind">팝업 닫기</span></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- visual spot -->
+    <div class="visual-spot"></div>
+    <!-- //visual spot -->
 
-                </div>
-            </div>
-            <div class="in-center tac"><a href="">로고</a></div>
-            <div class="in-right">
-                <button type="button">버튼1</button>
-                <button type="button">버튼2</button>
-            </div>
-        </div>
-    </div>
-    <!-- section -->
-    <!-- 비쥬얼 스팟 영역 -->
-    <div class="visual-spot">
-        <div class="spot-inner">
-            <div class="bg-area">
-                <button type="button" class="toggle-switch" data-tooltip="스위치!!"></button>
-            </div>
-            <div class="text-area">
-                <span class="text1">2019</span>
-                <p class="text2 mt10">Portfolio List</p>
-            </div>
-        </div>
-        <div class="full-event-area">
-            <span class="mouse type1"><span class="inner"><img src="images/left-mouse.png"></span></span>
-            <span class="mouse type2"><span class="inner"><img src="images/right-mouse.png"></span></span>
-            <span class="mouse type3"><span class="inner"><img src="images/left-mouse.png"></span></span>
-            <span class="mouse type4"><span class="inner"><img src="images/right-mouse.png"></span></span>
-            <span class="mouse type5"><span class="inner"><img src="images/left-mouse.png"></span></span>
-            <span class="mouse type6"><span class="inner"><img src="images/right-mouse.png"></span></span>
-        </div>
-    </div>
-    <!-- section -->
-    <div class="container mt50">
+    <!-- container -->
+    <div class="container">
         <div class="content">
-            <!-- photo list -->
 
-            <!-- mainTab content 1-->
-            <div>
-                <div class="section"></div>
-                <!-- 보이면 반응 하는 애니메이션 리스트 -->
-                <div class="section">
+            <!-- section 1 -->
+            <div class="section">
+                <div class="section-inner">
+                    <div class="blink-event-set">
+                        <span class="bim box-blink-ani"></span>
+                        <span class="lamp"></span>
+                        <span class="light box-blink-ani box-shadow-ani"></span>
+                        <button type="button" class="panel-btn1 toggle-switch"  data-tooltip="스위치!!"><span class="blind">전등 효과 켜기/끄기</span></button>
+                    </div>
 
-                    <h3 class="tit">참여 프로젝트</h3>
-                    <div class="section-inner mt20">
-                        <ul class="photo-list">
-                            <li>
-                                <a href="">
-                                    <span class="sub-tit ani-text1">https://www.pizzahut.co.kr/</span>
-                                    <p class="product-desc ani-text2 mt10">피자헛</p>
-                                </a>
-                                <div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">ㄴㅇㄹㄴㅇㄹㅇㅇㄴㄹㄴㅇㄹㄴㅇㄹㅇㄴㅇㄴㄹㅇㄴㄹㄴㅇㄹㄴㅇㄹㄹ</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <!--<span class="badge case2">특가세일</span>-->
-                                    <span class="sub-tit ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">테스트 디스크럽션 테스트 디스크럽션 테스트 디스크럽션</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <!--<span class="badge">특가세일</span>-->
-                                    <span class="ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">테스트 디스크럽션 테스트 디스크럽션 테스트 디스크럽션</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="sub-tit ani-text1">https://www.pizzahut.co.kr/</span>
-                                    <p class="product-desc ani-text2 mt10">피자헛</p>
-                                </a>
-                                <div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">ㄴㅇㄹㄴㅇㄹㅇㅇㄴㄹㄴㅇㄹㄴㅇㄹㅇㄴㅇㄴㄹㅇㄴㄹㄴㅇㄹㄴㅇㄹㄹ</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <!--<span class="badge case2">특가세일</span>-->
-                                    <span class="sub-tit ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">테스트 디스크럽션 테스트 디스크럽션 테스트 디스크럽션</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <!--<span class="badge">특가세일</span>-->
-                                    <span class="ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">테스트 디스크럽션 테스트 디스크럽션 테스트 디스크럽션</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="sub-tit ani-text1">https://www.pizzahut.co.kr/</span>
-                                    <p class="product-desc ani-text2 mt10">피자헛</p>
-                                </a>
-                                <div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">ㄴㅇㄹㄴㅇㄹㅇㅇㄴㄹㄴㅇㄹㄴㅇㄹㅇㄴㅇㄴㄹㅇㄴㄹㄴㅇㄹㄴㅇㄹㄹ</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <!--<span class="badge case2">특가세일</span>-->
-                                    <span class="sub-tit ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">테스트 디스크럽션 테스트 디스크럽션 테스트 디스크럽션</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <!--<span class="badge">특가세일</span>-->
-                                    <span class="ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">테스트 디스크럽션 테스트 디스크럽션 테스트 디스크럽션</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="sub-tit ani-text1">https://www.pizzahut.co.kr/</span>
-                                    <p class="product-desc ani-text2 mt10">피자헛</p>
-                                </a>
-                                <div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">ㄴㅇㄹㄴㅇㄹㅇㅇㄴㄹㄴㅇㄹㄴㅇㄹㅇㄴㅇㄴㄹㅇㄴㄹㄴㅇㄹㄴㅇㄹㄹ</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <!--<span class="badge case2">특가세일</span>-->
-                                    <span class="sub-tit ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">테스트 디스크럽션 테스트 디스크럽션 테스트 디스크럽션</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <!--<span class="badge">특가세일</span>-->
-                                    <span class="ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">테스트 디스크럽션 테스트 디스크럽션 테스트 디스크럽션</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="sub-tit ani-text1">https://www.pizzahut.co.kr/</span>
-                                    <p class="product-desc ani-text2 mt10">피자헛</p>
-                                </a>
-                                <div>
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">ㄴㅇㄹㄴㅇㄹㅇㅇㄴㄹㄴㅇㄹㄴㅇㄹㅇㄴㅇㄴㄹㅇㄴㄹㄴㅇㄹㄴㅇㄹㄹ</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <!--<span class="badge case2">특가세일</span>-->
-                                    <span class="sub-tit ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">테스트 디스크럽션 테스트 디스크럽션 테스트 디스크럽션</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <!--<span class="badge">특가세일</span>-->
-                                    <span class="ani-text1 mt10">서브 타이틀</span>
-                                    <p class="product-desc ani-text2 mt10">테스트 디스크럽션 테스트 디스크럽션 테스트 디스크럽션</p>
-                                    <span class="hash-tag ani-text3 mt10">#가나다 #라마바 #아자차 #타파하</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <h3 class="tit box-blink-ani">History Logs</h3>
+                    <div class="">
+                        <div class="years-tab">
+                            <ul class="partion-list">
+                                <li data-tab="list-tab" class="after-log is-active">2019</li>
+                                <li data-tab="list-tab" class="before-log">Before</li>
+                            </ul>
+                        </div>
+                        <ul class="photo-list after-log" data-tab-content="list-tab"></ul>
+                        <ul class="photo-list before-log" data-tab-content="list-tab"></ul>
                     </div>
                 </div>
-`
-                <!-- section -->
-                <!--<div class="section">
-                    <h3 class="tit box-type fc-blue">접근성 체크 리스트<span class="desc">Row - Table Group (Json)</span></h3>
-                    <ul class="tabs-nav">
-                        <li><a href="markup" data-tab="ddd" class="is-active">마크업</a></li>
-                        <li><a href="uxui" data-tab="ddd">기획(UX/UI)</a></li>
-                        <li><a href="develop" data-tab="ddd">개발</a></li>
-                    </ul>
-                    <div class="section-article mt30" data-tab-content="ddd">
-                        <h3 class="tit c-sign">마크업<span class="desc">※ 최종수정일:2014.06.09</span></h3>
-                        <p class="desc h3-type">※ 이 체크리스트는 <strong>NHN Web Content Accessibility Guidelines (NWCAG) 1.0</strong>를 기반으로 실무에서 살펴봐야 하는 항목들을 제시합니다.</p>
-                        &lt;!&ndash; row table &ndash;&gt;
-                        <div class="intro-tbl-row mt20"></div>
-                    </div>
-
-                    <div class="section-article mt30" data-tab-content="ddd">
-                        <h3 class="tit c-sign">기획(UX/UI)<span class="desc">※ 최종수정일:2014.06.09</span></h3>
-                        <p class="desc h3-type">※ 이 체크리스트는 <strong>NHN Web Content Accessibility Guidelines (NWCAG) 1.0</strong>를 기반으로 실무에서 살펴봐야 하는 항목들을 제시합니다.</p>
-                        &lt;!&ndash; row table &ndash;&gt;
-                        <div class="intro-tbl-row2 mt20"></div>
-                    </div>
-
-                    <div class="section-article mt30" data-tab-content="ddd">
-                        <h3 class="tit c-sign">개발<span class="desc">※ 최종수정일:2014.06.09</span></h3>
-                        <p class="desc h3-type">※ 이 체크리스트는 <strong>NHN Web Content Accessibility Guidelines (NWCAG) 1.0</strong>를 기반으로 실무에서 살펴봐야 하는 항목들을 제시합니다.</p>
-                        &lt;!&ndash; row table &ndash;&gt;
-                        <div class="intro-tbl-row3 mt20"></div>
-                    </div>
-                </div>-->
-
-                <!-- section -->
-                <!--<div class="section">
-                    <h3 class="tit box-type fc-blue">접근성 평가 도구 소개<span class="desc">※ 출처 - <a href="https://www.wah.or.kr:444/Participation/online-wah.asp" target="_blank" title="새창열기">웹 접근성 연구소</a></span></h3>
-
-                    <div class="section-article dot-top-line">
-                            <div class="mt20"><h4 class="tit">Open-WAX</h4></div>
-                            <ul class="list-01 b-dash mt20">
-                                <li>
-                                    <span class="bold-9 fc-white">프로그램 명 : Open-WAX</span>
-                                </li>
-                                <li>
-                                    <span class="bold-9 fc-white">이미지</span>
-                                    <ul class="list-02 mt10">
-                                        <li><img src="https://www.wah.or.kr:444/images/Guide/Open-wax.gif" alt="Open-WAX 프로그램 이미지"></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <span class="bold-9 fc-white">특징</span>
-                                    <ul class="list-02 b-circle mt10">
-                                        <li>브라우저 플러그인 방식(Firefox, Chrome 등과 함께 사용)</li>
-                                        <li>1 페이지씩 검사</li>
-                                        <li>16개 항목 검사</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <span class="bold-9 fc-white">설치방법</span>
-                                    <ul class="list-02 b-circle mt10">
-                                        <li><span>Chrome</span> 브라우저 &gt; 도구 더보기 &gt; 확장 프로그램 &gt; “OpenWAX” 검색</li>
-                                        <li><span>FireFox</span> 브라우저 &gt; 도구 &gt; 부가기능 &gt; “openwax” 검색</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                    </div>
-
-                    <div class="section-article dot-top-line">
-                        <div class="mt20"><h4 class="tit">WAVE</h4></div>
-                        <ul class="list-01 b-dash mt20">
-                            <li><span class="bold-9 fc-white">프로그램 명 : WAVE</span></li>
-                            <li><span class="bold-9 fc-white">이미지</span>
-                                <ul class="list-02 b-circle mt10">
-                                    <li><img src="https://www.wah.or.kr:444/images/Guide/wave.gif" alt="WAVE 프로그램 이미지"></li>
-                                </ul>
-                            </li>
-                            <li><span class="bold-9 fc-white">특징</span>
-                                <ul class="list-02 b-circle mt10">
-                                    <li>서비스 페이지 및 브라우저 플러그인 방식 제공</li>
-                                    <li>1 페이지씩 검사</li>
-                                    <li>검사 결과를 요청한 페이지 위에 직관적인 형태로 표시</li>
-                                </ul>
-                            </li>
-                            <li><span class="bold-9 fc-white">제작 : </span>WebAIM</li>
-                            <li><span class="bold-9 fc-white">설치방법</span>
-                                <ul class="list-02 b-circle mt10">
-                                    <li>서비스 페이지 : <a href="http://wave.webaim.org" class="blue" title="WAVE 다운로드 접속">http://wave.webaim.org</a> 접속</li>
-                                    <li><span>Chrome</span> 브라우저 &gt; 도구 더보기 &gt; 확장 프로그램 &gt; “WAVE” 검색</li>
-                                    <li><span>FireFox</span> 브라우저 &gt; 도구 &gt; 부가기능 &gt; “WAVE” 검색</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="section-article dot-top-line">
-                        <div class="mt20"><h4 class="tit">AChecker</h4></div>
-                        <ul class="list-01 b-dash mt20">
-                            <li><span class="bold-9 fc-white">프로그램 명 : AChecker</span></li>
-                            <li><span class="bold-9 fc-white">이미지</span>
-                                <ul class="list-02 mt10">
-                                    <li><img src="https://www.wah.or.kr:444/images/Guide/wave.gif" alt="AChecker 프로그램 이미지"></li>
-                                </ul>
-                            </li>
-                            <li><span class="bold-9 fc-white">특징</span>
-                                <ul class="list-02 b-circle mt10">
-                                    <li>서비스 페이지 제공</li>
-                                    <li>URL, HTML 파일, HTML 마크업 평가지원</li>
-                                    <li>옵션을 제공하여, 접근성 준수수준(Level) 등을 지정하여 평가 가능</li>
-                                </ul>
-                            </li>
-                            <li><span class="bold-9 fc-white">제작 : </span>University of Toronto</li>
-                            <li><span class="bold-9 fc-white">설치방법</span>
-                                <ul class="list-02 mt10">
-                                    <li>URL : <a href="http://achecker.ca/checker/" class="blue" title="AChecker 다운로드 접속">http://achecker.ca/checker/</a> 접속</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="section-article dot-top-line">
-                        <div class="mt20"><h4 class="tit">Colour Contrast Analyser</h4></div>
-                        <ul class="list-01 b-dash mt20">
-                            <li><span class="bold-9 fc-white">프로그램 명 : Colour Contrast Analyser</span></li>
-                            <li><span class="bold-9 fc-white">이미지</span>
-                                <ul class="list-02 b-circle mt10">
-                                    <li><img src="https://www.wah.or.kr:444/images/Guide/Colour_Contrast_Analyser.gif" alt="Colour Contrast Analyser 프로그램 이미지"></li>
-                                </ul>
-                            </li>
-                            <li><span class="bold-9 fc-white">특징</span>
-                                <ul class="list-02 b-circle mt10">
-                                    <li>응용 소프트웨어 방식(설치 프로그램 별도제공)</li>
-                                    <li>1 페이지씩 검사</li>
-                                    <li>16개 항목 검사(전문가의 판단을 도움)</li>
-                                </ul>
-                            </li>
-                            <li><span class="bold-9 fc-white">제작 : </span>The Paciello Group</li>
-                            <li><span class="bold-9 fc-white">설치방법</span>
-                                <ul class="list-02 b-circle mt10">
-                                    <li>URL : <a href="https://www.paciellogroup.com/resources/contrastanalyser/" class="blue" title="Colour Contrast Analyser 다운로드 접속">https://www.paciellogroup.com/resources/contrastanalyser/</a> 접속 후 다운로드</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="mt20"><h4 class="tit">해외 웹 접근성 평가도구 리스트</h4></div>
-                    <ul class="list-01 b-dash mt20">
-                        <li>W3C 홈페이지에 소개되어 있는 웹 접근성 평가도구 리스트(89개)를 아래 페이지에서 확인 가능
-                            <ul class="list-02 b-circle mt10">
-                                <li>URL : <a href="https://www.w3.org/WAI/ER/tools/" class="blue" title="W3C 홈페이지 접속">https://www.w3.org/WAI/ER/tools/</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>-->
             </div>
-            <!-- //mainTab content 1-->
-
-            <!-- mainTab content 2-->
-            <div>
-                <div class="section">
-                    <ol>
-                        <li>
-                            <h2 class="tit">1. Tooltip</h2>
-                            <!-- banner comp -->
-                            <div class="banner">
-                                <h3 class="tit box-type fc-blue">이것은 마케팅을 위한 배너 광고 입니다.</h3>
-                                <a href="" title="배너 새창열기" class="mt20" data-tooltip="배너 새창열기<br>툴팁"><img src="https://higherlogicdownload.s3.amazonaws.com/IPWEA/f1ebe30c-d06b-484c-ae2c-afea2318360a/UploadedImages/WA/Homepage/pencil-banner-hp-1200px.png" alt="배너 내용"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <h2 class="tit">2. Tooltip</h2>
-                        </li>
-                    </ol>
-
-                </div>
-            </div>
-            <!-- //mainTab content 2-->
 
         </div>
     </div>
-    <!-- section -->
-    <div class="footer">
-        <div class="inner">
-            <div class="address-group">
-                <p>777, Cheonhoyet-gil, Gangdong-gu, Seoul, Republic of Korea</p>
-                <p class="mt10">통신판매업 어쩌구 저쩌구 : 42342323 호</p>
-                <p class="mt10">copyright @Lee dae-sung.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="scroll-floating">
-    <button type="button"></button>
-</div>
-<div class="overlay d-bottom">
-    <div class="overlay-inner">
-        ㅇㄹㅇㄹㅇㄹ
-    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!-- //footer -->
 </div>
 </body>
 </html>

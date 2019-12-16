@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--2019.03.29 -->
+    <meta name="format-detection" content="telephone=no"/>
+    <!--//2019.03.29 -->
+    <title>이벤트</title>
+    <link type="text/css" rel="stylesheet" href="../../responsive/asset/css/common.css" />
+    <script src="../../responsive/asset/js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+    <div class="container">
+        <div class="event-wrap">
+            <form>
+                <div class="title-area2">
+                    <h1><img src="../../responsive/asset/images/h1-title_3.png"></h1>
+                </div>
+                <div class="form-area">
+                    <div class="input-warp">
+                        <p class="text type2">아래의 정보를 입력해주세요!</p>
+                        <p class="sub-desc tac">체험단 신청에 참여해주셔서 감사합니다.<br>휴대폰번호를 입력하여 당첨 여부를 확인해주세요.</p>
+                    </div>
+                    <div class="input-warp no-bg">
+                        <h2>신청자 정보</h2>
+                        <div class="inner type2">
+                            <div class="field-set">
+                                <input type="text" class="form-set mt0" name="userName" placeholder="휴대폰번호"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area pt0">
+                        <!-- 성공 -->
+                        <button type="button" class="js-modal-open" data-target="#v50Win">당첨 확인하기</button>
+                        <!-- 실패 -->
+                        <!--<button type="button" class="js-modal-open" data-target="#v50Lose">당첨 확인하기</button>-->
+                    </div>
+                </div>
+            </form><!--//form-->
+        </div><!--//event-wrap-->
+        <div class="info">
+            <h2>유의사항</h2>
+            <ul class="bullet_style">
+                <li>매월 진행되는 SNS 미션은 체험단에게 별도 안내되며, 미 진행 시 사전 예고 없이 체험이 중단 될 수 있습니다.</li>
+                <li>비정상적인 신청 / 체험폰 훼손(중고판매&명의변경) 시 즉각적으로 체험이 중단될 수 있습니다.</li>
+                <li>입력 정보에 대해서는 체험단으로만 사용 예정이며, 사실과 다른 정보 입력 시에도 신청 취소 될 수 있습니다.</li>
+            </ul>
+        </div>
+    </div><!--//container-->
+</div>
+
+<!--modal-->
+
+<div class="modal" id="v50Win">
+    <div class="modal-container">
+        <button type="button" class="js-modal-close close-icon" data-target="#v50Win"><span class="blind">닫기</span></button>
+        <div class="contents">
+            <div class="mid">
+                <p class="sub-title tac ">축하합니다!</p>
+                <p class="margin10 tac type2">LG V50 ThinQ 무료체험단에 선정되셨습니다.<br>자세한 내용은 MMS 발송을 통해 안내드릴 예정입니다. </p>
+            </div>
+            <div class="bottom">
+                <button type="button" class="js-modal-close" data-target="#v50Win">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="v50Lose">
+    <div class="modal-container">
+        <button type="button" class="js-modal-close close-icon" data-target="#v50Lose"><span class="blind">닫기</span></button>
+        <div class="contents">
+            <div class="mid">
+                <p class="margin10 tac type2">아쉽게도 LG V50 ThinQ 무료체험단에 선정되지 않으셨습니다.</p>
+            </div>
+            <div class="bottom">
+                <button type="button" class="js-modal-close" data-target="#v50Lose">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    //input type number maxlength check
+    function maxLengthCheck(object){
+        if (object.value.length > object.maxLength){
+            object.value = object.value.slice(0, object.maxLength);
+        }
+    }
+    $(document).on('change', ".check-type .check-box", function(){
+        var $checkInput = $(this).find('.check-input').prop('checked');
+        var $input =  $(this).nextAll('.form-set');
+        if($checkInput ){
+            $input.attr('disabled', false);
+            $input.focus();
+        } else {
+            $input.val('');
+            $input.attr('disabled', true);
+        }
+        console.log($checkInput);
+        console.log($input.attr('disabled'));
+    });
+</script>
+
+
+<!--script-->
+<script src="../../responsive/asset/js/ui.js" ></script>
+</body>
+</html>

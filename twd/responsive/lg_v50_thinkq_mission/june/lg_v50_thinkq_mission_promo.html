@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--2019.03.29 -->
+    <meta name="format-detection" content="telephone=no"/>
+    <!--//2019.03.29 -->
+    <title>이벤트</title>
+    <link type="text/css" rel="stylesheet" href="../../asset/css/common.css" />
+    <script src="../../asset/js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+    <div class="container">
+        <div class="event-wrap type3">
+            <form>
+                <div class="top-title">
+                    <img src="../../asset/images/top-title_5.png" alt="SKT 5GX X LG V50 ThinQ">
+                    <a href="#" class="js-modal-open bg-primary" data-target="#v50_history"><img src="../../asset/images/show-history.png" alt="참여내역"></a>
+                </div>
+                <div class="title-area2">
+                    <h1><img src="../../asset/images/h1-title-mission.png" alt="체험단 5월 미션"></h1>
+                </div>
+                <div class="form-area">
+                    <div class="input-warp type2">
+                        <p class="text type2">환영합니다. <strong class="bold-text">홍길동</strong>님.</p>
+                        <p class="sub-desc tac">아래 <span class="bold-text">“미션 확인”</span>를 통하여 <span class="bold-text fc-red">6월</span> 미션 확인 후 <br> 수행해 주시기 바랍니다. 감사합니다.</p>
+                        <div class="btn-area type2 pt0">
+                            <button type="button" class="js-modal-open bg-primary" data-target="#v50_mission">미션 확인</button>
+                        </div>
+                    </div>
+
+                    <p class="section-title">미션 수행 정보 입력</p>
+
+                    <div class="input-warp no-bg">
+                        <h2>LG V50 ThinQ IMEI<span class="required">(필수)</span></h2>
+                        <div class="inner pb0">
+                            <div class="field-set">
+                                <input type="text" class="form-set mt0" name="userName" placeholder="IMEI 15자리(숫자)를 입력해주세요."/>
+                            </div>
+                            <p class="notice-desc">IMEI 확인 경로 : 설정 > 일반 > 휴대폰 정보 > 상태 > <br> IMEI(휴대폰 식별 번호) 확인</p>
+                        </div>
+                    </div>
+
+                    <div class="input-warp no-bg">
+                        <h2>수행 채널 및 URL 입력<span class="required">(필수)</span></h2>
+                        <div class="inner type2">
+                            <div class="field-set">
+                                <select class="form-set">
+                                    <option value="페이스북">페이스북</option>
+                                    <option value="인스타그램">인스타그램</option>
+                                    <option value="블로그">블로그</option>
+                                    <option value="유튜브">유튜브</option>
+                                    <option value="포스트">포스트</option>
+                                </select>
+                            </div>
+                            <div class="field-set">
+                                <input type="text" class="form-set mt0" name="snsUrl" placeholder="URL을 입력해주세요."/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-area d-type">
+                        <div class="box left"><button type="button" class="bg-info">취소</button></div>
+                        <div class="box right"><button type="button">등록</button></div>
+                    </div>
+
+                </div>
+            </form><!--//form-->
+        </div><!--//event-wrap-->
+    </div><!--//container-->
+</div>
+
+<!--modal-->
+<div class="modal type2" id="v50_mission">
+    <div class="modal-container">
+        <div class="pop-head">
+            <h1 class="tac tit">6월 미션 수행 내용</h1>
+            <span class="close-btn"><button type="button" class="js-modal-close" data-target="#v50_mission"><i class="icon icon-white-x"></i><span class="blind">닫기</span></button></span>
+        </div>
+        <div class="pop-content">
+            <div class="in-title">
+                <div class="img-tit"><img src="../../asset/images/20190527-title-logo.png" alt="LG V50 ThinQ"></div>
+                <h2 class="fs30 tac tit">6월 미션을 진행해주시기 바랍니다.</h2>
+            </div>
+            <div class="in-content">
+                <div class="desc-group line-type">
+                    <h3 class="tit">미션 등록 기간</h3>
+                    <div class="desc">
+                        <p class="text-type1">2019년 6월 20일(목) ~ 2019년 7월 10일(수)</p>
+                    </div>
+                    <h3 class="tit">미션 내용</h3>
+                    <div class="desc">
+                        <p class="text-type1"><span class="fc-red">‘oksusu 앱 5G MAX’</span> 무료 콘텐츠 이용후기 인증샷 또는 영상 등록</p>
+                        <p class="h5_tit">※ 5G MAX 무료 콘텐츠 이용방법</p>
+                        <p class="text-type2"><strong>Step 1.</strong> oksusu App 실행 > 메뉴에서 <strong class="fc-red">“SKT 5GX관”</strong> 선택</p>
+                        <div class="img-section full-size-case"><img src="../../asset/images/lgv50_6_mission_step1.jpg" alt=""></div>
+                        <p class="text-type2"><strong>Step 2.</strong> 상단 메뉴에서  <strong class="fc-red">“5G MAX”</strong> 선택 후 <strong>무료 콘텐츠</strong> 이용</p>
+                        <div class="img-section "><img src="../../asset/images/lgv50_6_mission_step2.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="desc-group none-padding">
+                    <p class="tit strong">미션 등록 시 유의 사항</p>
+                    <ul class="u-list circle-type">
+                        <li>미션 등록 SNS 공유 결과물(이미지/영상)은 ‘비공개/삭제’하지 않도록 해주시기 바랍니다.</li>
+                        <li>미션 미참여시 '체험폰 대상' 관련 불이익을 받을 수 있으니 꼭 참여 바랍니다.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pop-foot">
+                <div class="btn-area">
+                    <button type="button" class="js-modal-close btn default-bg " data-target="#v50_mission">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal type2" id="v50_history">
+    <div class="modal-container">
+        <div class="pop-head">
+            <h1 class="tac tit">체험단 참여내역</h1>
+            <span class="close-btn"><button type="button" class="js-modal-close" data-target="#v50_history"><i class="icon icon-white-x"></i><span class="blind">닫기</span></button></span>
+        </div>
+        <div class="pop-content">
+            <div class="in-content">
+                <div class="history-section">
+                    <div class="tbl-area">
+                        <strong class="tit">6월 참여 내역</strong>
+                        <table class="tbl_row">
+                            <caption>6월 참여 내역</caption>
+                            <colgroup>
+                                <col width="25%">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">SNS 채널</th>
+                                    <td>Facebook</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">URL</th>
+                                    <td>http://Instagram.com/abcde1/abcde1/abcde1/abcde1/abcde1/abcde1/abcde1/abcde1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">등록일</th>
+                                    <td>2019-06-11 07:05:03</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">수정일</th>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tbl-area">
+                        <strong class="tit">히스토리</strong>
+                        <table class="tbl_col">
+                            <caption>히스토리</caption>
+                            <colgroup>
+                                <col width="*">
+                                <col width="40%">
+                                <col width="40%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">월</th>
+                                    <th scope="col">참여 여부</th>
+                                    <th scope="col">참여일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>5월</td>
+                                    <td>참여</td>
+                                    <td>2020-03-31</td>
+                                </tr>
+                                <tr>
+                                    <td>4월</td>
+                                    <td>미참여</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>3월</td>
+                                    <td>참여</td>
+                                    <td>2019-04-31</td>
+                                </tr>
+                                <tr>
+                                    <td>2월</td>
+                                    <td>참여</td>
+                                    <td>2019-04-31</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-foot">
+                <div class="btn-area">
+                    <button type="button" class="js-modal-close btn default-bg " data-target="#v50_history">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--script-->
+<script src="../../asset/js/ui.js" ></script>
+</body>
+</html>

@@ -1,50 +1,28 @@
 var UI = {
     init : function(){
-        this.tabs();
         this.tableColDraw('.intro-tbl-col', colOption1, rowData1);
         this.tableAni('.tbl-col', 'ani-slide-down-up');
-        this.tableRowDraw('.intro-tbl-row', rowTableColOption, rowData2);
-        this.tableRowDraw('.intro-tbl-row2',rowTableColOption, rowData3);
-        this.tableRowDraw('.intro-tbl-row3',rowTableColOption, rowData4);
+        this.tableRowDraw('.intro-tbl-row', rowTableColOption, rowData2); //웹접근성 테이블
+        this.tableRowDraw('.intro-tbl-row2',rowTableColOption, rowData3); //웹접근성 테이블
+        this.tableRowDraw('.intro-tbl-row3',rowTableColOption, rowData4); //웹접근성 테이블
+        this.historyLogDraw('.photo-list.after-log', historyLogAfter, '.years-tab li.after-log');
+        this.historyLogDraw('.photo-list.before-log', historyLogBefore , '.years-tab li.before-log');
         this.toggleClassTarget('.overlay.d-right', '.tbl-event-btn', 'is-show');
+        this.moreText('.feedback', '22');
+        this.defaultListDraw('.search-output', ItTechnicalTermList);
+
+        this.tabs();
+        this.sectionToggleSwitchEvent();
         this.tooltip();
         this.headetStickyBar();
-        this.scrollTopStickyBtn();
         this.windowKeyCodeCheck();
         this.mainVisualSwitchEvent();
         this.visualMouseClickEvent();
-        this.popup()
-    },
-    tabs: function(){
-        var $hash = window.location.href;
-        var tabGroup = [];
-        $('[data-tab]').each(function(key, value){
-            if($.inArray($(this).data('tab'), tabGroup) === -1){
-                tabGroup.push($(this).data('tab'));
-            }
-        });
-
-        $.each(tabGroup, function(key, value){
-            var $tabs = $('[data-tab=' + value + ']');
-            var $contents = $('[data-tab-content=' + value + ']');
-            var $onIndex = $tabs.index($tabs.filter('.is-active'));
-            $contents.hide();
-            $contents.eq($onIndex).show();
-            $tabs.on('click', function(e){
-                var $index = $tabs.index(this);
-                var $href = $(this).attr('href');
-                console.log($hash + $href);
-                e.preventDefault();
-                $tabs.removeClass('is-active');
-                $tabs.eq($index).addClass('is-active');
-                $contents.hide();
-                $contents.eq($index).show();
-            });
-
-        });
+        this.gnbListDraw();
+        this.popup();
     },
     tableColDraw: function(wrap, cols, rows){
-        if(cols && rows && cols !== undefined && rows !== undefined) {
+        if(cols && rows) {
             if ($('.intro-tbl-col')) {
                 var $col = cols;
                 var $row = rows;
@@ -79,7 +57,7 @@ var UI = {
         }
     },
     tableRowDraw: function (wrap, cols, rows) {
-        if(cols && rows && cols !== undefined && rows !== undefined) {
+        if(cols && rows) {
             if ($('.intro-tbl-row')) {
                 var $col = cols;
                 var $row = rows;
@@ -110,6 +88,96 @@ var UI = {
             return false;
         }
     },
+    historyLogDraw : function(el, obj , lengthEl) {
+        var $el = $(el);
+        var $obj = obj;
+        var $listEl = $(lengthEl);
+        var $text = $listEl.text();
+        var $length = obj.length;
+
+        if(lengthEl !== '' && lengthEl !== undefined){
+            $listEl.text($text +' (' + $length + ') ');
+        }
+
+        var $count = $length +1;
+
+        $.each($obj , function(key, value){
+            var $pc = value.img[0];
+            var $tablet = value.img[1];
+            var $mobile = value.img[2];
+            $count--;
+            var $info =
+                '<dl class="info">' +
+                '<dd class="name">' + $count + '.&nbsp;'+ value.name + '</dd>' +
+                '<dd class="type">' + value.type + '</dd>' +
+                '<dd class="date">' + value.date + '</dd>' +
+                '<dd class="agency">' + value.agency + '</dd>' +
+                '<dd class="customer">' + value.customer + '</dd>' +
+                '<dd class="position">' + value.position + '</dd>' +
+                '<dd class="process">' + value.process + '</dd>' +
+                '<dd class="language">' + value.language + '</dd>' +
+                '<dd class="tool">' + value.tool + '</dd>' +
+                '<dd class="support">' + value.support + '</dd>' +
+                '<dd class="description"><p>' + value.description + '</p></dd>' +
+                '<dd class="feedback"><p>' + value.feedback + '</p></dd>' +
+                '<dd class="url"><a href="' + value.url + '" target="_blank" title="' + value.url + ' 바로가기">사이트 바로가기</a></dd>' +
+                '</dl>';
+            var $pic1 = '<div class="pic">' +
+                '<span class="item case1" style="background-image:url(' + $pc + ');"></span>' +
+                '<span class="item case2"></span>' +
+                '<span class="item case3" style="background-image:url(' + $mobile + ');"></span>' +
+                '</div>';
+            var $pic2 = '<div class="pic">' +
+                '<span class="item case1" style="background-image:url(' + $pc + ');"></span>' +
+                '<span class="item case2"></span>' +
+                '<span class="item case3"></span>' +
+                '</div>';
+            var $pic3 = '<div class="pic">' +
+                '<span class="item case1"></span>' +
+                '<span class="item case2"></span>' +
+                '<span class="item case3" style="background-image:url(' + $mobile + ');"></span>' +
+                '</div>';
+            var $pic4 = '<div class="pic">' +
+                '<span class="item case1" style="background-image:url(' + $pc + ');"></span>' +
+                '<span class="item case2" style="background-image:url(' + $tablet + ');"></span>' +
+                '<span class="item case3" style="background-image:url(' + $mobile + ');"></span>' +
+                '</div>';
+            var $pic5 = '<div class="pic">' +
+                '<span class="item case1"></span>' +
+                '<span class="item case2"></span>' +
+                '<span class="item case3"></span>' +
+                '</div>';
+
+            if($pc !== '' && $mobile !== '' && $tablet === '') {
+                $el.append('<li>' + $pic1 + $info + '</li>');
+            } else if($pc !== '' && $tablet === '' && $mobile === '') {
+                $el.append('<li>' + $pic2 + $info + '</li>');
+            } else if($pc === '' && $tablet === '' && $mobile !== '') {
+                $el.append('<li>' + $pic3 + $info + '</li>');
+            } else if ($pc !== '' && $tablet !== '' && $mobile !== ''){
+                $el.append('<li>' + $pic4 + $info + '</li>');
+            } else {
+                $el.append('<li>' + $pic5 + $info + '</li>');
+            }
+
+        });
+    },
+    defaultListDraw : function(el, array) {
+        var $el = $(el);
+        var $array = array;
+
+        $.each(array , function(key,value) {
+            $el.append('<li>'+ value +'</li>');
+        });
+    },
+    gnbListDraw : function() {
+        var $el = $('.gnb .nav-list');
+        var $array = gnbList;
+
+        $.each($array , function(key,value) {
+            $el.append('<li><a href="'+ value.url +'">'+ value.name +'</a></li>');
+        });
+    },
     tableAni : function (tname, aname){
         var $tableTr = $(tname +' tbody tr'),
             currentHighlight = 0,
@@ -121,27 +189,33 @@ var UI = {
             $tableTr.removeClass(aname).eq(currentHighlight).addClass(aname);
         },N * 1000);
     },
-    /*photoListAni: function(sec) {
-        var $listLi =  $('.photo-list li'),
-            currentHighlight = 0,
-            N = sec;
-
-            if($aniEvent !== true){
-                $listLi.eq(0).addClass("ani-on");
-                var $inter = setInterval(function () {
-                    currentHighlight = (currentHighlight + 1) % $listLi.length;
-                    $listLi.eq(currentHighlight).addClass("ani-on");
-                    console.log("인터벌 클리어 확인");
-                    if ((currentHighlight + 1) === $listLi.length) {
-                        clearInterval($inter);
-                        return false;
-                    }
-                }, N * 100);
-                $aniEvent = true;
-            } else {
-                return false;
+    tabs: function(){
+        var $hash = window.location.href;
+        var tabGroup = [];
+        $('[data-tab]').each(function(key, value){
+            if($.inArray($(this).data('tab'), tabGroup) === -1){
+                tabGroup.push($(this).data('tab'));
             }
-    },*/
+        });
+
+        $.each(tabGroup, function(key, value){
+            var $tabs = $('[data-tab=' + value + ']');
+            var $contents = $('[data-tab-content=' + value + ']');
+            var $onIndex = $tabs.index($tabs.filter('.is-active'));
+            $contents.hide();
+            $contents.eq($onIndex).show();
+            $tabs.on('click', function(e){
+                var $index = $tabs.index(this);
+                var $href = $(this).attr('href');
+                e.preventDefault();
+                $tabs.removeClass('is-active');
+                $tabs.eq($index).addClass('is-active');
+                $contents.hide();
+                $contents.eq($index).show();
+            });
+
+        });
+    },
     tooltip: function () {
         var tooltipGroup = [];
         $('[data-tooltip]').each(function() {
@@ -212,6 +286,7 @@ var UI = {
         var $htmlScrollTop = $html.scrollTop();
         var $elHeight = parseInt($spot.innerHeight());
         if($htmlScrollTop > $elHeight){
+            $this.addClass('is-fixed');
             $this.addClass('is-active');
         } else if( $htmlScrollTop > 0){
             $this.addClass('is-fixed');
@@ -221,13 +296,21 @@ var UI = {
             $this.removeClass('is-active');
         }
     },
-    scrollTopStickyBtn: function() {
-        var $html = $('html, body');
-        var $htmlScrollTop = $html.scrollTop();
-        var $btn = $('.scroll-floating button');
-        $btn.on('click',function() {
-            $html.animate({scrollTop : 0}, 300);
-        });
+    scrollLimitEvent: function(btn ,min, max , classNmae) { //버튼클래스, 최소높이 클래스, 최대 높이 클래스, 컨트롤 클래스
+        var $scroll = $(document).scrollTop();
+        var $float = $(btn);
+        var $floatHeight = $float.outerHeight();
+        var $floatOffsetTop = $(btn).offset().top;
+        var $minTop = $(min).offset().top;
+        var $maxTop = $(max).offset().top - $floatHeight;
+
+        if($scroll < $minTop){
+            $float.removeClass(classNmae);
+        } else if($floatOffsetTop < $maxTop) {
+            $float.addClass(classNmae);
+        } else {
+            $float.removeClass(classNmae);
+        }
     },
     windowKeyCodeCheck : function () {
         $(window).on('keydown',function(e){
@@ -240,7 +323,7 @@ var UI = {
     },
     mainVisualSwitchEvent : function(){
         var $on = false;
-        var $toggleBtn = $('.toggle-switch');
+        var $toggleBtn = $('.visual-toggle');
         var $visual = $('.visual-spot');
         var $mouse = $('.mouse');
         var $theme = $("body");
@@ -259,14 +342,18 @@ var UI = {
         })
 
     },
+    sectionToggleSwitchEvent : function(){
+        var $btn = $(".section-inner .toggle-switch");
+        $btn.on('click', function(){
+            $(this).parents('.section').toggleClass("is-on");
+        });
+    },
     visualMouseClickEvent : function () {
         var mouseGroup=[];
 
         $('.mouse').each(function(key, value){
             mouseGroup.push(this);
         });
-
-        console.log(mouseGroup);
 
         $.each(mouseGroup, function(key, value){
             var $this = $(value);
@@ -306,34 +393,136 @@ var UI = {
             $close.on('click', function(){
                 $body.removeClass("is-lock");
                 $target.removeClass('is-show');
+                $target.children('.dimmed').remove();
             });
         })
 
     },
     popCallback : function (){
 
+    },
+
+    moreText : function(el, height) {
+        var $height = Number(height);
+        $(el).each(function() {
+            var length = $(this).children('p').text().length;
+
+            if(length > 30) {
+                $(this).append('<a href="" class="more-event">더보기</a>');
+                var $btn = $(this).find('.more-event');
+                $btn.on('click', function (e) {
+                    e.preventDefault();
+                    var $el = $(this).parents(el);
+                    var $text = String($(this).text());
+
+                    if ($text !== '더보기') {
+                        $el.children('p').css({'height': $height + 'px', 'white-space': 'nowrap'});
+                        $(this).text('더보기');
+                    } else {
+                        $el.children('p').css({'height': 'auto', 'white-space': 'normal'});
+                        $(this).text('접기');
+                    }
+                });
+            } else {
+                return false;
+            }
+
+        });
+    },
+    rate: function () {
+
+    },
+    itTtListSearch : function(list) {
+        var $el = $(".search-wrap .search-output");
+        var $value = $(list).val();
+        var $match = $(".search-output li:contains('" + $value + "')");
+
+        $el.children().removeClass("is-show");
+
+        if($value.length !== 0) {
+            $('.search-count span.num').text('(' +$match.length + ')');
+            $match.each(function (key, value) {
+                $(this).addClass("is-show");
+            });
+        } else {
+            $('.search-count span.num').text('(0)');
+            $el.children().removeClass("is-show");
+        }
+    },
+    popupLogSearch : function(list , obj1, obj2) {
+        var $el = $('.photo-list');
+        var $value =  $(list).val();
+        var $resualt = $(".pop .resualt-search");
+        var $obj1 = obj1;
+        var $obj2 = obj2;
+        var $matchArray = [];
+
+        $.each($obj1, function(key, value) {
+            var $url = value.url;
+            var $name = value.name;
+            if($name.match($value)){
+                $matchArray.push(value);
+            }
+        });
+
+        $.each($obj2, function(key, value) {
+            var $url = value.url;
+            var $name = value.name;
+            if($name.match($value)){
+                $matchArray.push(value);
+            }
+        });
+
+        if($value.length !== 0 && $value !== '') {
+            if($matchArray.length !== 0) {
+                $resualt.text('');
+                $resualt.children().remove();
+                $.each($matchArray, function (key, value) {
+                    var $num = parseInt(key + 1);
+                    var $getUrl = value.url;
+                    var $getName = value.name;
+                    $resualt.append('<a href="' + $getUrl + '" target="_blank" title="새창 이동">'+ $num +'. '+ $getName + '</a>');
+                });
+            } else {
+                $resualt.text('검색 결과가 없습니다.');
+            }
+        } else {
+            $resualt.children().remove();
+            $resualt.text('검색 결과가 없습니다.');
+        }
     }
 };
 
 var $aniEvent = false;
 
 //ready
-$(document).ready(function(){
+$(function(){
     UI.init();
 });
 //scroll
 $(window).on('scroll', function(){
-    var $photoListWrap = $('.photo-list').offset().top/2;
-    var $scrollTop = $('html, body').scrollTop();
-
-
-/*    if($scrollTop > $photoListWrap ) {
-        UI.photoListAni('2');
-    }*/
     UI.headetStickyBar();
-    UI.scrollTopStickyBtn();
+    UI.scrollLimitEvent('.scroll-floating', '.container', '.footer',"is-show");
 });
 //resize
 $(window).on('resize', function(){
     UI.tooltip();
+});
+//event
+$(document).on('click', '.scroll-floating button', function(e){
+    e.preventDefault();
+    $('html, body').stop(e).animate({scrollTop : 0}, 300);
+});
+$(document).on('keyup', "#searcTtList" , function(){
+    UI.itTtListSearch(this);
+});
+$(document).on('click', "#getSearchText", function() {
+    UI.popupLogSearch('#searchTit',historyLogAfter, historyLogBefore);
+});
+$(document).on("keypress",'#searchTit', function(event){//input enter key
+    if(event.keyCode === 13) {
+        $('#getSearchText').click();
+    }else if (event.keyCode === 96){
+        $('#searchTit').val('');
+    }
 });
