@@ -2,14 +2,9 @@ var UI = {
     init : function(){
         this.tableColDraw('.intro-tbl-col', colOption1, rowData1);
         this.tableAni('.tbl-col', 'ani-slide-down-up');
-        this.tableRowDraw('.intro-tbl-row', rowTableColOption, rowData2); //웹접근성 테이블
-        this.tableRowDraw('.intro-tbl-row2',rowTableColOption, rowData3); //웹접근성 테이블
-        this.tableRowDraw('.intro-tbl-row3',rowTableColOption, rowData4); //웹접근성 테이블
-        this.historyLogDraw('.photo-list.after-log', historyLogAfter, '.years-tab li.after-log');
-        this.historyLogDraw('.photo-list.before-log', historyLogBefore , '.years-tab li.before-log');
         this.toggleClassTarget('.overlay.d-right', '.tbl-event-btn', 'is-show');
+        this.historyLogDraw(historyLog);
         this.moreText('.feedback', '22');
-        this.defaultListDraw('.search-output', ItTechnicalTermList);
 
         this.tabs();
         this.sectionToggleSwitchEvent();
@@ -88,24 +83,45 @@ var UI = {
             return false;
         }
     },
-    historyLogDraw : function(el, obj , lengthEl) {
-        var $el = $(el);
+    historyLogDraw : function(obj) {
         var $obj = obj;
-        var $listEl = $(lengthEl);
-        var $text = $listEl.text();
-        var $length = obj.length;
+        var $years = new Date().getFullYear();
+        var $afterLog = $(".years-tab li.after-log");
+        var $beforeLog = $(".years-tab li.before-log");
+        var $totalLength = $obj.length;
+        var $mArray = [];
+        var $nArray = [];
 
-        if(lengthEl !== '' && lengthEl !== undefined){
-            $listEl.text($text +' (' + $length + ') ');
-        }
+        $.each($obj, function(key, value){
+            var $getYears = value.date;
+            if($getYears.match($years)){
+                $mArray.push($getYears.match($years));
+            } else {
+                $nArray.push($getYears.match(null));
+            }
+        });
 
-        var $count = $length +1;
+        var $aMax = $mArray.length;
+        var $bMax = $nArray.length;
 
-        $.each($obj , function(key, value){
+        $.each($obj, function(key, value){
+            var $getYears = value.date;
             var $pc = value.img[0];
             var $tablet = value.img[1];
             var $mobile = value.img[2];
-            $count--;
+            var $count;
+            var $el;
+
+            if (parseInt($getYears.split(".")) !== parseInt($years)) {
+                $el = $('.photo-list.before-log');
+                $beforeLog.text('before (' + $nArray.length + ')');
+                $count = $bMax--;
+            } else {
+                $el = $('.photo-list.after-log');
+                $afterLog.text($years + ' (' + $mArray.length + ')');
+                $count = $aMax--;
+            }
+
             var $info =
                 '<dl class="info">' +
                 '<dd class="name">' + $count + '.&nbsp;'+ value.name + '</dd>' +
@@ -174,9 +190,30 @@ var UI = {
         var $el = $('.gnb .nav-list');
         var $array = gnbList;
 
-        $.each($array , function(key,value) {
-            $el.append('<li><a href="'+ value.url +'">'+ value.name +'</a></li>');
+        $.each($array, function (key, value) {
+            $el.append('<li><a href="' + value.url + '">' + value.name + '</a></li>');
         });
+    },
+    profileQaDraw: function(el, array) {
+        var $el = $(el);
+        var $array = array;
+        var $sort = [];
+        var $random = [];
+
+        $.each($array, function (key, value) {
+            $random.push(value);
+        });
+
+        $random.sort(function(){
+            return Math.random() - Math.random();
+        });
+
+        $random.splice(0, ($random.length - 10));
+
+        $.each($random ,function(key, value){
+            $(el).append('<p class="question">' + value.question + '</p><p class="answer">' + value.answer + '</p>')
+        });
+
     },
     tableAni : function (tname, aname){
         var $tableTr = $(tname +' tbody tr'),
@@ -322,7 +359,7 @@ var UI = {
         });
     },
     mainVisualSwitchEvent : function(){
-        var $on = false;
+
         var $toggleBtn = $('.visual-toggle');
         var $visual = $('.visual-spot');
         var $mouse = $('.mouse');
@@ -334,10 +371,12 @@ var UI = {
                 $visual.removeClass('is-on');
                 $theme.removeClass('x-mas');
                 $mouse.css({"display":"inline-block"});
+                $themeOncheck = false;
             } else {
                 $(this).addClass('is-on');
                 $visual.addClass('is-on');
                 $theme.addClass('x-mas');
+                $themeOncheck = true;
             }
         })
 
@@ -398,10 +437,6 @@ var UI = {
         })
 
     },
-    popCallback : function (){
-
-    },
-
     moreText : function(el, height) {
         var $height = Number(height);
         $(el).each(function() {
@@ -429,9 +464,6 @@ var UI = {
 
         });
     },
-    rate: function () {
-
-    },
     itTtListSearch : function(list) {
         var $el = $(".search-wrap .search-output");
         var $value = $(list).val();
@@ -449,26 +481,19 @@ var UI = {
             $el.children().removeClass("is-show");
         }
     },
-    popupLogSearch : function(list , obj1, obj2) {
+    popupLogSearch : function(list , obj) {
         var $el = $('.photo-list');
         var $value =  $(list).val();
         var $resualt = $(".pop .resualt-search");
-        var $obj1 = obj1;
-        var $obj2 = obj2;
+        var $obj = obj;
         var $matchArray = [];
 
-        $.each($obj1, function(key, value) {
+        $.each($obj, function(key, value) {
             var $url = value.url;
             var $name = value.name;
-            if($name.match($value)){
-                $matchArray.push(value);
-            }
-        });
+            var $regexp = new RegExp($value, 'ig');
 
-        $.each($obj2, function(key, value) {
-            var $url = value.url;
-            var $name = value.name;
-            if($name.match($value)){
+            if($name.match($regexp)){
                 $matchArray.push(value);
             }
         });
@@ -490,14 +515,52 @@ var UI = {
             $resualt.children().remove();
             $resualt.text('검색 결과가 없습니다.');
         }
+    },
+    patOnTheBack: function (el, array) {
+        var $body = $('body');
+        var $btn = $(el);
+        var $array = array;
+        var $random = [];
+        var $popOn = false;
+
+        $btn.on('click', function(e){
+            e.preventDefault();
+
+            if(!$body.children().is('.layer-pop')) {
+                $.each($array, function (key, value) {$random.push(value);});
+                $random.sort(function () {return Math.random() - Math.random();}); // 랜덤 정렬
+                $random.splice(0, ($random.length - 1)); // 1개만 가져오기
+
+                $body.append('<div class="layer-pop"><div class="pop-body"><span class="text">' + $random + '</span></div><div class="pop-foot"><button type="button" class="close-layer-pop">닫기</button></div></div>');
+                $body.find('.layer-pop .close-layer-pop').focus();
+
+                $popOn = true;
+            } else {
+                alert("먼저 팝업을 닫아 주세요.");
+                return false;
+            }
+        });
+
+        $(document).on('click','button.close-layer-pop', function(e){
+            e.preventDefault();
+            if($popOn){
+                $body.find('.layer-pop').remove();
+                $popOn = false;
+            } else {
+                return false;
+            }
+        })
     }
 };
 
 var $aniEvent = false;
-
+var $themeOncheck = false;
 //ready
 $(function(){
     UI.init();
+    if($themeOncheck){
+        $('.visual-toggle').click();
+    }
 });
 //scroll
 $(window).on('scroll', function(){
@@ -517,7 +580,7 @@ $(document).on('keyup', "#searcTtList" , function(){
     UI.itTtListSearch(this);
 });
 $(document).on('click', "#getSearchText", function() {
-    UI.popupLogSearch('#searchTit',historyLogAfter, historyLogBefore);
+    UI.popupLogSearch('#searchTit',historyLog);
 });
 $(document).on("keypress",'#searchTit', function(event){//input enter key
     if(event.keyCode === 13) {

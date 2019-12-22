@@ -2,153 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac616bb4-2468-4271-9686-3a159f0b6ecd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/intro/images/blank-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/images/icons/icon-search-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/images/list/twd-pc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/2019-home-package-sample.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/2019-planning-event-sample.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/2019-strong-point-device-sample.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/2019-strong-point-smart-home-sample.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/2019-strong-point-tgift-sample.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/accessory_01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/accessory_02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/device_01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/device_02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/event-accordian-target-move.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/event-accordian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/event-alert.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/event-change0img-src.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/event-confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/event-layer-popup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/event-scroll-top.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/event-tab.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/event-target-move.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/event-toggle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/event-tooltip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/event-window-popup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/gate-promo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/click-event-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase4-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase4-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase5-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/editerDcase6-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/gate-promo-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/main-banner-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/terms-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/images/value-ad-sv-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/index2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/main-banner-event.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/planning-default-markup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/planning-goggle-optimizing-part-markup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/planning-goggle-optimizing-section-markup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/planning-goggle-optimizing-target-markup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/fonts/NotoSansKR-Bold-Hestia.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/fonts/NotoSansKR-Bold-Hestia.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/fonts/NotoSansKR-DemiLight-Hestia.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/fonts/NotoSansKR-DemiLight-Hestia.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/20190527-title-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/5gx-title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/bg_line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/bg_line2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/ccpp-table.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/checked-input.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/chk-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/chk-title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/chk1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/chk2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/close_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/galaxy-note10-title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title-mission.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_4_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_4_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_4_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/h1-title_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icon-radio-checked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icon-radio-type2-checked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icon-radio-type2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icon-radio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icon-select-arrow.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icon-white-x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icpp-table.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/icpp-table2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lg_v50_mission_login_title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lgv50_11_mission.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lgv50_11_mission_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lgv50_6_mission_step1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lgv50_6_mission_step2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lgv50_7_mission.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/lgv50_9_mission.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/mt-pp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/note10-friend-title.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/rate-smile-half.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/rate-smile-off.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/rate-smile-on.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/show-history.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/title-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/title-bg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/top-title_4_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/top-title_4_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/top-title_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot1-checked.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot2-checked.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot3-checked.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot4-checked.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot5-checked.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot6-checked.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/tour-spot6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/images/unchecked-input.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/js/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/js/jquery-1.10.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/js/jquery.raty.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/asset/js/ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/june/lg_v50_thinkq_mission_login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/june/lg_v50_thinkq_mission_promo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/lg_v50_thinkq_mission_son_promo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/lg_v50_thinkq_promo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/lg_v50_thinkq_rsv_son_promo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/lg_v50_thinkq_rsv_son_win_promo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/responsive/lg_v50_thinkq_mission/lg_v50_thinkq_winners.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/strong-point-default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/strong-point-type1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/strong-point-type2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/strong-point-type3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/terms.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/tgift_01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/tgift_02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twd/value-added-service.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/images/profile-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/js/ItTechnicalTermList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/js/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/js/webAccessibility.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/css/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro/css/intro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro/css/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/images/cat-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/images/cat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/images/icons/icon-thor-hammer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/images/logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/ittt.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro/ittt.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/js/front-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/front-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/js/intro-table-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/intro-table-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/tdirect-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twd/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/twd/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twd/css/twd.css" beforeDir="false" afterPath="$PROJECT_DIR$/twd/css/twd.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twd/images/editerDcase3-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twd/images/editerDcase4-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/twd/images/editerDcase4-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twd/images/editerDcase4-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/twd/images/editerDcase4-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twd/images/editerDcase4-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/twd/images/editerDcase4-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twd/images/editerDcase5-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/twd/images/editerDcase5-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twd/images/editerDcase6-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/twd/images/editerDcase6-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/twd/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twd/js/data-twd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twd/js/front-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/twd/js/front-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/js/intro-table-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/globalData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/js/renderingMarkup.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/renderingMarkup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/web-accessibility.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro/web-accessibility.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,18 +62,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\git\pro-ject\ct-kpi-2019" />
+      <recent name="E:\git\pro-ject\ct-kpi-2019\book" />
       <recent name="E:\git\pro-ject\intro\images\list" />
       <recent name="E:\git\pro-ject\intro\images" />
       <recent name="E:\git\pro-ject\twd" />
-      <recent name="E:\git\pro-ject\twd\images" />
-      <recent name="E:\git\pro-ject\intro\images\icons" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\git\pro-ject\intro\images" />
+      <recent name="E:\git\pro-ject\ct-kpi-2019\js" />
+      <recent name="E:\git\pro-ject\ct-kpi-2019" />
+      <recent name="E:\git\pro-ject\ct-kpi-2019\css" />
       <recent name="E:\git\pro-ject\intro\images\list" />
-      <recent name="E:\git\pro-ject\twd\images" />
-      <recent name="E:\git\pro-ject\twd" />
-      <recent name="E:\git\pro-ject\intro\images\icons" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -441,6 +308,18 @@
       <workItem from="1576109978803" duration="18741000" />
       <workItem from="1576132352981" duration="7846000" />
       <workItem from="1576197274487" duration="25891000" />
+      <workItem from="1576455767642" duration="19141000" />
+      <workItem from="1576477047513" duration="1121000" />
+      <workItem from="1576481844068" duration="5638000" />
+      <workItem from="1576629030619" duration="26003000" />
+      <workItem from="1576659180784" duration="138000" />
+      <workItem from="1576714865725" duration="12691000" />
+      <workItem from="1576729927925" duration="15767000" />
+      <workItem from="1576800463793" duration="6940000" />
+      <workItem from="1576809220284" duration="10000" />
+      <workItem from="1576818427583" duration="9817000" />
+      <workItem from="1576828869150" duration="48000" />
+      <workItem from="1576831948991" duration="468000" />
     </task>
     <task id="LOCAL-00001" summary="[이대성] 이미지 위치 값 가져오기 제네레이터">
       <created>1554266632969</created>
@@ -617,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574736098704</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update">
+      <created>1576455831011</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1576455831011</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">

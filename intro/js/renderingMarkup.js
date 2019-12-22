@@ -43,7 +43,7 @@ function renderingMarkup () {
         '</div>' +
         '<ul class="search-desc-list b-circle mt30">' +
         '<li>숫자, 영문, 한글 검색 됩니다.</li>' +
-        '<li>대소문자 구분 필요합니다.</li>' +
+        '<li>대소문자 구분 필요없습니다.</li>' +
         '<li>초성으로 검색되지 않습니다.</li>' +
         '<li>Enter 키를 누르시면 검색이 됩니다.</li>' +
         '<li>Esc 키를 누르시면 초기화 됩니다.</li>' +
@@ -97,7 +97,7 @@ function renderingMarkup () {
         '<div class="inner">' +
         '<div class="in-left"><button type="button" data-pop="gnb"><i class="icon icon icon-nav-hambuger"><span class="blind">GNB 창 열기</span></i></button></div>' +
         '<div class="in-center">' +
-        '<h1 class="tac">Ds</h1>' +
+        '<h1 class="tac"><a href="index.html">Home</a></h1>' +
         '</div>' +
         '<div class="in-right">' +
         '<ul class="util">' +

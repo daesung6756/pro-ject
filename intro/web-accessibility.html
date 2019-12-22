@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/intro.css">
     <script src="js/jquery-3.4.0.min.js"></script>
     <script src="js/renderingMarkup.js"></script>
-    <script src="js/intro-table-data.js"></script>
+    <script src="js/globalData.js"></script>
+    <script src="js/webAccessibility.js"></script>
     <script src="js/front-ui.js"></script>
 </head>
 <body>
@@ -37,10 +38,20 @@
                     </div>
 
                     <h3 class="tit box-blink-ani">접근성</h3>
+                    <p>정보 제공 사이트 널리 내용 참조.</p>
                     <div class="">
-                        <table class="intro-tbl-row"></table>
-                        <table class="intro-tbl-row2"></table>
-                        <table class="intro-tbl-row3"></table>
+                        <div>
+                            <ul>
+                                <li data-tab="mainTab" class="is-active">퍼블리셔</li>
+                                <li data-tab="mainTab">기획자</li>
+                                <li data-tab="mainTab">개발자</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div data-tab-content="mainTab"><table class="intro-tbl-row" ></table></div>
+                            <div data-tab-content="mainTab"><table class="intro-tbl-row2" ></table></div>
+                            <div data-tab-content="mainTab"><table class="intro-tbl-row3" ></table></div>
+                        </div>
                     </div>
                 </div>
             </div>
