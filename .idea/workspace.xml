@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac616bb4-2468-4271-9686-3a159f0b6ecd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/intro/images/profile-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/js/ItTechnicalTermList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/js/profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro/js/webAccessibility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro/images/icons/icon-cardiogram-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd-use-scripts/js/front-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd-use-scripts/js/jquery-3.4.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd-use-scripts/lotto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twd-use-scripts/pc-input-change-url.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/css/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro/css/intro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/ittt.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro/ittt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro/info.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/js/front-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/front-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/js/intro-table-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/globalData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/js/globalData.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/globalData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro/js/renderingMarkup.js" beforeDir="false" afterPath="$PROJECT_DIR$/intro/js/renderingMarkup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro/web-accessibility.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro/web-accessibility.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +30,8 @@
         <option value="tsconfig.json" />
         <option value="package.json" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -48,12 +46,15 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1TXb5Rag1v5UYeBvpK1Pq6oIbaG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/intro/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/twd-use-scripts" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -62,18 +63,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\git\pro-ject\intro\images\icons" />
       <recent name="E:\git\pro-ject\ct-kpi-2019" />
       <recent name="E:\git\pro-ject\ct-kpi-2019\book" />
       <recent name="E:\git\pro-ject\intro\images\list" />
       <recent name="E:\git\pro-ject\intro\images" />
-      <recent name="E:\git\pro-ject\twd" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\pro-ject\twd-use-scripts" />
       <recent name="E:\git\pro-ject\intro\images" />
       <recent name="E:\git\pro-ject\ct-kpi-2019\js" />
       <recent name="E:\git\pro-ject\ct-kpi-2019" />
       <recent name="E:\git\pro-ject\ct-kpi-2019\css" />
-      <recent name="E:\git\pro-ject\intro\images\list" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -320,6 +321,10 @@
       <workItem from="1576818427583" duration="9817000" />
       <workItem from="1576828869150" duration="48000" />
       <workItem from="1576831948991" duration="468000" />
+      <workItem from="1577059067655" duration="4132000" />
+      <workItem from="1577067392894" duration="982000" />
+      <workItem from="1577068786967" duration="538000" />
+      <workItem from="1577069512871" duration="2875000" />
     </task>
     <task id="LOCAL-00001" summary="[이대성] 이미지 위치 값 가져오기 제네레이터">
       <created>1554266632969</created>
@@ -503,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576455831011</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update">
+      <created>1577059121558</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1577059121558</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">

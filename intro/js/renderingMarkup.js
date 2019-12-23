@@ -101,6 +101,7 @@ function renderingMarkup () {
         '</div>' +
         '<div class="in-right">' +
         '<ul class="util">' +
+        '<li><button type="button" class="love-btn" title="위로 해줄께!"><i class="icon icon-cardiogram-white"><span class="blind">팝업 열기</span></i></button></li>' +
         '<li><button type="button" data-pop="search" title="투입 프로젝트 검색하기"><i class="icon icon-search-white"><span class="blind">Search 열기</span></i></button></li>' +
         '<li><button type="button" data-pop="util"><i class="icon icon-more-circle-white"><span class="blind">UTIL 창 열기</span></i></button></li>' +
         '</ul>' +

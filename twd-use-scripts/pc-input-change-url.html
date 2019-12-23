@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- 인풋을 통해 입력값을 변경 하는 스크립트 -->
+    <div>
+        <fieldset class="url-resualt">
+            <legend>로컬 주소 변환</legend>
+            <div class="url-inner">
+                <input type="text" id="url-resualt" placeholder="변환 버튼을 누르면 변환된 주소가 자동 복사 됩니다.">
+                <label for="url-resualt"><button type="button" onclick="changeUrl()">변환</button></label>
+            </div>
+            <p>※ input 입력 후 Enter나 변환 버튼을 누르세요. </p>
+        </fieldset>
+    </div>
+
+<script>
+    //실제 url 변환
+    function changeUrl() {
+        var $parents = $('.url-resualt');
+        var $input =  $parents.find('input');
+        var $fileSrc = $input.val().trim();
+        var $fileSrcLength = $fileSrc.length;
+        var $srcSplit = $fileSrc.split('/');
+        var $splitString = '/' + $srcSplit[3];
+        var $splitStringLength = $splitString.length;
+        var $stringIndexOf = $fileSrc.indexOf($splitString);
+        if($stringIndexOf <= 9 ) {
+            $stringIndexOf = $stringIndexOf + $splitStringLength;
+        }
+        var $srcCheck = $fileSrc.slice(0, $stringIndexOf );
+        var $srcSlice = $fileSrc.slice($stringIndexOf, $fileSrcLength);
+
+
+        if( $fileSrc === null || $fileSrc === ''){
+
+            alert('경로가 올바르지 않습니다.');
+            return false;
+
+        } else {
+
+            if($srcCheck.match('http://tws')){
+                var realUrl = 'http://pc.twd.emotion.co.kr' + $srcSlice;
+                $input.val(realUrl).select();
+                document.execCommand('copy');
+                $parents.append('<p class="notice-desc">클립보드에 정상적으로 복사 되었습니다.</p>');
+
+            } else if ($srcCheck.match('http://twm')){
+                var realUrl = 'http://m.twd.emotion.co.kr' + $srcSlice;
+                $input.val(realUrl).select();
+                document.execCommand('copy');
+                $parents.append('<p class="notice-desc">클립보드에 정상적으로 복사 되었습니다.</p>');
+            } else {
+                alert('정확한 경로 형식으로 넣어 주세요.');
+            }
+        }
+    }
+    $(document).on('keydown','#url-resualt', function(e) {
+        if(e.keyCode === 13) { // 엔터키 옵션
+            changeUrl();
+        }
+    });
+    $(document).on('click', '#url-resualt',  function (e){
+        $('.url-resualt').find('.notice-desc').remove();
+        $(this).val('');
+    });
+
+    function autoFocus (el) {
+        var $el = $(el);
+        $el.focus();
+    }
+
+    $(document).ready(function() {
+        autoFocus ('#url-resualt');
+    });
+</script>
+</body>
+</html>

@@ -5,6 +5,7 @@ var UI = {
         this.toggleClassTarget('.overlay.d-right', '.tbl-event-btn', 'is-show');
         this.historyLogDraw(historyLog);
         this.moreText('.feedback', '22');
+        this.patOnTheBack('.love-btn',encouragement );
 
         this.tabs();
         this.sectionToggleSwitchEvent();

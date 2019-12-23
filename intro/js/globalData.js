@@ -3,6 +3,7 @@ var colOption1 = [
     {key:'file', headline:'파일',width:'auto',align:'left',indent:'5px'},
     {key:'etc', headline:'비고',width:'34px',align:'center',indent:'0'}
 ];
+// 오버레이 리스트
 var rowData1 = [
     {'file':'Twd 기획전 템플릿 가이드', 'url':'http://150.24.218.42:8080/temp', 'target':'_blank', 'etc':'·'},
     {'file':'Css 공통 가이드', 'url':'http://150.24.218.42:8080/css', 'target':'_blank', 'etc':'·'},
@@ -18,6 +19,7 @@ var rowData1 = [
     {'file':'커피 자판기', 'url':'http://150.24.218.42:8080/machine', 'target':'_blank', 'etc':'·'},
 ];
 
+// Gnb 리스트
 var gnbList = [
     {
         name:'나는 누구?',
@@ -41,6 +43,7 @@ var gnbList = [
     },
 ];
 
+//업무 내역
 var historyLog = [
     {
         img: [
@@ -463,4 +466,26 @@ var historyLog = [
         rate  : 4
     },
 ];
+
+// 위로 메세지
+var encouragement = [
+    '오늘 하루도 수고 많았어',
+    '그럴 수도 있지',
+    '힘들면 그만해도 돼',
+    '괜히 스트레스 받지마',
+    '어쩔 수 없지 뭐 너무 신경 쓰지마',
+    '너무 애쓰지 않아도 돼',
+    '다들 그러고 살더라',
+    '술이나 한잔 하자!',
+    '인생 뭐 있냐! 니 승질대로 해~!',
+    '네가 어떤 삶을 살든 나는 너를 응원 할꺼야',
+    '이래야만 하는 건 없어',
+    '너를 만난 순간부터 하루하루가 행복이야',
+    '나는 네가 마음껏 행복했으면 좋겠어',
+    '그래도 괜찮아',
+    '오늘 하루 어땠어? 별일 없었어? 말 안해도 알아.. 많이 힘들었구나.',
+    '나는 네가 너라서 좋아.',
+    '처음부터 겁먹지 말어. 막상 가보면 아무것도 아닌 게 세상에는 참 많어.',
+];
+
 var $themeOncheck = false;

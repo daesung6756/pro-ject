@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>동영상 강좌 리뷰</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="js/front-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="header"><div class="inner tac"><a href="index.html" target="_self">목록보기</a></div></div>
+    <div class="container">
+        <div class="content">
+            <div class="desc-group">
+                <h1 class="tit">모던웹을 위한 Javascript + jQuery 입문 3판 8강 변수와 함께 사용하는 연산자</h1>
+                <p class="sub-tit"><a href="https://youtu.be/ae7nnlOBbbM?list=PLBXuLgInP-5kLy13XLuK8iBWVFDBJygYr" target="_blank">동영상 바로보기</a></p>
+                <p class="text">
+                    <strong>변수</strong><br>
+                    <br>
+                    변수는 프로그래밍 언어 전체에서 가장 중요한 개념이다.<br>
+                    코드가 진행 될때 <em>값을 저장할때 사용하는 식별자</em>이다.<br>
+                    var(variable)을 통해 변수를 선언하는 방법은 아래와 같다.<br>
+                    <br>
+                    - 값을 할당하지 않고 선언을 하는 경우<br>
+                    var 식별자;<br>
+                    => 위와 같이 값을 할당하지 않으면 <em class="fc-red">undefined</em> 를 출력한다.<br>
+                    <br>
+                    - 값을 할당하고 선언하는 경우<br>
+                    var 식별자 = 10;<br>
+                    => 위와 같이 값을 할당 하면 <em class="fc-red">10</em> 을 출력한다.<br>
+                    <br>
+                    <span class="sub-text fc-red">* html, css, script등 모든 언어는 처음부터 차례대로 실행된다.</span><br>
+                    <span class="sub-text fc-red">* 스크립트에서 처음 선언하는 할당값을 초기화라고 한다.</span><br>
+                    <br>
+                    - 값을 할당하고 선언하는 경우<br>
+                    var 식별자 = 10 (초기화 값);<br>
+                    <br>
+                    - 값을 할당하지 않고 선언을 하는 경우<br>
+                    var 식별자;<br>
+                    식별자 = 10 (초기화 값)<br>
+                    <br>
+                    <br>
+                    <strong>변수와 함께 사용하는 연산자 (산술, 문자열 연결, 증감, 대입 등)</strong><br>
+                    <br>
+                    <em>1. 산술연산자</em><br>
+                    표준 덧셈, 뺄셈, 곱셈, 나누기 등이 있으며, 숫자 자료형에 사용 할 수 있다.<br>
+                    <br>
+                    ex) 덧셈 <br>
+                    var 변수 = 10; <span class="fc-remark">// 변수를 선언하고 10이라는 값을 할당</span><br>
+                    변수 + 10; <span class="fc-remark">// 변수에 + 10을 더한다.</span><br>
+                    => console.log(변수) 20을 출력 한다.<br>
+                    <br>
+                    <br>
+                    <em>2. 문자열연산자</em><br>
+                    문자열 연결 연산자라고 하며, 덧셈을 사용하여 문자열과 문자열은 연결 시키는 역할을 한다.<br>
+                    <br>
+                    ex) 문자열 연결 연산 <br>
+                    var 변수 = "안녕하세요."; <span class="fc-remark">// 변수를 선언하고 "안녕하세요." 라는 값을 할당</span><br>
+                    변수 + "반갑습니다."; <span class="fc-remark">// 변수에 + 10을 더한다.</span><br>
+                    => console.log(변수) "안녕하세요.반갑습니다."을 출력 한다.<br>
+                    <br>
+                    <br>
+                    <em>3. 증감연산자</em><br>
+                    대상을 1씩 증가시키거나, 1씩 감속시키는 역할을 한다.<br>
+                    <br>
+                    ex)<br>
+                    var 변수 = 10; <span class="fc-remark">// 변수를 선언하고 10 이라는 값을 할당</span><br>
+                    변수++; <span class="fc-remark">// 변수 후위에 + 1을 더한다.</span><br>
+                    ++변수; <span class="fc-remark">// 변수 전위에 + 1을 더한다.</span><br>
+                    변수--; <span class="fc-remark">// 변수 후위에 - 1을 뺀다.</span><br>
+                    --변수; <span class="fc-remark">// 변수 전위에 - 1을 뺀다.</span><br>
+                    <br>
+                    <br>
+                    <em>4. 대입연산자</em><br>
+                    대입 연산자는 변수에 값을 대입할 때 사용하는 이항 연산자이다.<br>
+                    = <span class="fc-remark">// 왼쪽에 오른쪽 피연산자의 값을 대입함.</span><br>
+                    += <span class="fc-remark">// 왼쪽에 오른쪽 피연산자의 값을 더하고 왼쪽에 대입.</span><br>
+                    -= <span class="fc-remark">// 왼쪽에 오른쪽 피연산자의 값을 빼고 왼쪽에 대입.</span><br>
+                    %= <span class="fc-remark">// 왼쪽에 오른쪽 피연산자의 값을 나누고 왼쪽에 대입.</span><br>
+                    *= <span class="fc-remark">// 왼쪽에 오른쪽 피연산자의 값을 곱하고 왼쪽에 대입.</span><br>
+                    <span class="sub-text fc-red">대입 연산자에서 연산자의 순서는 매우 중요하므로 주의를 기울여야 한다.</span><br>
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="inner"><p>2019 KPI Emotion @ Lee dae sung.</p></div>
+    </div>
+</div>
+</body>
+</html>

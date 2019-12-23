@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--<meta name="viewport" content="width=device-width, user-scalable=no">-->
+    <title>T World Shop - guide</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--<link type="text/css" rel="stylesheet" href="/tws/path/path.css">-->
+    <style>
+        html, body {min-width:320px;margin:0;}
+        fieldset {border:0;}
+        * {box-sizing:border-box;}
+
+        .wrap.is-hide{display:none;}
+        .control-box {position:fixed;top:50%;right:10px;transform: translateY(-50%);z-index:1;font-size:0;}
+        .control-box button {width:100px;height:50px;background:rgba(211,221,333,.7);border:0;cursor:pointer;font-size:12px;vertical-align:top;}
+        .control-box button + button {margin-left:5px;}
+        .scroll-sync.is-active {background:#f70000;color:#fff;font-weight:bold;}
+
+
+        .url-resualt {text-align:center;}
+        .url-resualt .url-inner {display:inline-block;position:relative;padding:10px 90px 10px 0;max-width:600px;width:100%;}
+        .url-resualt .url-inner input {width:100%;height:60px;border:3px solid #ff7a01;text-indent:10px;font-size:20px;}
+        .url-resualt .url-inner input:focus{ border:3px solid #2b71ff; }
+        .url-resualt .url-inner label {position:absolute;top:50%;right:0;padding:5px;transform: translateY(-50%)}
+        .url-resualt .url-inner button {width:80px;height:60px;line-height:60px;background:#ff7a01;color:#fff;font-weight:bold;border:0;}
+        .url-resualt .url-inner button:active {position:relative;top:1px;left:1px;}
+        .url-resualt .notice-desc {color:red;}
+
+        .local-img-view {margin-top:20px;padding-top:20px;border-top:1px dotted #888;}
+        .local-img-view .file-up {display:block;position:relative;padding:10px;height:500px;}
+        .local-img-view .file-up .fake {position:absolute;top:0;left:0;width:100%;height:100%;background:#fff;border:3px dotted #333;line-height:300px;text-align:center;}
+        .local-img-view .file-up .fake:hover {background:#efefef;}
+        .local-img-view .file-up input {width:1px;height:1px;}
+        .local-img-output {position:relative;top:-78px;}
+        .local-img-output .thumb {display:inline-block;width:640px;}
+        .local-img-output .thumb img{max-width:100%;}
+
+    </style>
+</head>
+<body>
+<div class="control-box">
+    <button type="button" class="scroll-sync">스크롤 동기화<br>실행</button>
+    <button type="button" class="img-view-reset" onclick="handleFileSelectReset()">이미지 초기화</button>
+</div>
+<div class="wrap">
+    <p style="margin-top:150px; text-align:center; color:#ff7a01; font-size:30px; font-weight:bold;">SK T world 다이렉트 모바일 코딩진행표입니다.</p>
+    <fieldset class="url-resualt">
+        <legend>로컬 주소 변환</legend>
+        <div class="url-inner">
+            <input type="text" id="url-resualt" placeholder="변환 버튼을 누르면 변환된 주소가 자동 복사 됩니다.">
+            <label for="url-resualt"><button type="button" onclick="changeUrl()">변환</button></label>
+        </div>
+    </fieldset>
+    <p>※ input 입력 후 Enter나 변환 버튼을 누르세요. </p>
+    <div class="local-img-view">
+        <fieldset class="file-up">
+            <input type="file" id="files" name="files[]" multiple  class="fake" />
+        </fieldset>
+    </div>
+</div>
+
+<div id="list" class="local-img-output"></div>
+<script>
+    function testFunction (number) {
+        var thisFrame = $('html, body');
+        var noticeFrame = $('html, body', window.parent.frames[number].document);
+        noticeFrame.scrollTop(thisFrame.scrollTop());
+    }
+
+    $(document).on('click','.scroll-sync', function(){
+        if($(this).hasClass('is-active')) {
+            $(this).removeClass('is-active');
+            $(this).html('스크롤 동기화<br>실행');
+        } else {
+            $(this).addClass('is-active');
+            $(this).html('스크롤 동기화<br>중지');
+        }
+    });
+    $(document).on('scroll', function() {
+        if($('.scroll-sync').hasClass('is-active')){
+            testFunction(1);
+        } else {
+            return false;
+        }
+    });
+    //실제 url 변환
+    function changeUrl() {
+        var $parents = $('.url-resualt');
+        var $input =  $parents.find('input');
+        var $fileSrc = $input.val().trim();
+        var $fileSrcLength = $fileSrc.length;
+        var $srcSplit = $fileSrc.split('/');
+        var $splitString = '/' + $srcSplit[3];
+        var $splitStringLength = $splitString.length;
+        var $stringIndexOf = $fileSrc.indexOf($splitString);
+        if($stringIndexOf <= 9 ) {
+            $stringIndexOf = $stringIndexOf + $splitStringLength;
+        }
+        var $srcCheck = $fileSrc.slice(0, $stringIndexOf );
+        var $srcSlice = $fileSrc.slice($stringIndexOf, $fileSrcLength);
+
+
+        if( $fileSrc === null || $fileSrc === ''){
+
+            alert('경로가 올바르지 않습니다.');
+            return false;
+
+        } else {
+
+            if($srcCheck.match('http://tws')){
+                var realUrl = 'http://pc.twd.emotion.co.kr' + $srcSlice;
+                $input.val(realUrl).select();
+                document.execCommand('copy');
+                $parents.append('<p class="notice-desc">클립보드에 정상적으로 복사 되었습니다.</p>');
+
+            } else if ($srcCheck.match('http://twm')){
+                var realUrl = 'http://m.twd.emotion.co.kr' + $srcSlice;
+                $input.val(realUrl).select();
+                document.execCommand('copy');
+                $parents.append('<p class="notice-desc">클립보드에 정상적으로 복사 되었습니다.</p>');
+            } else {
+                alert('정확한 경로 형식으로 넣어 주세요.');
+            }
+        }
+    }
+    $(document).on('keydown','#url-resualt', function(e) {
+        if(e.keyCode === 13) {
+            changeUrl();
+        }
+    });
+    $(document).on('click', '#url-resualt',  function (e){
+        $('.url-resualt').find('.notice-desc').remove();
+        $(this).val('');
+    });
+
+    function autoFocus (el) {
+        var $el = $(el);
+        $el.focus();
+    }
+
+    //로컬 이미지 미리 보기
+    function handleFileSelect(evt) {
+
+        var files = evt.target.files; // FileList object
+        var wrap = document.querySelector('.wrap');
+
+        wrap.classList.add('is-hide');
+        // Loop through the FileList and render image files as thumbnails.
+        for (var i = 0, f; f = files[i]; i++) {
+
+            // Only process image files.
+            if (!f.type.match('image.*')) {
+                continue;
+            }
+
+            var reader = new FileReader();
+
+            // Closure to capture the file information.
+            reader.onload = (function(theFile) {
+                return function(e) {
+                    // Render thumbnail.
+                    var span = document.createElement('span');
+                    span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                        '" title="', escape(theFile.name), '"/>'].join('');
+                    document.getElementById('list').insertBefore(span, null);
+                };
+            })(f);
+
+            // Read in the image file as a data URL.
+            reader.readAsDataURL(f);
+        }
+    }
+    function handleFileSelectReset() {
+        var wrap = document.querySelector('.wrap');
+        var output = document.querySelector('.local-img-output');
+        var child = output.querySelector('span');
+        var input = document.getElementById('files');
+
+        if(child !== null && child !== undefined){
+            wrap.classList.remove('is-hide');
+            output.removeChild(child);
+            input.value = "";
+
+        } else {
+            console.log('불러온 이미지가 없습니다.');
+            return false;
+        }
+    }
+    document.getElementById('files').addEventListener('change', handleFileSelect, false);
+
+    $(document).ready(function() {
+        autoFocus ('#url-resualt');
+    });
+</script>
+</body>
+</html>
